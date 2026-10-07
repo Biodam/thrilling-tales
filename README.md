@@ -37,15 +37,15 @@ timeline
 
 ---
 
-## 🚀 Key Features & Roadmap
+## 🚀 Features & Architecture
 
-- [x] **Zero-Build Static Architecture**: Seamlessly hosted on GitHub Pages in a repository subfolder.
-- [x] **Subpage Routing**: Clean separation between landing page (`/`) and the interactive timeline canvas (`/timeline/`).
-- [ ] **Interactive Timeline Canvas**: Zoomable, pannable chronological axis spanning thousands of years.
-- [ ] **Multi-Dimensional Filters**: Filter events by nation/region, faction (Celestia, Abyss, Fatui, Hexenzirkel), and prominent characters.
-- [ ] **Lore Citation Drawer**: Direct in-game source citations with quotes from books, artifacts, and dialogue.
-- [ ] **Spoiler Protection**: Configurable spoiler boundary based on your current Archon Quest progression.
-- [ ] **Search & Cross-Referencing**: Fast client-side search across events, characters, and historical documents.
+- [x] **Dedicated Interactive Horizontal Timeline**: Proportional horizontal axis with Era bands, ruler ticks, and chronological milestone nodes.
+- [x] **Hover Quick-Preview**: Instant floating tooltip preview with thumbnail, era, date, and summary on node hover.
+- [x] **Click to Pin Inspector**: Pin any milestone into a dedicated slide-out inspector drawer that stays open during exploration.
+- [x] **Multi-Image Carousel**: Each event supports a full image carousel with captions, slide controls, and indicator dots.
+- [x] **Rich Lore Categorization & Citations**: Region, character, faction tags, spoiler warnings, and verbatim in-game citations.
+- [x] **Era Fast Jumpers & Live Search**: Jump between canonical eras and instantly filter milestones by keyword, character, or nation.
+- [x] **Zero-Build GitHub Pages Hosting**: Native HTML5, modern CSS, and ES modules with relative path resolution for subfolder deployment.
 
 ---
 
@@ -53,22 +53,28 @@ timeline
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── deploy.yml       # GitHub Actions automated deployment to GitHub Pages
 ├── .gitignore               # Ignored files (system, IDE, build artifacts)
 ├── .nojekyll                # Disables Jekyll processing on GitHub Pages
 ├── README.md                # Project documentation and roadmap
 ├── AGENTS.md                # AI agent operating instructions & lore guidelines
+├── data/                    # Structured canonical lore datasets
+│   ├── eras.json            # Canonical eras definition, time ranges, and color themes
+│   └── events.json          # Rich chronological milestones with carousel images & citations
 ├── docs/                    # Technical & architectural specifications
 │   ├── architecture.md      # Data pipeline, rendering engine & client architecture
 │   ├── lore-schema.md       # JSON/YAML data format specification for events
 │   └── deployment.md        # GitHub Pages subfolder deployment guide
-├── index.html               # Main project landing page
-├── timeline/                # Timeline application subfolder
-│   └── index.html           # Interactive timeline "Hello World" canvas
+├── index.html               # Main interactive horizontal timeline application
+├── timeline/                # Subpage redirect for backward compatibility
+│   └── index.html           # Redirects to root timeline
 └── assets/                  # Shared static web assets
     ├── css/
-    │   └── style.css        # Thematic styles (Teyvat/Irminsul aesthetic)
+    │   └── style.css        # Thematic styles (horizontal track, inspector, carousel)
     └── js/
-        └── main.js          # Client-side timeline interactions & helpers
+        └── main.js          # Interactive horizontal timeline engine & controllers
 ```
 
 ---

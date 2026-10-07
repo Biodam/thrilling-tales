@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dragon-sovereigns",
+    "name": "Seven Sovereigns Era",
+    "shortName": "Sovereigns",
+    "color": "#38bdf8",
+    "bgGradient": "linear-gradient(90deg, rgba(56, 189, 248, 0.15), rgba(95, 227, 219, 0.15))",
+    "description": "Pre-genesis era when the Seven Dragons ruled the primordial elemental world.",
+    "startRank": 0,
+    "endRank": 150
+  },
+  {
+    "id": "primordial-one",
+    "name": "Era of the Primordial One",
+    "shortName": "Primordial One",
+    "color": "#5fe3db",
+    "bgGradient": "linear-gradient(90deg, rgba(95, 227, 219, 0.15), rgba(229, 193, 88, 0.15))",
+    "description": "Arrival of Phanes, creation of the Four Shades, and the Unified Human Civilization.",
+    "startRank": 151,
+    "endRank": 350
+  },
+  {
+    "id": "second-who-came",
+    "name": "The Second Who Came & War in Heaven",
+    "shortName": "War in Heaven",
+    "color": "#c084fc",
+    "bgGradient": "linear-gradient(90deg, rgba(192, 132, 252, 0.15), rgba(244, 114, 182, 0.15))",
+    "description": "The catastrophic war that shattered the sky, sank Enkanomiya, and severed humanity from heaven.",
+    "startRank": 351,
+    "endRank": 500
+  },
+  {
+    "id": "archon-war",
+    "name": "The Archon War (~3,700 - 2,000 YA)",
+    "shortName": "Archon War",
+    "color": "#e5c158",
+    "bgGradient": "linear-gradient(90deg, rgba(229, 193, 88, 0.15), rgba(251, 146, 60, 0.15))",
+    "description": "Thousands of gods battle for the Seven Divine Thrones established by Celestia.",
+    "startRank": 501,
+    "endRank": 750
+  },
+  {
+    "id": "cataclysm",
+    "name": "The Cataclysm (500 YA)",
+    "shortName": "The Cataclysm",
+    "color": "#a855f7",
+    "bgGradient": "linear-gradient(90deg, rgba(168, 85, 247, 0.15), rgba(239, 68, 68, 0.15))",
+    "description": "The fall of Khaenri'ah, global abyssal disaster, and the death of multiple Archons.",
+    "startRank": 751,
+    "endRank": 900
+  },
+  {
+    "id": "modern",
+    "name": "Modern Era (Traveler's Journey)",
+    "shortName": "Modern Era",
+    "color": "#60a5fa",
+    "bgGradient": "linear-gradient(90deg, rgba(96, 165, 250, 0.15), rgba(129, 140, 248, 0.15))",
+    "description": "The Traveler awakens in Mondstadt and sets out across the Seven Nations.",
+    "startRank": 901,
+    "endRank": 1000
+  }
+]

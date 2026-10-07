@@ -4,101 +4,156 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thrilling Tales — Teyvat Interactive Timeline</title>
-  <meta name="description" content="An interactive, chronological timeline to explore Genshin Impact lore from the Primordial One to the Traveler's journey.">
+  <meta name="description" content="Interactive horizontal timeline visualizer for Genshin Impact lore with hover previews, pinned event inspector, and image carousels.">
+  <!-- Relative path to styles -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-  <!-- Site Navigation -->
-  <header class="site-header">
-    <div class="container nav-bar">
+  <!-- Top Navigation & Controls Bar -->
+  <header class="timeline-topbar">
+    <div class="topbar-left">
       <a href="./index.html" class="brand">
         <span class="brand-icon">✨</span>
         <span class="brand-title">Thrilling Tales</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="./index.html" class="nav-link active">Home</a></li>
-        <li><a href="./timeline/" class="nav-link">Timeline Preview</a></li>
-        <li><a href="https://github.com/Biodam/thrilling-tales" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li>
-      </ul>
+
+      <!-- Quick Era Jump Buttons -->
+      <nav class="era-jumper-group" id="era-jumper-group" aria-label="Era Jumpers">
+        <!-- Rendered dynamically by main.js -->
+      </nav>
+    </div>
+
+    <div class="topbar-right">
+      <!-- Search Filter -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="timeline-search" 
+          class="search-input" 
+          placeholder="Search lore, character, region..." 
+          aria-label="Search timeline"
+        >
+      </div>
+
+      <!-- Zoom Controls -->
+      <div class="zoom-controls" title="Timeline Zoom">
+        <button id="zoom-out-btn" class="zoom-btn" title="Zoom Out">−</button>
+        <button id="zoom-reset-btn" class="zoom-btn" title="Reset Zoom">100%</button>
+        <button id="zoom-in-btn" class="zoom-btn" title="Zoom In">+</button>
+      </div>
+
+      <span id="event-count-badge" style="font-size: 0.775rem; color: var(--gold-celestial); font-weight: 600; white-space: nowrap;">
+        Loading...
+      </span>
+
+      <!-- GitHub Link -->
+      <a href="https://github.com/Biodam/thrilling-tales" target="_blank" rel="noopener noreferrer" class="github-btn" title="View Source on GitHub">
+        <span>GitHub</span>
+      </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="badge-tag">Genshin Impact Lore Discovery</div>
-        <h1>The Chronicles of <span class="highlight">Teyvat</span></h1>
-        <p class="hero-subtitle">
-          Unraveling tens of thousands of years of fragmented history. Trace the rise and fall of ancient civilizations, the Archon War, the Cataclysm of Khaenri'ah, and the Traveler's journey along an interactive chronological timeline.
-        </p>
-        <div class="cta-group">
-          <a href="./timeline/" class="btn btn-primary">
-            <span>Explore Timeline (Hello World Subpage)</span> →
-          </a>
-          <a href="./docs/architecture.md" class="btn btn-secondary">
-            <span>Read Architecture Docs</span>
-          </a>
-        </div>
+  <!-- Horizontal Timeline Viewport -->
+  <main class="timeline-viewport" id="timeline-viewport">
+    <div class="timeline-canvas" id="timeline-canvas">
+      
+      <!-- Era Header Bands -->
+      <div class="era-band-container" id="era-band-container">
+        <!-- Injected via main.js -->
       </div>
-    </section>
 
-    <!-- Project Features Grid -->
-    <section class="container">
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="feature-icon">⏳</div>
-          <h2 class="feature-title">Chronological Cohesion</h2>
-          <p class="feature-desc">
-            Transform scattered book chapters, artifact sets, and weapon lore into a unified, step-by-step chronology of Teyvat.
-          </p>
-        </div>
+      <!-- Central Axis Line -->
+      <div class="timeline-axis-line"></div>
 
-        <div class="feature-card">
-          <div class="feature-icon">🏛️</div>
-          <h2 class="feature-title">Primary Source Citations</h2>
-          <p class="feature-desc">
-            Every timeline milestone is grounded in canonical in-game citations, complete with verbatim quotes and item provenance.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">🚀</div>
-          <h2 class="feature-title">GitHub Pages Subfolder Ready</h2>
-          <p class="feature-desc">
-            Engineered with strict relative path routing to deploy effortlessly to GitHub Pages under any repository subfolder.
-          </p>
-        </div>
+      <!-- Ruler Ticks Container -->
+      <div class="ruler-container" id="ruler-container">
+        <!-- Injected via main.js -->
       </div>
-    </section>
 
-    <!-- Architecture & Documentation Links -->
-    <section class="container" style="margin-bottom: 4rem;">
-      <div class="feature-card" style="border-left: 4px solid var(--gold-celestial);">
-        <h3 class="feature-title">Project Documentation & Specifications</h3>
-        <p class="feature-desc" style="margin-bottom: 1.25rem;">
-          Explore the design documents, data schemas, and deployment guides that power this project:
-        </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="./docs/architecture.md" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">Architecture Overview</a>
-          <a href="./docs/lore-schema.md" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">Lore Data Schema</a>
-          <a href="./docs/deployment.md" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">GitHub Pages Deployment</a>
-        </div>
+      <!-- Event Nodes Container -->
+      <div id="event-nodes-container">
+        <!-- Injected via main.js -->
       </div>
-    </section>
+
+    </div>
   </main>
 
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>Thrilling Tales — Fan-made Genshin Impact Lore Project. Hosted on GitHub Pages.</p>
-      <p style="margin-top: 0.4rem; font-size: 0.8rem;">
-        Genshin Impact &copy; COGNOSPHERE / miHoYo. Content is for educational and lore research purposes.
-      </p>
+  <!-- Floating Hover Preview Tooltip -->
+  <div class="timeline-tooltip" id="timeline-tooltip" role="tooltip" aria-hidden="true">
+    <!-- Populated dynamically upon node hover -->
+  </div>
+
+  <!-- Pinned Event Inspector Drawer (Slide-out panel) -->
+  <aside class="event-inspector" id="event-inspector" aria-label="Event Details Inspector">
+    <div class="inspector-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span id="inspector-era" class="node-era-badge" style="background: rgba(229, 193, 88, 0.15); border: 1px solid var(--gold-celestial); font-size: 0.75rem;">
+          Era
+        </span>
+        <span id="inspector-date" class="inspector-date">Date</span>
+      </div>
+      <button class="inspector-close-btn" id="inspector-close-btn" title="Close / Unpin (Esc)">✕</button>
+    </div>
+
+    <!-- Image Carousel -->
+    <div class="carousel-container" id="inspector-carousel">
+      <div id="carousel-slides">
+        <!-- Rendered dynamically -->
+      </div>
+      <button class="carousel-nav-btn prev" id="carousel-prev" title="Previous Slide">‹</button>
+      <button class="carousel-nav-btn next" id="carousel-next" title="Next Slide">›</button>
+      <div class="carousel-dots" id="carousel-dots">
+        <!-- Dots injected dynamically -->
+      </div>
+    </div>
+
+    <!-- Inspector Body -->
+    <div class="inspector-body">
+      <h2 id="inspector-title" class="inspector-title">Event Title</h2>
+      <p id="inspector-desc" class="inspector-desc">Detailed event description text.</p>
+
+      <!-- Tags Section -->
+      <div class="inspector-tag-section">
+        <span class="section-label">Categorization & Entities</span>
+        <div class="tag-cloud" id="inspector-tags">
+          <!-- Injected via main.js -->
+        </div>
+      </div>
+
+      <!-- Canonical Sources & Quotes -->
+      <div class="inspector-tag-section">
+        <span class="section-label">Primary Canonical Citations</span>
+        <div id="inspector-sources">
+          <!-- Injected via main.js -->
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Bottom Helper Bar -->
+  <footer class="timeline-bottombar">
+    <div class="hint-chips">
+      <span class="hint-chip">
+        <kbd class="key-kbd">Drag</kbd> or <kbd class="key-kbd">Mouse Wheel</kbd> to Pan
+      </span>
+      <span class="hint-chip">
+        <kbd class="key-kbd">Hover</kbd> to Preview
+      </span>
+      <span class="hint-chip">
+        <kbd class="key-kbd">Click</kbd> to Pin Details
+      </span>
+      <span class="hint-chip">
+        <kbd class="key-kbd">Esc</kbd> to Unpin
+      </span>
+    </div>
+    <div>
+      <span>Teyvat Interactive Timeline • Genshin Impact Lore</span>
     </div>
   </footer>
 
+  <!-- Main timeline application script -->
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

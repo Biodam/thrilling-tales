@@ -12,35 +12,37 @@ This document details the software architecture, data lifecycle, rendering strat
 
 ---
 
-## 2. Component Diagram
+## 2. Component Architecture
 
 ```mermaid
 graph TD
     subgraph DataLayer [Data Layer]
-        ErasData[eras.json]
-        EventsData[events/*.json]
-        SourcesData[sources.json]
+        ErasData[data/eras.json]
+        EventsData[data/events.json]
     end
 
     subgraph CoreEngine [Client Engine]
-        DataLoader[Data Loader & Validator]
-        FilterEngine[Filter & Search Engine]
-        TimelineEngine[Chronological Axis & Zoom Manager]
+        DataLoader[Data Loader & Relative Path Resolver]
+        PanZoomManager[Drag-to-Pan & Zoom Scale Controller]
+        FilterEngine[Era Jumper & Live Keyword Search]
     end
 
-    subgraph PresentationLayer [UI Presentation Layer]
-        LandingView[Root Landing Page (index.html)]
-        TimelineView[Timeline Subpage (timeline/index.html)]
-        EventDrawer[Event Citation Drawer]
-        SpoilerManager[Spoiler Protection Controller]
+    subgraph UIComponents [UI Presentation Layer]
+        TopBar[Header Bar: Era Quick Jumpers & Search]
+        HorizontalTrack[Horizontal Canvas: Era Bands, Ruler & Staggered Nodes]
+        HoverTooltip[Floating Hover Preview Tooltip]
+        InspectorDrawer[Pinned Event Inspector Drawer]
+        ImageCarousel[Multi-Image Carousel with Captions & Nav]
     end
 
     DataLayer --> DataLoader
     DataLoader --> FilterEngine
-    FilterEngine --> TimelineEngine
-    TimelineEngine --> TimelineView
-    TimelineView --> EventDrawer
-    SpoilerManager -.-> FilterEngine
+    DataLoader --> HorizontalTrack
+    PanZoomManager --> HorizontalTrack
+    FilterEngine --> TopBar
+    HorizontalTrack -.->|Hover| HoverTooltip
+    HorizontalTrack -.->|Click to Pin| InspectorDrawer
+    InspectorDrawer --> ImageCarousel
 ```
 
 ---
@@ -48,26 +50,18 @@ graph TD
 ## 3. Directory & Asset Layout
 
 ```text
-├── index.html                   # Project portal & overview
+├── index.html                   # Dedicated horizontal timeline application
 ├── timeline/
-│   └── index.html               # Main interactive timeline application
+│   └── index.html               # Backward-compatible redirect to root timeline
 ├── data/                        # Static lore data (structured JSON)
-│   ├── eras.json                # Master list of canonical epochs
-│   ├── factions.json            # Factions & allegiances (Celestia, Fatui, etc.)
-│   └── events/                  # Chunked event datasets
-│       ├── primordial.json      # Primordial One / Sovereigns
-│       ├── archon-war.json      # Archon War era
-│       ├── cataclysm.json       # 500 YA Khaenri'ah cataclysm
-│       └── traveler-era.json    # Modern Traveler journey
+│   ├── eras.json                # Master list of canonical epochs & themes
+│   └── events.json              # Canonical milestones with carousel images & citations
 ├── assets/
 │   ├── css/
-│   │   ├── style.css            # Global typography & Teyvat design system
-│   │   └── timeline.css         # Timeline canvas & node styling
-│   ├── js/
-│   │   ├── main.js              # Global router & utilities
-│   │   ├── timeline.js          # Timeline rendering & interactions
-│   │   └── data-store.js        # Event loading & filtering logic
-│   └── images/                  # Badges, icons, and visual assets
+│   │   └── style.css            # Horizontal track, pins, tooltips, drawer & carousels
+│   └── js/
+│       └── main.js              # Complete interactive timeline engine & controllers
+└── docs/                        # Architecture, lore schema, and deployment guides
 ```
 
 ---
