@@ -80,8 +80,8 @@ Because this project is built as a zero-dependency static web application, no co
 ### Running with Python (Recommended)
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/Biodam/thrilling-tales.git
+cd thrilling-tales
 
 # Start a local static file server
 python3 -m http.server 8080
@@ -97,21 +97,13 @@ npx serve . -l 8080
 
 ---
 
-## 🌐 GitHub Pages Deployment (Subfolder Hosting)
+## 🌐 Live GitHub Pages Deployment (Subfolder Hosting)
 
-This project is tailored to run on **GitHub Pages** within a repository subfolder:
-`https://<your-username>.github.io/<repo-name>/`
+The project is deployed and live on **GitHub Pages**:
+- **Root Landing Page**: [https://biodam.github.io/thrilling-tales/](https://biodam.github.io/thrilling-tales/)
+- **Interactive Timeline Subpage**: [https://biodam.github.io/thrilling-tales/timeline/](https://biodam.github.io/thrilling-tales/timeline/)
 
-### Setup Instructions
-1. Push your repository to GitHub.
-2. Go to **Settings** > **Pages** in your GitHub repository.
-3. Under **Build and deployment**:
-   - **Source**: Select `Deploy from a branch`.
-   - **Branch**: Select `main` (or your default branch) and folder `/ (root)`.
-4. Click **Save**.
-5. Once deployed, your site will be live at:
-   - Root: `https://<your-username>.github.io/<repo-name>/`
-   - Timeline Subpage: `https://<your-username>.github.io/<repo-name>/timeline/`
+Continuous deployment is handled automatically via GitHub Actions on every push to `main` using `.github/workflows/deploy.yml`.
 
 > **Note on Relative Paths**: All asset references and internal links use explicit relative paths (`./` and `../`), ensuring that the site functions flawlessly regardless of whether it is hosted at domain root or inside any repository subfolder.
 
