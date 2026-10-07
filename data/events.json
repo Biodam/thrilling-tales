@@ -2,17 +2,26 @@
   {
     "id": "reign-of-sovereigns",
     "title": "Reign of the Seven Dragon Sovereigns",
-    "dateDisplay": "Pre-Genesis • The Primordial Light Realm",
+    "yearsAgo": 7000,
+    "yearsAgoDisplay": "~7,000+ YA",
+    "dateDisplay": "~7,000+ Years Ago • The Primordial Light Realm",
     "orderRank": 30,
     "eraId": "dragon-sovereigns",
     "eraName": "Old World (Seven Sovereigns)",
-    "summary": "Before the arrival of gods or humanity, Teyvat was an untamed elemental realm ruled by seven colossal dragon sovereigns.",
+    "summary": "Before the arrival of gods or humanity, Teyvat was an untamed elemental realm ruled exclusively by seven colossal dragon sovereigns.",
     "description": "In the ancient age of the Light Realm, the Seven Dragon Sovereigns held supreme dominion over the primordial elements of Teyvat. Under the leadership of the Dragon King Nibelung, civilizations of vishaps and dragons flourished across the globe without celestial interference or divine thrones.",
     "images": [],
     "tags": {
       "region": "Primordial Teyvat",
-      "factions": ["Seven Dragon Sovereigns", "Vishaps of the Deep"],
-      "characters": ["Dragon King Nibelung", "Apep", "Scylla"],
+      "factions": [
+        "Seven Dragon Sovereigns",
+        "Vishaps of the Deep"
+      ],
+      "characters": [
+        "Dragon King Nibelung",
+        "Apep",
+        "Scylla"
+      ],
       "spoilerLevel": "Fontaine World Quests"
     },
     "sources": [
@@ -31,17 +40,24 @@
   {
     "id": "nibelung-voyage",
     "title": "Nibelung's Cosmic Journey & The Power from Beyond",
-    "dateDisplay": "Pre-Genesis • Cosmic Incursion",
+    "yearsAgo": 6500,
+    "yearsAgoDisplay": "~6,500+ YA",
+    "dateDisplay": "~6,500+ Years Ago • Cosmic Incursion",
     "orderRank": 80,
     "eraId": "dragon-sovereigns",
     "eraName": "Old World (Seven Sovereigns)",
-    "summary": "The Dragon King Nibelung travels beyond Teyvat's firmament, returning with dark forbidden power to fight the heavens.",
+    "summary": "Dragon King Nibelung travels beyond Teyvat's firmament, returning with dark forbidden power to fight celestial invaders.",
     "description": "Foreshadowing the arrival of extraterrestrial powers, Dragon King Nibelung ventured outside the boundary of Teyvat into the Dark Sea and the cosmos. He acquired a pitch-black power from beyond this world to contest celestial invaders, planting the first seeds of the forbidden knowledge that would later plague the world.",
     "images": [],
     "tags": {
       "region": "The Dark Sea",
-      "factions": ["Seven Dragon Sovereigns"],
-      "characters": ["Dragon King Nibelung", "Apep"],
+      "factions": [
+        "Seven Dragon Sovereigns"
+      ],
+      "characters": [
+        "Dragon King Nibelung",
+        "Apep"
+      ],
       "spoilerLevel": "Sumeru Desert World Quests"
     },
     "sources": [
@@ -53,10 +69,47 @@
     ]
   },
   {
+    "id": "morax-genesis",
+    "title": "Genesis of Morax (Rex Lapis)",
+    "yearsAgo": 6000,
+    "yearsAgoDisplay": ">6,000 YA",
+    "dateDisplay": ">6,000 Years Ago • Genesis of the Prime Adeptus",
+    "orderRank": 120,
+    "eraId": "primordial-one",
+    "eraName": "When the Doves Held Branches",
+    "summary": "Morax emerges as a primeval god of Geo and Prime Adeptus, beginning his vigil over the lands of Liyue.",
+    "description": "Over six thousand years ago, before the establishment of nations and long before the Archon War, Morax took physical form as a primeval deity with dominion over earth and stone. As the Prime of Adepti, he would eventually lead gods and mortals through millennia of turmoil to build Liyue.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Adepti of Liyue"
+      ],
+      "characters": [
+        "Morax (Rex Lapis / Zhongli)"
+      ],
+      "spoilerLevel": "Archon Quest Chapter I"
+    },
+    "sources": [
+      {
+        "title": "Zhongli - Character Story 5 & Voice Lines",
+        "category": "character_story",
+        "quote": "I have lived for over six thousand years. The journey has been long, and time wears away at all things."
+      },
+      {
+        "title": "Stone Tablet Compilations: Vol. 1",
+        "category": "book",
+        "quote": "The Geo Lord was born from the raw essence of mountain stone, walking the untamed earth before the kingdoms rose."
+      }
+    ]
+  },
+  {
     "id": "phanes-arrives",
     "title": "Arrival of Phanes & Creation of the Four Shades",
-    "dateDisplay": "Unknown Millennium • Creation of Heaven and Earth",
-    "orderRank": 140,
+    "yearsAgo": 6000,
+    "yearsAgoDisplay": "~6,000 YA",
+    "dateDisplay": "~6,000 Years Ago • Creation of Heaven and Earth",
+    "orderRank": 145,
     "eraId": "primordial-one",
     "eraName": "When the Doves Held Branches",
     "summary": "The Primordial One (Phanes) arrives in Teyvat and creates Four Shining Shades to reshape the cosmos.",
@@ -64,8 +117,14 @@
     "images": [],
     "tags": {
       "region": "Celestia",
-      "factions": ["Celestia", "The Four Shades"],
-      "characters": ["Phanes (The Primordial One)", "Istaroth"],
+      "factions": [
+        "Celestia",
+        "The Four Shades"
+      ],
+      "characters": [
+        "Phanes (The Primordial One)",
+        "Istaroth"
+      ],
       "spoilerLevel": "Enkanomiya World Quests"
     },
     "sources": [
@@ -79,7 +138,9 @@
   {
     "id": "great-war-forty-years",
     "title": "The Forty-Year War: Fall of the Dragon Sovereigns",
-    "dateDisplay": "Unknown Millennium • Subjugation of the Sovereigns",
+    "yearsAgo": 5960,
+    "yearsAgoDisplay": "~5,960 YA",
+    "dateDisplay": "~5,960 Years Ago • Subjugation of the Sovereigns",
     "orderRank": 175,
     "eraId": "primordial-one",
     "eraName": "When the Doves Held Branches",
@@ -88,8 +149,15 @@
     "images": [],
     "tags": {
       "region": "Primordial Teyvat",
-      "factions": ["Celestia", "Seven Dragon Sovereigns"],
-      "characters": ["Phanes", "Apep", "Nibelung"],
+      "factions": [
+        "Celestia",
+        "Seven Dragon Sovereigns"
+      ],
+      "characters": [
+        "Phanes",
+        "Apep",
+        "Nibelung"
+      ],
       "spoilerLevel": "Enkanomiya / Sumeru Quests"
     },
     "sources": [
@@ -103,7 +171,9 @@
   {
     "id": "unified-human-civilization",
     "title": "The Unified Human Civilization & Celestial Envoys",
-    "dateDisplay": "Golden Age of Mortals • Pre-Archon Era",
+    "yearsAgo": 5500,
+    "yearsAgoDisplay": "~5,500 YA",
+    "dateDisplay": "~5,500 Years Ago • Golden Age of Mortals",
     "orderRank": 210,
     "eraId": "primordial-one",
     "eraName": "When the Doves Held Branches",
@@ -112,8 +182,15 @@
     "images": [],
     "tags": {
       "region": "Global Teyvat",
-      "factions": ["Unified Human Civilization", "The Seelie Ancestors", "Celestia"],
-      "characters": ["Seelie Ancestors", "First Mortals"],
+      "factions": [
+        "Unified Human Civilization",
+        "The Seelie Ancestors",
+        "Celestia"
+      ],
+      "characters": [
+        "Seelie Ancestors",
+        "First Mortals"
+      ],
       "spoilerLevel": "The Chasm World Quests"
     },
     "sources": [
@@ -132,8 +209,10 @@
   {
     "id": "second-who-came-invasion",
     "title": "Invasion of the Second Who Came & Shattered Skies",
-    "dateDisplay": "War in Heaven • The Funerary Year",
-    "orderRank": 250,
+    "yearsAgo": 5000,
+    "yearsAgoDisplay": "~5,000 YA",
+    "dateDisplay": "~5,000 Years Ago • The Funerary Year",
+    "orderRank": 245,
     "eraId": "second-who-came",
     "eraName": "War of Funerary Flame",
     "summary": "A second extraterrestrial throne strikes Teyvat, causing a celestial war that shatters the Unified Civilization.",
@@ -141,8 +220,14 @@
     "images": [],
     "tags": {
       "region": "Celestia & Global Teyvat",
-      "factions": ["Celestia", "The Second Who Came"],
-      "characters": ["Phanes", "The Second Descender"],
+      "factions": [
+        "Celestia",
+        "The Second Who Came"
+      ],
+      "characters": [
+        "Phanes",
+        "The Second Descender"
+      ],
       "spoilerLevel": "Enkanomiya World Quests"
     },
     "sources": [
@@ -156,8 +241,10 @@
   {
     "id": "sinking-of-enkanomiya",
     "title": "The Sinking of Byakuyakoku (Enkanomiya)",
-    "dateDisplay": "The Funerary Year • Abyssal Plunge",
-    "orderRank": 275,
+    "yearsAgo": 5000,
+    "yearsAgoDisplay": "~5,000 YA",
+    "dateDisplay": "~5,000 Years Ago • Abyssal Plunge of Byakuyakoku",
+    "orderRank": 270,
     "eraId": "second-who-came",
     "eraName": "War of Funerary Flame",
     "summary": "During the War in Heaven, an entire realm collapses beneath the ocean into the Dark Abyssal depths.",
@@ -165,8 +252,14 @@
     "images": [],
     "tags": {
       "region": "Enkanomiya",
-      "factions": ["Byakuyakoku People", "Bathysmal Vishaps"],
-      "characters": ["Istaroth (Kairos)", "Aberaku no Mikoto"],
+      "factions": [
+        "Byakuyakoku People",
+        "Bathysmal Vishaps"
+      ],
+      "characters": [
+        "Istaroth (Kairos)",
+        "Aberaku no Mikoto"
+      ],
       "spoilerLevel": "From Dusk to Dawn in Byakuyakoku"
     },
     "sources": [
@@ -180,7 +273,9 @@
   {
     "id": "fall-of-seelie-race",
     "title": "The Fall and Curse of the Seelie Race",
-    "dateDisplay": "Post-War in Heaven • The Seelie Degradation",
+    "yearsAgo": 4900,
+    "yearsAgoDisplay": "~4,900 YA",
+    "dateDisplay": "~4,900 Years Ago • The Seelie Degradation",
     "orderRank": 295,
     "eraId": "second-who-came",
     "eraName": "War of Funerary Flame",
@@ -189,8 +284,14 @@
     "images": [],
     "tags": {
       "region": "Global Teyvat",
-      "factions": ["The Seelie Race", "Celestia"],
-      "characters": ["Seelie Ancestor Maiden", "The Outlander Traveler"],
+      "factions": [
+        "The Seelie Race",
+        "Celestia"
+      ],
+      "characters": [
+        "Seelie Ancestor Maiden",
+        "The Outlander Traveler"
+      ],
       "spoilerLevel": "Aramani / Aranyaka World Quests"
     },
     "sources": [
@@ -204,8 +305,10 @@
   {
     "id": "skyfrost-nail-sal-vindagnyr",
     "title": "Skyfrost Nail Falls on Sal Vindagnyr (Dragonspine)",
-    "dateDisplay": "Circa 3,000+ YA • Celestial Judgment",
-    "orderRank": 320,
+    "yearsAgo": 4800,
+    "yearsAgoDisplay": "~4,800 YA",
+    "dateDisplay": "~4,800 Years Ago • Celestial Judgment of Sal Vindagnyr",
+    "orderRank": 325,
     "eraId": "second-who-came",
     "eraName": "War of Funerary Flame",
     "summary": "A Celestial Divine Nail plummets from the heavens, freezing the paradise mountain of Sal Vindagnyr into Dragonspine.",
@@ -213,8 +316,15 @@
     "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Sal Vindagnyr", "Celestia"],
-      "characters": ["Princess of Sal Vindagnyr", "Imunlaukr", "Chief Priest"],
+      "factions": [
+        "Sal Vindagnyr",
+        "Celestia"
+      ],
+      "characters": [
+        "Princess of Sal Vindagnyr",
+        "Imunlaukr",
+        "Chief Priest"
+      ],
       "spoilerLevel": "Dragonspine Ancient Carvings"
     },
     "sources": [
@@ -233,17 +343,25 @@
   {
     "id": "chasm-nail-impact",
     "title": "Celestial Nail Impacts The Chasm",
-    "dateDisplay": "Ancient Era • Shattering of the Liyue Bedrock",
-    "orderRank": 345,
+    "yearsAgo": 4500,
+    "yearsAgoDisplay": "~4,500 YA",
+    "dateDisplay": "~4,500 Years Ago • Shattering of the Liyue Bedrock",
+    "orderRank": 350,
     "eraId": "second-who-came",
     "eraName": "War of Funerary Flame",
-    "summary": "A second Celestial Divine Nail crashes into western Liyue, creating the subterranean depths of The Chasm.",
+    "summary": "A Celestial Divine Nail crashes into western Liyue, creating the subterranean depths of The Chasm.",
     "description": "A Divine Nail plummeted from Celestia into the mineral-rich mountains of western Liyue. The colossal kinetic force created the inverted crater of The Chasm, driving out the ancient abyssal darkness beneath and warping the bedrock into twisting luminescent crystalline caverns.",
     "images": [],
     "tags": {
       "region": "Liyue",
-      "factions": ["Celestia", "Ancient Liyue Miners"],
-      "characters": ["Morax", "Azhdaha"],
+      "factions": [
+        "Celestia",
+        "Ancient Liyue Miners"
+      ],
+      "characters": [
+        "Morax",
+        "Azhdaha"
+      ],
       "spoilerLevel": "The Chasm Delvers World Quest"
     },
     "sources": [
@@ -255,34 +373,45 @@
     ]
   },
   {
-    "id": "rise-of-remuria",
-    "title": "God King Remus & The High Symphony of Remuria",
-    "dateDisplay": "Ancient Fontaine • Era of Remuria",
-    "orderRank": 380,
+    "id": "chenyu-vale-settlement",
+    "title": "The Jade Ancestors Settle in Chenyu Vale",
+    "yearsAgo": 4000,
+    "yearsAgoDisplay": "~4,000 YA",
+    "dateDisplay": "~4,000 Years Ago • Settlement of Chenyu Vale",
+    "orderRank": 375,
     "eraId": "interim-period",
     "eraName": "Interim Period (Ancient Kingdoms)",
-    "summary": "God King Remus unifies ancient Fontaine into the empire of Remuria using magical golden ichor and music.",
-    "description": "In the waters of ancient Fontaine, God King Remus founded the grand civilization of Remuria upon the massive ship Fortuna. Remus sought to defy the prophesied doom of the Primordial Sea by transmuting mortal souls into phobos—a golden symphony composed into stone and brass golems—before internal corruption and hubris brought Remuria's cataclysmic sinking.",
+    "summary": "Herbalists and Adepti settle the misty terraced valleys of Chenyu Vale, carving sacred Rainjade altars.",
+    "description": "Long before the formal establishment of Liyue Harbor, mortal clans fled regional divine conflicts and settled in the misty green mountains of Chenyu Vale. Guided by the Adepti Fujin, Lingyuan, and the Mountain Lord, they established sacred rites of Spirit Carp and crafted the immortal Rainjade altars to regulate the waterways.",
     "images": [],
     "tags": {
-      "region": "Fontaine",
-      "factions": ["Empire of Remuria", "Vishap Sovereign of Water"],
-      "characters": ["God King Remus", "Scylla", "Boethius", "Cassiodor"],
-      "spoilerLevel": "Sea of Bygone Eras World Quest"
+      "region": "Liyue",
+      "factions": [
+        "Chenyu Vale Clans",
+        "Adepti of Chenyu"
+      ],
+      "characters": [
+        "Fujin",
+        "Lingyuan",
+        "Herbalist Gui"
+      ],
+      "spoilerLevel": "Chenyu's Blessings of Sunken Jade"
     },
     "sources": [
       {
-        "title": "The History of the Decline and Fall of Remuria",
-        "category": "book",
-        "quote": "King Remus came aboard Fortuna, playing the golden harp. He gathered all peoples under his great symphony."
+        "title": "Fragment of Harmonious Whimsy Artifact Set",
+        "category": "artifact",
+        "quote": "The ancestors of Chenyu carved jade to pacify the churning river waters and offer tribute to the mountains."
       }
     ]
   },
   {
     "id": "three-god-alliance-sumeru",
     "title": "The Tripartite Alliance of Sumeru (Ay-Khanoum)",
-    "dateDisplay": "Ancient Sumeru • City of the Amphitheater",
-    "orderRank": 410,
+    "yearsAgo": 3800,
+    "yearsAgoDisplay": "~3,800 YA",
+    "dateDisplay": "~3,800 Years Ago • City of Ay-Khanoum",
+    "orderRank": 400,
     "eraId": "interim-period",
     "eraName": "Interim Period (Ancient Kingdoms)",
     "summary": "King Deshret, the Goddess of Flowers, and Greater Lord Rukkhadevata unite to build the utopia of Ay-Khanoum.",
@@ -290,8 +419,15 @@
     "images": [],
     "tags": {
       "region": "Sumeru",
-      "factions": ["Tripartite Alliance", "Pari of the Oasis"],
-      "characters": ["King Deshret (Amon)", "Nabu Malikata", "Greater Lord Rukkhadevata"],
+      "factions": [
+        "Tripartite Alliance",
+        "Pari of the Oasis"
+      ],
+      "characters": [
+        "King Deshret (Amon)",
+        "Nabu Malikata",
+        "Greater Lord Rukkhadevata"
+      ],
       "spoilerLevel": "Golden Slumber / Dirge of Bilqis"
     },
     "sources": [
@@ -310,8 +446,10 @@
   {
     "id": "passing-of-goddess-of-flowers",
     "title": "The Sacrifice of Nabu Malikata",
-    "dateDisplay": "Ancient Sumeru • Passing of the Flowers",
-    "orderRank": 435,
+    "yearsAgo": 3500,
+    "yearsAgoDisplay": "~3,500 YA",
+    "dateDisplay": "~3,500 Years Ago • The Passing of Nabu Malikata",
+    "orderRank": 425,
     "eraId": "interim-period",
     "eraName": "Interim Period (Ancient Kingdoms)",
     "summary": "Nabu Malikata willingly perishes to unlock forbidden knowledge for King Deshret, sowing the seeds of desert tragedy.",
@@ -319,8 +457,13 @@
     "images": [],
     "tags": {
       "region": "Sumeru",
-      "factions": ["Ancient Sumeru"],
-      "characters": ["Nabu Malikata", "King Deshret"],
+      "factions": [
+        "Ancient Sumeru"
+      ],
+      "characters": [
+        "Nabu Malikata",
+        "King Deshret"
+      ],
       "spoilerLevel": "Dirge of Bilqis"
     },
     "sources": [
@@ -332,10 +475,46 @@
     ]
   },
   {
+    "id": "rise-of-remuria",
+    "title": "God King Remus & The High Symphony of Remuria",
+    "yearsAgo": 3500,
+    "yearsAgoDisplay": "~3,500 YA",
+    "dateDisplay": "~3,500 Years Ago • Era of Remuria",
+    "orderRank": 450,
+    "eraId": "interim-period",
+    "eraName": "Interim Period (Ancient Kingdoms)",
+    "summary": "God King Remus unifies ancient Fontaine into the empire of Remuria using magical golden ichor and music.",
+    "description": "In the waters of ancient Fontaine, God King Remus founded the grand civilization of Remuria upon the massive ship Fortuna. Remus sought to defy the prophesied doom of the Primordial Sea by transmuting mortal souls into phobos—a golden symphony composed into stone and brass golems—before internal corruption and hubris brought Remuria's cataclysmic sinking.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Empire of Remuria",
+        "Vishap Sovereign of Water"
+      ],
+      "characters": [
+        "God King Remus",
+        "Scylla",
+        "Boethius",
+        "Cassiodor"
+      ],
+      "spoilerLevel": "Sea of Bygone Eras World Quest"
+    },
+    "sources": [
+      {
+        "title": "The History of the Decline and Fall of Remuria",
+        "category": "book",
+        "quote": "King Remus came aboard Fortuna, playing the golden harp. He gathered all peoples under his great symphony."
+      }
+    ]
+  },
+  {
     "id": "fall-of-gurabad",
     "title": "The Tyranny and Fall of Gurabad",
-    "dateDisplay": "Ancient Sumeru • The Jinni Curse",
-    "orderRank": 455,
+    "yearsAgo": 3000,
+    "yearsAgoDisplay": "~3,000 YA",
+    "dateDisplay": "~3,000 Years Ago • The Jinni Curse of Gurabad",
+    "orderRank": 475,
     "eraId": "interim-period",
     "eraName": "Interim Period (Ancient Kingdoms)",
     "summary": "Ormazd founds Gurabad with the Jinni Liloupar, but betrayal and blood lead to the kingdom's annihilation.",
@@ -343,8 +522,16 @@
     "images": [],
     "tags": {
       "region": "Sumeru",
-      "factions": ["Gurabad", "The Jinn"],
-      "characters": ["Liloupar", "Ormazd", "Shirin", "Kisra Parvezravan"],
+      "factions": [
+        "Gurabad",
+        "The Jinn"
+      ],
+      "characters": [
+        "Liloupar",
+        "Ormazd",
+        "Shirin",
+        "Kisra Parvezravan"
+      ],
       "spoilerLevel": "Dirge of Bilqis"
     },
     "sources": [
@@ -356,34 +543,12 @@
     ]
   },
   {
-    "id": "chenyu-vale-settlement",
-    "title": "The Jade Ancestors Settle in Chenyu Vale",
-    "dateDisplay": "Circa 4,000 YA • Ancient Liyue",
-    "orderRank": 475,
-    "eraId": "interim-period",
-    "eraName": "Interim Period (Ancient Kingdoms)",
-    "summary": "Herbalists and Adepti settle the misty terraced valleys of Chenyu Vale, carving sacred jade altars.",
-    "description": "Long before the formal establishment of Liyue Harbor, mortal clans fled regional divine conflicts and settled in the misty green mountains of Chenyu Vale. Guided by the Adepti Fujin, Lingyuan, and the Mountain Lord, they established sacred rites of Spirit Carp and crafted the immortal Rainjade altars to regulate the waterways.",
-    "images": [],
-    "tags": {
-      "region": "Liyue",
-      "factions": ["Chenyu Vale Clans", "Adepti of Chenyu"],
-      "characters": ["Fujin", "Lingyuan", "Herbalist Gui"],
-      "spoilerLevel": "Chenyu's Blessings of Sunken Jade"
-    },
-    "sources": [
-      {
-        "title": "Fragment of Harmonious Whimsy Artifact Set",
-        "category": "artifact",
-        "quote": "The ancestors of Chenyu carved jade to pacify the churning river waters and offer tribute to the mountains."
-      }
-    ]
-  },
-  {
     "id": "guili-assembly-founding",
     "title": "Morax and Guizhong Establish the Guili Assembly",
-    "dateDisplay": "Circa 3,700 YA • Dawn of the Archon War",
-    "orderRank": 510,
+    "yearsAgo": 3700,
+    "yearsAgoDisplay": "~3,700 YA",
+    "dateDisplay": "~3,700 Years Ago • Dawn of the Archon War",
+    "orderRank": 505,
     "eraId": "archon-war",
     "eraName": "The Archon War (~3,700 – 2,000 YA)",
     "summary": "Morax and Guizhong unite their peoples upon the fertile plains of Liyue, establishing the Guili Assembly.",
@@ -391,8 +556,16 @@
     "images": [],
     "tags": {
       "region": "Liyue",
-      "factions": ["Guili Assembly", "Adepti of Liyue"],
-      "characters": ["Morax (Zhongli)", "Guizhong", "Cloud Retainer", "Marchosius"],
+      "factions": [
+        "Guili Assembly",
+        "Adepti of Liyue"
+      ],
+      "characters": [
+        "Morax (Zhongli)",
+        "Guizhong",
+        "Cloud Retainer",
+        "Marchosius"
+      ],
       "spoilerLevel": "Lantern Rite Event Quests"
     },
     "sources": [
@@ -411,8 +584,10 @@
   {
     "id": "passing-of-guizhong",
     "title": "The Fall of Guizhong & Founding of Liyue Harbor",
-    "dateDisplay": "Circa 3,700 YA • Tragedy on Guili Plains",
-    "orderRank": 535,
+    "yearsAgo": 3700,
+    "yearsAgoDisplay": "~3,700 YA",
+    "dateDisplay": "~3,700 Years Ago • Tragedy on Guili Plains",
+    "orderRank": 525,
     "eraId": "archon-war",
     "eraName": "The Archon War (~3,700 – 2,000 YA)",
     "summary": "Guizhong perishes during a fierce assault on the Guili Plains; Morax guides the survivors to found Liyue Harbor.",
@@ -420,8 +595,15 @@
     "images": [],
     "tags": {
       "region": "Liyue",
-      "factions": ["Guili Assembly", "Adepti of Liyue"],
-      "characters": ["Morax", "Guizhong", "Madame Ping"],
+      "factions": [
+        "Guili Assembly",
+        "Adepti of Liyue"
+      ],
+      "characters": [
+        "Morax",
+        "Guizhong",
+        "Madame Ping"
+      ],
       "spoilerLevel": "Archon Quest Chapter I"
     },
     "sources": [
@@ -435,8 +617,10 @@
   {
     "id": "fall-of-decarabian",
     "title": "The Rebellion in Old Mondstadt & Barbatos' Ascension",
-    "dateDisplay": "Circa 2,600 YA • The Song of Freedom",
-    "orderRank": 560,
+    "yearsAgo": 2600,
+    "yearsAgoDisplay": "~2,600 YA",
+    "dateDisplay": "~2,600 Years Ago • Song of Freedom in Old Mondstadt",
+    "orderRank": 550,
     "eraId": "archon-war",
     "eraName": "The Archon War (~3,700 – 2,000 YA)",
     "summary": "Mortals and a wind sprite overthrow Decarabian in Old Mondstadt; Barbatos ascends as the Anemo Archon.",
@@ -444,8 +628,16 @@
     "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Old Mondstadt Rebels", "Gunnhildr Clan"],
-      "characters": ["Barbatos (Venti)", "The Nameless Bard", "Decarabian", "Amos"],
+      "factions": [
+        "Old Mondstadt Rebels",
+        "Gunnhildr Clan"
+      ],
+      "characters": [
+        "Barbatos (Venti)",
+        "The Nameless Bard",
+        "Decarabian",
+        "Amos"
+      ],
       "spoilerLevel": "Archon Quest Prologue"
     },
     "sources": [
@@ -464,8 +656,10 @@
   {
     "id": "andrius-surrenders",
     "title": "Andrius Yields the Anemo Throne to Barbatos",
-    "dateDisplay": "Circa 2,600 YA • The Wolf King's Choice",
-    "orderRank": 580,
+    "yearsAgo": 2600,
+    "yearsAgoDisplay": "~2,600 YA",
+    "dateDisplay": "~2,600 Years Ago • The Wolf King's Choice",
+    "orderRank": 570,
     "eraId": "archon-war",
     "eraName": "The Archon War (~3,700 – 2,000 YA)",
     "summary": "The Wolf of the North realizes his frozen blizzards cannot nourish mortal life and yields the Divine Throne.",
@@ -473,8 +667,14 @@
     "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Four Winds of Mondstadt", "Wolves of Wolvendom"],
-      "characters": ["Andrius (Lupus Boreas)", "Barbatos"],
+      "factions": [
+        "Four Winds of Mondstadt",
+        "Wolves of Wolvendom"
+      ],
+      "characters": [
+        "Andrius (Lupus Boreas)",
+        "Barbatos"
+      ],
       "spoilerLevel": "Razor Story Quest / Prologue"
     },
     "sources": [
@@ -488,8 +688,10 @@
   {
     "id": "orobashi-watatsumi",
     "title": "Orobashi Rescues Enkanomiya and Raises Watatsumi",
-    "dateDisplay": "Archon War Era • Serpent of the Deep",
-    "orderRank": 600,
+    "yearsAgo": 2200,
+    "yearsAgoDisplay": "~2,200 YA",
+    "dateDisplay": "~2,200 Years Ago • Orobashi Raises Watatsumi Island",
+    "orderRank": 595,
     "eraId": "archon-war",
     "eraName": "The Archon War (~3,700 – 2,000 YA)",
     "summary": "The Great Serpent Orobashi flees the Archon War, encounters Enkanomiya, and lifts its people up to Watatsumi Island.",
@@ -497,8 +699,14 @@
     "images": [],
     "tags": {
       "region": "Inazuma",
-      "factions": ["Sangonomiya Clan", "Enkanomiya"],
-      "characters": ["Orobashi no Mikoto", "Sangonomiya Ancestors"],
+      "factions": [
+        "Sangonomiya Clan",
+        "Enkanomiya"
+      ],
+      "characters": [
+        "Orobashi no Mikoto",
+        "Sangonomiya Ancestors"
+      ],
       "spoilerLevel": "Watatsumi Island World Quests"
     },
     "sources": [
@@ -510,10 +718,50 @@
     ]
   },
   {
+    "id": "xbalanque-tollan",
+    "title": "Liberation of Tollan & First Pyro Archon Xbalanque",
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2,000 YA",
+    "dateDisplay": "~2,000 Years Ago • Liberation of Tollan & First Pyro Archon",
+    "orderRank": 615,
+    "eraId": "archon-war",
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "Xbalanque slays the dragon tyrant Xiuhcoatl at Tollan, establishing the rules of the Pyro Archon and the Ode of Resurrection.",
+    "description": "Two thousand years ago, during the tumultuous conflicts of the Archon War, the human hero Xbalanque led mortal warriors against the oppressive dragon lord Xiuhcoatl in the Sacred City of Tollan. Slaying Xiuhcoatl and taking one of his eyes in an oath of peace, Xbalanque ascended as the first Pyro Archon. With the aid of Ronova, the Shade of Death, he instituted the Sacred Flame, the Pilgrimage, and the Ode of Resurrection so that mortal humans could inherit the divine throne.",
+    "images": [],
+    "tags": {
+      "region": "Natlan",
+      "factions": [
+        "Natlan Tribes",
+        "Wayob Ancestors"
+      ],
+      "characters": [
+        "Xbalanque",
+        "Xiuhcoatl",
+        "Ronova (Shade of Death)"
+      ],
+      "spoilerLevel": "Natlan Archon Quest Chapter V"
+    },
+    "sources": [
+      {
+        "title": "Talking Stick Weapon Lore",
+        "category": "weapon",
+        "quote": "Xbalanque buried the ancient dragon lord in the city of gold, and lit the first Sacred Flame for mortals."
+      },
+      {
+        "title": "Natlan World Quest: Tale of Dreams Plucked From Fire",
+        "category": "quest",
+        "quote": "With the Shade of Death's blessing, Xbalanque established the rules of the Pyro Archon, ensuring the flame would never be extinguished."
+      }
+    ]
+  },
+  {
     "id": "slaying-of-orobashi",
     "title": "Raiden Ei Slays Orobashi at Yashiori Island",
-    "dateDisplay": "Archon War Era • Musou no Hitotachi",
-    "orderRank": 620,
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2,000 YA",
+    "dateDisplay": "~2,000 Years Ago • Duel at Yashiori Island",
+    "orderRank": 630,
     "eraId": "archon-war",
     "eraName": "The Archon War (~3,700 – 2,000 YA)",
     "summary": "Orobashi is coerced by Celestia into invading Yashiori; Raiden Ei executes the serpent with the Musou no Hitotachi.",
@@ -521,8 +769,15 @@
     "images": [],
     "tags": {
       "region": "Inazuma",
-      "factions": ["Inazuma Shogunate", "Watatsumi Island"],
-      "characters": ["Raiden Ei", "Orobashi", "Sasayuri"],
+      "factions": [
+        "Inazuma Shogunate",
+        "Watatsumi Island"
+      ],
+      "characters": [
+        "Raiden Ei",
+        "Orobashi",
+        "Sasayuri"
+      ],
       "spoilerLevel": "Archon Quest Chapter II"
     },
     "sources": [
@@ -541,17 +796,26 @@
   {
     "id": "deshret-sacrifice",
     "title": "King Deshret's Forbidden Knowledge Sacrifice",
-    "dateDisplay": "Circa 2,000 YA • Catastrophe of the Sands",
-    "orderRank": 645,
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2,000 YA",
+    "dateDisplay": "~2,000 Years Ago • Close of the Archon War in Sumeru",
+    "orderRank": 650,
     "eraId": "archon-war",
     "eraName": "The Archon War (~3,700 – 2,000 YA)",
     "summary": "Forbidden knowledge corrupts King Deshret's empire; Deshret sacrifices himself while Rukkhadevata shrinks her form.",
-    "description": "King Deshret unleashed forbidden knowledge from the dark cosmos in an attempt to create an eternal world without divine oppression. The corruption spread like a contagion, afflicting the populace with Eleazar and releasing Withering Zones. King Deshret sacrificed himself to contain the catastrophe, while Greater Lord Rukkhadevata exhausted her divine power cleansing Irminsul, regressing into the form of a small child.",
+    "description": "King Deshret unleashed forbidden knowledge from the dark cosmos in an attempt to create an eternal world without divine oppression. The corruption spread like a contagion, afflicting the populace with Eleazar and releasing Withering Zones. King Deshret sacrificed himself to contain the catastrophe, while Greater Lord Rukkhadevata exhausted her divine power cleansing Irminsul, regressing into the form of a small child and claiming the Dendro divine seat.",
     "images": [],
     "tags": {
       "region": "Sumeru",
-      "factions": ["King Deshret's Empire", "Dendro Archon Followers"],
-      "characters": ["King Deshret", "Greater Lord Rukkhadevata", "Kasala"],
+      "factions": [
+        "King Deshret's Empire",
+        "Dendro Archon Followers"
+      ],
+      "characters": [
+        "King Deshret",
+        "Greater Lord Rukkhadevata",
+        "Kasala"
+      ],
       "spoilerLevel": "Archon Quest Chapter III: Act IV"
     },
     "sources": [
@@ -565,8 +829,10 @@
   {
     "id": "fall-of-remuria-fontaine",
     "title": "Fall of Remuria & Egeria's Ascension",
-    "dateDisplay": "Circa 2,000 YA • The Waters of Fontaine",
-    "orderRank": 680,
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2,000 YA",
+    "dateDisplay": "~2,000 Years Ago • Sinking of Remuria & Egeria's Ascension",
+    "orderRank": 675,
     "eraId": "post-archon-war",
     "eraName": "Post-Archon War (~2,000 – 500 YA)",
     "summary": "Remuria collapses beneath the waves; Egeria is freed from the Primordial Sea and becomes the Hydro Archon.",
@@ -574,8 +840,15 @@
     "images": [],
     "tags": {
       "region": "Fontaine",
-      "factions": ["Remuria", "Court of Fontaine"],
-      "characters": ["Egeria", "King Remus", "Scylla"],
+      "factions": [
+        "Remuria",
+        "Court of Fontaine"
+      ],
+      "characters": [
+        "Egeria",
+        "King Remus",
+        "Scylla"
+      ],
       "spoilerLevel": "Sea of Bygone Eras World Quest"
     },
     "sources": [
@@ -589,8 +862,10 @@
   {
     "id": "mondstadt-aristocracy-rebellion",
     "title": "Vennessa's Rebellion & Founding of Knights of Favonius",
-    "dateDisplay": "Circa 1,000 YA • Fall of the Lawrence Clan",
-    "orderRank": 710,
+    "yearsAgo": 1000,
+    "yearsAgoDisplay": "~1,000 YA",
+    "dateDisplay": "~1,000 Years Ago • Vennessa's Rebellion",
+    "orderRank": 705,
     "eraId": "post-archon-war",
     "eraName": "Post-Archon War (~2,000 – 500 YA)",
     "summary": "The gladiator slave Vennessa and Barbatos overthrow the corrupt Aristocracy, establishing the Knights of Favonius.",
@@ -598,8 +873,16 @@
     "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Knights of Favonius", "Mondstadt Aristocracy"],
-      "characters": ["Vennessa", "Barbatos", "Lord Lawrence", "Ragnvindr"],
+      "factions": [
+        "Knights of Favonius",
+        "Mondstadt Aristocracy"
+      ],
+      "characters": [
+        "Vennessa",
+        "Barbatos",
+        "Lord Lawrence",
+        "Ragnvindr"
+      ],
       "spoilerLevel": "Genshin Impact Manga / Venti Story Quest"
     },
     "sources": [
@@ -618,8 +901,10 @@
   {
     "id": "ascension-of-vennessa",
     "title": "Vennessa Ascends to Celestia as the Falcon of the West",
-    "dateDisplay": "Circa 1,000 YA • Windrise Oak Tree",
-    "orderRank": 735,
+    "yearsAgo": 1000,
+    "yearsAgoDisplay": "~1,000 YA",
+    "dateDisplay": "~1,000 Years Ago • Ascension of the Falcon of the West",
+    "orderRank": 730,
     "eraId": "post-archon-war",
     "eraName": "Post-Archon War (~2,000 – 500 YA)",
     "summary": "At the end of her life, Vennessa ascends to Celestia at Windrise, becoming one of the Four Winds.",
@@ -627,8 +912,14 @@
     "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Four Winds of Mondstadt", "Knights of Favonius"],
-      "characters": ["Vennessa", "Barbatos"],
+      "factions": [
+        "Four Winds of Mondstadt",
+        "Knights of Favonius"
+      ],
+      "characters": [
+        "Vennessa",
+        "Barbatos"
+      ],
       "spoilerLevel": "Venti Story Quest: Carmen Dei"
     },
     "sources": [
@@ -642,17 +933,24 @@
   {
     "id": "guhua-ascension",
     "title": "The Legend and Ascension of Master Guhua",
-    "dateDisplay": "Centuries Ago • The Way of the Blade",
+    "yearsAgo": 800,
+    "yearsAgoDisplay": "~800 YA",
+    "dateDisplay": "~800 Years Ago • The Ascension of Master Guhua",
     "orderRank": 760,
     "eraId": "post-archon-war",
     "eraName": "Post-Archon War (~2,000 – 500 YA)",
     "summary": "The martial artist Guhua masters the sword and polearm, ascending to the heavens in a flash of purple light.",
-    "description": "During Liyue's mortal era, a legendary hero named Guhua mastered the twin martial arts of the Rain Cutter and the Light Piercer. Walking the mortal path with unmatched righteousness and chivalry, he achieved enlightenment at the Kingfisher's Peak, ascending to the celestial realm in a beam of violet dawn light and establishing the Guhua Clan.",
+    "description": "During Liyue's mortal era, a legendary hero named Guhua mastered the twin martial arts of the Rain Cutter and the Light Piercer. Walking the mortal path with unmatched righteousness and chivalry, he achieved enlightenment at Kingfisher's Peak, ascending to the celestial realm in a beam of violet dawn light and establishing the Guhua Clan.",
     "images": [],
     "tags": {
       "region": "Liyue",
-      "factions": ["Guhua Brotherhood"],
-      "characters": ["Master Guhua", "Xingqiu (Successor)"],
+      "factions": [
+        "Guhua Brotherhood"
+      ],
+      "characters": [
+        "Master Guhua",
+        "Xingqiu (Successor)"
+      ],
       "spoilerLevel": "Xingqiu Story Quest / Wangshan Hall"
     },
     "sources": [
@@ -666,6 +964,8 @@
   {
     "id": "khaenriah-cataclysm-outbreak",
     "title": "The Cataclysm: Rhinedottir & The Five Sinners",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 YA",
     "dateDisplay": "500 Years Ago • The Eclipse Dynasty Falls",
     "orderRank": 795,
     "eraId": "cataclysm",
@@ -675,8 +975,18 @@
     "images": [],
     "tags": {
       "region": "Khaenri'ah",
-      "factions": ["Eclipse Dynasty", "The Five Sinners", "Abyss Order"],
-      "characters": ["Rhinedottir (Gold)", "Pierro", "Dainsleif", "King Irmin", "Vedrfolnir"],
+      "factions": [
+        "Eclipse Dynasty",
+        "The Five Sinners",
+        "Abyss Order"
+      ],
+      "characters": [
+        "Rhinedottir (Gold)",
+        "Pierro",
+        "Dainsleif",
+        "King Irmin",
+        "Vedrfolnir"
+      ],
       "spoilerLevel": "Archon Quest Chapter IV / Caribert"
     },
     "sources": [
@@ -695,7 +1005,9 @@
   {
     "id": "destruction-of-khaenriah",
     "title": "Destruction of Khaenri'ah & The Curse of Wilderness",
-    "dateDisplay": "500 Years Ago • Celestial Retribution",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 YA",
+    "dateDisplay": "500 Years Ago • Celestial Retribution & The Curse",
     "orderRank": 815,
     "eraId": "cataclysm",
     "eraName": "The Cataclysm (500 YA)",
@@ -704,8 +1016,16 @@
     "images": [],
     "tags": {
       "region": "Khaenri'ah",
-      "factions": ["Celestia", "Khaenri'ah Dynasty", "The Seven Archons"],
-      "characters": ["Dainsleif", "The Traveler's Sibling", "Unknown God"],
+      "factions": [
+        "Celestia",
+        "Khaenri'ah Dynasty",
+        "The Seven Archons"
+      ],
+      "characters": [
+        "Dainsleif",
+        "The Traveler's Sibling",
+        "Unknown God"
+      ],
       "spoilerLevel": "Archon Quest: Requiem of the Echoing Depths / Caribert"
     },
     "sources": [
@@ -719,7 +1039,9 @@
   {
     "id": "fall-of-durin-dragonspine",
     "title": "The Fall of Durin upon Dragonspine",
-    "dateDisplay": "500 Years Ago • Mondstadt's Defense",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 YA",
+    "dateDisplay": "500 Years Ago • Fall of Durin upon Dragonspine",
     "orderRank": 835,
     "eraId": "cataclysm",
     "eraName": "The Cataclysm (500 YA)",
@@ -728,8 +1050,17 @@
     "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Four Winds of Mondstadt", "Knights of Favonius"],
-      "characters": ["Barbatos", "Dvalin", "Durin", "Arundolyn", "Rostam"],
+      "factions": [
+        "Four Winds of Mondstadt",
+        "Knights of Favonius"
+      ],
+      "characters": [
+        "Barbatos",
+        "Dvalin",
+        "Durin",
+        "Arundolyn",
+        "Rostam"
+      ],
       "spoilerLevel": "The Chalk Prince and the Dragon / Prologue"
     },
     "sources": [
@@ -743,7 +1074,9 @@
   {
     "id": "chasm-sacrifice-bosacius",
     "title": "Bosacius and Boyang Seal the Abyssal Breach in The Chasm",
-    "dateDisplay": "500 Years Ago • The Bedrock Sacrifice",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 YA",
+    "dateDisplay": "500 Years Ago • The Bedrock Sacrifice in The Chasm",
     "orderRank": 855,
     "eraId": "cataclysm",
     "eraName": "The Cataclysm (500 YA)",
@@ -752,8 +1085,16 @@
     "images": [],
     "tags": {
       "region": "Liyue",
-      "factions": ["Millelith", "Five Yakshas"],
-      "characters": ["Bosacius (Marshal Vana)", "Boyang", "Xiao", "Yelan (Ancestor)"],
+      "factions": [
+        "Millelith",
+        "Five Yakshas"
+      ],
+      "characters": [
+        "Bosacius (Marshal Vana)",
+        "Boyang",
+        "Xiao",
+        "Yelan (Ancestor)"
+      ],
       "spoilerLevel": "Archon Quest Interlude: Perilous Trail"
     },
     "sources": [
@@ -767,7 +1108,9 @@
   {
     "id": "deaths-of-the-archons",
     "title": "The Sacrifices of Makoto, Rukkhadevata & Egeria",
-    "dateDisplay": "500 Years Ago • Twilight of the Divine",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 YA",
+    "dateDisplay": "500 Years Ago • Sacrifices of Makoto, Rukkhadevata & Egeria",
     "orderRank": 875,
     "eraId": "cataclysm",
     "eraName": "The Cataclysm (500 YA)",
@@ -776,8 +1119,16 @@
     "images": [],
     "tags": {
       "region": "Inazuma / Sumeru / Fontaine",
-      "factions": ["The Seven Archons"],
-      "characters": ["Raiden Makoto", "Raiden Ei", "Greater Lord Rukkhadevata", "Nahida", "Egeria"],
+      "factions": [
+        "The Seven Archons"
+      ],
+      "characters": [
+        "Raiden Makoto",
+        "Raiden Ei",
+        "Greater Lord Rukkhadevata",
+        "Nahida",
+        "Egeria"
+      ],
       "spoilerLevel": "Sumeru / Fontaine Archon Quests"
     },
     "sources": [
@@ -796,8 +1147,10 @@
   {
     "id": "founding-of-abyss-order",
     "title": "Chlothar Alberich Founds the Abyss Order",
-    "dateDisplay": "Post-Cataclysm • The Miracle of the Sinner",
-    "orderRank": 905,
+    "yearsAgo": 499,
+    "yearsAgoDisplay": "~499 YA",
+    "dateDisplay": "~499 Years Ago • The Miracle of the Sinner",
+    "orderRank": 900,
     "eraId": "modern",
     "eraName": "Post-Cataclysm & Traveler's Journey",
     "summary": "Chlothar Alberich encounters the Sinner in a Sumeru cavern and founds the Abyss Order to avenge Khaenri'ah.",
@@ -805,8 +1158,16 @@
     "images": [],
     "tags": {
       "region": "Sumeru",
-      "factions": ["Abyss Order", "Alberich Clan"],
-      "characters": ["Chlothar Alberich", "Caribert", "The Sinner (Vedrfolnir)", "Traveler's Sibling"],
+      "factions": [
+        "Abyss Order",
+        "Alberich Clan"
+      ],
+      "characters": [
+        "Chlothar Alberich",
+        "Caribert",
+        "The Sinner (Vedrfolnir)",
+        "Traveler's Sibling"
+      ],
       "spoilerLevel": "Archon Quest Chapter III: Act VI - Caribert"
     },
     "sources": [
@@ -818,43 +1179,60 @@
     ]
   },
   {
-    "id": "tatarasuna-incident",
-    "title": "The Tatarasuna Smelter Incident & Scaramouche's Betrayal",
-    "dateDisplay": "Centuries Ago • Tragedy in Kannazuka",
-    "orderRank": 930,
+    "id": "focalors-furina-masquerade",
+    "title": "Focalors Divides Her Divinity & Furina's Masquerade Begins",
+    "yearsAgo": 499,
+    "yearsAgoDisplay": "499 YA",
+    "dateDisplay": "499 Years Ago • Masquerade of the Oratrice & Furina",
+    "orderRank": 915,
     "eraId": "modern",
     "eraName": "Post-Cataclysm & Traveler's Journey",
-    "summary": "Fatui Harbinger Dottore sabotages the Mikage Furnace, driving the puppet Kabukimono into despair.",
-    "description": "On Inazuma's island of Kannazuka, the wandering puppet created by Ei—known as Kabukimono—lived peacefully among the craftsmen of Tatarasuna. Infiltrating the smelter under the guise of an engineer, the Fatui Harbinger Il Dottore sabotaged the furnace with black jade, murdered Niwa, and tricked the puppet into believing he had been abandoned, setting him on the path to becoming Scaramouche.",
+    "summary": "To deceive the Heavenly Principles and subvert the prophecy of Fontaine, Focalors secludes her divinity within the Oratrice and tasks Furina with a 500-year performance.",
+    "description": "Inheriting the Hydro Archon throne after Egeria's fall, Focalors uncovered the inescapable prophecy that all Fontainians would dissolve. To subvert Celestia, Focalors divided her divinity from her human body, creating Furina to act as the immortal Archon in public while accumulating Indemnitium in the Oratrice Mecanique d'Analyse Cardinale for nearly five centuries to execute the divine throne itself.",
     "images": [],
     "tags": {
-      "region": "Inazuma",
-      "factions": ["Tatarasuna Craftsmen", "Fatui Harbingers"],
-      "characters": ["Scaramouche (Wanderer)", "Niwa Hisahide", "Il Dottore (Escher)", "Raiden Ei"],
-      "spoilerLevel": "Archon Quest Interlude: Inversion of Genesis"
+      "region": "Fontaine",
+      "factions": [
+        "Court of Fontaine"
+      ],
+      "characters": [
+        "Focalors",
+        "Furina",
+        "Egeria"
+      ],
+      "spoilerLevel": "Archon Quest Chapter IV: Act V - Masquerade of the Guilty"
     },
     "sources": [
       {
-        "title": "Husk of Opulent Dreams Artifact Set",
-        "category": "artifact",
-        "quote": "He thought that he had found a home among mortals, until the black smoke choked the smelter and betrayal took his heart."
+        "title": "Archon Quest Chapter IV: Act V - Masquerade of the Guilty",
+        "category": "quest",
+        "quote": "'For five hundred years, she lived only to play this role... A human body bearing the torment of gods, all to deceive the Heavenly Principles.'"
       }
     ]
   },
   {
     "id": "rosalyne-crimson-witch",
-    "title": "Rosalyne Becomes the Crimson Witch of Embers",
-    "dateDisplay": "Post-Cataclysm • The Flame of Grief",
-    "orderRank": 955,
+    "title": "Rosalyne Becomes the Crimson Witch of Flame",
+    "yearsAgo": 490,
+    "yearsAgoDisplay": "~490 YA",
+    "dateDisplay": "~490 Years Ago • The Crimson Witch of Flame",
+    "orderRank": 930,
     "eraId": "modern",
     "eraName": "Post-Cataclysm & Traveler's Journey",
-    "summary": "Following Rostam's death in the Cataclysm, Rosalyne burns her mortal body to become the Crimson Witch, later joining the Fatui.",
+    "summary": "Following Rostam's death in the Cataclysm, Rosalyne burns her mortal body to become the Crimson Witch, later joining the Fatui as La Signora.",
     "description": "Returning from her studies at the Sumeru Akademiya to find Mondstadt devastated and her beloved Rostam slain by abyssal monsters, Rosalyne-Kruzchka Lohefalter was consumed by grief. She burned away her mortal flesh with liquid fire to incinerate every monster in Teyvat as the Crimson Witch of Flame, before Pierro found her and recruited her as the Eighth Fatui Harbinger, La Signora.",
     "images": [],
     "tags": {
       "region": "Mondstadt / Snezhnaya",
-      "factions": ["Fatui Harbingers"],
-      "characters": ["Rosalyne-Kruzchka Lohefalter (La Signora)", "Rostam", "Pierro", "Tsaritsa"],
+      "factions": [
+        "Fatui Harbingers"
+      ],
+      "characters": [
+        "Rosalyne-Kruzchka Lohefalter (La Signora)",
+        "Rostam",
+        "Pierro",
+        "Tsaritsa"
+      ],
       "spoilerLevel": "Crimson Witch of Flames / Inazuma Archon Quest"
     },
     "sources": [
@@ -866,10 +1244,158 @@
     ]
   },
   {
+    "id": "neuvillette-iudex",
+    "title": "Neuvillette Appointed Iudex of Fontaine",
+    "yearsAgo": 400,
+    "yearsAgoDisplay": "~400 YA",
+    "dateDisplay": "~400 Years Ago • Neuvillette Appointed Iudex of Fontaine",
+    "orderRank": 945,
+    "eraId": "modern",
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "The reincarnated Hydro Sovereign Neuvillette arrives in the Court of Fontaine, assuming office as the nation's Chief Justice.",
+    "description": "Invited by Focalors via an enigmatic letter, Neuvillette—the newly reincarnated Hydro Dragon Sovereign in human form—entered mortal society and accepted the post of Iudex (Chief Justice) at the Palais Mermonia. Over four centuries, Neuvillette oversaw the legal system, championed the integration of Melusines into Fontaine society, and grew to understand human emotional fragility.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Court of Fontaine",
+        "Marechaussee Phantom"
+      ],
+      "characters": [
+        "Neuvillette",
+        "Furina",
+        "Carole"
+      ],
+      "spoilerLevel": "Neuvillette Story Quest: Diluvies Chapter"
+    },
+    "sources": [
+      {
+        "title": "Neuvillette - Character Story 4",
+        "category": "character_story",
+        "quote": "Four hundred years ago, upon the invitation of the Hydro Archon, the newly awakened dragon sovereign assumed the seat of the Chief Justice."
+      }
+    ]
+  },
+  {
+    "id": "tatarasuna-incident",
+    "title": "The Tatarasuna Smelter Incident & Scaramouche's Betrayal",
+    "yearsAgo": 400,
+    "yearsAgoDisplay": "~400 YA",
+    "dateDisplay": "~400 Years Ago • Tragedy of the Tatarasuna Smelter",
+    "orderRank": 958,
+    "eraId": "modern",
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "Fatui Harbinger Dottore sabotages the Mikage Furnace, driving the puppet Kabukimono into despair.",
+    "description": "On Inazuma's island of Kannazuka, the wandering puppet created by Ei—known as Kabukimono—lived peacefully among the craftsmen of Tatarasuna. Infiltrating the smelter under the guise of an engineer, the Fatui Harbinger Il Dottore sabotaged the furnace with black jade, murdered Niwa, and tricked the puppet into believing he had been abandoned, setting him on the path to becoming Scaramouche.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Tatarasuna Craftsmen",
+        "Fatui Harbingers"
+      ],
+      "characters": [
+        "Scaramouche (Wanderer)",
+        "Niwa Hisahide",
+        "Il Dottore (Escher)",
+        "Raiden Ei"
+      ],
+      "spoilerLevel": "Archon Quest Interlude: Inversion of Genesis"
+    },
+    "sources": [
+      {
+        "title": "Husk of Opulent Dreams Artifact Set",
+        "category": "artifact",
+        "quote": "He thought that he had found a home among mortals, until the black smoke choked the smelter and betrayal took his heart."
+      }
+    ]
+  },
+  {
+    "id": "raiden-gokaden-fall",
+    "title": "Scaramouche's Vengeance & Fall of the Raiden Gokaden",
+    "yearsAgo": 100,
+    "yearsAgoDisplay": "~100 YA",
+    "dateDisplay": "~100 Years Ago • Fall of the Raiden Gokaden",
+    "orderRank": 970,
+    "eraId": "modern",
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "Seeking vengeance against the bladesmiths of Inazuma, Scaramouche sabotages the Raiden Gokaden forging clans.",
+    "description": "Approximately a century ago, the vengeful puppet Kunikuzushi orchestrated the systematic destruction of Inazuma's five supreme sword-forging traditions (the Raiden Gokaden). Tampering with the Shogunate's sacred blueprints, he brought about the execution and flight of the master smiths of the Isshin, Hyakume, and Senju arts, leaving only the Kaedehara and Kamisato clans clinging to survival.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Raiden Gokaden",
+        "Kaedehara Clan",
+        "Kamisato Clan"
+      ],
+      "characters": [
+        "Scaramouche (Kunikuzushi)",
+        "Kaedehara Yoshinori",
+        "Kamisato Ancestors"
+      ],
+      "spoilerLevel": "Hues of the Violet Garden Event Quest"
+    },
+    "sources": [
+      {
+        "title": "Kagotsurube Isshin Weapon Lore",
+        "category": "weapon",
+        "quote": "The bladesmith clans withered one after another under the shadow of an unknown puppeteer's wrath."
+      },
+      {
+        "title": "Hues of the Violet Garden: The Blackier Leaf",
+        "category": "quest",
+        "quote": "A century ago, Kunikuzushi altered the sacred diagram to avenge his perceived betrayal in Tatarasuna."
+      }
+    ]
+  },
+  {
+    "id": "crepus-delusion-incident",
+    "title": "The Crepus Delusion Incident & Diluc's Departure",
+    "yearsAgo": 4,
+    "yearsAgoDisplay": "4 YA",
+    "dateDisplay": "4 Years Ago • Incident of Crepus & Ursa the Drake",
+    "orderRank": 982,
+    "eraId": "modern",
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "Crepus dies using a Delusion against Ursa the Drake; Dottore intervenes; Diluc resigns from the Knights of Favonius.",
+    "description": "Four years ago on Diluc's eighteenth birthday, the monster Ursa the Drake attacked Master Crepus' transport caravan outside Mondstadt. Crepus repelled the beast by tapping into a dark Fatui Delusion, but the backlash mortally wounded him. When Grand Inspector Eroch ordered the sacrifice covered up to preserve the Knights' reputation, Diluc resigned in fury, setting out on a three-year vigil through the seven nations to hunt the Fatui.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Knights of Favonius",
+        "Fatui",
+        "Ragnvindr Clan"
+      ],
+      "characters": [
+        "Diluc Ragnvindr",
+        "Crepus Ragnvindr",
+        "Kaeya Alberich",
+        "Il Dottore"
+      ],
+      "spoilerLevel": "Genshin Impact Manga / Diluc Character Story 4"
+    },
+    "sources": [
+      {
+        "title": "Diluc - Character Story 4",
+        "category": "character_story",
+        "quote": "On that rainy day four years ago, Crepus unleashed a forbidden power to protect his son, dying in Diluc's arms."
+      },
+      {
+        "title": "Genshin Impact Official Manga: Chapter 1",
+        "category": "official_media",
+        "quote": "The monster was driven off, but the black fire had already consumed his soul."
+      }
+    ]
+  },
+  {
     "id": "traveler-awakens",
     "title": "The Outlander Awakens: Starfell Beach",
-    "dateDisplay": "Present Day • The Journey Across Teyvat Begins",
-    "orderRank": 985,
+    "yearsAgo": 0,
+    "yearsAgoDisplay": "Present (0 YA)",
+    "dateDisplay": "Present Day (0 YA) • The Journey Across Teyvat Begins",
+    "orderRank": 995,
     "eraId": "modern",
     "eraName": "Post-Cataclysm & Traveler's Journey",
     "summary": "Separated from their twin for five hundred years, the Traveler awakens on a Mondstadt beach and rescues Paimon.",
@@ -877,8 +1403,15 @@
     "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Traveler & Paimon", "Knights of Favonius"],
-      "characters": ["Aether / Lumine", "Paimon", "Unknown God"],
+      "factions": [
+        "Traveler & Paimon",
+        "Knights of Favonius"
+      ],
+      "characters": [
+        "Aether / Lumine",
+        "Paimon",
+        "Unknown God"
+      ],
       "spoilerLevel": "Archon Quest Prologue: Act I"
     },
     "sources": [

@@ -258,10 +258,11 @@ class TeyvatTimelineApp {
       band.style.borderColor = `${era.color}40`;
       band.title = `Click to view lore and milestones for ${era.name}`;
 
-      // Clean title without subtitle text to prevent text overflow
+      // Clean title with year range pill
       band.innerHTML = `
         <div class="era-band-title" style="color: ${era.color};">
           <span>${era.shortName || era.name}</span>
+          ${era.yearRange ? `<span class="era-band-year">${era.yearRange}</span>` : ''}
           <span class="era-info-icon" aria-label="Era Information">ℹ️</span>
         </div>
       `;
@@ -292,7 +293,10 @@ class TeyvatTimelineApp {
     // Populate Inspector Drawer with rich Era information
     this.inspectorEra.textContent = 'Historical Epoch';
     this.inspectorEra.style.color = era.color;
-    this.inspectorDate.textContent = `Epoch Rank: ${era.startRank} – ${era.endRank}`;
+    this.inspectorDate.innerHTML = `
+      <span class="inspector-year-pill">${era.yearRange || ''}</span>
+      <span class="inspector-date-full">Epoch Rank: ${era.startRank} – ${era.endRank}</span>
+    `;
     this.inspectorTitle.textContent = era.name;
     this.inspectorDesc.textContent = era.longDescription || era.description;
 
@@ -324,7 +328,10 @@ class TeyvatTimelineApp {
         <div class="era-milestones-container">
           ${eraEvents.map(e => `
             <button class="era-milestone-btn" data-event-id="${e.id}">
-              <span class="era-milestone-date">${e.dateDisplay}</span>
+              <div class="era-milestone-header">
+                <span class="era-milestone-year">${e.yearsAgoDisplay || ''}</span>
+                <span class="era-milestone-date">${e.dateDisplay}</span>
+              </div>
               <span class="era-milestone-title">${e.title}</span>
             </button>
           `).join('')}
@@ -363,8 +370,9 @@ class TeyvatTimelineApp {
   renderRuler() {
     if (!this.ruler) return;
     this.ruler.innerHTML = '';
-    const totalTicks = 80;
+    const totalTicks = 100;
 
+    // Background fine ticks
     for (let i = 0; i <= totalTicks; i++) {
       const tick = document.createElement('div');
       const isMajor = i % 10 === 0;
@@ -372,6 +380,33 @@ class TeyvatTimelineApp {
       tick.style.left = `${(i / totalTicks) * 100}%`;
       this.ruler.appendChild(tick);
     }
+
+    // Explicit chronological milestone markers with numbers of years
+    const milestones = [
+      { rank: 30, label: '~7,000+ YA' },
+      { rank: 145, label: '~6,000 YA' },
+      { rank: 245, label: '~5,000 YA' },
+      { rank: 375, label: '~4,000 YA' },
+      { rank: 505, label: '~3,700 YA' },
+      { rank: 550, label: '~2,600 YA' },
+      { rank: 650, label: '~2,000 YA' },
+      { rank: 705, label: '~1,000 YA' },
+      { rank: 815, label: '500 YA' },
+      { rank: 945, label: '~400 YA' },
+      { rank: 970, label: '~100 YA' },
+      { rank: 995, label: '0 YA' },
+    ];
+
+    milestones.forEach(m => {
+      const mEl = document.createElement('div');
+      mEl.className = 'ruler-milestone';
+      mEl.style.left = `${(m.rank / 1000) * 100}%`;
+      mEl.innerHTML = `
+        <div class="milestone-tick"></div>
+        <span class="milestone-label">${m.label}</span>
+      `;
+      this.ruler.appendChild(mEl);
+    });
   }
 
   renderNodes() {
@@ -393,11 +428,18 @@ class TeyvatTimelineApp {
       node.style.left = `${posX}px`;
       node.style.color = era.color;
 
+      const subContext = (ev.dateDisplay || '').includes('•') 
+        ? ev.dateDisplay.split('•')[1].trim() 
+        : ev.dateDisplay;
+
       node.innerHTML = `
         <div class="event-connector-line"></div>
         <div class="node-pin-dot" style="border-color: ${era.color}; box-shadow: 0 0 12px ${era.color};"></div>
         <div class="event-node-card">
-          <span class="card-date-badge">${ev.dateDisplay}</span>
+          <div class="card-date-badge">
+            <span class="card-year-number">${ev.yearsAgoDisplay || ''}</span>
+            <span class="card-date-sub" title="${ev.dateDisplay}">${subContext}</span>
+          </div>
           <h3 class="card-title-text">${ev.title}</h3>
           <div class="card-thumbnail-bar">
             <span class="card-pill-tag" style="background: ${era.color}22; color: ${era.color}; border: 1px solid ${era.color}44;">
@@ -438,8 +480,9 @@ class TeyvatTimelineApp {
       ${firstImage ? `<img src="${firstImage}" alt="${ev.title}" class="tooltip-img" onerror="this.remove()">` : ''}
       <div class="tooltip-header">
         <span class="tooltip-era" style="color: ${era.color};">${ev.eraName}</span>
-        <span class="tooltip-date">${ev.dateDisplay}</span>
+        <span class="tooltip-year-badge">${ev.yearsAgoDisplay || ''}</span>
       </div>
+      <div class="tooltip-date-full">${ev.dateDisplay}</div>
       <div class="tooltip-title">${ev.title}</div>
       <div class="tooltip-summary">${ev.summary}</div>
       <div class="tooltip-pin-hint">Click node to pin event 📌</div>
@@ -474,7 +517,10 @@ class TeyvatTimelineApp {
     // Fill Inspector Metadata
     this.inspectorEra.textContent = ev.eraName;
     this.inspectorEra.style.color = era.color;
-    this.inspectorDate.textContent = ev.dateDisplay;
+    this.inspectorDate.innerHTML = `
+      <span class="inspector-year-pill">${ev.yearsAgoDisplay || ''}</span>
+      <span class="inspector-date-full">${ev.dateDisplay}</span>
+    `;
     this.inspectorTitle.textContent = ev.title;
     this.inspectorDesc.textContent = ev.description;
 

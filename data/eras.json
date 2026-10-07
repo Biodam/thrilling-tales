@@ -3,12 +3,21 @@
     "id": "dragon-sovereigns",
     "name": "Old World (Seven Sovereigns)",
     "shortName": "Old World",
+    "yearRange": ">7,000 Years Ago",
     "color": "#38bdf8",
     "bgGradient": "linear-gradient(90deg, rgba(56, 189, 248, 0.2), rgba(95, 227, 219, 0.15))",
     "description": "The pre-genesis era when the primordial Light Realm was ruled exclusively by the Seven Dragon Sovereigns under Dragon King Nibelung, before the arrival of gods or humanity.",
     "longDescription": "Before the firmament was forged and the heavens cast their light upon Teyvat, the world belonged to the Light Realm. Seven elemental dragons held supreme dominion over Pyro, Hydro, Anemo, Electro, Dendro, Cryo, and Geo. Guided by the Dragon King Nibelung, the ancient vishap civilizations thrived in raw elemental harmony. When cosmic threats loomed, Nibelung ventured into the Dark Sea beyond Teyvat's borders, returning with a forbidden power from outside this world to resist the celestial forces that would soon descend.",
-    "keyFigures": ["Dragon King Nibelung", "Apep (Dendro Sovereign)", "Scylla (Hydro Sovereign)", "Vishaps of the Deep"],
-    "dominantFactions": ["Seven Dragon Sovereigns", "Vishaps of the Light Realm"],
+    "keyFigures": [
+      "Dragon King Nibelung",
+      "Apep (Dendro Sovereign)",
+      "Scylla (Hydro Sovereign)",
+      "Vishaps of the Deep"
+    ],
+    "dominantFactions": [
+      "Seven Dragon Sovereigns",
+      "Vishaps of the Light Realm"
+    ],
     "startRank": 0,
     "endRank": 110
   },
@@ -16,12 +25,23 @@
     "id": "primordial-one",
     "name": "When the Doves Held Branches",
     "shortName": "Primordial One",
+    "yearRange": "~6,000 – 5,000 YA",
     "color": "#5fe3db",
     "bgGradient": "linear-gradient(90deg, rgba(95, 227, 219, 0.2), rgba(229, 193, 88, 0.15))",
     "description": "The arrival of Phanes (The Primordial One), creation of the Four Shades, forty years of war to dethrone the dragons, and the dawn of the Unified Human Civilization.",
-    "longDescription": "The Primordial One (Phanes), the First Descender, arrived from the cosmos. Accompanied by four glowing shades—including Istaroth, the Shade of Time—Phanes waged an apocalyptic forty-year war against the Seven Dragon Sovereigns. Upon breaking the dominion of the dragons, Phanes terraformed the harsh elemental landscapes, created the first humans, and established a singular global civilization. In this golden era, humanity shared one tongue, built subterranean megaliths across the globe, and received revelations directly from celestial envoys.",
-    "keyFigures": ["Phanes (The Primordial One)", "Istaroth (Kairos)", "The Four Shades", "The Seelie Ancestors"],
-    "dominantFactions": ["Celestia", "The Four Shades", "Unified Human Civilization"],
+    "longDescription": "The Primordial One (Phanes), the First Descender, arrived from the cosmos over 6,000 years ago. Accompanied by four glowing shades—including Istaroth, the Shade of Time—Phanes waged an apocalyptic forty-year war against the Seven Dragon Sovereigns. Upon breaking the dominion of the dragons, Phanes terraformed the harsh elemental landscapes, created the first humans, and established a singular global civilization. In this golden era, humanity shared one tongue, built subterranean megaliths across the globe, and received revelations directly from celestial envoys.",
+    "keyFigures": [
+      "Phanes (The Primordial One)",
+      "Istaroth (Kairos)",
+      "The Four Shades",
+      "The Seelie Ancestors",
+      "Morax"
+    ],
+    "dominantFactions": [
+      "Celestia",
+      "The Four Shades",
+      "Unified Human Civilization"
+    ],
     "startRank": 111,
     "endRank": 230
   },
@@ -29,12 +49,24 @@
     "id": "second-who-came",
     "name": "War of Funerary Flame",
     "shortName": "War in Heaven",
+    "yearRange": "~5,000 – 4,000 YA",
     "color": "#c084fc",
     "bgGradient": "linear-gradient(90deg, rgba(192, 132, 252, 0.2), rgba(244, 114, 182, 0.15))",
     "description": "The Second Who Came descends; heaven and earth shatter in war; Enkanomiya plunges into the dark sea; and Divine Nails strike Teyvat.",
-    "longDescription": "The peace of the Unified Civilization was violently shattered when 'The Second Who Came' arrived from beyond the sky. An unprecedented war tore through the celestial dome, shattering continental shelves. The realm of Byakuyakoku (Enkanomiya) broke off and plunged into the abyssal ocean depths, while Celestia launched Divine Nails from the sky—impacting Sal Vindagnyr (Dragonspine), The Chasm, and the Sumeru desert to mend dimensional tears and suppress abyssal corruption. The Seelie race was cursed to devolve into sorrowful wisps after a forbidden union.",
-    "keyFigures": ["The Second Descender", "Phanes", "Istaroth", "The Princess of Sal Vindagnyr", "Aberaku no Mikoto"],
-    "dominantFactions": ["Celestia", "The Second Who Came", "Ancient Enkanomiya", "Sal Vindagnyr"],
+    "longDescription": "The peace of the Unified Civilization was violently shattered around 5,000 years ago when 'The Second Who Came' arrived from beyond the sky. An unprecedented war tore through the celestial dome, shattering continental shelves. The realm of Byakuyakoku (Enkanomiya) broke off and plunged into the abyssal ocean depths, while Celestia launched Divine Nails from the sky—impacting Sal Vindagnyr (Dragonspine), The Chasm, and the Sumeru desert to mend dimensional tears and suppress abyssal corruption. The Seelie race was cursed to devolve into sorrowful wisps after a forbidden union.",
+    "keyFigures": [
+      "The Second Descender",
+      "Phanes",
+      "Istaroth",
+      "The Princess of Sal Vindagnyr",
+      "Aberaku no Mikoto"
+    ],
+    "dominantFactions": [
+      "Celestia",
+      "The Second Who Came",
+      "Ancient Enkanomiya",
+      "Sal Vindagnyr"
+    ],
     "startRank": 231,
     "endRank": 360
   },
@@ -42,12 +74,25 @@
     "id": "interim-period",
     "name": "Interim Period (Ancient Kingdoms)",
     "shortName": "Ancient Kingdoms",
+    "yearRange": "~4,000 – 3,700 YA",
     "color": "#fb923c",
     "bgGradient": "linear-gradient(90deg, rgba(251, 146, 60, 0.2), rgba(229, 193, 88, 0.15))",
     "description": "The emergence of regional mortal and divine civilizations: Remuria in Fontaine, King Deshret in Sumeru, and early human settlements in Liyue and Mondstadt.",
     "longDescription": "In the centuries following the shattering of the unified civilization, isolated kingdoms rose from the ashes. In Fontaine, God King Remus founded the grand aquatic empire of Remuria with the golden symphony of Phobos. In the deserts of Sumeru, King Deshret, Nabu Malikata (Goddess of Flowers), and Greater Lord Rukkhadevata formed the Tripartite Alliance, building the dream city of Ay-Khanoum. In Liyue, early Adepti and human clans gathered in Chenyu Vale and Mt. Tianheng, while Decarabian sheltered his subjects in Old Mondstadt.",
-    "keyFigures": ["King Deshret (Amon)", "Nabu Malikata", "Greater Lord Rukkhadevata", "King Remus", "Liloupar", "Fujin"],
-    "dominantFactions": ["Empire of Remuria", "Tripartite Alliance of Sumeru", "Ancient Jinn Kingdoms", "Adepti of Chenyu"],
+    "keyFigures": [
+      "King Deshret (Amon)",
+      "Nabu Malikata",
+      "Greater Lord Rukkhadevata",
+      "King Remus",
+      "Liloupar",
+      "Fujin"
+    ],
+    "dominantFactions": [
+      "Empire of Remuria",
+      "Tripartite Alliance of Sumeru",
+      "Ancient Jinn Kingdoms",
+      "Adepti of Chenyu"
+    ],
     "startRank": 361,
     "endRank": 490
   },
@@ -55,12 +100,29 @@
     "id": "archon-war",
     "name": "The Archon War (~3,700 – 2,000 YA)",
     "shortName": "Archon War",
+    "yearRange": "~3,700 – 2,000 YA",
     "color": "#e5c158",
     "bgGradient": "linear-gradient(90deg, rgba(229, 193, 88, 0.2), rgba(234, 179, 8, 0.15))",
     "description": "Celestia establishes the Seven Divine Thrones, igniting a millennia-long war of divine conquest across all nations.",
-    "longDescription": "Celestia decreed that seven divine seats would rule over mortals, triggering brutal conflicts between gods and divine beasts across every corner of Teyvat. In Liyue, Morax and Guizhong established the Guili Assembly before Guizhong's tragic fall, leading Morax to found Liyue Harbor and bury rival gods with Guyun's stone spears. In Mondstadt, Barbatos and mortal rebels toppled Decarabian. In Inazuma, Raiden Ei and Makoto unified the islands and defeated the serpent Orobashi. In Sumeru, King Deshret sacrificed himself to purge forbidden knowledge.",
-    "keyFigures": ["Morax (Rex Lapis)", "Guizhong", "Barbatos (Venti)", "Decarabian", "Andrius", "Raiden Makoto & Ei", "Orobashi", "Egeria"],
-    "dominantFactions": ["Liyue Adepti & Millelith", "Old Mondstadt Rebels", "Inazuma Shogunate", "Dendro & Sand Divinities"],
+    "longDescription": "Celestia decreed that seven divine seats would rule over mortals, triggering brutal conflicts between gods and divine beasts across every corner of Teyvat. In Liyue, Morax and Guizhong established the Guili Assembly before Guizhong's tragic fall, leading Morax to found Liyue Harbor and bury rival gods with Guyun's stone spears. In Mondstadt, Barbatos and mortal rebels toppled Decarabian. In Inazuma, Raiden Ei and Makoto unified the islands and defeated the serpent Orobashi. In Natlan, Xbalanque defeated Xiuhcoatl. In Sumeru, King Deshret sacrificed himself to purge forbidden knowledge.",
+    "keyFigures": [
+      "Morax (Rex Lapis)",
+      "Guizhong",
+      "Barbatos (Venti)",
+      "Decarabian",
+      "Andrius",
+      "Raiden Makoto & Ei",
+      "Orobashi",
+      "Xbalanque",
+      "Egeria"
+    ],
+    "dominantFactions": [
+      "Liyue Adepti & Millelith",
+      "Old Mondstadt Rebels",
+      "Inazuma Shogunate",
+      "Dendro & Sand Divinities",
+      "Natlan Tribes"
+    ],
     "startRank": 491,
     "endRank": 660
   },
@@ -68,12 +130,26 @@
     "id": "post-archon-war",
     "name": "Post-Archon War (~2,000 – 500 YA)",
     "shortName": "Mortal Nations",
+    "yearRange": "~2,000 – 500 YA",
     "color": "#34d399",
     "bgGradient": "linear-gradient(90deg, rgba(52, 211, 153, 0.2), rgba(56, 189, 248, 0.15))",
     "description": "The Seven Nations consolidate mortal governance, cultures blossom, Vennessa frees Mondstadt, and heroes walk the earth.",
     "longDescription": "With the conclusion of the Archon War and the Seven Archons seated upon their thrones, humanity entered a golden era of mortal culture, commerce, and governance. In Mondstadt, the corrupt Aristocracy of the Lawrence Clan was toppled 1,000 years ago by the hero Vennessa and Barbatos, establishing the Knights of Favonius before Vennessa ascended to Celestia. In Liyue, Master Guhua perfected martial chivalry. In Fontaine, Egeria guided the newborn mortal civilization following Remuria's sinking.",
-    "keyFigures": ["Vennessa", "Barbatos", "Master Guhua", "Egeria", "Lord Lawrence", "Arundolyn", "Rostam"],
-    "dominantFactions": ["Knights of Favonius", "Liyue Qixing", "Tri-Commission of Inazuma", "Court of Fontaine"],
+    "keyFigures": [
+      "Vennessa",
+      "Barbatos",
+      "Master Guhua",
+      "Egeria",
+      "Lord Lawrence",
+      "Arundolyn",
+      "Rostam"
+    ],
+    "dominantFactions": [
+      "Knights of Favonius",
+      "Liyue Qixing",
+      "Tri-Commission of Inazuma",
+      "Court of Fontaine"
+    ],
     "startRank": 661,
     "endRank": 780
   },
@@ -81,12 +157,30 @@
     "id": "cataclysm",
     "name": "The Cataclysm (500 YA)",
     "shortName": "The Cataclysm",
+    "yearRange": "500 Years Ago",
     "color": "#a855f7",
     "bgGradient": "linear-gradient(90deg, rgba(168, 85, 247, 0.22), rgba(239, 68, 68, 0.18))",
     "description": "The godless underground kingdom of Khaenri'ah falls; abyssal horrors erupt worldwide; and multiple Archons make the ultimate sacrifice.",
     "longDescription": "Five centuries ago, Khaenri'ah's alchemical 'Art of Khemia' broke containment under Rhinedottir and the Five Sinners, piercing the veil of the Abyss. Black monsters flooded into all seven nations. Celestia and the Seven Archons descended upon Khaenri'ah, destroying the Eclipse Dynasty and inflicting the curse of immortality and hilichurl transformation. The catastrophic war claimed the lives of Raiden Makoto in Khaenri'ah, Greater Lord Rukkhadevata in Sumeru, and Egeria in Fontaine, while Barbatos and Dvalin slew the dragon Durin upon Dragonspine.",
-    "keyFigures": ["Rhinedottir (Gold)", "Pierro", "Dainsleif", "Raiden Makoto", "Raiden Ei", "Greater Lord Rukkhadevata", "Egeria", "Bosacius", "Boyang", "Durin"],
-    "dominantFactions": ["Eclipse Dynasty of Khaenri'ah", "The Five Sinners", "Abyss Order", "The Seven Archons", "Millelith & Yakshas"],
+    "keyFigures": [
+      "Rhinedottir (Gold)",
+      "Pierro",
+      "Dainsleif",
+      "Raiden Makoto",
+      "Raiden Ei",
+      "Greater Lord Rukkhadevata",
+      "Egeria",
+      "Bosacius",
+      "Boyang",
+      "Durin"
+    ],
+    "dominantFactions": [
+      "Eclipse Dynasty of Khaenri'ah",
+      "The Five Sinners",
+      "Abyss Order",
+      "The Seven Archons",
+      "Millelith & Yakshas"
+    ],
     "startRank": 781,
     "endRank": 890
   },
@@ -94,12 +188,32 @@
     "id": "modern",
     "name": "Post-Cataclysm & Traveler's Journey",
     "shortName": "Modern Era",
+    "yearRange": "500 YA – Present",
     "color": "#60a5fa",
     "bgGradient": "linear-gradient(90deg, rgba(96, 165, 250, 0.2), rgba(129, 140, 248, 0.15))",
     "description": "The Abyss Order emerges in secret; the Fatui Harbingers gather the Gnoses; and the Traveler awakens to begin their odyssey.",
-    "longDescription": "In the aftermath of the Cataclysm, Chlothar Alberich founded the Abyss Order in Sumeru, swearing revenge against the heavenly principles. In Snezhnaya, the Tsaritsa and Pierro assembled the Eleven Fatui Harbingers to challenge Celestia's dominion. After five centuries sealed in stasis, the Traveler awakens on the shores of Starfell Beach in Mondstadt, fishes up Paimon, and begins a fateful journey across Mondstadt, Liyue, Inazuma, Sumeru, Fontaine, and Natlan to unravel the truth of Teyvat.",
-    "keyFigures": ["Aether / Lumine (Traveler)", "Paimon", "Dainsleif", "The Tsaritsa", "Pierro", "Scaramouche", "Rosalyne (La Signora)", "Il Dottore"],
-    "dominantFactions": ["Traveler & Paimon", "Abyss Order", "Eleven Fatui Harbingers", "Knights of Favonius", "Liyue Qixing"],
+    "longDescription": "In the aftermath of the Cataclysm, Chlothar Alberich founded the Abyss Order in Sumeru. In Fontaine, Focalors created the Oratrice and Furina began her 500-year masquerade. In Snezhnaya, the Tsaritsa and Pierro assembled the Eleven Fatui Harbingers to challenge Celestia's dominion. After five centuries sealed in stasis, the Traveler awakens on the shores of Starfell Beach in Mondstadt, fishes up Paimon, and begins a fateful journey across Mondstadt, Liyue, Inazuma, Sumeru, Fontaine, and Natlan to unravel the truth of Teyvat.",
+    "keyFigures": [
+      "Aether / Lumine (Traveler)",
+      "Paimon",
+      "Dainsleif",
+      "Furina",
+      "Neuvillette",
+      "The Tsaritsa",
+      "Pierro",
+      "Scaramouche",
+      "Rosalyne (La Signora)",
+      "Il Dottore",
+      "Diluc"
+    ],
+    "dominantFactions": [
+      "Traveler & Paimon",
+      "Abyss Order",
+      "Eleven Fatui Harbingers",
+      "Knights of Favonius",
+      "Liyue Qixing",
+      "Court of Fontaine"
+    ],
     "startRank": 891,
     "endRank": 1000
   }
