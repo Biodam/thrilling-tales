@@ -132,6 +132,14 @@ class TeyvatTimelineApp {
     this.zoomOutBtn?.addEventListener('click', () => this.adjustZoom(-0.2));
     this.zoomResetBtn?.addEventListener('click', () => this.resetZoom());
 
+    // Era Jumper Wheel Scroll
+    this.eraJumperGroup?.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        this.eraJumperGroup.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+
     // Search Input
     this.searchInput?.addEventListener('input', (e) => {
       this.searchQuery = e.target.value.toLowerCase().trim();
