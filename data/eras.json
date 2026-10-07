@@ -1,62 +1,82 @@
 [
   {
     "id": "dragon-sovereigns",
-    "name": "Seven Sovereigns Era",
-    "shortName": "Sovereigns",
+    "name": "Old World (Seven Sovereigns)",
+    "shortName": "Old World",
     "color": "#38bdf8",
-    "bgGradient": "linear-gradient(90deg, rgba(56, 189, 248, 0.15), rgba(95, 227, 219, 0.15))",
-    "description": "Pre-genesis era when the Seven Dragons ruled the primordial elemental world.",
+    "bgGradient": "linear-gradient(90deg, rgba(56, 189, 248, 0.18), rgba(95, 227, 219, 0.15))",
+    "description": "Pre-genesis era when the Seven Dragons and Dragon King Nibelung ruled the primordial Light Realm.",
     "startRank": 0,
-    "endRank": 150
+    "endRank": 110
   },
   {
     "id": "primordial-one",
-    "name": "Era of the Primordial One",
+    "name": "When the Doves Held Branches",
     "shortName": "Primordial One",
     "color": "#5fe3db",
-    "bgGradient": "linear-gradient(90deg, rgba(95, 227, 219, 0.15), rgba(229, 193, 88, 0.15))",
-    "description": "Arrival of Phanes, creation of the Four Shades, and the Unified Human Civilization.",
-    "startRank": 151,
-    "endRank": 350
+    "bgGradient": "linear-gradient(90deg, rgba(95, 227, 219, 0.18), rgba(229, 193, 88, 0.15))",
+    "description": "Arrival of Phanes, creation of the Four Shades, and the golden Unified Human Civilization.",
+    "startRank": 111,
+    "endRank": 230
   },
   {
     "id": "second-who-came",
-    "name": "The Second Who Came & War in Heaven",
+    "name": "War of Funerary Flame",
     "shortName": "War in Heaven",
     "color": "#c084fc",
-    "bgGradient": "linear-gradient(90deg, rgba(192, 132, 252, 0.15), rgba(244, 114, 182, 0.15))",
-    "description": "The catastrophic war that shattered the sky, sank Enkanomiya, and severed humanity from heaven.",
-    "startRank": 351,
-    "endRank": 500
+    "bgGradient": "linear-gradient(90deg, rgba(192, 132, 252, 0.18), rgba(244, 114, 182, 0.15))",
+    "description": "The Second Who Came strikes; sky shatters; Enkanomiya sinks; Divine Nails impact Teyvat.",
+    "startRank": 231,
+    "endRank": 360
+  },
+  {
+    "id": "interim-period",
+    "name": "Interim Period (Ancient Kingdoms)",
+    "shortName": "Ancient Kingdoms",
+    "color": "#fb923c",
+    "bgGradient": "linear-gradient(90deg, rgba(251, 146, 60, 0.18), rgba(229, 193, 88, 0.15))",
+    "description": "Rise of Remuria, King Deshret's civilization in Sumeru, and early human settlements.",
+    "startRank": 361,
+    "endRank": 490
   },
   {
     "id": "archon-war",
-    "name": "The Archon War (~3,700 - 2,000 YA)",
+    "name": "The Archon War (~3,700 – 2,000 YA)",
     "shortName": "Archon War",
     "color": "#e5c158",
-    "bgGradient": "linear-gradient(90deg, rgba(229, 193, 88, 0.15), rgba(251, 146, 60, 0.15))",
-    "description": "Thousands of gods battle for the Seven Divine Thrones established by Celestia.",
-    "startRank": 501,
-    "endRank": 750
+    "bgGradient": "linear-gradient(90deg, rgba(229, 193, 88, 0.18), rgba(234, 179, 8, 0.15))",
+    "description": "Divine war for the Seven Thrones; Morax, Barbatos, Ei/Makoto, and Rukkhadevata prevail.",
+    "startRank": 491,
+    "endRank": 660
+  },
+  {
+    "id": "post-archon-war",
+    "name": "Post-Archon War (~2,000 – 500 YA)",
+    "shortName": "Mortal Nations",
+    "color": "#34d399",
+    "bgGradient": "linear-gradient(90deg, rgba(52, 211, 153, 0.18), rgba(56, 189, 248, 0.15))",
+    "description": "Rebellion against Mondstadt Aristocracy, Vennessa founds Knights of Favonius; mortal rule consolidates.",
+    "startRank": 661,
+    "endRank": 780
   },
   {
     "id": "cataclysm",
     "name": "The Cataclysm (500 YA)",
     "shortName": "The Cataclysm",
     "color": "#a855f7",
-    "bgGradient": "linear-gradient(90deg, rgba(168, 85, 247, 0.15), rgba(239, 68, 68, 0.15))",
-    "description": "The fall of Khaenri'ah, global abyssal disaster, and the death of multiple Archons.",
-    "startRank": 751,
-    "endRank": 900
+    "bgGradient": "linear-gradient(90deg, rgba(168, 85, 247, 0.2), rgba(239, 68, 68, 0.18))",
+    "description": "Fall of Khaenri'ah, global Abyssal eruption, death of Archons, and birth of dark beasts.",
+    "startRank": 781,
+    "endRank": 890
   },
   {
     "id": "modern",
-    "name": "Modern Era (Traveler's Journey)",
+    "name": "Post-Cataclysm & Traveler's Journey",
     "shortName": "Modern Era",
     "color": "#60a5fa",
-    "bgGradient": "linear-gradient(90deg, rgba(96, 165, 250, 0.15), rgba(129, 140, 248, 0.15))",
-    "description": "The Traveler awakens in Mondstadt and sets out across the Seven Nations.",
-    "startRank": 901,
+    "bgGradient": "linear-gradient(90deg, rgba(96, 165, 250, 0.18), rgba(129, 140, 248, 0.15))",
+    "description": "Abyss Order forms, Tatarasuna incident, Traveler awakens and journeys across the Seven Nations.",
+    "startRank": 891,
     "endRank": 1000
   }
 ]

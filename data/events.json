@@ -1,36 +1,25 @@
 [
   {
-    "id": "primordial-dragons",
+    "id": "reign-of-sovereigns",
     "title": "Reign of the Seven Dragon Sovereigns",
-    "dateDisplay": "Pre-Genesis • Age of the Primordial Realm",
-    "orderRank": 60,
+    "dateDisplay": "Pre-Genesis • The Primordial Light Realm",
+    "orderRank": 30,
     "eraId": "dragon-sovereigns",
-    "eraName": "Seven Sovereigns Era",
-    "summary": "Before the arrival of gods or humanity, Teyvat was ruled by seven colossal elemental dragons led by the Dragon King Nibelung.",
-    "description": "In the ancient world of the Light Realm, the Seven Dragon Sovereigns held total dominion over the pure elemental elements of Teyvat. Under the rule of the Dragon King Nibelung, civilizations of vishaps flourished across the primordial lands before external beings ever pierced through the firmament.",
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The Primordial Elemental Realm ruled by the Great Dragons",
-        "alt": "Primordial elemental landscape"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The untamed Light Realm before the sky was forged",
-        "alt": "Ancient starry cosmic sky"
-      }
-    ],
+    "eraName": "Old World (Seven Sovereigns)",
+    "summary": "Before the arrival of gods or humanity, Teyvat was an untamed elemental realm ruled by seven colossal dragon sovereigns.",
+    "description": "In the ancient age of the Light Realm, the Seven Dragon Sovereigns held supreme dominion over the primordial elements of Teyvat. Under the leadership of the Dragon King Nibelung, civilizations of vishaps and dragons flourished across the globe without celestial interference or divine thrones.",
+    "images": [],
     "tags": {
       "region": "Primordial Teyvat",
-      "factions": ["Seven Sovereigns", "Vishaps of the Deep"],
-      "characters": ["Nibelung", "Apep", "Neuvillette (Predecessor)"],
+      "factions": ["Seven Dragon Sovereigns", "Vishaps of the Deep"],
+      "characters": ["Dragon King Nibelung", "Apep", "Scylla"],
       "spoilerLevel": "Fontaine World Quests"
     },
     "sources": [
       {
-        "title": "Before Sun and Moon",
+        "title": "Before Sun and Moon: When the Doves Held Branches",
         "category": "book",
-        "quote": "In the beginning, the world was ruled by the dragons. Then came the heavens..."
+        "quote": "In the beginning, the world was ruled by the dragons. The dragons held the primordial elemental authority."
       },
       {
         "title": "Neuvillette - Character Story 5",
@@ -40,215 +29,423 @@
     ]
   },
   {
-    "id": "phanes-arrives",
-    "title": "Arrival of Phanes & The Primordial War",
-    "dateDisplay": "Circa Unknown Millennium • Creation Era",
-    "orderRank": 220,
-    "eraId": "primordial-one",
-    "eraName": "Era of the Primordial One",
-    "summary": "The Primordial One (Phanes) arrives in Teyvat, creates the Four Shades, and wages a forty-year war to subjugate the Seven Dragons.",
-    "description": "Born from an egg and crowned with wings, the Primordial One arrived from the cosmos. Accompanied by four glowing shades (including the Shade of Time, Istaroth, and the Shade of Death), Phanes waged a colossal war against the Seven Sovereigns for forty years. Defeating the dragons, Phanes established the Heavenly Principles and began terraforming Teyvat for mortal life.",
-    "images": [
+    "id": "nibelung-voyage",
+    "title": "Nibelung's Cosmic Journey & The Power from Beyond",
+    "dateDisplay": "Pre-Genesis • Cosmic Incursion",
+    "orderRank": 80,
+    "eraId": "dragon-sovereigns",
+    "eraName": "Old World (Seven Sovereigns)",
+    "summary": "The Dragon King Nibelung travels beyond Teyvat's firmament, returning with dark forbidden power to fight the heavens.",
+    "description": "Foreshadowing the arrival of extraterrestrial powers, Dragon King Nibelung ventured outside the boundary of Teyvat into the Dark Sea and the cosmos. He acquired a pitch-black power from beyond this world to contest celestial invaders, planting the first seeds of the forbidden knowledge that would later plague the world.",
+    "images": [],
+    "tags": {
+      "region": "The Dark Sea",
+      "factions": ["Seven Dragon Sovereigns"],
+      "characters": ["Dragon King Nibelung", "Apep"],
+      "spoilerLevel": "Sumeru Desert World Quests"
+    },
+    "sources": [
       {
-        "url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1000&q=80",
-        "caption": "Phanes descending from the celestial firmament",
-        "alt": "Celestial golden light bursting through clouds"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The Forty-Year War that shook heaven and earth",
-        "alt": "Dramatic mountains and cosmic aurora"
+        "title": "Apep - Dialogue in The Realm of Beginnings",
+        "category": "quest",
+        "quote": "The Dragon King acquired the power of darkness from outside of this world and led us in a rebellion against the order established by the invaders."
       }
-    ],
+    ]
+  },
+  {
+    "id": "phanes-arrives",
+    "title": "Arrival of Phanes & Creation of the Four Shades",
+    "dateDisplay": "Unknown Millennium • Creation of Heaven and Earth",
+    "orderRank": 140,
+    "eraId": "primordial-one",
+    "eraName": "When the Doves Held Branches",
+    "summary": "The Primordial One (Phanes) arrives in Teyvat and creates Four Shining Shades to reshape the cosmos.",
+    "description": "Born from an egg and crowned with wings, the Primordial One (Phanes) descended upon Teyvat as the First Descender. Phanes created four shining shades from itself, including the Shade of Time (Istaroth), the Shade of Death, the Shade of Life, and the Shade of Space, preparing to seize control of the world from the native dragons.",
+    "images": [],
     "tags": {
       "region": "Celestia",
-      "factions": ["Celestia", "The Four Shades", "Seven Sovereigns"],
-      "characters": ["Phanes (The Primordial One)", "Istaroth", "Dragon King Nibelung"],
-      "spoilerLevel": "Enkanomiya World Quest"
+      "factions": ["Celestia", "The Four Shades"],
+      "characters": ["Phanes (The Primordial One)", "Istaroth"],
+      "spoilerLevel": "Enkanomiya World Quests"
     },
     "sources": [
       {
-        "title": "Before Sun and Moon: When the Doves Held Branches",
+        "title": "Before Sun and Moon: On Phanes, or The Primordial One",
         "category": "book",
-        "quote": "The Primordial One, or Phanes... It had wings and a crown, and was born from an egg, neither male nor female. But if the world would be created, the eggshell had to be broken."
+        "quote": "The Primordial One may have been Phanes. It had wings and a crown, and was born from an egg, neither male nor female... Phanes brought forth four shining shades of itself."
       }
     ]
   },
   {
-    "id": "unified-civilization",
-    "title": "The Unified Human Civilization & Divine Envoy Era",
-    "dateDisplay": "Pre-Archon War • Golden Age of Humanity",
-    "orderRank": 310,
+    "id": "great-war-forty-years",
+    "title": "The Forty-Year War: Fall of the Dragon Sovereigns",
+    "dateDisplay": "Unknown Millennium • Subjugation of the Sovereigns",
+    "orderRank": 175,
     "eraId": "primordial-one",
-    "eraName": "Era of the Primordial One",
-    "summary": "Humanity prospers in a single unified civilization under the direct guidance of heavenly Seelie envoys.",
-    "description": "During humanity's earliest golden epoch, a singular civilization spanned all corners of Teyvat, sharing one language and architecture (seen today in subterranean ruins across all seven nations). Celestia guided mortal kingdoms through beautiful, wise Seelie envoys, and humanity lived in peace with no concept of starvation or territorial borders.",
-    "images": [
+    "eraName": "When the Doves Held Branches",
+    "summary": "Phanes and the Four Shades wage a forty-year war against the Seven Dragons, shattering their dominion.",
+    "description": "A titanic conflict erupted between the Primordial One and the Seven Dragon Sovereigns. The war lasted for forty long years, violently reshaping Teyvat's landscapes and elements. In the end, the dragon kings were defeated, their absolute authority over the elements fractured, and the survivors fled to the depths or went into hiding.",
+    "images": [],
+    "tags": {
+      "region": "Primordial Teyvat",
+      "factions": ["Celestia", "Seven Dragon Sovereigns"],
+      "characters": ["Phanes", "Apep", "Nibelung"],
+      "spoilerLevel": "Enkanomiya / Sumeru Quests"
+    },
+    "sources": [
       {
-        "url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80",
-        "caption": "Monolithic architecture from the Unified Human Civilization",
-        "alt": "Ancient stone temple ruins bathed in divine dawn light"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80",
-        "caption": "Seelie guiding mortals in the age of harmony",
-        "alt": "Ethereal mystical wisps over starry landscape"
+        "title": "Before Sun and Moon: The Forty-Year War",
+        "category": "book",
+        "quote": "Forty winters mourned, and forty springs were buried. In the end, the seven sovereigns fell, and the heaven and earth were opened."
       }
-    ],
+    ]
+  },
+  {
+    "id": "unified-human-civilization",
+    "title": "The Unified Human Civilization & Celestial Envoys",
+    "dateDisplay": "Golden Age of Mortals • Pre-Archon Era",
+    "orderRank": 210,
+    "eraId": "primordial-one",
+    "eraName": "When the Doves Held Branches",
+    "summary": "Humanity prospers across all of Teyvat as a single civilization guided directly by Seelie envoys from Celestia.",
+    "description": "After terraforming the realm, Phanes created mortals. Humanity flourished across the continent under a single language and architectural style, remnants of which still exist in subterranean ruins across all nations. Wise and beautiful celestial envoys—the Seelie—walked openly among humanity, offering divine revelations directly from the heavens in an age of prosperity without war.",
+    "images": [],
     "tags": {
       "region": "Global Teyvat",
-      "factions": ["Unified Human Civilization", "The Seelie Race", "Celestia"],
-      "characters": ["The Seelie Ancestors", "First Mortal Kings"],
-      "spoilerLevel": "The Chasm / Enkanomiya"
+      "factions": ["Unified Human Civilization", "The Seelie Ancestors", "Celestia"],
+      "characters": ["Seelie Ancestors", "First Mortals"],
+      "spoilerLevel": "The Chasm World Quests"
     },
     "sources": [
       {
-        "title": "Tiara of Frost / Artifact Circlets",
+        "title": "Tiara of Frost / Circlet Artifacts",
         "category": "artifact",
-        "quote": "They say that, once upon a time, the people of the land could hear the revelations from the heavens directly. The envoys of the gods walked among beneficial humanity..."
+        "quote": "The envoys of the gods walked among benevolent humanity then, and the communication between heaven and earth was unobstructed."
+      },
+      {
+        "title": "A Thousand Floating Dreams Weapon Lore",
+        "category": "weapon",
+        "quote": "Long, long ago, the great and ancient spirits walked the surface alongside the mortals."
       }
     ]
   },
   {
-    "id": "second-who-came",
-    "title": "The Second Who Came & The Sinking of Enkanomiya",
-    "dateDisplay": "Pre-Cataclysmic Epoch • War in Heaven",
-    "orderRank": 410,
+    "id": "second-who-came-invasion",
+    "title": "Invasion of the Second Who Came & Shattered Skies",
+    "dateDisplay": "War in Heaven • The Funerary Year",
+    "orderRank": 250,
     "eraId": "second-who-came",
-    "eraName": "The Second Who Came & War in Heaven",
-    "summary": "A second extraterrestrial force invades Teyvat, triggering a catastrophic war in heaven that shatters the unified civilization and casts Enkanomiya beneath the waves.",
-    "description": "The peace of Teyvat was violently shattered when 'The Second Who Came' descended from beyond the sky. A catastrophic war between the invaders and the Primordial One tore the heavens apart. Vast landmasses collapsed into the oceanic abyss; among them was Enkanomiya, plunging thousands of mortals into perpetual darkness beneath the realm of Bathysmal Vishaps.",
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The Sinking of Enkanomiya into the Abyssal Depths",
-        "alt": "Subterranean ocean caverns with luminous shrines"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The shattered celestial sky during the Great War",
-        "alt": "Shattered celestial cosmos"
-      }
-    ],
+    "eraName": "War of Funerary Flame",
+    "summary": "A second extraterrestrial throne strikes Teyvat, causing a celestial war that shatters the Unified Civilization.",
+    "description": "The peace of the world ended abruptly when 'The Second Who Came' descended through the sky. A catastrophic war broke out between the heavens and the invader. The celestial firmament cracked, the continental plates shifted violently, and direct communication between Celestia and humanity was permanently severed.",
+    "images": [],
     "tags": {
-      "region": "Enkanomiya",
-      "factions": ["Second Who Came", "Celestia", "Byakuyakoku People"],
-      "characters": ["Phanes", "Istaroth", "The Second Descender"],
-      "spoilerLevel": "From Dusk to Dawn in Byakuyakoku"
+      "region": "Celestia & Global Teyvat",
+      "factions": ["Celestia", "The Second Who Came"],
+      "characters": ["Phanes", "The Second Descender"],
+      "spoilerLevel": "Enkanomiya World Quests"
     },
     "sources": [
       {
         "title": "Before Sun and Moon: The Funerary Year",
         "category": "book",
-        "quote": "The second throne of the heavens came, and war opened, as did the heavens and the earth. Then, the land of Byakuyakoku was sunk into the waters."
+        "quote": "The second throne of the heavens came, and war opened, as did the heavens and the earth. Then, darkness descended upon the lands."
       }
     ]
   },
   {
-    "id": "skyfrost-nail",
-    "title": "Divine Nails Fall: The Ruin of Sal Vindagnyr",
-    "dateDisplay": "Circa 3,000+ Years Ago • Pre-Archon War",
-    "orderRank": 480,
+    "id": "sinking-of-enkanomiya",
+    "title": "The Sinking of Byakuyakoku (Enkanomiya)",
+    "dateDisplay": "The Funerary Year • Abyssal Plunge",
+    "orderRank": 275,
     "eraId": "second-who-came",
-    "eraName": "The Second Who Came & War in Heaven",
-    "summary": "A Celestial Divine Nail strikes Dragonspine, turning the lush mountain kingdom of Sal Vindagnyr into a frozen graveyard.",
-    "description": "High upon what is now known as Dragonspine once stood Sal Vindagnyr, an idyllic, lush green mountain realm with a sacred silver-white Irminsul tree. Suspected of questioning the heavens, the civilization was devastated when a Celestial Nail plummeted from the sky. The blast shattered the mountain, froze the climate permanently, and doomed Princess and her people to frozen extinction.",
-    "images": [
+    "eraName": "War of Funerary Flame",
+    "summary": "During the War in Heaven, an entire realm collapses beneath the ocean into the Dark Abyssal depths.",
+    "description": "As the war shook heaven and earth, the mortal land of Byakuyakoku broke away from the surface and plummeted into the deep ocean cavern known today as Enkanomiya. Trapped in perpetual darkness and preyed upon by ferocious Bathysmal Vishaps, the stranded humans cried out to heaven, but only the Shade of Time, Istaroth, did not abandon them.",
+    "images": [],
+    "tags": {
+      "region": "Enkanomiya",
+      "factions": ["Byakuyakoku People", "Bathysmal Vishaps"],
+      "characters": ["Istaroth (Kairos)", "Aberaku no Mikoto"],
+      "spoilerLevel": "From Dusk to Dawn in Byakuyakoku"
+    },
+    "sources": [
       {
-        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The Skyfrost Nail suspended above Dragonspine's peak",
-        "alt": "Snowy frozen mountain peak under clear sky"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The frozen ruins of Sal Vindagnyr buried in ice",
-        "alt": "Blizzard mountain landscape with frozen ruins"
+        "title": "Before Sun and Moon: The Third Year of Darkness",
+        "category": "book",
+        "quote": "The land was sunk into the waters. The people cried out to heaven, but only the God of Time listened to their desperate pleas."
       }
-    ],
+    ]
+  },
+  {
+    "id": "fall-of-seelie-race",
+    "title": "The Fall and Curse of the Seelie Race",
+    "dateDisplay": "Post-War in Heaven • The Seelie Degradation",
+    "orderRank": 295,
+    "eraId": "second-who-came",
+    "eraName": "War of Funerary Flame",
+    "summary": "Following the War in Heaven and a forbidden union with an outlander, the Seelie race is cursed to devolve into mindless wisps.",
+    "description": "After the disaster, a Seelie maiden fell in love with an outlander traveler. Celestia placed a cruel curse upon the entire Seelie species: should they ever fall in love with humanity, they would lose their wisdom, beauty, and physical bodies, degrading into the small, mournful guiding wisps that now wander the ruins of Teyvat.",
+    "images": [],
+    "tags": {
+      "region": "Global Teyvat",
+      "factions": ["The Seelie Race", "Celestia"],
+      "characters": ["Seelie Ancestor Maiden", "The Outlander Traveler"],
+      "spoilerLevel": "Aramani / Aranyaka World Quests"
+    },
+    "sources": [
+      {
+        "title": "Records of Jueyun: Vol. 4",
+        "category": "book",
+        "quote": "They were cursed to wander the wilderness. If they ever fall in love with mortals, their forms wither and their intellect vanishes."
+      }
+    ]
+  },
+  {
+    "id": "skyfrost-nail-sal-vindagnyr",
+    "title": "Skyfrost Nail Falls on Sal Vindagnyr (Dragonspine)",
+    "dateDisplay": "Circa 3,000+ YA • Celestial Judgment",
+    "orderRank": 320,
+    "eraId": "second-who-came",
+    "eraName": "War of Funerary Flame",
+    "summary": "A Celestial Divine Nail plummets from the heavens, freezing the paradise mountain of Sal Vindagnyr into Dragonspine.",
+    "description": "High upon what is now Dragonspine once stood Sal Vindagnyr, a green, lush mountain kingdom centered on a sacred silver-white Irminsul tree. Suspected of hubris or seeking forbidden secrets, the civilization was obliterated when a Celestial Nail descended from the heavens. The impact shattered the peak, frosted the entire region in perpetual blizzards, and froze its inhabitants to extinction.",
+    "images": [],
     "tags": {
       "region": "Mondstadt",
       "factions": ["Sal Vindagnyr", "Celestia"],
-      "characters": ["The Princess of Sal Vindagnyr", "Imunlaukr", "Chief Priest"],
-      "spoilerLevel": "Dragonspine Ancient Carvings Quest"
+      "characters": ["Princess of Sal Vindagnyr", "Imunlaukr", "Chief Priest"],
+      "spoilerLevel": "Dragonspine Ancient Carvings"
     },
     "sources": [
       {
         "title": "Blizzard Strayer Artifact Set",
         "category": "artifact",
-        "quote": "When the nail from the heavens broke the mountain into shards, the girl picked a branch from the frost-covered tree..."
+        "quote": "When the nail from the heavens broke the mountain into shards, the girl picked a branch from the frost-covered tree, but the cold would not relent."
       },
       {
-        "title": "Snow-Tombed Starsilver Weapon Lore",
+        "title": "Snow-Tombed Starsilver Lore",
         "category": "weapon",
         "quote": "When the heavens' pillars descended, the lush mountain was swallowed by endless howling ice and snow."
       }
     ]
   },
   {
-    "id": "archon-war-guili",
-    "title": "Guili Assembly & The Passing of Guizhong",
-    "dateDisplay": "Circa 3,700 Years Ago • Archon War",
-    "orderRank": 590,
-    "eraId": "archon-war",
-    "eraName": "The Archon War (~3,700 - 2,000 YA)",
-    "summary": "Morax and Guizhong co-found the prosperous Guili Assembly in the plains of Liyue, until tragedy strikes during the Archon War.",
-    "description": "Morax (the God of Geo) and Guizhong (the Goddess of Dust) formed a deep bond of wisdom and strength, uniting their peoples on the plains of Guili. Guizhong created the Guizhong Ballista and sought to teach mortals machinery and virtue. During the peak of the Archon War, dark gods attacked the plains. Guizhong perished in a field of Glaze Lilies, and Morax led the grieving survivors south to found Liyue Harbor.",
-    "images": [
+    "id": "chasm-nail-impact",
+    "title": "Celestial Nail Impacts The Chasm",
+    "dateDisplay": "Ancient Era • Shattering of the Liyue Bedrock",
+    "orderRank": 345,
+    "eraId": "second-who-came",
+    "eraName": "War of Funerary Flame",
+    "summary": "A second Celestial Divine Nail crashes into western Liyue, creating the subterranean depths of The Chasm.",
+    "description": "A Divine Nail plummeted from Celestia into the mineral-rich mountains of western Liyue. The colossal kinetic force created the inverted crater of The Chasm, driving out the ancient abyssal darkness beneath and warping the bedrock into twisting luminescent crystalline caverns.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": ["Celestia", "Ancient Liyue Miners"],
+      "characters": ["Morax", "Azhdaha"],
+      "spoilerLevel": "The Chasm Delvers World Quest"
+    },
+    "sources": [
       {
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The Guili Plains covered in wild Glaze Lilies",
-        "alt": "Golden plains of Liyue at sunset"
+        "title": "Tenacity of the Millelith Artifact Set",
+        "category": "artifact",
+        "quote": "In ancient times, a star fell from the sky into the vast wastelands to the west, transforming the earth into a deep abyss."
+      }
+    ]
+  },
+  {
+    "id": "rise-of-remuria",
+    "title": "God King Remus & The High Symphony of Remuria",
+    "dateDisplay": "Ancient Fontaine • Era of Remuria",
+    "orderRank": 380,
+    "eraId": "interim-period",
+    "eraName": "Interim Period (Ancient Kingdoms)",
+    "summary": "God King Remus unifies ancient Fontaine into the empire of Remuria using magical golden ichor and music.",
+    "description": "In the waters of ancient Fontaine, God King Remus founded the grand civilization of Remuria upon the massive ship Fortuna. Remus sought to defy the prophesied doom of the Primordial Sea by transmuting mortal souls into phobos—a golden symphony composed into stone and brass golems—before internal corruption and hubris brought Remuria's cataclysmic sinking.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": ["Empire of Remuria", "Vishap Sovereign of Water"],
+      "characters": ["God King Remus", "Scylla", "Boethius", "Cassiodor"],
+      "spoilerLevel": "Sea of Bygone Eras World Quest"
+    },
+    "sources": [
+      {
+        "title": "The History of the Decline and Fall of Remuria",
+        "category": "book",
+        "quote": "King Remus came aboard Fortuna, playing the golden harp. He gathered all peoples under his great symphony."
+      }
+    ]
+  },
+  {
+    "id": "three-god-alliance-sumeru",
+    "title": "The Tripartite Alliance of Sumeru (Ay-Khanoum)",
+    "dateDisplay": "Ancient Sumeru • City of the Amphitheater",
+    "orderRank": 410,
+    "eraId": "interim-period",
+    "eraName": "Interim Period (Ancient Kingdoms)",
+    "summary": "King Deshret, the Goddess of Flowers, and Greater Lord Rukkhadevata unite to build the utopia of Ay-Khanoum.",
+    "description": "In the golden sands and lush oases of Sumeru, three benevolent divinities formed a sacred pact of friendship: King Deshret (Amon), Nabu Malikata (the Goddess of Flowers), and Greater Lord Rukkhadevata. Together they founded Ay-Khanoum ('City of the Moon Maiden'), blending wisdom, dreams, and life into an unprecedented age of desert prosperity.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": ["Tripartite Alliance", "Pari of the Oasis"],
+      "characters": ["King Deshret (Amon)", "Nabu Malikata", "Greater Lord Rukkhadevata"],
+      "spoilerLevel": "Golden Slumber / Dirge of Bilqis"
+    },
+    "sources": [
+      {
+        "title": "The Tale of Shiruyeh and Shirin",
+        "category": "book",
+        "quote": "Three gods shared their thrones upon the oasis: the Lord of the Desert, the Mistress of Flowers, and the Avatar of the Tree."
       },
       {
-        "url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The ancient stone machinery and Guizhong Ballista",
-        "alt": "Ancient stone assembly"
+        "title": "Flower of Paradise Lost Artifact Set",
+        "category": "artifact",
+        "quote": "The three friends raised Ay-Khanoum, where mortals and spirits lived side by side."
       }
-    ],
+    ]
+  },
+  {
+    "id": "passing-of-goddess-of-flowers",
+    "title": "The Sacrifice of Nabu Malikata",
+    "dateDisplay": "Ancient Sumeru • Passing of the Flowers",
+    "orderRank": 435,
+    "eraId": "interim-period",
+    "eraName": "Interim Period (Ancient Kingdoms)",
+    "summary": "Nabu Malikata willingly perishes to unlock forbidden knowledge for King Deshret, sowing the seeds of desert tragedy.",
+    "description": "Seeking to help King Deshret overcome the immutable rules of the Heavenly Principles, Nabu Malikata willingly sacrificed her physical life. Her death caused Padisarahs to bloom across the desert, but her passing broke King Deshret's heart, driving him into an obsessive quest to reconstruct her mind and conquer mortality itself through forbidden abyssal knowledge.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": ["Ancient Sumeru"],
+      "characters": ["Nabu Malikata", "King Deshret"],
+      "spoilerLevel": "Dirge of Bilqis"
+    },
+    "sources": [
+      {
+        "title": "Oasis Garden's Reminiscence",
+        "category": "material",
+        "quote": "The Goddess of Flowers chose to perish so that the Lord of Sand might look upon the sky unblinded."
+      }
+    ]
+  },
+  {
+    "id": "fall-of-gurabad",
+    "title": "The Tyranny and Fall of Gurabad",
+    "dateDisplay": "Ancient Sumeru • The Jinni Curse",
+    "orderRank": 455,
+    "eraId": "interim-period",
+    "eraName": "Interim Period (Ancient Kingdoms)",
+    "summary": "Ormazd founds Gurabad with the Jinni Liloupar, but betrayal and blood lead to the kingdom's annihilation.",
+    "description": "Following Ay-Khanoum's decline, the mortal shepherd Ormazd rose to power in Gurabad with the aid of the Jinni Liloupar. Ormazd became a cruel tyrant, enslaving the desert folk. Enraged, Liloupar wove a three-generation curse of fratricide and plague that collapsed Gurabad into ruins and sand.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": ["Gurabad", "The Jinn"],
+      "characters": ["Liloupar", "Ormazd", "Shirin", "Kisra Parvezravan"],
+      "spoilerLevel": "Dirge of Bilqis"
+    },
+    "sources": [
+      {
+        "title": "The Tomb of Caroses / The Scroll of Streaming Song",
+        "category": "book",
+        "quote": "Liloupar's vengeance tore through three generations of royalty until the great walls of Gurabad choked on dust."
+      }
+    ]
+  },
+  {
+    "id": "chenyu-vale-settlement",
+    "title": "The Jade Ancestors Settle in Chenyu Vale",
+    "dateDisplay": "Circa 4,000 YA • Ancient Liyue",
+    "orderRank": 475,
+    "eraId": "interim-period",
+    "eraName": "Interim Period (Ancient Kingdoms)",
+    "summary": "Herbalists and Adepti settle the misty terraced valleys of Chenyu Vale, carving sacred jade altars.",
+    "description": "Long before the formal establishment of Liyue Harbor, mortal clans fled regional divine conflicts and settled in the misty green mountains of Chenyu Vale. Guided by the Adepti Fujin, Lingyuan, and the Mountain Lord, they established sacred rites of Spirit Carp and crafted the immortal Rainjade altars to regulate the waterways.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": ["Chenyu Vale Clans", "Adepti of Chenyu"],
+      "characters": ["Fujin", "Lingyuan", "Herbalist Gui"],
+      "spoilerLevel": "Chenyu's Blessings of Sunken Jade"
+    },
+    "sources": [
+      {
+        "title": "Fragment of Harmonious Whimsy Artifact Set",
+        "category": "artifact",
+        "quote": "The ancestors of Chenyu carved jade to pacify the churning river waters and offer tribute to the mountains."
+      }
+    ]
+  },
+  {
+    "id": "guili-assembly-founding",
+    "title": "Morax and Guizhong Establish the Guili Assembly",
+    "dateDisplay": "Circa 3,700 YA • Dawn of the Archon War",
+    "orderRank": 510,
+    "eraId": "archon-war",
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "Morax and Guizhong unite their peoples upon the fertile plains of Liyue, establishing the Guili Assembly.",
+    "description": "Around 3,700 years ago, Morax (God of Geo) and Guizhong (God of Dust) allied their followers on the vast fertile plains north of Mt. Tianheng. Combining their names into 'Guili', Guizhong guided mortals in engineering, agriculture, and moral code, while Morax shielded the assembly with stone and jade.",
+    "images": [],
     "tags": {
       "region": "Liyue",
       "factions": ["Guili Assembly", "Adepti of Liyue"],
       "characters": ["Morax (Zhongli)", "Guizhong", "Cloud Retainer", "Marchosius"],
-      "spoilerLevel": "Lantern Rite / Guili Plains Quests"
+      "spoilerLevel": "Lantern Rite Event Quests"
     },
     "sources": [
       {
         "title": "Stone Tablet Compilations: Vol. 1",
         "category": "book",
-        "quote": "Guizhong and Morax were allies. They gathered the people upon the plains, giving it the name Guili from their combined names..."
+        "quote": "Guizhong and Morax were allies. They gathered the people upon the plains, giving it the name Guili from their combined names."
       },
       {
         "title": "Memory of Dust Weapon Lore",
         "category": "weapon",
-        "quote": "She spoke with a gentle smile: 'This is the mark of our pledge, and it is also my challenge to you. All my wisdom is hidden within this stone dumbbell.'"
+        "quote": "'This is the mark of our pledge, and it is also my challenge to you. All my wisdom is hidden within this stone dumbbell.'"
       }
     ]
   },
   {
-    "id": "decarabian-fall",
-    "title": "The Rebellion of Old Mondstadt & Barbatos' Ascension",
-    "dateDisplay": "Circa 2,600 Years Ago • Archon War",
-    "orderRank": 690,
+    "id": "passing-of-guizhong",
+    "title": "The Fall of Guizhong & Founding of Liyue Harbor",
+    "dateDisplay": "Circa 3,700 YA • Tragedy on Guili Plains",
+    "orderRank": 535,
     "eraId": "archon-war",
-    "eraName": "The Archon War (~3,700 - 2,000 YA)",
-    "summary": "Mortals and a humble wind spirit rebel against Decarabian's howling hurricane cage in Old Mondstadt, establishing new freedom.",
-    "description": "In Old Mondstadt (today's Stormterror's Lair), the God of Storms Decarabian kept his people enclosed in an impenetrable wall of wind, believing he protected them from the biting blizzards of Andrius. A nameless youth, the maiden Amos, and a tiny wind sprite rallied the populace in a desperate rebellion for freedom. Decarabian fell in battle, the boy died in his companion's arms, and the sprite ascended to become Barbatos, reshaping Mondstadt's mountains with gentle breezes.",
-    "images": [
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "Guizhong perishes during a fierce assault on the Guili Plains; Morax guides the survivors to found Liyue Harbor.",
+    "description": "During the escalating clashes of the Archon War, black dust and rival gods unleashed a catastrophic flood across the Guili Plains. Guizhong fell in battle amidst the Glaze Lilies. Grieving the loss of his dearest companion, Morax led the surviving mortals south past Mt. Tianheng to the sea, where they laid the first foundations of Liyue Harbor.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": ["Guili Assembly", "Adepti of Liyue"],
+      "characters": ["Morax", "Guizhong", "Madame Ping"],
+      "spoilerLevel": "Archon Quest Chapter I"
+    },
+    "sources": [
       {
-        "url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The howling storm walls surrounding Old Mondstadt",
-        "alt": "Massive swirling winds around stone tower"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-        "caption": "Barbatos transforming Mondstadt into rolling green hills",
-        "alt": "Gentle emerald green meadows under open skies"
+        "title": "Customs of Liyue: Vol. 2",
+        "category": "book",
+        "quote": "Guizhong perished amidst the glaze lilies. The Geo Archon led the people south of Mt. Tianheng, founding the port city of Liyue."
       }
-    ],
+    ]
+  },
+  {
+    "id": "fall-of-decarabian",
+    "title": "The Rebellion in Old Mondstadt & Barbatos' Ascension",
+    "dateDisplay": "Circa 2,600 YA • The Song of Freedom",
+    "orderRank": 560,
+    "eraId": "archon-war",
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "Mortals and a wind sprite overthrow Decarabian in Old Mondstadt; Barbatos ascends as the Anemo Archon.",
+    "description": "In Old Mondstadt (Stormterror's Lair), the God of Storms Decarabian confined his people within an impenetrable hurricane barrier. A nameless boy bard, the hunter Amos, the knight Gunnhildr, and a tiny wind sprite united in rebellion. Decarabian was slain, the boy perished in the battle, and the wind sprite took the boy's form, ascending as Barbatos, the Anemo Archon.",
+    "images": [],
     "tags": {
       "region": "Mondstadt",
-      "factions": ["Gunnhildr Clan", "Old Mondstadt Rebels"],
-      "characters": ["Barbatos (Venti)", "The Nameless Bard", "Decarabian", "Amos", "Andrius"],
+      "factions": ["Old Mondstadt Rebels", "Gunnhildr Clan"],
+      "characters": ["Barbatos (Venti)", "The Nameless Bard", "Decarabian", "Amos"],
       "spoilerLevel": "Archon Quest Prologue"
     },
     "sources": [
@@ -265,111 +462,424 @@
     ]
   },
   {
-    "id": "cataclysm-fall",
-    "title": "The Fall of Khaenri'ah & Global Abyssal Incursion",
-    "dateDisplay": "500 Years Ago • The Cataclysm",
-    "orderRank": 810,
-    "eraId": "cataclysm",
-    "eraName": "The Cataclysm (500 YA)",
-    "summary": "Khaenri'ah is annihilated by Abyssal calamity and Celestia's judgment, unleashing dark beasts across all seven nations.",
-    "description": "Five centuries ago, the godless underground dynasty of Khaenri'ah collapsed. The alchemist Rhinedottir's 'Art of Khemia' broke containment, opening abyssal rifts that poured horrific monsters (such as the dragon Durin, rifthounds, and shadowy husks) across Teyvat. Celestia summoned the Seven Archons to Khaenri'ah. The nation was wiped off the map, its pureblood citizens cursed with immortality, and half-bloods transformed into hilichurls.",
-    "images": [
+    "id": "andrius-surrenders",
+    "title": "Andrius Yields the Anemo Throne to Barbatos",
+    "dateDisplay": "Circa 2,600 YA • The Wolf King's Choice",
+    "orderRank": 580,
+    "eraId": "archon-war",
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "The Wolf of the North realizes his frozen blizzards cannot nourish mortal life and yields the Divine Throne.",
+    "description": "Andrius (Lupus Boreas), the mighty Wolf King of the North, realized that his freezing blizzards only brought hardship to human beings. Believing himself incapable of nurturing mortal civilization, he surrendered his chance at the Anemo Archon throne and chose to let his physical body perish, allowing his spirit to remain as a guardian of Wolvendom.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": ["Four Winds of Mondstadt", "Wolves of Wolvendom"],
+      "characters": ["Andrius (Lupus Boreas)", "Barbatos"],
+      "spoilerLevel": "Razor Story Quest / Prologue"
+    },
+    "sources": [
       {
-        "url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The crimson eclipse sky burning over ruined Khaenri'ah",
-        "alt": "Dramatic eclipse over dark ruined citadel"
+        "title": "Breeze Amidst the Forest: Vol. 1",
+        "category": "book",
+        "quote": "Andrius believed that his biting cold could only snuff out human lives. Therefore, he chose to let his power flow into the earth."
+      }
+    ]
+  },
+  {
+    "id": "orobashi-watatsumi",
+    "title": "Orobashi Rescues Enkanomiya and Raises Watatsumi",
+    "dateDisplay": "Archon War Era • Serpent of the Deep",
+    "orderRank": 600,
+    "eraId": "archon-war",
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "The Great Serpent Orobashi flees the Archon War, encounters Enkanomiya, and lifts its people up to Watatsumi Island.",
+    "description": "Fleeing the wrath of the golden god Morax during the Archon War, the great serpent Orobashi fell into the depths of Enkanomiya. Touched by the prayers of the desperate subterranean humans, Orobashi broke coral branches from his body to illuminate their darkness, slew the Dragonheir vishaps, and carried the people to the surface, raising Watatsumi Island from the sea.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": ["Sangonomiya Clan", "Enkanomiya"],
+      "characters": ["Orobashi no Mikoto", "Sangonomiya Ancestors"],
+      "spoilerLevel": "Watatsumi Island World Quests"
+    },
+    "sources": [
+      {
+        "title": "The Narukami Trail: Vol. 1",
+        "category": "book",
+        "quote": "The great serpent fled to the bottom of the ocean. There, he took pity on the children of the dark and brought them up to the surface."
+      }
+    ]
+  },
+  {
+    "id": "slaying-of-orobashi",
+    "title": "Raiden Ei Slays Orobashi at Yashiori Island",
+    "dateDisplay": "Archon War Era • Musou no Hitotachi",
+    "orderRank": 620,
+    "eraId": "archon-war",
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "Orobashi is coerced by Celestia into invading Yashiori; Raiden Ei executes the serpent with the Musou no Hitotachi.",
+    "description": "Having learned the forbidden history of the world in *Before Sun and Moon*, Orobashi was sentenced to death by Celestia. To save his people from celestial annihilation, Orobashi sacrificed himself by invading Yashiori Island. Raiden Ei met him in battle and cleaved both the serpent god and the entire island in two with a single strike of the Musou no Hitotachi, creating the Musoujin Gorge.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": ["Inazuma Shogunate", "Watatsumi Island"],
+      "characters": ["Raiden Ei", "Orobashi", "Sasayuri"],
+      "spoilerLevel": "Archon Quest Chapter II"
+    },
+    "sources": [
+      {
+        "title": "Emblem of Severed Fate Artifact Set",
+        "category": "artifact",
+        "quote": "That slash split the serpent god in two, cut the island asunder, and severed the life of the General of the Tengu."
       },
       {
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The Abyssal hordes invading the surface of Teyvat",
-        "alt": "Dark stormy skies with shadow beasts"
+        "title": "Before Sun and Moon",
+        "category": "book",
+        "quote": "For reading this book, the great serpent was sentenced to death by heaven."
       }
-    ],
+    ]
+  },
+  {
+    "id": "deshret-sacrifice",
+    "title": "King Deshret's Forbidden Knowledge Sacrifice",
+    "dateDisplay": "Circa 2,000 YA • Catastrophe of the Sands",
+    "orderRank": 645,
+    "eraId": "archon-war",
+    "eraName": "The Archon War (~3,700 – 2,000 YA)",
+    "summary": "Forbidden knowledge corrupts King Deshret's empire; Deshret sacrifices himself while Rukkhadevata shrinks her form.",
+    "description": "King Deshret unleashed forbidden knowledge from the dark cosmos in an attempt to create an eternal world without divine oppression. The corruption spread like a contagion, afflicting the populace with Eleazar and releasing Withering Zones. King Deshret sacrificed himself to contain the catastrophe, while Greater Lord Rukkhadevata exhausted her divine power cleansing Irminsul, regressing into the form of a small child.",
+    "images": [],
     "tags": {
-      "region": "Khaenri'ah",
-      "factions": ["Eclipse Dynasty", "Abyss Order", "Celestia", "The Seven Archons"],
-      "characters": ["Dainsleif", "Rhinedottir (Gold)", "Pierro", "Lumine", "Aether", "King Irmin"],
-      "spoilerLevel": "Archon Quest Chapter I: Act IV / Caribert"
+      "region": "Sumeru",
+      "factions": ["King Deshret's Empire", "Dendro Archon Followers"],
+      "characters": ["King Deshret", "Greater Lord Rukkhadevata", "Kasala"],
+      "spoilerLevel": "Archon Quest Chapter III: Act IV"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter III: Act IV - King Deshret and the Three Magi",
+        "category": "quest",
+        "quote": "'King Deshret chose to sacrifice himself to seal away the forbidden knowledge... and the Greater Lord expended her power, shrinking into the form of a child.'"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-remuria-fontaine",
+    "title": "Fall of Remuria & Egeria's Ascension",
+    "dateDisplay": "Circa 2,000 YA • The Waters of Fontaine",
+    "orderRank": 680,
+    "eraId": "post-archon-war",
+    "eraName": "Post-Archon War (~2,000 – 500 YA)",
+    "summary": "Remuria collapses beneath the waves; Egeria is freed from the Primordial Sea and becomes the Hydro Archon.",
+    "description": "The Dragon of Water Scylla and rebelling vishaps attacked Remuria's capital. Phobos collapsed into madness, and Remuria sank into the abyss. Remus gave up his life, and Egeria was summoned from the depths of the Primordial Sea by Celestia to assume the Hydro Archon throne, forgiving the sins of mortal survivors and creating the modern nation of Fontaine.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": ["Remuria", "Court of Fontaine"],
+      "characters": ["Egeria", "King Remus", "Scylla"],
+      "spoilerLevel": "Sea of Bygone Eras World Quest"
+    },
+    "sources": [
+      {
+        "title": "The History of the Decline and Fall of Remuria: Vol. 3",
+        "category": "book",
+        "quote": "The waters engulfed the golden city. From the tears of the sorrowful depths, the Lord of All Waters arose to guide the people."
+      }
+    ]
+  },
+  {
+    "id": "mondstadt-aristocracy-rebellion",
+    "title": "Vennessa's Rebellion & Founding of Knights of Favonius",
+    "dateDisplay": "Circa 1,000 YA • Fall of the Lawrence Clan",
+    "orderRank": 710,
+    "eraId": "post-archon-war",
+    "eraName": "Post-Archon War (~2,000 – 500 YA)",
+    "summary": "The gladiator slave Vennessa and Barbatos overthrow the corrupt Aristocracy, establishing the Knights of Favonius.",
+    "description": "A thousand years ago, Mondstadt was choked by the tyranny of the Lawrence Clan and the corrupt aristocracy. The red-haired gladiator slave Vennessa challenged Lord Lawrence. With the timely aid of Barbatos and the dragon Dvalin, Vennessa liberated the city, abolished human slavery, and founded the Knights of Favonius and the Church of Favonius.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": ["Knights of Favonius", "Mondstadt Aristocracy"],
+      "characters": ["Vennessa", "Barbatos", "Lord Lawrence", "Ragnvindr"],
+      "spoilerLevel": "Genshin Impact Manga / Venti Story Quest"
+    },
+    "sources": [
+      {
+        "title": "Biography of Gunnhildr",
+        "category": "book",
+        "quote": "A thousand years ago, the brave warrior Vennessa rose up against the corrupt aristocracy, and freedom returned to the City of the Wind."
+      },
+      {
+        "title": "Genshin Impact Official Manga: Prologue",
+        "category": "official_media",
+        "quote": "'Mondstadt's wind belongs to everyone! Not just the nobles who claim to own it.'"
+      }
+    ]
+  },
+  {
+    "id": "ascension-of-vennessa",
+    "title": "Vennessa Ascends to Celestia as the Falcon of the West",
+    "dateDisplay": "Circa 1,000 YA • Windrise Oak Tree",
+    "orderRank": 735,
+    "eraId": "post-archon-war",
+    "eraName": "Post-Archon War (~2,000 – 500 YA)",
+    "summary": "At the end of her life, Vennessa ascends to Celestia at Windrise, becoming one of the Four Winds.",
+    "description": "After governing Mondstadt in peace as its first Dandelion Knight, Vennessa took her final journey to Windrise. In full view of the people, she ascended to Celestia, leaving behind a sapling that grew into the monumental oak tree seen today. She transformed into the Falcon of the West, eternally watching over Mondstadt.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": ["Four Winds of Mondstadt", "Knights of Favonius"],
+      "characters": ["Vennessa", "Barbatos"],
+      "spoilerLevel": "Venti Story Quest: Carmen Dei"
     },
     "sources": [
       {
         "title": "Breeze Amidst the Forest: Vol. 2",
         "category": "book",
-        "quote": "Five hundred years ago, disaster descended upon the land. The dark dragon Durin was born of corrupted alchemy..."
-      },
-      {
-        "title": "Deepwood Memories: Timepiece",
-        "category": "artifact",
-        "quote": "The black sun fell, and the disaster brought contamination from the deepest void..."
+        "quote": "At Windrise, the maiden ascended to the heavens, taking the form of a great falcon to guard the realm forevermore."
       }
     ]
   },
   {
-    "id": "cataclysm-sacrifices",
-    "title": "Sacrifices of the Archons (Makoto, Egeria & Rukkhadevata)",
-    "dateDisplay": "500 Years Ago • Aftermath of the Cataclysm",
-    "orderRank": 860,
+    "id": "guhua-ascension",
+    "title": "The Legend and Ascension of Master Guhua",
+    "dateDisplay": "Centuries Ago • The Way of the Blade",
+    "orderRank": 760,
+    "eraId": "post-archon-war",
+    "eraName": "Post-Archon War (~2,000 – 500 YA)",
+    "summary": "The martial artist Guhua masters the sword and polearm, ascending to the heavens in a flash of purple light.",
+    "description": "During Liyue's mortal era, a legendary hero named Guhua mastered the twin martial arts of the Rain Cutter and the Light Piercer. Walking the mortal path with unmatched righteousness and chivalry, he achieved enlightenment at the Kingfisher's Peak, ascending to the celestial realm in a beam of violet dawn light and establishing the Guhua Clan.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": ["Guhua Brotherhood"],
+      "characters": ["Master Guhua", "Xingqiu (Successor)"],
+      "spoilerLevel": "Xingqiu Story Quest / Wangshan Hall"
+    },
+    "sources": [
+      {
+        "title": "Records of the Gallant: Vol. 1",
+        "category": "book",
+        "quote": "Master Guhua traversed the land with a righteous heart. When his martial art reached perfection, he ascended into the purple dawn."
+      }
+    ]
+  },
+  {
+    "id": "khaenriah-cataclysm-outbreak",
+    "title": "The Cataclysm: Rhinedottir & The Five Sinners",
+    "dateDisplay": "500 Years Ago • The Eclipse Dynasty Falls",
+    "orderRank": 795,
     "eraId": "cataclysm",
     "eraName": "The Cataclysm (500 YA)",
-    "summary": "Three Archons perish during the Cataclysm, altering the divine leadership of Inazuma, Fontaine, and Sumeru forever.",
-    "description": "The toll of the Cataclysm was catastrophic for the Seven. Raiden Makoto traveled secretly to Khaenri'ah and perished in Ei's arms, leaving Ei to forge the Raiden Shogun puppet. In the desert of Tunigi Hollow, Egeria (Hydro Archon) died containing the abyss, her body transforming into the Amrita nectar. In Sumeru, Greater Lord Rukkhadevata sacrificed her physical form to purge the forbidden knowledge invading the Irminsul tree, plucking the purest branch to create Nahida.",
-    "images": [
+    "summary": "Khaenri'ah's alchemists breach the abyss; dark monsters pour out across the seven nations.",
+    "description": "Five centuries ago, the godless underground kingdom of Khaenri'ah collapsed into catastrophic madness. Led by Rhinedottir (Gold) and the Five Sinners, the alchemical Art of Khemia breached abyssal boundaries, birthing terrifying synthetic monsters such as Durin, Elynas, and legions of Rifthounds that surged into every nation of Teyvat.",
+    "images": [],
+    "tags": {
+      "region": "Khaenri'ah",
+      "factions": ["Eclipse Dynasty", "The Five Sinners", "Abyss Order"],
+      "characters": ["Rhinedottir (Gold)", "Pierro", "Dainsleif", "King Irmin", "Vedrfolnir"],
+      "spoilerLevel": "Archon Quest Chapter IV / Caribert"
+    },
+    "sources": [
       {
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The sacred Amrita Pool blooming in the Tunigi Hollow",
-        "alt": "Sacred glowing oasis in desert"
+        "title": "Breeze Amidst the Forest: Vol. 2",
+        "category": "book",
+        "quote": "Five hundred years ago, disaster descended upon the land. The dark dragon Durin was born of corrupted alchemy."
       },
       {
-        "url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The roots of Irminsul purged beneath the sanctuary",
-        "alt": "Glowing sacred divine tree roots"
+        "title": "Shadow of the Errant Stalker Weapon Lore",
+        "category": "weapon",
+        "quote": "The black sun fell, and the five sinners divided the power of the abyss among themselves."
       }
-    ],
+    ]
+  },
+  {
+    "id": "destruction-of-khaenriah",
+    "title": "Destruction of Khaenri'ah & The Curse of Wilderness",
+    "dateDisplay": "500 Years Ago • Celestial Retribution",
+    "orderRank": 815,
+    "eraId": "cataclysm",
+    "eraName": "The Cataclysm (500 YA)",
+    "summary": "Celestia destroys Khaenri'ah; its pureblood mortals are cursed with immortality and half-bloods into hilichurls.",
+    "description": "The Heavenly Principles summoned the Seven Archons directly to Khaenri'ah to eradicate the Abyssal corruption. The subterranean nation was obliterated by divine pillars and cubes of red light. Celestia laid a terrible curse upon its citizens: pureblood Khaenri'ahns were doomed to eternal immortality watching their minds erode, while those of foreign blood were warped into monstrous hilichurls.",
+    "images": [],
     "tags": {
-      "region": "Sumeru / Inazuma / Fontaine",
-      "factions": ["The Seven Archons", "Pari of Vourukasha"],
+      "region": "Khaenri'ah",
+      "factions": ["Celestia", "Khaenri'ah Dynasty", "The Seven Archons"],
+      "characters": ["Dainsleif", "The Traveler's Sibling", "Unknown God"],
+      "spoilerLevel": "Archon Quest: Requiem of the Echoing Depths / Caribert"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter II: Act IV - Requiem of the Echoing Depths",
+        "category": "quest",
+        "quote": "'The curse of immortality was not a blessing, but the cruelest torment. For five hundred years, my flesh has eroded while my soul cannot die.'"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-durin-dragonspine",
+    "title": "The Fall of Durin upon Dragonspine",
+    "dateDisplay": "500 Years Ago • Mondstadt's Defense",
+    "orderRank": 835,
+    "eraId": "cataclysm",
+    "eraName": "The Cataclysm (500 YA)",
+    "summary": "The corrupted shadow dragon Durin invades Mondstadt; Barbatos and Dvalin defeat it over Dragonspine.",
+    "description": "During the Cataclysm, Rhinedottir's dark dragon Durin flew over Mondstadt, threatening total annihilation. Barbatos awakened from his slumber and summoned the dragon Dvalin (Stormterror). After an apocalyptic aerial battle in the clouds, Dvalin tore Durin's throat, sending the beast crashing onto the snowy slopes of Dragonspine, where its corrupted red heart still beats within Wyrmrest Valley.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": ["Four Winds of Mondstadt", "Knights of Favonius"],
+      "characters": ["Barbatos", "Dvalin", "Durin", "Arundolyn", "Rostam"],
+      "spoilerLevel": "The Chalk Prince and the Dragon / Prologue"
+    },
+    "sources": [
+      {
+        "title": "Breeze Amidst the Forest: Vol. 2 - Ballad of Durin",
+        "category": "book",
+        "quote": "Dvalin spread six wings and tore through the clouds, biting through the neck of the dark dragon. The shadow dragon crashed into the snow of the silver mountain."
+      }
+    ]
+  },
+  {
+    "id": "chasm-sacrifice-bosacius",
+    "title": "Bosacius and Boyang Seal the Abyssal Breach in The Chasm",
+    "dateDisplay": "500 Years Ago • The Bedrock Sacrifice",
+    "orderRank": 855,
+    "eraId": "cataclysm",
+    "eraName": "The Cataclysm (500 YA)",
+    "summary": "The Yaksha Bosacius and Millelith soldier Boyang trap themselves inside the Fantastic Compass to seal the Abyss.",
+    "description": "Abyssal monsters poured from the bottom of The Chasm into Liyue. Morax deployed the Millelith and the Yakshas. The madness-afflicted Electro Yaksha Bosacius and the Millelith sorcerer Boyang lured the dark horde into the deepest cavern, activating the Fantastic Compass to seal the rift from within, sacrificing their lives so that Liyue's surface would remain safe.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": ["Millelith", "Five Yakshas"],
+      "characters": ["Bosacius (Marshal Vana)", "Boyang", "Xiao", "Yelan (Ancestor)"],
+      "spoilerLevel": "Archon Quest Interlude: Perilous Trail"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Interlude Chapter: Act II - Perilous Trail",
+        "category": "quest",
+        "quote": "'Boyang, do you miss home?' 'I do... but look, the monsters can no longer escape. Our people are safe.'"
+      }
+    ]
+  },
+  {
+    "id": "deaths-of-the-archons",
+    "title": "The Sacrifices of Makoto, Rukkhadevata & Egeria",
+    "dateDisplay": "500 Years Ago • Twilight of the Divine",
+    "orderRank": 875,
+    "eraId": "cataclysm",
+    "eraName": "The Cataclysm (500 YA)",
+    "summary": "Three Archons perish in the Cataclysm, altering the divine thrones of Inazuma, Sumeru, and Fontaine forever.",
+    "description": "The Cataclysm exacted a brutal toll on the Seven. In Khaenri'ah, Raiden Makoto was fatally wounded, leaving her mourning twin Ei to forge the Shogun puppet. In Sumeru, Greater Lord Rukkhadevata purged forbidden knowledge from Irminsul, creating Nahida before expending herself. In Fontaine's Tunigi Hollow, Egeria dissolved her body into the Amrita nectar to cleanse the abyssal filth, giving birth to the Pari.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma / Sumeru / Fontaine",
+      "factions": ["The Seven Archons"],
       "characters": ["Raiden Makoto", "Raiden Ei", "Greater Lord Rukkhadevata", "Nahida", "Egeria"],
-      "spoilerLevel": "Sumeru Archon Quest Chapter III: Act V"
+      "spoilerLevel": "Sumeru / Fontaine Archon Quests"
     },
     "sources": [
       {
         "title": "Archon Quest Chapter III: Act V - Where the Boat of Consciousness Crafts",
         "category": "quest",
-        "quote": "'Let the world completely forget me.' With these words, the avatar of Irminsul erased her own corrupted presence from memory."
+        "quote": "'Let the world completely forget me.' With these words, the avatar of Irminsul cleansed the world's memory."
       },
       {
         "title": "Vourukasha's Glow Artifact Set",
         "category": "artifact",
-        "quote": "The former Lord of the Amrita dissolved into pure waters to cleanse the dark stain spreading across the lands."
+        "quote": "The former Lord of the Amrita dissolved into sweet waters to wash away the black mud of the abyss."
+      }
+    ]
+  },
+  {
+    "id": "founding-of-abyss-order",
+    "title": "Chlothar Alberich Founds the Abyss Order",
+    "dateDisplay": "Post-Cataclysm • The Miracle of the Sinner",
+    "orderRank": 905,
+    "eraId": "modern",
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "Chlothar Alberich encounters the Sinner in a Sumeru cavern and founds the Abyss Order to avenge Khaenri'ah.",
+    "description": "Tormented by his half-blood son Caribert's transformation into a hilichurl, the Khaenri'ahn noble Chlothar Alberich wandered Sumeru's Avidya forest. Guided by the Traveler's sibling, Chlothar encountered a mysterious floating crystal radiating dark divinity—the Sinner Vedrfolnir. Witnessing a blasphemous miracle, Chlothar abandoned all gods and proclaimed the founding of the Abyss Order.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": ["Abyss Order", "Alberich Clan"],
+      "characters": ["Chlothar Alberich", "Caribert", "The Sinner (Vedrfolnir)", "Traveler's Sibling"],
+      "spoilerLevel": "Archon Quest Chapter III: Act VI - Caribert"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter III: Act VI - Caribert",
+        "category": "quest",
+        "quote": "'I shall be the herald of the abyss. The gods shall know the fury of those they have discarded!'"
+      }
+    ]
+  },
+  {
+    "id": "tatarasuna-incident",
+    "title": "The Tatarasuna Smelter Incident & Scaramouche's Betrayal",
+    "dateDisplay": "Centuries Ago • Tragedy in Kannazuka",
+    "orderRank": 930,
+    "eraId": "modern",
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "Fatui Harbinger Dottore sabotages the Mikage Furnace, driving the puppet Kabukimono into despair.",
+    "description": "On Inazuma's island of Kannazuka, the wandering puppet created by Ei—known as Kabukimono—lived peacefully among the craftsmen of Tatarasuna. Infiltrating the smelter under the guise of an engineer, the Fatui Harbinger Il Dottore sabotaged the furnace with black jade, murdered Niwa, and tricked the puppet into believing he had been abandoned, setting him on the path to becoming Scaramouche.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": ["Tatarasuna Craftsmen", "Fatui Harbingers"],
+      "characters": ["Scaramouche (Wanderer)", "Niwa Hisahide", "Il Dottore (Escher)", "Raiden Ei"],
+      "spoilerLevel": "Archon Quest Interlude: Inversion of Genesis"
+    },
+    "sources": [
+      {
+        "title": "Husk of Opulent Dreams Artifact Set",
+        "category": "artifact",
+        "quote": "He thought that he had found a home among mortals, until the black smoke choked the smelter and betrayal took his heart."
+      }
+    ]
+  },
+  {
+    "id": "rosalyne-crimson-witch",
+    "title": "Rosalyne Becomes the Crimson Witch of Embers",
+    "dateDisplay": "Post-Cataclysm • The Flame of Grief",
+    "orderRank": 955,
+    "eraId": "modern",
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "Following Rostam's death in the Cataclysm, Rosalyne burns her mortal body to become the Crimson Witch, later joining the Fatui.",
+    "description": "Returning from her studies at the Sumeru Akademiya to find Mondstadt devastated and her beloved Rostam slain by abyssal monsters, Rosalyne-Kruzchka Lohefalter was consumed by grief. She burned away her mortal flesh with liquid fire to incinerate every monster in Teyvat as the Crimson Witch of Flame, before Pierro found her and recruited her as the Eighth Fatui Harbinger, La Signora.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt / Snezhnaya",
+      "factions": ["Fatui Harbingers"],
+      "characters": ["Rosalyne-Kruzchka Lohefalter (La Signora)", "Rostam", "Pierro", "Tsaritsa"],
+      "spoilerLevel": "Crimson Witch of Flames / Inazuma Archon Quest"
+    },
+    "sources": [
+      {
+        "title": "Crimson Witch of Flames Artifact Set",
+        "category": "artifact",
+        "quote": "She poured liquid fire into her veins. Long before the people feared her as a monster, she had wept all her tears upon the grave of her beloved."
       }
     ]
   },
   {
     "id": "traveler-awakens",
-    "title": "The Outlander Awakens: Starfell Valley",
-    "dateDisplay": "Present Day • Modern Era",
-    "orderRank": 960,
+    "title": "The Outlander Awakens: Starfell Beach",
+    "dateDisplay": "Present Day • The Journey Across Teyvat Begins",
+    "orderRank": 985,
     "eraId": "modern",
-    "eraName": "Modern Era (Traveler's Journey)",
-    "summary": "Having slept for five centuries following their separation from their twin, the Traveler awakens on Starfell Beach and fishes up Paimon.",
-    "description": "Separated from their sibling by the Sustainer of Heavenly Principles during their attempted escape from Khaenri'ah's destruction, the Traveler was sealed in cubes of crimson light for 500 years. Awakening on a secluded beach in Mondstadt's Starfell Valley, the Traveler rescues a floating companion named Paimon from drowning. Together, they set forth on a journey across the Seven Nations to find the Seven Archons and reunite with their lost sibling.",
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80",
-        "caption": "Starfell Beach in Mondstadt where the journey begins",
-        "alt": "Golden sunny beach with azure ocean"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80",
-        "caption": "The Statue of The Seven in Starfell Lake",
-        "alt": "Lush emerald hills and lake"
-      }
-    ],
+    "eraName": "Post-Cataclysm & Traveler's Journey",
+    "summary": "Separated from their twin for five hundred years, the Traveler awakens on a Mondstadt beach and rescues Paimon.",
+    "description": "Sealed away by the Sustainer of Heavenly Principles during their escape from the Cataclysm 500 years prior, the Traveler awakens alone on the pristine shores of Starfell Beach in Mondstadt. After fishing up the floating fairy Paimon from the sea, the two embark on an epic odyssey across the Seven Nations to meet the Seven Archons, uncover the secrets of Celestia, and reunite with their lost sibling.",
+    "images": [],
     "tags": {
       "region": "Mondstadt",
       "factions": ["Traveler & Paimon", "Knights of Favonius"],
       "characters": ["Aether / Lumine", "Paimon", "Unknown God"],
-      "spoilerLevel": "Prologue: Act I"
+      "spoilerLevel": "Archon Quest Prologue: Act I"
     },
     "sources": [
       {

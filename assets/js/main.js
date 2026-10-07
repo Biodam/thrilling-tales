@@ -336,12 +336,13 @@ class TeyvatTimelineApp {
     const rect = nodeElement.getBoundingClientRect();
     const tooltipX = rect.left + rect.width / 2;
     const isTop = nodeElement.classList.contains('stagger-top');
-    const tooltipY = isTop ? rect.top - 180 : rect.bottom + 10;
 
-    const firstImage = ev.images?.[0]?.url || '';
+    const validImages = (ev.images || []).filter(img => img && img.url && img.url.trim() !== '');
+    const hasImage = validImages.length > 0;
+    const firstImage = hasImage ? validImages[0].url : '';
 
     this.tooltip.innerHTML = `
-      ${firstImage ? `<img src="${firstImage}" alt="${ev.title}" class="tooltip-img" onerror="this.style.display='none'">` : ''}
+      ${firstImage ? `<img src="${firstImage}" alt="${ev.title}" class="tooltip-img" onerror="this.remove()">` : ''}
       <div class="tooltip-header">
         <span class="tooltip-era" style="color: ${era.color};">${ev.eraName}</span>
         <span class="tooltip-date">${ev.dateDisplay}</span>
@@ -351,8 +352,12 @@ class TeyvatTimelineApp {
       <div class="tooltip-pin-hint">Click node to pin event 📌</div>
     `;
 
+    // Position tooltip dynamically based on rendered height
     this.tooltip.style.left = `${tooltipX}px`;
-    this.tooltip.style.top = `${Math.max(65, Math.min(window.innerHeight - 300, tooltipY))}px`;
+    const tooltipHeight = this.tooltip.offsetHeight || (hasImage ? 260 : 130);
+    const tooltipY = isTop ? rect.top - tooltipHeight - 12 : rect.bottom + 12;
+
+    this.tooltip.style.top = `${Math.max(65, Math.min(window.innerHeight - tooltipHeight - 20, tooltipY))}px`;
     this.tooltip.classList.add('is-visible');
   }
 
@@ -379,7 +384,7 @@ class TeyvatTimelineApp {
     this.inspectorTitle.textContent = ev.title;
     this.inspectorDesc.textContent = ev.description;
 
-    // Render Image Carousel
+    // Render Image Carousel (or hide if empty)
     this.renderCarousel(ev.images || []);
 
     // Render Tags
@@ -399,25 +404,38 @@ class TeyvatTimelineApp {
   }
 
   renderCarousel(images) {
-    if (!this.carouselSlides || !this.carouselDots) return;
+    if (!this.carousel || !this.carouselSlides || !this.carouselDots) return;
     this.carouselSlides.innerHTML = '';
     this.carouselDots.innerHTML = '';
 
-    if (!images || images.length === 0) {
+    const validImages = (images || []).filter(img => img && img.url && img.url.trim() !== '');
+
+    // If no valid images, completely hide the carousel UI
+    if (validImages.length === 0) {
       this.carousel.style.display = 'none';
       return;
     }
 
     this.carousel.style.display = 'block';
 
-    images.forEach((img, idx) => {
+    validImages.forEach((img, idx) => {
       // Slide element
       const slide = document.createElement('div');
       slide.className = `carousel-slide ${idx === 0 ? 'active' : ''}`;
       slide.innerHTML = `
-        <img src="${img.url}" alt="${img.alt || 'Event artwork'}" class="carousel-img" onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80'">
+        <img src="${img.url}" alt="${img.alt || 'Event artwork'}" class="carousel-img">
         ${img.caption ? `<div class="carousel-caption">${img.caption}</div>` : ''}
       `;
+
+      // Handle image load error: if image fails, remove this slide
+      const imgEl = slide.querySelector('img');
+      imgEl.addEventListener('error', () => {
+        slide.remove();
+        if (this.carouselSlides.children.length === 0) {
+          this.carousel.style.display = 'none';
+        }
+      });
+
       this.carouselSlides.appendChild(slide);
 
       // Dot element
@@ -427,7 +445,7 @@ class TeyvatTimelineApp {
       this.carouselDots.appendChild(dot);
     });
 
-    const hasMultiple = images.length > 1;
+    const hasMultiple = validImages.length > 1;
     this.prevBtn.style.display = hasMultiple ? 'flex' : 'none';
     this.nextBtn.style.display = hasMultiple ? 'flex' : 'none';
     this.carouselDots.style.display = hasMultiple ? 'flex' : 'none';
