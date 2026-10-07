@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline Preview (Hello World) — Thrilling Tales</title>
+  <meta name="description" content="Interactive Hello World preview of the Teyvat Timeline hosted on GitHub Pages in a subfolder.">
+  <!-- Note: Relative path pointing to parent assets directory -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="../index.html" class="brand">
+        <span class="brand-icon">✨</span>
+        <span class="brand-title">Thrilling Tales</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">← Back to Home</a></li>
+        <li><a href="./index.html" class="nav-link active">Timeline Subpage</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Header -->
+    <div class="timeline-header">
+      <div class="badge-tag">GitHub Pages Subpage Preview</div>
+      <h1 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 0.5rem;">
+        Hello World from <span style="color: var(--gold-celestial);">Teyvat!</span> 🌍
+      </h1>
+      <p style="color: var(--text-muted); max-width: 750px;">
+        This page confirms your subpage routing on GitHub Pages (<code>/timeline/</code>). All static assets and internal navigation resolve using relative paths (<code>../</code>), ensuring complete compatibility when hosted inside a repository subfolder.
+      </p>
+    </div>
+
+    <!-- Timeline Interactive Controls -->
+    <div class="timeline-controls">
+      <div class="filter-pills">
+        <span style="font-size: 0.85rem; color: var(--text-muted); align-self: center; margin-right: 0.5rem;">Filter Era:</span>
+        <button class="pill-btn active" data-era="all">All Eras</button>
+        <button class="pill-btn" data-era="primordial">Primordial</button>
+        <button class="pill-btn" data-era="archon-war">Archon War</button>
+        <button class="pill-btn" data-era="cataclysm">The Cataclysm</button>
+        <button class="pill-btn" data-era="modern">Modern Era</button>
+      </div>
+      <div id="event-count" style="font-size: 0.85rem; color: var(--gold-celestial); font-weight: 500;">
+        Showing 4 canonical milestones
+      </div>
+    </div>
+
+    <!-- Timeline Track (Hello World Interactive Milestones) -->
+    <div class="timeline-track">
+
+      <!-- Milestone 1: Primordial Era -->
+      <article class="timeline-node" data-era="primordial">
+        <div class="node-pin" style="background: var(--cyan-irminsul); box-shadow: 0 0 10px var(--cyan-irminsul);"></div>
+        <div class="node-content">
+          <div class="node-header">
+            <span class="node-era-badge badge-primordial">Era of the Primordial One</span>
+            <span class="node-timestamp">Pre-Genesis • ~Unknown Millennium</span>
+          </div>
+          <h2 class="node-title">Phanes Arrives & The Sovereigns Fall</h2>
+          <p class="node-body">
+            The Primordial One (Phanes) arrives in Teyvat and battles the Seven Dragon Sovereigns for forty years. With the creation of the Four Shades, Phanes creates heaven, earth, and the first unified human civilization.
+          </p>
+          <div class="source-box">
+            "When the Doves Held Branches: The Primordial One may have been Phanes. It had wings and a crown, and was born from an egg, neither male nor female..."
+            <div style="margin-top: 0.35rem; font-weight: 600; color: var(--cyan-irminsul);">— Before Sun and Moon</div>
+          </div>
+          <div class="node-meta">
+            <span class="meta-tag">Factions: Celestia, Dragon Sovereigns</span>
+            <span class="meta-tag">Location: Primordial Teyvat</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Milestone 2: Archon War -->
+      <article class="timeline-node" data-era="archon-war">
+        <div class="node-pin" style="background: var(--gold-celestial); box-shadow: 0 0 10px var(--gold-celestial);"></div>
+        <div class="node-content">
+          <div class="node-header">
+            <span class="node-era-badge badge-archon-war">The Archon War</span>
+            <span class="node-timestamp">Circa 3,700 – 2,000 YA</span>
+          </div>
+          <h2 class="node-title">The Fall of Decarabian & Rise of Barbatos</h2>
+          <p class="node-body">
+            In Old Mondstadt (Stormterror's Lair), the nameless bard, Amos, the knight, and a wind spirit lead an uprising against the God of Storms, Decarabian. Decarabian falls, and the wind spirit ascends as the Anemo Archon, Barbatos.
+          </p>
+          <div class="source-box">
+            "A nameless wind spirit joined with a young boy... and from the fury of the storm arose the breeze of freedom."
+            <div style="margin-top: 0.35rem; font-weight: 600; color: var(--gold-celestial);">— Biography of Gunnhildr & Breeze Amidst the Forest</div>
+          </div>
+          <div class="node-meta">
+            <span class="meta-tag">Factions: Gunnhildr Clan, Old Mondstadt</span>
+            <span class="meta-tag">Location: Mondstadt</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Milestone 3: The Cataclysm -->
+      <article class="timeline-node" data-era="cataclysm">
+        <div class="node-pin" style="background: var(--purple-abyss); box-shadow: 0 0 10px var(--purple-abyss);"></div>
+        <div class="node-content">
+          <div class="node-header">
+            <span class="node-era-badge badge-cataclysm">The Cataclysm</span>
+            <span class="node-timestamp">500 Years Ago</span>
+          </div>
+          <h2 class="node-title">The Fall of Khaenri'ah & Abyssal Outbreak</h2>
+          <p class="node-body">
+            The subterranean eclipse dynasty of Khaenri'ah collapses under abyssal corruption. Celestia and the Seven Archons intervene, leaving Khaenri'ah ruined and its people afflicted with the curse of the wilderness and immortality.
+          </p>
+          <div class="source-box">
+            "The black sun fell, and the disaster brought contamination from the deepest void. Monsters of the Abyss surged across the seven nations..."
+            <div style="margin-top: 0.35rem; font-weight: 600; color: var(--purple-abyss);">— Deepwood Memories & Breeze Amidst the Forest Vol. 2</div>
+          </div>
+          <div class="node-meta">
+            <span class="meta-tag">Factions: Khaenri'ah, Abyss Order, The Seven</span>
+            <span class="meta-tag">Location: Khaenri'ah & Global Teyvat</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Milestone 4: Modern Era -->
+      <article class="timeline-node" data-era="modern">
+        <div class="node-pin" style="background: var(--blue-hydro); box-shadow: 0 0 10px var(--blue-hydro);"></div>
+        <div class="node-content">
+          <div class="node-header">
+            <span class="node-era-badge badge-modern">Modern Era</span>
+            <span class="node-timestamp">Present Day</span>
+          </div>
+          <h2 class="node-title">Hello World: The Traveler Awakens</h2>
+          <p class="node-body">
+            Separated from their twin by the Sustainer of Heavenly Principles, the Traveler awakens on the shores of Starfell Beach in Mondstadt, fishes up Paimon, and begins their journey across the Seven Nations of Teyvat.
+          </p>
+          <div class="source-box">
+            "Two twins, traveling between worlds, were intercepted by an unknown god... So began the journey through the seven kingdoms."
+            <div style="margin-top: 0.35rem; font-weight: 600; color: var(--blue-hydro);">— Archon Quest Prologue: Act I - The Outlander Who Caught the Wind</div>
+          </div>
+          <div class="node-meta">
+            <span class="meta-tag">Factions: Traveler & Paimon</span>
+            <span class="meta-tag">Location: Mondstadt (Starfell Beach)</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Subpage Navigation Confirmation Box -->
+    <div class="feature-card" style="margin-bottom: 4rem; border: 1px dashed var(--gold-celestial); text-align: center;">
+      <h3 class="feature-title">🎉 GitHub Pages Subfolder Setup Complete!</h3>
+      <p class="feature-desc" style="max-width: 600px; margin: 0 auto 1.5rem;">
+        You are viewing the subpage at <code>./timeline/index.html</code>. Both this page and the root page are ready for hosting on GitHub Pages in any repository subfolder.
+      </p>
+      <a href="../index.html" class="btn btn-primary">← Return to Landing Page</a>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Thrilling Tales — Teyvat Interactive Timeline. Subpage demonstration.</p>
+    </div>
+  </footer>
+
+  <!-- Relative path to parent script -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

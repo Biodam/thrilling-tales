@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor & IDE configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node / Build artifacts (if bundler is introduced later)
+node_modules/
+dist/
+build/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
