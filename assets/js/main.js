@@ -216,10 +216,7 @@ class TeyvatTimelineApp {
       btn.textContent = era.shortName || era.name;
       btn.style.borderColor = `${era.color}40`;
       btn.addEventListener('click', () => {
-        this.activeEra = era.id;
-        this.updateActiveEraButton(btn);
-        this.applyFilters();
-        this.jumpToEra(era);
+        this.showEraInfo(era);
       });
       this.eraJumperGroup.appendChild(btn);
     });
@@ -245,26 +242,114 @@ class TeyvatTimelineApp {
 
     this.eras.forEach(era => {
       const band = document.createElement('div');
-      band.className = 'era-band';
+      band.className = `era-band ${this.activeEra === era.id ? 'is-active-era' : ''}`;
+      band.setAttribute('data-id', era.id);
       const widthPct = ((era.endRank - era.startRank) / 1000) * 100;
       band.style.width = `${widthPct}%`;
       band.style.background = era.bgGradient || 'rgba(255,255,255,0.05)';
       band.style.borderColor = `${era.color}40`;
+      band.title = `Click to view lore and milestones for ${era.name}`;
 
+      // Clean title without subtitle text to prevent text overflow
       band.innerHTML = `
-        <div class="era-band-title" style="color: ${era.color};">${era.name}</div>
-        <div class="era-band-dates">${era.description}</div>
+        <div class="era-band-title" style="color: ${era.color};">
+          <span>${era.shortName || era.name}</span>
+          <span class="era-info-icon" aria-label="Era Information">ℹ️</span>
+        </div>
       `;
 
       band.addEventListener('click', () => {
-        this.activeEra = era.id;
-        this.renderEraButtons();
-        this.applyFilters();
-        this.jumpToEra(era);
+        this.showEraInfo(era);
       });
 
       this.eraBands.appendChild(band);
     });
+  }
+
+  showEraInfo(era) {
+    this.activeEra = era.id;
+    this.renderEraButtons();
+    this.applyFilters();
+    this.jumpToEra(era);
+
+    // Highlight active era band
+    document.querySelectorAll('.era-band').forEach(b => {
+      b.classList.toggle('is-active-era', b.getAttribute('data-id') === era.id);
+    });
+
+    // Deselect any pinned event node
+    document.querySelectorAll('.event-node').forEach(n => n.classList.remove('is-active'));
+    this.pinnedEvent = null;
+
+    // Populate Inspector Drawer with rich Era information
+    this.inspectorEra.textContent = 'Historical Epoch';
+    this.inspectorEra.style.color = era.color;
+    this.inspectorDate.textContent = `Epoch Rank: ${era.startRank} – ${era.endRank}`;
+    this.inspectorTitle.textContent = era.name;
+    this.inspectorDesc.textContent = era.longDescription || era.description;
+
+    // Hide image carousel for era overview
+    if (this.carousel) this.carousel.style.display = 'none';
+
+    // Populate Tags with Key Figures & Dominant Factions
+    if (this.inspectorTags) {
+      this.inspectorTags.innerHTML = '';
+      if (era.dominantFactions && era.dominantFactions.length) {
+        era.dominantFactions.forEach(f => {
+          this.inspectorTags.innerHTML += `<span class="tag-badge">🛡️ ${f}</span>`;
+        });
+      }
+      if (era.keyFigures && era.keyFigures.length) {
+        era.keyFigures.forEach(k => {
+          this.inspectorTags.innerHTML += `<span class="tag-badge" style="border-color: ${era.color}60; color: ${era.color};">👑 ${k}</span>`;
+        });
+      }
+    }
+
+    // Populate Sources section with an interactive list of events in this era
+    if (this.inspectorSources) {
+      const eraEvents = this.events.filter(e => e.eraId === era.id);
+      this.inspectorSources.innerHTML = `
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+          ${eraEvents.length} canonical milestone${eraEvents.length === 1 ? '' : 's'} recorded. Click any to navigate:
+        </div>
+        <div class="era-milestones-container">
+          ${eraEvents.map(e => `
+            <button class="era-milestone-btn" data-event-id="${e.id}">
+              <span class="era-milestone-date">${e.dateDisplay}</span>
+              <span class="era-milestone-title">${e.title}</span>
+            </button>
+          `).join('')}
+        </div>
+      `;
+
+      // Attach click listeners to jump directly to any event in this era
+      this.inspectorSources.querySelectorAll('.era-milestone-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const eventId = btn.getAttribute('data-event-id');
+          const targetEvent = this.events.find(e => e.id === eventId);
+          if (targetEvent) {
+            this.jumpToEvent(targetEvent);
+          }
+        });
+      });
+    }
+
+    this.inspector.classList.add('is-open');
+  }
+
+  jumpToEvent(ev) {
+    const canvasWidth = this.canvas.offsetWidth || 3800;
+    const availableWidth = canvasWidth - 200;
+    const posX = 100 + (ev.orderRank / 1000) * availableWidth;
+    
+    this.viewport.scrollTo({
+      left: Math.max(0, posX - this.viewport.offsetWidth / 2),
+      behavior: 'smooth'
+    });
+
+    const nodeElement = document.querySelector(`.event-node[data-id="${ev.id}"]`);
+    this.pinEvent(ev, nodeElement);
   }
 
   renderRuler() {
@@ -374,6 +459,7 @@ class TeyvatTimelineApp {
     // Mark active node
     document.querySelectorAll('.event-node').forEach(n => n.classList.remove('is-active'));
     if (nodeElement) nodeElement.classList.add('is-active');
+    document.querySelectorAll('.era-band').forEach(b => b.classList.remove('is-active-era'));
 
     const era = this.eras.find(e => e.id === ev.eraId) || { color: '#e5c158' };
 
@@ -400,6 +486,7 @@ class TeyvatTimelineApp {
   unpinEvent() {
     this.pinnedEvent = null;
     document.querySelectorAll('.event-node').forEach(n => n.classList.remove('is-active'));
+    document.querySelectorAll('.era-band').forEach(b => b.classList.remove('is-active-era'));
     this.inspector.classList.remove('is-open');
   }
 

@@ -267,34 +267,94 @@ body {
   height: 100%;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
-  padding: 0.5rem 0.85rem;
+  padding: 0.4rem 0.75rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
 }
 
 .era-band:hover {
   transform: translateY(-2px);
   border-color: var(--gold-celestial);
+  box-shadow: 0 4px 16px rgba(229, 193, 88, 0.25);
+}
+
+.era-band.is-active-era {
+  border-color: var(--gold-celestial);
+  box-shadow: 0 0 16px rgba(229, 193, 88, 0.4), inset 0 0 10px rgba(229, 193, 88, 0.15);
 }
 
 .era-band-title {
   font-family: var(--font-serif);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--text-main);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-.era-band-dates {
+.era-info-icon {
   font-size: 0.7rem;
-  color: var(--text-muted);
-  white-space: nowrap;
+  opacity: 0.65;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.era-band:hover .era-info-icon {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* Era Milestones in Inspector Drawer */
+.era-milestones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.era-milestone-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.85rem;
+  color: var(--text-main);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.era-milestone-btn:hover {
+  background: rgba(229, 193, 88, 0.12);
+  border-color: var(--gold-celestial);
+  transform: translateX(4px);
+  box-shadow: 0 2px 10px rgba(229, 193, 88, 0.2);
+}
+
+.era-milestone-date {
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  color: var(--gold-celestial);
+}
+
+.era-milestone-title {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
 }
 
 /* Horizontal Central Axis */
