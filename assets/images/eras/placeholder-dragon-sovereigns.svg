@@ -42,7 +42,7 @@
   <text x="960" y="430" font-size="42" text-anchor="middle" fill="#38bdf8">🐉</text>
 
   <!-- Era Title -->
-  <text x="960" y="490" font-family="'Cinzel', 'Georgia', serif" font-size="34" font-weight="800" text-anchor="middle" fill="#f8fafc" letter-spacing="6">OLD WORLD (SEVEN SOVEREIGNS)</text>
+  <text x="960" y="490" font-family="'Cinzel', 'Georgia', serif" font-size="34" font-weight="800" text-anchor="middle" fill="#f8fafc" letter-spacing="6">SEVEN SOVEREIGNS</text>
 
   <!-- Subtitle Range -->
   <text x="960" y="535" font-family="'Cinzel', 'Georgia', serif" font-size="18" font-weight="600" text-anchor="middle" fill="#38bdf8" letter-spacing="2">>7,000 Years Ago • Primordial Light Realm</text>

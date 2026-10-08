@@ -1,8 +1,8 @@
 [
   {
     "id": "dragon-sovereigns",
-    "name": "Old World (Seven Sovereigns)",
-    "shortName": "Old World",
+    "name": "Seven Sovereigns",
+    "shortName": "Seven Sovereigns",
     "yearRange": ">7,000 Years Ago",
     "color": "#38bdf8",
     "bgGradient": "linear-gradient(90deg, rgba(56, 189, 248, 0.2), rgba(95, 227, 219, 0.15))",
@@ -78,8 +78,8 @@
   },
   {
     "id": "interim-period",
-    "name": "Interim Period (Ancient Kingdoms)",
-    "shortName": "Ancient Kingdoms",
+    "name": "Interim Period",
+    "shortName": "Interim Period",
     "yearRange": "~4,000 – 3,700 YA",
     "color": "#fb923c",
     "bgGradient": "linear-gradient(90deg, rgba(251, 146, 60, 0.2), rgba(229, 193, 88, 0.15))",
@@ -106,8 +106,8 @@
   },
   {
     "id": "archon-war",
-    "name": "The Archon War (~3,700 – 2,000 YA)",
-    "shortName": "Archon War",
+    "name": "The Archon War",
+    "shortName": "The Archon War",
     "yearRange": "~3,700 – 2,000 YA",
     "color": "#e5c158",
     "bgGradient": "linear-gradient(90deg, rgba(229, 193, 88, 0.2), rgba(234, 179, 8, 0.15))",
@@ -138,8 +138,8 @@
   },
   {
     "id": "post-archon-war",
-    "name": "Post-Archon War (~2,000 – 500 YA)",
-    "shortName": "Mortal Nations",
+    "name": "Era of the Seven",
+    "shortName": "Era of the Seven",
     "yearRange": "~2,000 – 500 YA",
     "color": "#34d399",
     "bgGradient": "linear-gradient(90deg, rgba(52, 211, 153, 0.2), rgba(56, 189, 248, 0.15))",
@@ -167,7 +167,7 @@
   },
   {
     "id": "cataclysm",
-    "name": "The Cataclysm (500 YA)",
+    "name": "The Cataclysm",
     "shortName": "The Cataclysm",
     "yearRange": "500 Years Ago",
     "color": "#a855f7",
@@ -200,8 +200,8 @@
   },
   {
     "id": "modern",
-    "name": "Post-Cataclysm & Traveler's Journey",
-    "shortName": "Modern Era",
+    "name": "Traveler's Journey",
+    "shortName": "Traveler's Journey",
     "yearRange": "500 YA – Present",
     "color": "#60a5fa",
     "bgGradient": "linear-gradient(90deg, rgba(96, 165, 250, 0.2), rgba(129, 140, 248, 0.15))",
