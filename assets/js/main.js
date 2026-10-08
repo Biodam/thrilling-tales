@@ -121,7 +121,7 @@ class TeyvatTimelineApp {
   computePanelLayout() {
     const startX = 180;
     const startY = 140;
-    const panelGap = 220;
+    const panelGap = 200;
 
     let currentX = startX;
 
@@ -129,26 +129,10 @@ class TeyvatTimelineApp {
       const eraEvents = this.events.filter(e => e.eraId === era.id);
       const count = eraEvents.length;
 
-      // Determine columns and width based on number of events in this epoch
-      let columns = 3;
-      let width = 1220;
-
-      if (count <= 2) {
-        columns = 1;
-        width = 560;
-      } else if (count <= 4) {
-        columns = 2;
-        width = 880;
-      } else if (count <= 6) {
-        columns = 3;
-        width = 1220;
-      } else if (count <= 8) {
-        columns = 4;
-        width = 1580;
-      } else {
-        columns = Math.min(6, Math.ceil(count / 2));
-        width = columns * 370 + 80;
-      }
+      // Event card width is 340px with 20px gap.
+      // Total track width for N cards is count * 360px - 20px + panel horizontal padding (~60px).
+      // Minimum width 880px ensures bottom artwork showcase (520px) and lore narrative have ample breathing room.
+      const width = Math.max(880, count * 360 + 60);
 
       const layoutItem = {
         id: era.id,
@@ -156,7 +140,6 @@ class TeyvatTimelineApp {
         x: currentX,
         y: startY,
         width,
-        columns,
         eventCount: count,
         color: era.color
       };
@@ -166,7 +149,7 @@ class TeyvatTimelineApp {
     });
 
     const totalWidth = currentX + 300;
-    this.worldBounds = { width: Math.max(12500, totalWidth), height: 1400 };
+    this.worldBounds = { width: Math.max(18000, totalWidth), height: 1400 };
 
     if (this.canvasWorld) {
       this.canvasWorld.style.width = `${this.worldBounds.width}px`;
@@ -388,9 +371,9 @@ class TeyvatTimelineApp {
     const vHeight = this.viewport.clientHeight;
 
     // Desired zoom to frame the era panel comfortably with margins
-    const targetZoom = Math.min(1.0, Math.max(0.68, Math.min((vWidth - 120) / layout.width, (vHeight - 140) / 800)));
+    const targetZoom = Math.min(1.0, Math.max(0.42, Math.min((vWidth - 120) / layout.width, (vHeight - 140) / 720)));
     const targetX = (vWidth / 2) - (layout.x + layout.width / 2) * targetZoom;
-    const targetY = 80;
+    const targetY = (vHeight / 2) - (layout.y + 340) * targetZoom;
 
     // Highlight the active panel
     document.querySelectorAll('.spatial-era-panel').forEach(p => {
@@ -478,33 +461,31 @@ class TeyvatTimelineApp {
       </defs>
     `;
 
-    // Draw cosmic rails between adjacent era panels
+    // Draw cosmic rails between adjacent era panels (aligned with the central timeline rail)
     for (let i = 0; i < this.panelLayout.length - 1; i++) {
       const current = this.panelLayout[i];
       const next = this.panelLayout[i + 1];
 
       const x1 = current.x + current.width;
-      const y1 = current.y + 165; // Center of hero banner
+      const railY = current.y + 324;
       const x2 = next.x;
-      const y2 = next.y + 165;
 
       const midX = (x1 + x2) / 2;
 
-      // Cubic curve
+      // Cosmic bridge segment
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-      path.setAttribute('d', `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`);
+      path.setAttribute('d', `M ${x1} ${railY} L ${x2} ${railY}`);
       path.setAttribute('fill', 'none');
       path.setAttribute('stroke', 'url(#celestialRailGrad)');
-      path.setAttribute('stroke-width', '3');
-      path.setAttribute('stroke-dasharray', '8 6');
+      path.setAttribute('stroke-width', '4');
       path.setAttribute('filter', 'url(#railGlow)');
       this.connectorsSvg.appendChild(path);
 
       // Celestial waypoint dot
       const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       circle.setAttribute('cx', midX);
-      circle.setAttribute('cy', (y1 + y2) / 2);
-      circle.setAttribute('r', '5');
+      circle.setAttribute('cy', railY);
+      circle.setAttribute('r', '6');
       circle.setAttribute('fill', '#e5c158');
       circle.setAttribute('filter', 'url(#railGlow)');
       this.connectorsSvg.appendChild(circle);
@@ -524,7 +505,6 @@ class TeyvatTimelineApp {
       panel.style.top = `${layout.y}px`;
       panel.style.setProperty('--panel-glow', `${era.color}40`);
       panel.style.setProperty('--panel-width', `${layout.width}px`);
-      panel.style.setProperty('--panel-columns', layout.columns);
 
       // Determine hero artwork based on era and modern toggle
       let currentHeroArt = era.bgImage;
@@ -534,33 +514,90 @@ class TeyvatTimelineApp {
           : era.bgImage;
       }
 
-      // Hero Banner HTML
-      const heroBannerHtml = `
-        <div class="era-hero-banner">
-          <img src="${currentHeroArt}" alt="${era.name}" class="era-hero-img" id="hero-img-${era.id}">
-          <div class="era-hero-overlay"></div>
-          <div class="era-hero-content">
-            <div class="era-hero-badge-row">
-              <span class="era-epoch-badge" style="color: ${era.color}; border-color: ${era.color}60;">
-                Epoch ${String(index + 1).padStart(2, '0')} / ${String(this.eras.length).padStart(2, '0')}
-              </span>
-              <span class="era-hero-year">${era.yearRange || ''}</span>
-              ${era.id === 'modern' ? `
-                <div class="artwork-switcher-group" title="Switch Modern Era Artworks">
-                  <button class="art-switch-btn ${this.modernArtwork === 'paimon' ? 'active' : ''}" data-art="paimon">
-                    <span>✨ Paimon & Traveler</span>
-                  </button>
-                  <button class="art-switch-btn ${this.modernArtwork === 'snez' ? 'active' : ''}" data-art="snez">
-                    <span>❄️ Snezhnaya</span>
-                  </button>
-                </div>
-              ` : ''}
+      // Events for this era
+      const eraEvents = this.events.filter(e => e.eraId === era.id);
+
+      // Top Header
+      const headerHtml = `
+        <div class="era-panel-header">
+          <div class="era-panel-header-left">
+            <span class="era-epoch-badge" style="color: ${era.color}; border-color: ${era.color}60;">
+              Epoch ${String(index + 1).padStart(2, '0')} / ${String(this.eras.length).padStart(2, '0')}
+            </span>
+            <span class="era-hero-year">${era.yearRange || ''}</span>
+          </div>
+          <div class="era-panel-header-right">
+            <span>${eraEvents.length} canonical milestones</span>
+          </div>
+        </div>
+      `;
+
+      // Events Top Track (Strictly ON TOP of the timeline rail)
+      const eventsTrackHtml = `
+        <div class="era-events-top-track" id="events-track-${era.id}"></div>
+      `;
+
+      // Central Timeline Rail (Dividing axis)
+      const railHtml = `
+        <div class="era-timeline-rail" style="--rail-gradient: linear-gradient(90deg, ${era.color}ee, ${era.color}77);"></div>
+      `;
+
+      // Key figures & dominant factions chips
+      const keyFiguresChips = (era.keyFigures && era.keyFigures.length)
+        ? `
+          <div class="era-meta-block">
+            <span class="era-meta-label">KEY FIGURES:</span>
+            <div class="era-meta-chips">
+              ${era.keyFigures.map(fig => `<span class="era-meta-chip figure">👑 ${fig}</span>`).join('')}
+            </div>
+          </div>
+        `
+        : '';
+
+      const dominantFactionsChips = (era.dominantFactions && era.dominantFactions.length)
+        ? `
+          <div class="era-meta-block">
+            <span class="era-meta-label">FACTIONS:</span>
+            <div class="era-meta-chips">
+              ${era.dominantFactions.map(fac => `<span class="era-meta-chip faction">🛡️ ${fac}</span>`).join('')}
+            </div>
+          </div>
+        `
+        : '';
+
+      // Extra Information Section (BELOW timeline rail, inside era panel area)
+      const extraInfoHtml = `
+        <div class="era-extra-info-bottom">
+          <div class="era-extra-media">
+            <img src="${currentHeroArt}" alt="${era.name}" class="era-extra-art-img" id="era-art-${era.id}">
+            <div class="era-extra-art-overlay"></div>
+            ${era.id === 'modern' ? `
+              <div class="artwork-switcher-group" title="Switch Modern Era Artworks">
+                <button class="art-switch-btn ${this.modernArtwork === 'paimon' ? 'active' : ''}" data-art="paimon">
+                  <span>✨ Paimon & Traveler</span>
+                </button>
+                <button class="art-switch-btn ${this.modernArtwork === 'snez' ? 'active' : ''}" data-art="snez">
+                  <span>❄️ Snezhnaya</span>
+                </button>
+              </div>
+            ` : ''}
+          </div>
+
+          <div class="era-extra-lore">
+            <div>
+              <div class="era-lore-title-row">
+                <h3 class="era-lore-title" style="color: ${era.color};">${era.name}</h3>
+                <span class="era-lore-years">${era.yearRange || ''}</span>
+              </div>
+              <p class="era-lore-text">${era.longDescription || era.description}</p>
             </div>
 
-            <h2 class="era-hero-title">${era.name}</h2>
-            <p class="era-hero-desc">${era.description}</p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+              ${keyFiguresChips}
+              ${dominantFactionsChips}
+            </div>
 
-            <div class="era-hero-actions">
+            <div class="era-lore-actions">
               <button class="era-inspect-btn" data-era-id="${era.id}" title="Inspect full epoch lore and key figures">
                 <span>Inspect Epoch Lore</span>
                 <span>ℹ️</span>
@@ -576,35 +613,18 @@ class TeyvatTimelineApp {
         </div>
       `;
 
-      // Events for this era
-      const eraEvents = this.events.filter(e => e.eraId === era.id);
+      panel.innerHTML = headerHtml + eventsTrackHtml + railHtml + extraInfoHtml;
 
-      const eventsHtml = `
-        <div class="era-panel-body">
-          <div class="era-events-header">
-            <div class="era-events-title">
-              <span>Historical Milestones</span>
-              <span class="era-events-count-badge">${eraEvents.length} canonical events</span>
-            </div>
-          </div>
-          <div class="era-events-grid" id="events-grid-${era.id}">
-            <!-- Event cards rendered below -->
-          </div>
-        </div>
-      `;
-
-      panel.innerHTML = heroBannerHtml + eventsHtml;
-
-      // Event Card Injection
-      const gridEl = panel.querySelector(`#events-grid-${era.id}`);
-      if (gridEl) {
+      // Inject event card wrappers into top track
+      const trackEl = panel.querySelector(`#events-track-${era.id}`);
+      if (trackEl) {
         eraEvents.forEach(ev => {
-          const card = this.createEventCard(ev, era);
-          gridEl.appendChild(card);
+          const cardWrapper = this.createEventCardWrapper(ev, era);
+          trackEl.appendChild(cardWrapper);
         });
       }
 
-      // Event Listeners for Hero Actions
+      // Event Listeners for Epoch Inspect Button
       panel.querySelector('.era-inspect-btn')?.addEventListener('click', (e) => {
         e.stopPropagation();
         this.showEraInfo(era);
@@ -623,8 +643,8 @@ class TeyvatTimelineApp {
               b.classList.toggle('active', b.getAttribute('data-art') === chosenArt);
             });
 
-            // Update Hero Image
-            const imgEl = panel.querySelector(`#hero-img-${era.id}`);
+            // Update Image
+            const imgEl = panel.querySelector(`#era-art-${era.id}`);
             if (imgEl) {
               imgEl.src = chosenArt === 'snez' && era.alternateBgImage ? era.alternateBgImage : era.bgImage;
             }
@@ -636,7 +656,11 @@ class TeyvatTimelineApp {
     });
   }
 
-  createEventCard(ev, era) {
+  createEventCardWrapper(ev, era) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'spatial-event-card-wrapper';
+    wrapper.style.setProperty('--card-accent', era.color);
+
     const card = document.createElement('div');
     const isPinned = this.pinnedEvent?.id === ev.id;
     card.className = `spatial-event-card ${isPinned ? 'is-pinned-active' : ''}`;
@@ -662,6 +686,20 @@ class TeyvatTimelineApp {
       </div>
     `;
 
+    // Connector stem & pin down to timeline rail
+    const stem = document.createElement('div');
+    stem.className = 'card-timeline-stem';
+    stem.style.background = era.color;
+
+    const pin = document.createElement('div');
+    pin.className = 'card-timeline-pin';
+    pin.style.borderColor = era.color;
+    pin.style.boxShadow = `0 0 10px ${era.color}`;
+
+    wrapper.appendChild(card);
+    wrapper.appendChild(stem);
+    wrapper.appendChild(pin);
+
     // Click to pin
     card.addEventListener('click', (e) => {
       // Don't pin if user was actively dragging
@@ -681,7 +719,7 @@ class TeyvatTimelineApp {
       this.hideTooltip();
     });
 
-    return card;
+    return wrapper;
   }
 
   setupMinimapThumbs() {
@@ -742,11 +780,14 @@ class TeyvatTimelineApp {
 
         const cardEl = document.querySelector(`.spatial-event-card[data-id="${ev.id}"]`);
         if (cardEl) {
+          const wrapperEl = cardEl.closest('.spatial-event-card-wrapper') || cardEl;
           if (matchesSearch) {
+            wrapperEl.style.display = 'flex';
             cardEl.style.display = 'flex';
             matchCount++;
             eraMatchCount++;
           } else {
+            wrapperEl.style.display = 'none';
             cardEl.style.display = 'none';
           }
         }
