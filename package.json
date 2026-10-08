@@ -1,0 +1,23 @@
+{
+  "name": "thrilling-tales",
+  "version": "1.0.0",
+  "description": "Interactive chronological timeline visualizer for Genshin Impact lore",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.js",
+    "enrich": "node scripts/enrich-lore.js",
+    "serve": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "genshin-impact",
+    "lore",
+    "timeline",
+    "interactive"
+  ],
+  "author": "Biodam",
+  "license": "MIT",
+  "devDependencies": {
+    "genshin-db": "^5.1.18"
+  }
+}
