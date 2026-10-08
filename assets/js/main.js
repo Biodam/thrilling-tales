@@ -1095,7 +1095,6 @@ class TeyvatTimelineApp {
   }
 
   createEventCardWrapper(ev, era) {
-    const t = I18N[this.currentLang] || I18N.en;
     const wrapper = document.createElement('div');
     wrapper.className = 'spatial-event-card-wrapper';
     wrapper.style.setProperty('--card-accent', era.color);
@@ -1110,18 +1109,15 @@ class TeyvatTimelineApp {
       ? ev.dateDisplay.split('•')[1].trim()
       : ev.dateDisplay;
 
-    const sourceCount = (ev.sources || []).length;
-
     card.innerHTML = `
-      <div class="event-card-header">
-        <span class="event-card-year">${ev.yearsAgoDisplay || ''}</span>
-        <span class="event-card-date" title="${ev.dateDisplay}">${subDate}</span>
-      </div>
-      <h3 class="event-card-title">${ev.title}</h3>
-      <p class="event-card-summary">${ev.summary}</p>
-      <div class="event-card-footer">
-        <span class="event-card-region">📍 ${ev.tags?.region || 'Teyvat'}</span>
-        ${sourceCount > 0 ? `<span class="event-card-source-count">📖 ${t.sources(sourceCount)}</span>` : ''}
+      <div class="event-card-body">
+        <h3 class="event-card-title">${ev.title}</h3>
+        ${subDate ? `<div class="event-card-date" title="${ev.dateDisplay}">${subDate}</div>` : ''}
+        ${ev.yearsAgoDisplay ? `
+          <div class="event-card-year-container">
+            <span class="event-card-year">${ev.yearsAgoDisplay}</span>
+          </div>
+        ` : ''}
       </div>
     `;
 
