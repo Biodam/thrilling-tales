@@ -162,7 +162,7 @@ class TeyvatTimelineApp {
 
     // Mouse Pan Interaction
     this.viewport.addEventListener('mousedown', (e) => {
-      // Allow dragging on empty canvas or when holding spacebar, but not when clicking buttons or links
+      // Allow dragging on canvas or when holding spacebar, but not when clicking buttons, links, or inputs
       const isInteractive = e.target.closest('button, a, input, select');
       if (isInteractive && !this.isSpacePressed) return;
 
@@ -177,7 +177,7 @@ class TeyvatTimelineApp {
       if (!this.isPanning) return;
       const dx = e.clientX - this.panStart.x;
       const dy = e.clientY - this.panStart.y;
-      if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+      if (Math.hypot(dx, dy) > 8) {
         this.hasMoved = true;
       }
       this.camera.x = this.cameraStart.x + dx;
@@ -700,10 +700,23 @@ class TeyvatTimelineApp {
     wrapper.appendChild(stem);
     wrapper.appendChild(pin);
 
+    let cardDownPos = null;
+    card.addEventListener('mousedown', (e) => {
+      cardDownPos = { x: e.clientX, y: e.clientY };
+    });
+
     // Click to pin
     card.addEventListener('click', (e) => {
-      // Don't pin if user was actively dragging
-      if (this.hasMoved) return;
+      e.stopPropagation();
+      if (cardDownPos) {
+        const dist = Math.hypot(e.clientX - cardDownPos.x, e.clientY - cardDownPos.y);
+        if (dist > 8) return; // Ignore genuine drag gestures
+      }
+      this.pinEvent(ev, card);
+    });
+
+    // Click pin to open event details
+    pin.addEventListener('click', (e) => {
       e.stopPropagation();
       this.pinEvent(ev, card);
     });
