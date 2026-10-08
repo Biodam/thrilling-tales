@@ -19,7 +19,8 @@
       "Vishaps of the Light Realm"
     ],
     "startRank": 0,
-    "endRank": 110
+    "endRank": 110,
+    "wikiUrl": "https://genshin-impact.fandom.com/wiki/Seven_Sovereigns"
   },
   {
     "id": "primordial-one",
@@ -43,7 +44,8 @@
       "Unified Human Civilization"
     ],
     "startRank": 111,
-    "endRank": 230
+    "endRank": 230,
+    "wikiUrl": "https://genshin-impact.fandom.com/wiki/The_Primordial_One"
   },
   {
     "id": "second-who-came",
@@ -68,7 +70,8 @@
       "Sal Vindagnyr"
     ],
     "startRank": 231,
-    "endRank": 360
+    "endRank": 360,
+    "wikiUrl": "https://genshin-impact.fandom.com/wiki/Second_Who_Came"
   },
   {
     "id": "interim-period",
@@ -124,7 +127,8 @@
       "Natlan Tribes"
     ],
     "startRank": 491,
-    "endRank": 660
+    "endRank": 660,
+    "wikiUrl": "https://genshin-impact.fandom.com/wiki/Archon_War"
   },
   {
     "id": "post-archon-war",
@@ -151,7 +155,8 @@
       "Court of Fontaine"
     ],
     "startRank": 661,
-    "endRank": 780
+    "endRank": 780,
+    "wikiUrl": "https://genshin-impact.fandom.com/wiki/Timeline#Post-Archon_War_Period"
   },
   {
     "id": "cataclysm",
@@ -182,7 +187,8 @@
       "Millelith & Yakshas"
     ],
     "startRank": 781,
-    "endRank": 890
+    "endRank": 890,
+    "wikiUrl": "https://genshin-impact.fandom.com/wiki/Cataclysm"
   },
   {
     "id": "modern",
@@ -215,6 +221,7 @@
       "Court of Fontaine"
     ],
     "startRank": 891,
-    "endRank": 1000
+    "endRank": 1000,
+    "wikiUrl": "https://genshin-impact.fandom.com/wiki/Timeline#Traveler%27s_Journey"
   }
 ]

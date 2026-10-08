@@ -322,8 +322,16 @@ class TeyvatTimelineApp {
     if (this.inspectorSources) {
       const eraEvents = this.events.filter(e => e.eraId === era.id);
       this.inspectorSources.innerHTML = `
-        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-          ${eraEvents.length} canonical milestone${eraEvents.length === 1 ? '' : 's'} recorded. Click any to navigate:
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; gap: 0.5rem; flex-wrap: wrap;">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">
+            ${eraEvents.length} canonical milestone${eraEvents.length === 1 ? '' : 's'}:
+          </span>
+          ${era.wikiUrl ? `
+            <a href="${era.wikiUrl}" target="_blank" rel="noopener noreferrer" class="citation-open-btn" style="background: ${era.color}20; border-color: ${era.color}60; color: ${era.color};" title="Read about ${era.name} on Genshin Impact Wiki">
+              <span>Epoch Wiki</span>
+              <span class="ext-arrow">↗</span>
+            </a>
+          ` : ''}
         </div>
         <div class="era-milestones-container">
           ${eraEvents.map(e => `
@@ -651,12 +659,41 @@ class TeyvatTimelineApp {
       return;
     }
 
+    const iconMap = {
+      wiki: '🌐',
+      book: '📖',
+      artifact: '🏺',
+      weapon: '⚔️',
+      quest: '📜',
+      character_story: '👤',
+      material: '💎',
+      official_media: '🎬'
+    };
+
     sources.forEach(src => {
       const card = document.createElement('div');
-      card.className = 'citation-card';
+      const isWiki = src.category === 'wiki';
+      card.className = `citation-card ${isWiki ? 'citation-wiki-card' : ''}`;
+      const icon = iconMap[src.category] || '📖';
+      const categoryName = src.category ? src.category.replace('_', ' ') : 'source';
+
       card.innerHTML = `
         ${src.quote ? `<div class="citation-quote">"${src.quote}"</div>` : ''}
-        <div class="citation-title">📖 ${src.title} (${src.category})</div>
+        <div class="citation-footer-row">
+          <div class="citation-title-group">
+            <span class="citation-icon">${icon}</span>
+            ${src.url 
+              ? `<a href="${src.url}" target="_blank" rel="noopener noreferrer" class="citation-title-link" title="Open ${src.title} on Genshin Impact Wiki">${src.title}</a>`
+              : `<span class="citation-title-text">${src.title}</span>`}
+            <span class="citation-category-badge">${categoryName}</span>
+          </div>
+          ${src.url ? `
+            <a href="${src.url}" target="_blank" rel="noopener noreferrer" class="citation-open-btn" title="Open source on Genshin Impact Wiki">
+              <span>Wiki</span>
+              <span class="ext-arrow">↗</span>
+            </a>
+          ` : ''}
+        </div>
       `;
       this.inspectorSources.appendChild(card);
     });

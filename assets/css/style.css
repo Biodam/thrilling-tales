@@ -1023,10 +1023,27 @@ body {
 }
 
 .citation-card {
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.4);
   border-left: 3px solid var(--gold-celestial);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.citation-card:hover {
+  background: rgba(229, 193, 88, 0.06);
+}
+
+.citation-card.citation-wiki-card {
+  border-left-color: var(--cyan-irminsul);
+  background: rgba(95, 227, 219, 0.05);
+}
+
+.citation-card.citation-wiki-card:hover {
+  background: rgba(95, 227, 219, 0.1);
 }
 
 .citation-quote {
@@ -1034,13 +1051,95 @@ body {
   font-style: italic;
   color: #e2e8f0;
   line-height: 1.45;
-  margin-bottom: 0.3rem;
 }
 
-.citation-title {
-  font-size: 0.72rem;
+.citation-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.citation-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.citation-icon {
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.citation-title-link,
+.citation-title-text {
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--gold-celestial);
+  text-decoration: none;
+  line-height: 1.3;
+  transition: color 0.15s ease;
+}
+
+.citation-card.citation-wiki-card .citation-title-link {
+  color: var(--cyan-irminsul);
+}
+
+.citation-title-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.citation-category-badge {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.citation-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(229, 193, 88, 0.15);
+  border: 1px solid rgba(229, 193, 88, 0.35);
+  color: var(--gold-celestial);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.citation-card.citation-wiki-card .citation-open-btn {
+  background: rgba(95, 227, 219, 0.15);
+  border-color: rgba(95, 227, 219, 0.35);
+  color: var(--cyan-irminsul);
+}
+
+.citation-open-btn:hover {
+  background: var(--gold-celestial);
+  color: #0b0f19;
+  border-color: var(--gold-celestial);
+  transform: translateY(-1px);
+}
+
+.citation-card.citation-wiki-card .citation-open-btn:hover {
+  background: var(--cyan-irminsul);
+  color: #0b0f19;
+  border-color: var(--cyan-irminsul);
 }
 
 /* Navigation Helper Bar at Bottom of Viewport */
