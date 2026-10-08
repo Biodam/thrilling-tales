@@ -413,6 +413,7 @@ body {
 .spatial-era-panel {
   position: absolute;
   width: var(--panel-width, 1260px);
+  min-width: 1210px;
   height: 680px;
   min-height: 680px;
   background: rgba(12, 17, 28, 0.94);

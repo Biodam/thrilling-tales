@@ -365,8 +365,9 @@ class TeyvatTimelineApp {
 
       // Event card width is 340px with 20px gap.
       // Total track width for N cards is count * 360px - 20px + panel horizontal padding (~60px).
-      // Minimum width 880px ensures bottom artwork showcase (520px) and lore narrative have ample breathing room.
-      const width = Math.max(880, count * 360 + 60);
+      // Minimum width 1210px maintains at least a 16:9 aspect ratio (680px * 16 / 9 = ~1209px)
+      // so 16:9 cover images are never cut/cropped on epoch cards with fewer events.
+      const width = Math.max(1210, count * 360 + 60);
 
       const layoutItem = {
         id: era.id,
