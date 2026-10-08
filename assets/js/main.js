@@ -145,6 +145,7 @@ class TeyvatTimelineApp {
     this.hasMoved = false;
     this.isSpacePressed = false;
     this.isAnimating = false;
+    this.cameraAnimId = null;
 
     // Spatial world layout metadata
     this.panelLayout = [];
@@ -399,6 +400,11 @@ class TeyvatTimelineApp {
       const isInteractive = e.target.closest('button, a, input, select');
       if (isInteractive && !this.isSpacePressed) return;
 
+      if (this.cameraAnimId) {
+        cancelAnimationFrame(this.cameraAnimId);
+        this.cameraAnimId = null;
+      }
+
       this.isPanning = true;
       this.hasMoved = false;
       this.panStart = { x: e.clientX, y: e.clientY };
@@ -429,6 +435,11 @@ class TeyvatTimelineApp {
     this.viewport.addEventListener('wheel', (e) => {
       e.preventDefault();
 
+      if (this.cameraAnimId) {
+        cancelAnimationFrame(this.cameraAnimId);
+        this.cameraAnimId = null;
+      }
+
       const rect = this.viewport.getBoundingClientRect();
       const mouseX = e.clientX - rect.left;
       const mouseY = e.clientY - rect.top;
@@ -450,7 +461,7 @@ class TeyvatTimelineApp {
       const zoomFactor = Math.exp(-dy * sensitivity);
 
       const oldZoom = this.camera.zoom;
-      const newZoom = Math.max(0.18, Math.min(3.0, oldZoom * zoomFactor));
+      const newZoom = Math.max(0.02, Math.min(3.0, oldZoom * zoomFactor));
 
       if (Math.abs(newZoom - oldZoom) < 0.0001) return;
 
@@ -571,7 +582,11 @@ class TeyvatTimelineApp {
 
     // Resize Window
     window.addEventListener('resize', () => {
-      this.applyCameraTransform();
+      if (this.activeEra === 'all') {
+        this.fitAll();
+      } else {
+        this.applyCameraTransform();
+      }
       this.updateMinimap();
     });
   }
@@ -582,7 +597,7 @@ class TeyvatTimelineApp {
     const centerX = vWidth / 2;
     const centerY = vHeight / 2;
 
-    const newZoom = Math.max(0.22, Math.min(2.5, this.camera.zoom + delta));
+    const newZoom = Math.max(0.02, Math.min(2.5, this.camera.zoom + delta));
     const worldX = (centerX - this.camera.x) / this.camera.zoom;
     const worldY = (centerY - this.camera.y) / this.camera.zoom;
 
@@ -651,6 +666,11 @@ class TeyvatTimelineApp {
   }
 
   animateCameraTo(targetX, targetY, targetZoom, duration = 400) {
+    if (this.cameraAnimId) {
+      cancelAnimationFrame(this.cameraAnimId);
+      this.cameraAnimId = null;
+    }
+
     const startX = this.camera.x;
     const startY = this.camera.y;
     const startZoom = this.camera.zoom;
@@ -669,11 +689,13 @@ class TeyvatTimelineApp {
       this.applyCameraTransform();
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        this.cameraAnimId = requestAnimationFrame(animate);
+      } else {
+        this.cameraAnimId = null;
       }
     };
 
-    requestAnimationFrame(animate);
+    this.cameraAnimId = requestAnimationFrame(animate);
   }
 
   flyToEra(eraId, open = true) {
@@ -703,7 +725,7 @@ class TeyvatTimelineApp {
   }
 
   fitAll() {
-    if (!this.viewport) return;
+    if (!this.viewport || !this.panelLayout || this.panelLayout.length === 0) return;
     this.activeEra = 'all';
     this.updateActiveEraButton();
     this.closeAllEras();
@@ -713,9 +735,25 @@ class TeyvatTimelineApp {
     const vWidth = this.viewport.clientWidth;
     const vHeight = this.viewport.clientHeight;
 
-    const targetZoom = Math.min(0.85, Math.max(0.22, Math.min(vWidth / (this.worldBounds.width + 400), vHeight / (this.worldBounds.height + 200))));
-    const targetX = (vWidth - this.worldBounds.width * targetZoom) / 2;
-    const targetY = 60;
+    const first = this.panelLayout[0];
+    const last = this.panelLayout[this.panelLayout.length - 1];
+    const allErasMinX = first.x;
+    const allErasMaxX = last.x + last.width;
+    const allErasWidth = allErasMaxX - allErasMinX;
+    const allErasHeight = 680;
+    const allErasMinY = first.y;
+
+    const padX = Math.max(30, Math.min(80, vWidth * 0.05));
+    const padY = Math.max(40, Math.min(100, vHeight * 0.1));
+    const availW = Math.max(200, vWidth - padX * 2);
+    const availH = Math.max(200, vHeight - padY * 2);
+
+    const targetZoom = Math.max(0.02, Math.min(0.85, Math.min(availW / allErasWidth, availH / allErasHeight)));
+    const worldCenterX = allErasMinX + allErasWidth / 2;
+    const worldCenterY = allErasMinY + allErasHeight / 2;
+
+    const targetX = (vWidth / 2) - worldCenterX * targetZoom;
+    const targetY = (vHeight / 2) - worldCenterY * targetZoom;
 
     this.animateCameraTo(targetX, targetY, targetZoom, 600);
   }
@@ -734,13 +772,16 @@ class TeyvatTimelineApp {
     const t = I18N[this.currentLang] || I18N.en;
 
     const allBtn = document.createElement('button');
+    allBtn.type = 'button';
     allBtn.className = `era-btn ${this.activeEra === 'all' ? 'active' : ''}`;
+    allBtn.setAttribute('data-id', 'all');
     allBtn.textContent = t.fitAll;
     allBtn.addEventListener('click', () => this.fitAll());
     this.eraJumperGroup.appendChild(allBtn);
 
     this.eras.forEach(era => {
       const btn = document.createElement('button');
+      btn.type = 'button';
       btn.className = `era-btn ${this.activeEra === era.id ? 'active' : ''}`;
       btn.setAttribute('data-id', era.id);
       btn.textContent = era.shortName || era.name;
@@ -754,11 +795,7 @@ class TeyvatTimelineApp {
     if (!this.eraJumperGroup) return;
     this.eraJumperGroup.querySelectorAll('.era-btn').forEach(btn => {
       const id = btn.getAttribute('data-id');
-      if (this.activeEra === 'all') {
-        btn.classList.toggle('active', !id);
-      } else {
-        btn.classList.toggle('active', id === this.activeEra);
-      }
+      btn.classList.toggle('active', id === this.activeEra);
     });
   }
 
