@@ -315,16 +315,21 @@ body {
 .spatial-era-panel {
   position: absolute;
   width: var(--panel-width, 1260px);
+  height: 680px;
+  min-height: 680px;
   background: rgba(12, 17, 28, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 1px rgba(255, 255, 255, 0.2);
-  padding: 1.5rem 1.75rem 1.75rem 1.75rem;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  transition: border-color 0.3s ease, 
+              box-shadow 0.35s ease, 
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .spatial-era-panel:hover,
@@ -339,16 +344,9 @@ body {
 
 /* When closed, card maintains its width and a fixed height for visual continuity */
 .spatial-era-panel.is-closed {
-  height: 680px;
-  min-height: 680px;
-  padding: 0;
-  overflow: hidden;
   cursor: pointer;
   border-width: 1.5px;
   border-color: rgba(255, 255, 255, 0.16);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-              border-color 0.25s ease, 
-              box-shadow 0.25s ease;
 }
 
 .spatial-era-panel.is-closed:hover {
@@ -358,23 +356,104 @@ body {
               0 0 45px var(--panel-glow, rgba(229, 193, 88, 0.35));
 }
 
+/* Smooth State Transitions between Closed Cover and Detailed View */
+.spatial-era-panel .era-closed-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  user-select: none;
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.4s ease,
+              visibility 0.45s ease;
+}
+
+.spatial-era-panel .era-detailed-content {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.75rem 1.75rem 1.75rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.4s ease,
+              visibility 0.45s ease;
+}
+
+/* CLOSED STATE */
 .spatial-era-panel.is-closed .era-closed-cover {
-  display: flex !important;
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0px);
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .spatial-era-panel.is-closed .era-detailed-content {
-  display: none !important;
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  filter: blur(4px);
+  pointer-events: none;
+  visibility: hidden;
 }
 
+/* OPEN STATE */
 .spatial-era-panel:not(.is-closed) .era-closed-cover {
-  display: none !important;
+  opacity: 0;
+  transform: scale(1.05);
+  filter: blur(6px);
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .spatial-era-panel:not(.is-closed) .era-detailed-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0px);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Staggered entrance for items inside opened detailed view */
+.spatial-era-panel:not(.is-closed) .spatial-event-card-wrapper {
+  animation: eventCardEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+@keyframes eventCardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.spatial-era-panel:not(.is-closed) .era-extra-info-bottom {
+  animation: loreEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+@keyframes loreEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Full Artwork Cover on Closed Panel */
