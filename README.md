@@ -29,7 +29,7 @@ The timeline is structured around canonical eras and historical milestones:
 timeline
     title Major Historical Epochs of Teyvat
     Primordial Era : Arrival of the Primordial One (Phanes) : Defeat of the Seven Sovereigns : Unified Human Civilization
-    Second Who Came : War in Heaven : Sinking of Enkanomiya : Shattering of the Sky
+    Second Who Came : War of Funerary Flame : Sinking of Enkanomiya : Shattering of the Sky
     Archon War : Divine struggles across the Seven Nations : Establishment of the Seven Thrones : Founding of Guili Assembly & Decarabian's Fall
     Cataclysm (500 YA) : Fall of Khaenri'ah : Abyssal Incursion : Sacrifice of Greater Lord Rukkhadevata & Makoto
     Modern Era : Traveler Awakens : Mondstadt to Natlan & Snezhnaya : Unveiling of the Heavenly Principles

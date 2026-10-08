@@ -44,7 +44,7 @@ When adding or formatting lore data, adhere to canonical Teyvat chronology and t
 ### Canonical Chronological Eras
 1. **Dragon Sovereigns Era / Pre-Genesis**: Reign of the Seven Dragon Sovereigns; primordial elements.
 2. **Era of the Primordial One (Phanes)**: Arrival of the Heavenly Principles, creation of the Four Shades, defeat of the dragons, creation of humans, Unified Human Civilization.
-3. **The Second Who Came & War in Heaven**: Great war shaking heaven and earth; shattering of the Unified Civilization; sinking of Enkanomiya.
+3. **The Second Who Came & War of Funerary Flame**: Great war shaking heaven and earth; shattering of the Unified Civilization; sinking of Enkanomiya.
 4. **Pre-Archon War Period**: Rise of ancient human civilizations (Sal Vindagnyr, Remuria, Gurabad, Guili Assembly, Old Mondstadt under Decarabian).
 5. **The Archon War (~3,700 to 2,000 YA)**: Divine conflict for the Seven Divine Thrones; Morax, Barbatos, Ei/Makoto, Rukkhadevata, etc. establish the Seven Nations.
 6. **Post-Archon War / Peace of the Seven**: Consolidation of national cultures and mortal governance.
