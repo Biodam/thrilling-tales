@@ -209,7 +209,7 @@ class TeyvatTimelineApp {
       }
     });
 
-    // Cursor-focused Focal Wheel Zoom
+    // Scroll Wheel & Trackpad Pinch Zoom (Direct Zoom Control)
     this.viewport.addEventListener('wheel', (e) => {
       e.preventDefault();
 
@@ -217,20 +217,36 @@ class TeyvatTimelineApp {
       const mouseX = e.clientX - rect.left;
       const mouseY = e.clientY - rect.top;
 
-      // Trackpad 2-finger panning detection: if Ctrl key is not pressed and deltaX is substantial
-      if (e.ctrlKey || Math.abs(e.deltaY) > 0) {
-        const zoomDelta = e.deltaY < 0 ? 1.09 : 0.91;
-        const newZoom = Math.max(0.22, Math.min(2.5, this.camera.zoom * zoomDelta));
-
-        const worldX = (mouseX - this.camera.x) / this.camera.zoom;
-        const worldY = (mouseY - this.camera.y) / this.camera.zoom;
-
-        this.camera.x = mouseX - worldX * newZoom;
-        this.camera.y = mouseY - worldY * newZoom;
-        this.camera.zoom = newZoom;
-
+      // Handle pure horizontal scroll wheel (e.g. side-scroll thumbwheels)
+      if (Math.abs(e.deltaY) === 0 && Math.abs(e.deltaX) > 0) {
+        this.camera.x -= e.deltaX;
         this.applyCameraTransform();
+        return;
       }
+
+      // Normalize delta based on mode (pixels vs lines vs pages)
+      let dy = e.deltaY;
+      if (e.deltaMode === 1) dy *= 20; // Firefox line mode
+      else if (e.deltaMode === 2) dy *= 400; // Page mode
+
+      // Natural exponential continuous zoom factor centered at cursor
+      const sensitivity = 0.0025;
+      const zoomFactor = Math.exp(-dy * sensitivity);
+
+      const oldZoom = this.camera.zoom;
+      const newZoom = Math.max(0.18, Math.min(3.0, oldZoom * zoomFactor));
+
+      if (Math.abs(newZoom - oldZoom) < 0.0001) return;
+
+      // Focal zoom: anchor the exact world coordinate directly under the mouse cursor
+      const worldX = (mouseX - this.camera.x) / oldZoom;
+      const worldY = (mouseY - this.camera.y) / oldZoom;
+
+      this.camera.x = mouseX - worldX * newZoom;
+      this.camera.y = mouseY - worldY * newZoom;
+      this.camera.zoom = newZoom;
+
+      this.applyCameraTransform();
     }, { passive: false });
 
     // Spacebar Hand Tool Pan Keybinding
