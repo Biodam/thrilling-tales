@@ -1369,8 +1369,9 @@ body {
   text-transform: uppercase;
 }
 
-/* Floating Hover Preview Tooltip */
+/* Floating Hover Preview Tooltip (Disabled: user clicks card to inspect) */
 .timeline-tooltip {
+  display: none !important;
   position: fixed;
   width: 320px;
   background: var(--bg-card);

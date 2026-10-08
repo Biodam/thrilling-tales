@@ -1112,7 +1112,7 @@ class TeyvatTimelineApp {
     card.innerHTML = `
       <div class="event-card-body">
         <h3 class="event-card-title">${ev.title}</h3>
-        ${subDate ? `<div class="event-card-date" title="${ev.dateDisplay}">${subDate}</div>` : ''}
+        ${subDate ? `<div class="event-card-date">${subDate}</div>` : ''}
         ${ev.yearsAgoDisplay ? `
           <div class="event-card-year-container">
             <span class="event-card-year">${ev.yearsAgoDisplay}</span>
@@ -1140,7 +1140,7 @@ class TeyvatTimelineApp {
       cardDownPos = { x: e.clientX, y: e.clientY };
     });
 
-    // Click to pin
+    // Click to pin / inspect
     card.addEventListener('click', (e) => {
       e.stopPropagation();
       if (cardDownPos) {
@@ -1156,17 +1156,6 @@ class TeyvatTimelineApp {
       e.stopPropagation();
       this.pinEvent(ev, card);
       this.syncSearchIndexForEvent(ev.id);
-    });
-
-    // Hover tooltip
-    card.addEventListener('mouseenter', () => {
-      if (!this.hasMoved && !this.pinnedEvent) {
-        this.showTooltip(ev, card, era);
-      }
-    });
-
-    card.addEventListener('mouseleave', () => {
-      this.hideTooltip();
     });
 
     return wrapper;
@@ -1418,36 +1407,8 @@ class TeyvatTimelineApp {
     }
   }
 
-  showTooltip(ev, cardElement, era) {
-    if (!this.tooltip) return;
-    const t = I18N[this.currentLang] || I18N.en;
-    const rect = cardElement.getBoundingClientRect();
-    const hasImage = ev.images && ev.images.length > 0 && ev.images[0].url;
-
-    this.tooltip.innerHTML = `
-      ${hasImage ? `<img src="${ev.images[0].url}" alt="${ev.title}" class="tooltip-img" onerror="this.remove()">` : ''}
-      <div class="tooltip-header">
-        <span class="tooltip-era" style="color: ${era.color};">${ev.eraName || era.name}</span>
-        <span class="tooltip-year-badge">${ev.yearsAgoDisplay || ''}</span>
-      </div>
-      <div class="tooltip-date-full">${ev.dateDisplay}</div>
-      <div class="tooltip-title">${ev.title}</div>
-      <div class="tooltip-summary">${ev.summary}</div>
-      <div class="tooltip-pin-hint">${t.pinDetailsHint}</div>
-    `;
-
-    const tooltipWidth = 320;
-    const tooltipHeight = 160;
-    let left = rect.left + rect.width / 2;
-    let top = rect.top - tooltipHeight - 12;
-
-    if (top < 70) {
-      top = rect.bottom + 12;
-    }
-
-    this.tooltip.style.left = `${left}px`;
-    this.tooltip.style.top = `${top}px`;
-    this.tooltip.classList.add('is-visible');
+  showTooltip() {
+    // Disabled: users click to inspect event details in inspector drawer
   }
 
   hideTooltip() {
