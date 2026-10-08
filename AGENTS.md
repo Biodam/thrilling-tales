@@ -66,7 +66,8 @@ Always prioritize primary canonical sources:
    - Utilize theme variables defined in `assets/css/style.css` (e.g., `--gold-celestial`, `--cyan-irminsul`, `--bg-abyss`).
    - Mobile-first, responsive layouts.
 3. **Data Schema Conformance**: All event entries must conform to the structure documented in [`docs/lore-schema.md`](docs/lore-schema.md).
-4. **Accessibility**: All interactive elements (timeline nodes, modal dialogs, drawers) must be keyboard navigable (`tabindex`, `aria-*` tags).
+4. **Official Localization Glossary**: All names, titles, places, and events must strictly adhere to the official localization documented in [`docs/glossary.md`](docs/glossary.md).
+5. **Accessibility**: All interactive elements (timeline nodes, modal dialogs, drawers) must be keyboard navigable (`tabindex`, `aria-*` tags).
 
 ---
 

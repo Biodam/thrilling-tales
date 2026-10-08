@@ -119,6 +119,7 @@ For detailed deployment configuration and optional GitHub Actions workflows, ref
 
 ## 📚 Documentation
 
+- [Canonical Lore Glossary](docs/glossary.md)
 - [System Architecture](docs/architecture.md)
 - [Lore Data Schema](docs/lore-schema.md)
 - [Deployment Guide](docs/deployment.md)
