@@ -8,7 +8,83 @@
  * - Luminous SVG celestial connector rails linking historical epochs
  * - Real-time bird's-eye Minimap navigation
  * - Pinned event inspector drawer with multi-image carousel and primary citations
+ * - Seamless Bilingual Localization (English & Brazilian Portuguese)
  */
+
+const I18N = {
+  en: {
+    searchPlaceholder: 'Search lore, character, region...',
+    fitAll: 'Fit All',
+    eventsBadge: (n) => `${n} event${n === 1 ? '' : 's'}`,
+    canonicalMilestones: (n) => `${n} canonical milestone${n === 1 ? '' : 's'}`,
+    epochBadge: (curr, total) => `Epoch ${String(curr).padStart(2, '0')} / ${String(total).padStart(2, '0')}`,
+    keyFigures: 'KEY FIGURES:',
+    factions: 'FACTIONS:',
+    inspectEpochLore: 'Inspect Epoch Lore',
+    epochWiki: 'Epoch Wiki',
+    sources: (n) => `${n} source${n === 1 ? '' : 's'}`,
+    historicalEpoch: 'Historical Epoch',
+    epochRank: (start, end) => `Epoch Rank: ${start} – ${end}`,
+    minimapTitle: '🗺️ Teyvat Overview',
+    pinnedEventDetails: 'Pinned Event Details',
+    tagSectionLabel: 'Categorization & Entities',
+    citationSectionLabel: 'Citations & References',
+    noCitations: 'No primary citations recorded yet.',
+    regionTag: (reg) => `📍 Region: ${reg}`,
+    spoilerTag: (lvl) => `⚠️ Spoiler: ${lvl}`,
+    pinDetailsHint: 'Click card to pin details 📌',
+    paimonArtBtn: '✨ Paimon & Traveler',
+    snezArtBtn: '❄️ Snezhnaya',
+    paimonAlt: 'Starfell Beach — Paimon & Traveler',
+    paimonCaption: 'Starfell Beach — The Traveler awakens and fishes up Paimon',
+    snezAlt: 'Zapolyarny Palace — Snezhnaya',
+    snezCaption: 'Zapolyarny Palace — The seat of the Tsaritsa and the Fatui Harbingers',
+    hints: {
+      drag: 'to Pan 2D',
+      wheel: 'to Zoom',
+      space: 'Hand Pan',
+      click: 'to Inspect',
+      esc: 'to Unpin'
+    },
+    bottomSubtitle: 'Teyvat Interactive 2D Canvas • Genshin Impact Lore'
+  },
+  pt: {
+    searchPlaceholder: 'Buscar história, personagem, região...',
+    fitAll: 'Ver Tudo',
+    eventsBadge: (n) => `${n} evento${n === 1 ? '' : 's'}`,
+    canonicalMilestones: (n) => `${n} marco${n === 1 ? '' : 's'} canônico${n === 1 ? '' : 's'}`,
+    epochBadge: (curr, total) => `Época ${String(curr).padStart(2, '0')} / ${String(total).padStart(2, '0')}`,
+    keyFigures: 'FIGURAS PRINCIPAIS:',
+    factions: 'FACÇÕES:',
+    inspectEpochLore: 'Inspecionar História da Época',
+    epochWiki: 'Wiki da Época',
+    sources: (n) => `${n} fonte${n === 1 ? '' : 's'}`,
+    historicalEpoch: 'Época Histórica',
+    epochRank: (start, end) => `Classificação da Época: ${start} – ${end}`,
+    minimapTitle: '🗺️ Visão Geral de Teyvat',
+    pinnedEventDetails: 'Detalhes do Evento Fixado',
+    tagSectionLabel: 'Categorização e Entidades',
+    citationSectionLabel: 'Citações e Fontes',
+    noCitations: 'Nenhuma citação primária registrada ainda.',
+    regionTag: (reg) => `📍 Região: ${reg}`,
+    spoilerTag: (lvl) => `⚠️ Spoiler: ${lvl}`,
+    pinDetailsHint: 'Clique no card para fixar detalhes 📌',
+    paimonArtBtn: '✨ Paimon e Viajante',
+    snezArtBtn: '❄️ Snezhnaya',
+    paimonAlt: 'Costa das Estrelas — Paimon e Viajante',
+    paimonCaption: 'Costa das Estrelas — O Viajante desperta e pesca Paimon',
+    snezAlt: 'Palácio Zapolyarny — Snezhnaya',
+    snezCaption: 'Palácio Zapolyarny — O assento da Tsaritsa e dos Mensageiros dos Fatui',
+    hints: {
+      drag: 'para Navegar 2D',
+      wheel: 'para Zoom',
+      space: 'Modo Mão Livre',
+      click: 'para Inspecionar',
+      esc: 'para Desafixar'
+    },
+    bottomSubtitle: 'Canvas 2D Interativo de Teyvat • Lore de Genshin Impact'
+  }
+};
 
 class TeyvatTimelineApp {
   constructor() {
@@ -19,6 +95,18 @@ class TeyvatTimelineApp {
     this.currentSlideIndex = 0;
     this.activeEra = 'all';
     this.searchQuery = '';
+
+    // Language state with persistent preference
+    this.currentLang = 'en';
+    try {
+      const savedLang = localStorage.getItem('thrilling_tales_lang');
+      if (savedLang && ['en', 'pt'].includes(savedLang)) {
+        this.currentLang = savedLang;
+      }
+    } catch (e) {
+      // Ignore localStorage access failures
+    }
+    this.dataCache = { en: null, pt: null };
 
     // Modern Era artwork toggle state: 'paimon' | 'snez'
     this.modernArtwork = 'paimon';
@@ -86,7 +174,10 @@ class TeyvatTimelineApp {
   }
 
   async init() {
+    document.documentElement.lang = this.currentLang;
+    this.updateLanguageButtons();
     await this.loadData();
+    this.updateStaticUI();
     this.computePanelLayout();
     this.setupCameraInteraction();
     this.setupEventListeners();
@@ -99,23 +190,130 @@ class TeyvatTimelineApp {
     });
   }
 
-  async loadData() {
+  async loadData(lang = this.currentLang) {
+    if (this.dataCache[lang]) {
+      this.eras = this.dataCache[lang].eras;
+      this.events = this.dataCache[lang].events;
+      this.filteredEvents = [...this.events];
+      return;
+    }
+
     try {
       const basePath = window.location.pathname.endsWith('/') 
         ? window.location.pathname 
         : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
 
+      const erasFile = lang === 'pt' ? 'data/eras_pt.json' : 'data/eras.json';
+      const eventsFile = lang === 'pt' ? 'data/events_pt.json' : 'data/events.json';
+
       const [erasRes, eventsRes] = await Promise.all([
-        fetch(`${basePath}data/eras.json`).catch(() => fetch('./data/eras.json')),
-        fetch(`${basePath}data/events.json`).catch(() => fetch('./data/events.json'))
+        fetch(`${basePath}${erasFile}`).catch(() => fetch(`./${erasFile}`)),
+        fetch(`${basePath}${eventsFile}`).catch(() => fetch(`./${eventsFile}`))
       ]);
 
       this.eras = await erasRes.json();
       this.events = await eventsRes.json();
       this.filteredEvents = [...this.events];
+      this.dataCache[lang] = { eras: this.eras, events: this.events };
     } catch (err) {
-      console.error('[Timeline 2D] Failed to load JSON data:', err);
+      console.error(`[Timeline 2D] Failed to load JSON data for language ${lang}:`, err);
     }
+  }
+
+  async switchLanguage(newLang) {
+    if (newLang === this.currentLang || !['en', 'pt'].includes(newLang)) return;
+    this.currentLang = newLang;
+    try {
+      localStorage.setItem('thrilling_tales_lang', newLang);
+    } catch (e) {}
+
+    document.documentElement.lang = newLang;
+    this.updateLanguageButtons();
+
+    const previousPinnedId = this.pinnedEvent?.id;
+    const previousActiveEra = this.activeEra;
+
+    await this.loadData(newLang);
+    this.updateStaticUI();
+    this.computePanelLayout();
+    this.render();
+
+    if (this.searchQuery) {
+      this.applyFilters();
+    }
+
+    if (previousPinnedId) {
+      const refreshedPinnedEvent = this.events.find(e => e.id === previousPinnedId);
+      if (refreshedPinnedEvent) {
+        const cardEl = document.querySelector(`.spatial-event-card[data-id="${previousPinnedId}"]`);
+        this.pinEvent(refreshedPinnedEvent, cardEl);
+      } else {
+        this.unpinEvent();
+      }
+    } else if (previousActiveEra && previousActiveEra !== 'all') {
+      const eraObj = this.eras.find(e => e.id === previousActiveEra);
+      if (eraObj) {
+        document.querySelectorAll('.spatial-era-panel').forEach(p => {
+          p.classList.toggle('is-active-panel', p.getAttribute('data-id') === previousActiveEra);
+        });
+      }
+    }
+  }
+
+  updateLanguageButtons() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      const lang = btn.getAttribute('data-lang');
+      const isActive = lang === this.currentLang;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+  }
+
+  updateStaticUI() {
+    const t = I18N[this.currentLang] || I18N.en;
+
+    // Search input placeholder
+    if (this.searchInput) {
+      this.searchInput.placeholder = t.searchPlaceholder;
+    }
+
+    // Minimap title
+    const minimapTitleEl = document.getElementById('minimap-title') || document.querySelector('.minimap-title');
+    if (minimapTitleEl) {
+      minimapTitleEl.textContent = t.minimapTitle;
+    }
+
+    // Inspector static titles
+    const inspectorHintEl = document.getElementById('inspector-hint-text') || document.querySelector('.inspector-hint-text');
+    if (inspectorHintEl && this.pinnedEvent) {
+      inspectorHintEl.textContent = t.pinnedEventDetails;
+    }
+
+    const tagLabelEl = document.getElementById('inspector-tag-label');
+    if (tagLabelEl) tagLabelEl.textContent = t.tagSectionLabel;
+
+    const citationLabelEl = document.getElementById('inspector-citation-label');
+    if (citationLabelEl) citationLabelEl.textContent = t.citationSectionLabel;
+
+    // Hint chips
+    const hintDrag = document.querySelector('#hint-drag .hint-text');
+    if (hintDrag) hintDrag.textContent = t.hints.drag;
+
+    const hintWheel = document.querySelector('#hint-wheel .hint-text');
+    if (hintWheel) hintWheel.textContent = t.hints.wheel;
+
+    const hintSpace = document.querySelector('#hint-space .hint-text');
+    if (hintSpace) hintSpace.textContent = t.hints.space;
+
+    const hintClick = document.querySelector('#hint-click .hint-text');
+    if (hintClick) hintClick.textContent = t.hints.click;
+
+    const hintEsc = document.querySelector('#hint-esc .hint-text');
+    if (hintEsc) hintEsc.textContent = t.hints.esc;
+
+    // Subtitle
+    const subTitleEl = document.querySelector('#bottombar-subtitle span');
+    if (subTitleEl) subTitleEl.textContent = t.bottomSubtitle;
   }
 
   computePanelLayout() {
@@ -298,6 +496,14 @@ class TeyvatTimelineApp {
       this.animateCameraTo(targetCamX, targetCamY, this.camera.zoom);
     });
 
+    // Language Switcher Buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        if (lang) this.switchLanguage(lang);
+      });
+    });
+
     // Resize Window
     window.addEventListener('resize', () => {
       this.applyCameraTransform();
@@ -411,10 +617,11 @@ class TeyvatTimelineApp {
   renderEraButtons() {
     if (!this.eraJumperGroup) return;
     this.eraJumperGroup.innerHTML = '';
+    const t = I18N[this.currentLang] || I18N.en;
 
     const allBtn = document.createElement('button');
     allBtn.className = `era-btn ${this.activeEra === 'all' ? 'active' : ''}`;
-    allBtn.textContent = 'Fit All';
+    allBtn.textContent = t.fitAll;
     allBtn.addEventListener('click', () => this.fitAll());
     this.eraJumperGroup.appendChild(allBtn);
 
@@ -495,6 +702,7 @@ class TeyvatTimelineApp {
   renderEraPanels() {
     if (!this.eraPanelsContainer) return;
     this.eraPanelsContainer.innerHTML = '';
+    const t = I18N[this.currentLang] || I18N.en;
 
     this.eras.forEach((era, index) => {
       const layout = this.panelLayout[index];
@@ -522,12 +730,12 @@ class TeyvatTimelineApp {
         <div class="era-panel-header">
           <div class="era-panel-header-left">
             <span class="era-epoch-badge" style="color: ${era.color}; border-color: ${era.color}60;">
-              Epoch ${String(index + 1).padStart(2, '0')} / ${String(this.eras.length).padStart(2, '0')}
+              ${t.epochBadge(index + 1, this.eras.length)}
             </span>
             <span class="era-hero-year">${era.yearRange || ''}</span>
           </div>
           <div class="era-panel-header-right">
-            <span>${eraEvents.length} canonical milestones</span>
+            <span>${t.canonicalMilestones(eraEvents.length)}</span>
           </div>
         </div>
       `;
@@ -546,7 +754,7 @@ class TeyvatTimelineApp {
       const keyFiguresChips = (era.keyFigures && era.keyFigures.length)
         ? `
           <div class="era-meta-block">
-            <span class="era-meta-label">KEY FIGURES:</span>
+            <span class="era-meta-label">${t.keyFigures}</span>
             <div class="era-meta-chips">
               ${era.keyFigures.map(fig => `<span class="era-meta-chip figure">👑 ${fig}</span>`).join('')}
             </div>
@@ -557,7 +765,7 @@ class TeyvatTimelineApp {
       const dominantFactionsChips = (era.dominantFactions && era.dominantFactions.length)
         ? `
           <div class="era-meta-block">
-            <span class="era-meta-label">FACTIONS:</span>
+            <span class="era-meta-label">${t.factions}</span>
             <div class="era-meta-chips">
               ${era.dominantFactions.map(fac => `<span class="era-meta-chip faction">🛡️ ${fac}</span>`).join('')}
             </div>
@@ -574,10 +782,10 @@ class TeyvatTimelineApp {
             ${era.id === 'modern' ? `
               <div class="artwork-switcher-group" title="Switch Modern Era Artworks">
                 <button class="art-switch-btn ${this.modernArtwork === 'paimon' ? 'active' : ''}" data-art="paimon">
-                  <span>✨ Paimon & Traveler</span>
+                  <span>${t.paimonArtBtn}</span>
                 </button>
                 <button class="art-switch-btn ${this.modernArtwork === 'snez' ? 'active' : ''}" data-art="snez">
-                  <span>❄️ Snezhnaya</span>
+                  <span>${t.snezArtBtn}</span>
                 </button>
               </div>
             ` : ''}
@@ -599,12 +807,12 @@ class TeyvatTimelineApp {
 
             <div class="era-lore-actions">
               <button class="era-inspect-btn" data-era-id="${era.id}" title="Inspect full epoch lore and key figures">
-                <span>Inspect Epoch Lore</span>
+                <span>${t.inspectEpochLore}</span>
                 <span>ℹ️</span>
               </button>
               ${era.wikiUrl ? `
                 <a href="${era.wikiUrl}" target="_blank" rel="noopener noreferrer" class="era-wiki-link" title="Open on Genshin Impact Wiki">
-                  <span>Epoch Wiki</span>
+                  <span>${t.epochWiki}</span>
                   <span class="ext-arrow">↗</span>
                 </a>
               ` : ''}
@@ -657,6 +865,7 @@ class TeyvatTimelineApp {
   }
 
   createEventCardWrapper(ev, era) {
+    const t = I18N[this.currentLang] || I18N.en;
     const wrapper = document.createElement('div');
     wrapper.className = 'spatial-event-card-wrapper';
     wrapper.style.setProperty('--card-accent', era.color);
@@ -682,7 +891,7 @@ class TeyvatTimelineApp {
       <p class="event-card-summary">${ev.summary}</p>
       <div class="event-card-footer">
         <span class="event-card-region">📍 ${ev.tags?.region || 'Teyvat'}</span>
-        ${sourceCount > 0 ? `<span class="event-card-source-count">📖 ${sourceCount} source${sourceCount === 1 ? '' : 's'}</span>` : ''}
+        ${sourceCount > 0 ? `<span class="event-card-source-count">📖 ${t.sources(sourceCount)}</span>` : ''}
       </div>
     `;
 
@@ -812,19 +1021,22 @@ class TeyvatTimelineApp {
       }
     });
 
+    const t = I18N[this.currentLang] || I18N.en;
     if (this.eventCountBadge) {
-      this.eventCountBadge.textContent = `${matchCount} event${matchCount === 1 ? '' : 's'}`;
+      this.eventCountBadge.textContent = t.eventsBadge(matchCount);
     }
   }
 
   updateEventCountBadge() {
+    const t = I18N[this.currentLang] || I18N.en;
     if (this.eventCountBadge) {
-      this.eventCountBadge.textContent = `${this.events.length} events`;
+      this.eventCountBadge.textContent = t.eventsBadge(this.events.length);
     }
   }
 
   showTooltip(ev, cardElement, era) {
     if (!this.tooltip) return;
+    const t = I18N[this.currentLang] || I18N.en;
     const rect = cardElement.getBoundingClientRect();
     const hasImage = ev.images && ev.images.length > 0 && ev.images[0].url;
 
@@ -837,7 +1049,7 @@ class TeyvatTimelineApp {
       <div class="tooltip-date-full">${ev.dateDisplay}</div>
       <div class="tooltip-title">${ev.title}</div>
       <div class="tooltip-summary">${ev.summary}</div>
-      <div class="tooltip-pin-hint">Click card to pin details 📌</div>
+      <div class="tooltip-pin-hint">${t.pinDetailsHint}</div>
     `;
 
     const tooltipWidth = 320;
@@ -862,6 +1074,12 @@ class TeyvatTimelineApp {
     this.pinnedEvent = ev;
     this.currentSlideIndex = 0;
     this.hideTooltip();
+
+    const t = I18N[this.currentLang] || I18N.en;
+    const inspectorHintEl = document.getElementById('inspector-hint-text') || document.querySelector('.inspector-hint-text');
+    if (inspectorHintEl) {
+      inspectorHintEl.textContent = t.pinnedEventDetails;
+    }
 
     // Mark active card
     document.querySelectorAll('.spatial-event-card').forEach(c => c.classList.remove('is-pinned-active'));
@@ -895,16 +1113,23 @@ class TeyvatTimelineApp {
     this.updateActiveEraButton();
     this.flyToEra(era.id);
 
+    const t = I18N[this.currentLang] || I18N.en;
+
     // Deselect any pinned event
     document.querySelectorAll('.spatial-event-card').forEach(c => c.classList.remove('is-pinned-active'));
     this.pinnedEvent = null;
 
+    const inspectorHintEl = document.getElementById('inspector-hint-text') || document.querySelector('.inspector-hint-text');
+    if (inspectorHintEl) {
+      inspectorHintEl.textContent = t.historicalEpoch;
+    }
+
     // Populate Inspector Drawer with rich Era information
-    this.inspectorEra.textContent = 'Historical Epoch';
+    this.inspectorEra.textContent = t.historicalEpoch;
     this.inspectorEra.style.color = era.color;
     this.inspectorDate.innerHTML = `
       <span class="inspector-year-pill">${era.yearRange || ''}</span>
-      <span class="inspector-date-full">Epoch Rank: ${era.startRank} – ${era.endRank}</span>
+      <span class="inspector-date-full">${t.epochRank(era.startRank, era.endRank)}</span>
     `;
     this.inspectorTitle.textContent = era.name;
     this.inspectorDesc.textContent = era.longDescription || era.description;
@@ -914,15 +1139,15 @@ class TeyvatTimelineApp {
       const modernSlides = [
         {
           url: era.bgImage,
-          alt: 'Starfell Beach — Paimon & Traveler',
-          caption: 'Starfell Beach — The Traveler awakens and fishes up Paimon'
+          alt: t.paimonAlt,
+          caption: t.paimonCaption
         }
       ];
       if (era.alternateBgImage) {
         modernSlides.push({
           url: era.alternateBgImage,
-          alt: 'Zapolyarny Palace — Snezhnaya',
-          caption: 'Zapolyarny Palace — The seat of the Tsaritsa and the Fatui Harbingers'
+          alt: t.snezAlt,
+          caption: t.snezCaption
         });
       }
       this.renderCarousel(modernSlides);
@@ -957,11 +1182,11 @@ class TeyvatTimelineApp {
       this.inspectorSources.innerHTML = `
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; gap: 0.5rem; flex-wrap: wrap;">
           <span style="font-size: 0.8rem; color: var(--text-muted);">
-            ${eraEvents.length} canonical milestone${eraEvents.length === 1 ? '' : 's'}:
+            ${t.canonicalMilestones(eraEvents.length)}:
           </span>
           ${era.wikiUrl ? `
             <a href="${era.wikiUrl}" target="_blank" rel="noopener noreferrer" class="citation-open-btn" style="background: ${era.color}20; border-color: ${era.color}60; color: ${era.color};" title="Read about ${era.name} on Genshin Impact Wiki">
-              <span>Epoch Wiki</span>
+              <span>${t.epochWiki}</span>
               <span class="ext-arrow">↗</span>
             </a>
           ` : ''}
@@ -1065,9 +1290,10 @@ class TeyvatTimelineApp {
   renderInspectorTags(tags) {
     if (!this.inspectorTags) return;
     this.inspectorTags.innerHTML = '';
+    const t = I18N[this.currentLang] || I18N.en;
 
     if (tags.region) {
-      this.inspectorTags.innerHTML += `<span class="tag-badge region">📍 Region: ${tags.region}</span>`;
+      this.inspectorTags.innerHTML += `<span class="tag-badge region">${t.regionTag(tags.region)}</span>`;
     }
 
     if (tags.factions && tags.factions.length) {
@@ -1083,16 +1309,17 @@ class TeyvatTimelineApp {
     }
 
     if (tags.spoilerLevel) {
-      this.inspectorTags.innerHTML += `<span class="tag-badge" style="border-color: rgba(248, 113, 113, 0.4); color: #fca5a5;">⚠️ Spoiler: ${tags.spoilerLevel}</span>`;
+      this.inspectorTags.innerHTML += `<span class="tag-badge" style="border-color: rgba(248, 113, 113, 0.4); color: #fca5a5;">${t.spoilerTag(tags.spoilerLevel)}</span>`;
     }
   }
 
   renderInspectorSources(sources) {
     if (!this.inspectorSources) return;
     this.inspectorSources.innerHTML = '';
+    const t = I18N[this.currentLang] || I18N.en;
 
     if (!sources || sources.length === 0) {
-      this.inspectorSources.innerHTML = '<p style="color: var(--text-muted); font-size: 0.85rem;">No primary citations recorded yet.</p>';
+      this.inspectorSources.innerHTML = `<p style="color: var(--text-muted); font-size: 0.85rem;">${t.noCitations}</p>`;
       return;
     }
 

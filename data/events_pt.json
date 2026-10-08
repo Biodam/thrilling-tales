@@ -1,0 +1,1673 @@
+[
+  {
+    "id": "reign-of-sovereigns",
+    "title": "O Reinado dos Sete Soberanos Dragões",
+    "yearsAgo": 7000,
+    "yearsAgoDisplay": "~7.000+ AA",
+    "dateDisplay": "~7.000+ Anos Atrás • O Reino Primordial da Luz",
+    "orderRank": 30,
+    "eraId": "dragon-sovereigns",
+    "eraName": "Mundo Antigo (Sete Soberanos)",
+    "summary": "Antes da chegada de deuses ou da humanidade, Teyvat era um reino elemental indomado governado exclusivamente por sete colossais dragões soberanos.",
+    "description": "Na era antiga do Reino da Luz, os Sete Soberanos Dragões exerciam domínio supremo sobre os elementos primordiais de Teyvat. Sob a liderança do Rei Dragão Nibelung, civilizações de vishaps e dragões floresciam pelo globo sem interferência celestial ou tronos divinos.",
+    "images": [],
+    "tags": {
+      "region": "Teyvat Primordial",
+      "factions": [
+        "Sete Soberanos Dragões",
+        "Vishaps das Profundezas"
+      ],
+      "characters": [
+        "Rei Dragão Nibelung",
+        "Apep",
+        "Scylla"
+      ],
+      "spoilerLevel": "Missões do Mundo de Fontaine"
+    },
+    "sources": [
+      {
+        "title": "Before Sun and Moon: When the Doves Held Branches",
+        "category": "book",
+        "quote": "In the beginning, the world was ruled by the dragons. The dragons held the primordial elemental authority.",
+        "url": "https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon#When_the_Doves_Held_Branches"
+      },
+      {
+        "title": "Neuvillette - Character Story 5",
+        "category": "character_story",
+        "quote": "Severed from the primordial throne, the authority of the dragons was wrested away by the usurper.",
+        "url": "https://genshin-impact.fandom.com/wiki/Neuvillette/Lore#Character_Story_5"
+      },
+      {
+        "title": "Genshin Impact Wiki: Seven Sovereigns",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Seven_Sovereigns"
+      }
+    ]
+  },
+  {
+    "id": "nibelung-voyage",
+    "title": "A Jornada Cósmica de Nibelung & O Poder do Além",
+    "yearsAgo": 6500,
+    "yearsAgoDisplay": "~6.500+ AA",
+    "dateDisplay": "~6.500+ Anos Atrás • Incursão Cósmica",
+    "orderRank": 80,
+    "eraId": "dragon-sovereigns",
+    "eraName": "Mundo Antigo (Sete Soberanos)",
+    "summary": "O Rei Dragão Nibelung viaja além do firmamento de Teyvat, retornando com um poder proibido e sombrio para combater invasores celestiais.",
+    "description": "Prevendo a chegada de poderes extraterrestres, o Rei Dragão Nibelung aventurou-se além das fronteiras de Teyvat no Mar Escuro e no cosmos. Ele adquiriu um poder negro como breu de além deste mundo para enfrentar os invasores celestiais, plantando as primeiras sementes do conhecimento proibido que mais tarde assolaria o mundo.",
+    "images": [],
+    "tags": {
+      "region": "O Mar Escuro",
+      "factions": [
+        "Sete Soberanos Dragões"
+      ],
+      "characters": [
+        "Rei Dragão Nibelung",
+        "Apep"
+      ],
+      "spoilerLevel": "Missões do Deserto de Sumeru"
+    },
+    "sources": [
+      {
+        "title": "Apep - Dialogue in The Realm of Beginnings",
+        "category": "quest",
+        "quote": "The Dragon King acquired the power of darkness from outside of this world and led us in a rebellion against the order established by the invaders.",
+        "url": "https://genshin-impact.fandom.com/wiki/Apep"
+      },
+      {
+        "title": "Genshin Impact Wiki: Nibelung",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Nibelung"
+      }
+    ]
+  },
+  {
+    "id": "morax-genesis",
+    "title": "A Gênese de Morax (Rex Lapis)",
+    "yearsAgo": 6000,
+    "yearsAgoDisplay": "~6.000 AA",
+    "dateDisplay": "Mais de 6.000 Anos Atrás • O Alvorecer de Liyue",
+    "orderRank": 120,
+    "eraId": "primordial-one",
+    "eraName": "Quando os Pombos Carregavam Ramos",
+    "summary": "Morax (Rex Lapis), o mais antigo dos Sete Arcontes, nasce ou desce à terra em Teyvat.",
+    "description": "Há mais de seis milênios, Morax surgiu na terra de Liyue. Antes mesmo de receber a Gnosis Geo ou o título de Arconte, ele caminhou entre os primeiros povos como o Deus dos Contratos e o Deus do Ouro, esculpindo as montanhas com lanças de pedra e estabelecendo as tradições fundamentais do comércio.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Adepti de Liyue"
+      ],
+      "characters": [
+        "Morax",
+        "Rex Lapis"
+      ],
+      "spoilerLevel": "Missão do Arconte Capítulo I"
+    },
+    "sources": [
+      {
+        "title": "Zhongli - Character Story 5 & Voice Lines",
+        "category": "character_story",
+        "quote": "I have lived for over six thousand years. The journey has been long, and time wears away at all things.",
+        "url": "https://genshin-impact.fandom.com/wiki/Zhongli/Lore#Character_Story_5"
+      },
+      {
+        "title": "Stone Tablet Compilations: Vol. 1",
+        "category": "book",
+        "quote": "The Geo Lord was born from the raw essence of mountain stone, walking the untamed earth before the kingdoms rose.",
+        "url": "https://genshin-impact.fandom.com/wiki/Stone_Tablet_Compilations"
+      },
+      {
+        "title": "Genshin Impact Wiki: Morax",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Morax"
+      }
+    ]
+  },
+  {
+    "id": "phanes-arrives",
+    "title": "A Chegada de Phanes & Criação das Quatro Sombras",
+    "yearsAgo": 6000,
+    "yearsAgoDisplay": "~6.000 AA",
+    "dateDisplay": "~6.000 Anos Atrás • A Descida Celestial",
+    "orderRank": 145,
+    "eraId": "primordial-one",
+    "eraName": "Quando os Pombos Carregavam Ramos",
+    "summary": "O Primeiro Que Veio (Phanes) desce dos céus, gera quatro sombras luminosas e prepara a conquista de Teyvat.",
+    "description": "Nascido de um ovo cósmico, Phanes — O Primeiro Que Veio e o Primeiro Descendente — chegou a Teyvat acompanhado por suas quatro sombras resplandecentes, incluindo Istaroth, a Sombra do Tempo. Ele iniciou a criação de um novo firmamento para proteger o mundo das trevas cósmicas externas.",
+    "images": [],
+    "tags": {
+      "region": "Celestia",
+      "factions": [
+        "Celestia",
+        "As Quatro Sombras"
+      ],
+      "characters": [
+        "Phanes",
+        "Istaroth"
+      ],
+      "spoilerLevel": "Missões do Mundo de Enkanomiya"
+    },
+    "sources": [
+      {
+        "title": "Before Sun and Moon: On Phanes, or The Primordial One",
+        "category": "book",
+        "quote": "The Primordial One may have been Phanes. It had wings and a crown, and was born from an egg, neither male nor female... Phanes brought forth four shining shades of itself.",
+        "url": "https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon#On_Phanes,_or_The_Primordial_One"
+      },
+      {
+        "title": "Genshin Impact Wiki: The Primordial One",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/The_Primordial_One"
+      }
+    ]
+  },
+  {
+    "id": "great-war-forty-years",
+    "title": "A Guerra dos Quarenta Anos: A Queda dos Soberanos Dragões",
+    "yearsAgo": 5960,
+    "yearsAgoDisplay": "~5.960 AA",
+    "dateDisplay": "~5.960 Anos Atrás • A Guerra da Criação",
+    "orderRank": 175,
+    "eraId": "primordial-one",
+    "eraName": "Quando os Pombos Carregavam Ramos",
+    "summary": "Phanes e as Quatro Sombras travam uma guerra devastadora de 40 anos, derrotando os Sete Soberanos Dragões e tomando a autoridade elemental.",
+    "description": "Por quarenta longos anos, céu e terra colidiram enquanto Phanes e suas sombras lutavam contra o Rei Dragão Nibelung e os Sete Soberanos. Os dragões foram decisivamente derrotados e destituídos de sua autoridade primordial sobre os elementos. Os sobreviventes fugiram para as profundezas oceânicas ou desertos esquecidos.",
+    "images": [],
+    "tags": {
+      "region": "Teyvat Global",
+      "factions": [
+        "Celestia",
+        "Sete Soberanos Dragões"
+      ],
+      "characters": [
+        "Phanes",
+        "Rei Dragão Nibelung",
+        "Apep",
+        "Scylla"
+      ],
+      "spoilerLevel": "Missões do Mundo de Fontaine"
+    },
+    "sources": [
+      {
+        "title": "Before Sun and Moon: The Forty-Year War",
+        "category": "book",
+        "quote": "Forty winters mourned, and forty springs were buried. In the end, the seven sovereigns fell, and the heaven and earth were opened.",
+        "url": "https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon#The_Forty-Year_War"
+      },
+      {
+        "title": "Genshin Impact Wiki: Seven Sovereigns",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Seven_Sovereigns"
+      }
+    ]
+  },
+  {
+    "id": "unified-human-civilization",
+    "title": "A Civilização Humana Unificada & Enviados Celestiais",
+    "yearsAgo": 5500,
+    "yearsAgoDisplay": "~5.500 AA",
+    "dateDisplay": "~5.500 Anos Atrás • A Era Dourada da Humanidade",
+    "orderRank": 210,
+    "eraId": "primordial-one",
+    "eraName": "Quando os Pombos Carregavam Ramos",
+    "summary": "A humanidade é criada por Phanes; uma civilização global unificada floresce com uma língua compartilhada e orientação celestial direta.",
+    "description": "Após reordenar o mundo, Phanes criou os primeiros humanos. A humanidade floresceu em uma Civilização Unificada pacífica abrangendo todo o globo, unida por uma língua e cultura comuns. Megálitos colossais foram construídos no subterrâneo e emissários celestiais desciam para conferir sabedoria, prosperidade e colheitas eternas aos mortais.",
+    "images": [],
+    "tags": {
+      "region": "Celestia & Teyvat Global",
+      "factions": [
+        "Civilização Humana Unificada",
+        "Celestia",
+        "Ancestrais Seelie"
+      ],
+      "characters": [
+        "Phanes",
+        "Ancestrais Seelie"
+      ],
+      "spoilerLevel": "Missões de Enkanomiya / Sumeru"
+    },
+    "sources": [
+      {
+        "title": "Tiara of Frost / Circlet Artifacts",
+        "category": "artifact",
+        "quote": "The envoys of the gods walked among benevolent humanity then, and the communication between heaven and earth was unobstructed.",
+        "url": "https://genshin-impact.fandom.com/wiki/Tiara_of_Frost"
+      },
+      {
+        "title": "A Thousand Floating Dreams Weapon Lore",
+        "category": "weapon",
+        "quote": "Long, long ago, the great and ancient spirits walked the surface alongside the mortals.",
+        "url": "https://genshin-impact.fandom.com/wiki/A_Thousand_Floating_Dreams"
+      },
+      {
+        "title": "Genshin Impact Wiki: Unified Civilization",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Unified_Civilization"
+      }
+    ]
+  },
+  {
+    "id": "second-who-came-invasion",
+    "title": "A Invasão do Segundo Que Veio & Céus Despedaçados",
+    "yearsAgo": 5000,
+    "yearsAgoDisplay": "~5.000 AA",
+    "dateDisplay": "~5.000 Anos Atrás • A Segunda Descida Cósmica",
+    "orderRank": 245,
+    "eraId": "second-who-came",
+    "eraName": "Guerra da Chama Funerária",
+    "summary": "O Segundo Que Veio chega a Teyvat, iniciando a terrível Guerra da Chama Funerária que parte os céus e devasta o mundo.",
+    "description": "Um invasor extraterrestre conhecido como \"O Segundo Que Veio\" chegou além do céu, desencadeando um conflito cataclísmico contra Celestia. O firmamento foi perfurado, montanhas tombaram nos oceanos e as fundações da Civilização Humana Unificada foram reduzidas a cinzas.",
+    "images": [],
+    "tags": {
+      "region": "Teyvat Global",
+      "factions": [
+        "Celestia",
+        "O Segundo Que Veio"
+      ],
+      "characters": [
+        "Phanes",
+        "O Segundo Que Veio"
+      ],
+      "spoilerLevel": "Missões do Mundo de Enkanomiya"
+    },
+    "sources": [
+      {
+        "title": "Before Sun and Moon: The Funerary Year",
+        "category": "book",
+        "quote": "The second throne of the heavens came, and war opened, as did the heavens and the earth. Then, darkness descended upon the lands.",
+        "url": "https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon#The_Funerary_Year"
+      },
+      {
+        "title": "Genshin Impact Wiki: Second Who Came",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Second_Who_Came"
+      }
+    ]
+  },
+  {
+    "id": "sinking-of-enkanomiya",
+    "title": "O Afundamento de Byakuyakoku (Enkanomiya)",
+    "yearsAgo": 5000,
+    "yearsAgoDisplay": "~5.000 AA",
+    "dateDisplay": "~5.000 Anos Atrás • A Noite Eterna Subterrânea",
+    "orderRank": 270,
+    "eraId": "second-who-came",
+    "eraName": "Guerra da Chama Funerária",
+    "summary": "Durante a grande guerra, a terra de Byakuyakoku desaba nas profundezas do oceano escuro, isolando seus habitantes da luz solar.",
+    "description": "Em meio às convulsões da Guerra da Chama Funerária, a massa continental de Byakuyakoku (posteriormente chamada Enkanomiya) desprendeu-se da superfície e afundou no mar abissal. No escuro absoluto, os humanos sobreviventes enfrentaram o terror dos Vishaps das Profundezas até que o sábio Abe Yoshihisa construiu o Helios (o Dainichi Mikoshi) com o auxílio de Istaroth.",
+    "images": [],
+    "tags": {
+      "region": "Enkanomiya",
+      "factions": [
+        "Povo de Byakuyakoku",
+        "Vishaps das Profundezas"
+      ],
+      "characters": [
+        "Abe Yoshihisa",
+        "Istaroth"
+      ],
+      "spoilerLevel": "Do Entardecer ao Alvorecer em Byakuyakoku"
+    },
+    "sources": [
+      {
+        "title": "Before Sun and Moon: The Third Year of Darkness",
+        "category": "book",
+        "quote": "The land was sunk into the waters. The people cried out to heaven, but only the God of Time listened to their desperate pleas.",
+        "url": "https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon#The_Third_Year_of_Darkness"
+      },
+      {
+        "title": "Genshin Impact Wiki: Enkanomiya",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Enkanomiya"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-seelie-race",
+    "title": "A Queda e a Maldição da Raça Seelie",
+    "yearsAgo": 4900,
+    "yearsAgoDisplay": "~5.000 AA",
+    "dateDisplay": "~5.000 Anos Atrás • A Punição Celestial",
+    "orderRank": 295,
+    "eraId": "second-who-came",
+    "eraName": "Guerra da Chama Funerária",
+    "summary": "Os nobres Seelie ancestrais são amaldiçoados após uma união proibida com um viajante das estrelas, regredindo em espíritos sem memória.",
+    "description": "Outrora uma das mais belas e sábias raças de Teyvat que guiavam a humanidade, os Seelies sofreram uma punição divina após um de seus ancestrais celebrar um matrimônio proibido com um viajante das estrelas. Privados de sua forma corpórea e memórias, foram condenados a definhar eternamente como pequenos espíritos flutuantes que buscam seus antigos lares.",
+    "images": [],
+    "tags": {
+      "region": "Teyvat Global",
+      "factions": [
+        "A Raça Seelie",
+        "Celestia"
+      ],
+      "characters": [
+        "Ancestrais Seelie",
+        "Nabu Malikata"
+      ],
+      "spoilerLevel": "Missões do Mundo de Aramani / Aranyaka"
+    },
+    "sources": [
+      {
+        "title": "Records of Jueyun: Vol. 4",
+        "category": "book",
+        "quote": "They were cursed to wander the wilderness. If they ever fall in love with mortals, their forms wither and their intellect vanishes.",
+        "url": "https://genshin-impact.fandom.com/wiki/Records_of_Jueyun#Vol._4"
+      },
+      {
+        "title": "Genshin Impact Wiki: Seelie",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Seelie"
+      }
+    ]
+  },
+  {
+    "id": "skyfrost-nail-sal-vindagnyr",
+    "title": "O Prego Congelado Atinge Sal Vindagnyr (Espinha do Dragão)",
+    "yearsAgo": 4800,
+    "yearsAgoDisplay": "~4.500 AA",
+    "dateDisplay": "~4.500 Anos Atrás • O Inverno Eterno da Montanha",
+    "orderRank": 325,
+    "eraId": "second-who-came",
+    "eraName": "Guerra da Chama Funerária",
+    "summary": "Um Prego Celestial despenca do céu sobre a montanha verdejante de Sal Vindagnyr, congelando a civilização e destruindo a Árvore Branca.",
+    "description": "Celestia lançou um Prego Celestial sobre a próspera civilização montanhosa de Sal Vindagnyr. O impacto partiu a montanha, destruiu a Árvore Branca Irminsul e transformou a verdejante cordilheira na desolada e gélida Espinha do Dragão, aniquilando seus habitantes sob nevascas perpétuas.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Celestia",
+        "Sal Vindagnyr"
+      ],
+      "characters": [
+        "Princesa de Sal Vindagnyr",
+        "Imunlaukr"
+      ],
+      "spoilerLevel": "Entalhes Antigos da Espinha do Dragão"
+    },
+    "sources": [
+      {
+        "title": "Blizzard Strayer Artifact Set",
+        "category": "artifact",
+        "quote": "When the nail from the heavens broke the mountain into shards, the girl picked a branch from the frost-covered tree, but the cold would not relent.",
+        "url": "https://genshin-impact.fandom.com/wiki/Blizzard_Strayer"
+      },
+      {
+        "title": "Snow-Tombed Starsilver Lore",
+        "category": "weapon",
+        "quote": "When the heavens' pillars descended, the lush mountain was swallowed by endless howling ice and snow.",
+        "url": "https://genshin-impact.fandom.com/wiki/Snow-Tombed_Starsilver"
+      },
+      {
+        "title": "Genshin Impact Wiki: Sal Vindagnyr",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Sal_Vindagnyr"
+      }
+    ]
+  },
+  {
+    "id": "chasm-nail-impact",
+    "title": "Prego Celestial Atinge o Despenhadeiro",
+    "yearsAgo": 4500,
+    "yearsAgoDisplay": "~4.500 AA",
+    "dateDisplay": "~4.500 Anos Atrás • O Fragmento Estelar das Profundezas",
+    "orderRank": 350,
+    "eraId": "second-who-came",
+    "eraName": "Guerra da Chama Funerária",
+    "summary": "Um meteoro celestial e um Prego Divino caem na cratera de Liyue, criando as minas cavernosas do Despenhadeiro.",
+    "description": "Durante a purgação divina do Abismo, um Prego Celestial despencou no oeste de Liyue, escavando o abismo monumental que se tornaria o Despenhadeiro. O poder do prego conteve a corrupção do Reino Escuro nas entranhas da terra, criando os minérios luminosos reverenciados por mineradores milênios depois.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Celestia",
+        "Mineradores Antigos de Liyue"
+      ],
+      "characters": [
+        "Morax"
+      ],
+      "spoilerLevel": "Missão do Mundo: Os Exploradores do Despenhadeiro"
+    },
+    "sources": [
+      {
+        "title": "Tenacity of the Millelith Artifact Set",
+        "category": "artifact",
+        "quote": "In ancient times, a star fell from the sky into the vast wastelands to the west, transforming the earth into a deep abyss.",
+        "url": "https://genshin-impact.fandom.com/wiki/Tenacity_of_the_Millelith"
+      },
+      {
+        "title": "Genshin Impact Wiki: The Chasm",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/The_Chasm"
+      }
+    ]
+  },
+  {
+    "id": "chenyu-vale-settlement",
+    "title": "Os Ancestrais do Jade Estabelecem-se no Vale Chenyu",
+    "yearsAgo": 4000,
+    "yearsAgoDisplay": "~4.000 AA",
+    "dateDisplay": "~4.000 Anos Atrás • A Dádiva das Águas do Jade",
+    "orderRank": 375,
+    "eraId": "interim-period",
+    "eraName": "A Era dos Antigos Reinos",
+    "summary": "Refugiados da guerra do Despenhadeiro migram para o norte e estabelecem as tradições de jade e chá no Vale Chenyu.",
+    "description": "Fugindo da turbulência celestial no Despenhadeiro, clãs humanos migraram para o noroeste de Liyue, fundando o Vale Chenyu. Sob a orientação dos Adepti locais (incluindo Fujin e Lingyuan), desenvolveram a arte espiritual do cultivo de jade e a cura pelas águas termais.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Clãs do Vale Chenyu",
+        "Adepti de Chenyu"
+      ],
+      "characters": [
+        "Fujin",
+        "Lingyuan",
+        "Morax"
+      ],
+      "spoilerLevel": "Bênçãos do Jade Submerso de Chenyu"
+    },
+    "sources": [
+      {
+        "title": "Fragment of Harmonious Whimsy Artifact Set",
+        "category": "artifact",
+        "quote": "The ancestors of Chenyu carved jade to pacify the churning river waters and offer tribute to the mountains.",
+        "url": "https://genshin-impact.fandom.com/wiki/Fragment_of_Harmonic_Whimsy"
+      },
+      {
+        "title": "Genshin Impact Wiki: Chenyu Vale",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Chenyu_Vale"
+      }
+    ]
+  },
+  {
+    "id": "three-god-alliance-sumeru",
+    "title": "A Aliança Tripartite de Sumeru (Ay-Khanoum)",
+    "yearsAgo": 3800,
+    "yearsAgoDisplay": "~3.800 AA",
+    "dateDisplay": "~3.800 Anos Atrás • A Cidade das Luas e Flores",
+    "orderRank": 400,
+    "eraId": "interim-period",
+    "eraName": "A Era dos Antigos Reinos",
+    "summary": "Rei Deshret, a Maior Lorde Rukkhadevata e Nabu Malikata unem forças para criar a cidade-oásis de Ay-Khanoum.",
+    "description": "No deserto ensolarado de Sumeru, três deuses lendários selaram um pacto de fraternidade pura. O Rei Deshret (Al-Ahmar), a Maior Lorde Rukkhadevata e Nabu Malikata (a Deusa das Flores) governaram em harmonia mútua, estabelecendo Ay-Khanoum (\"Cidade das Luas\"), uma era dourada de filosofia e florescimento cultural.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": [
+        "Aliança Tripartite",
+        "Pari do Oásis",
+        "Sumeru Antigo"
+      ],
+      "characters": [
+        "Rei Deshret",
+        "Maior Lorde Rukkhadevata",
+        "Nabu Malikata"
+      ],
+      "spoilerLevel": "Sono Dourado / Cântico de Bilqis"
+    },
+    "sources": [
+      {
+        "title": "The Tale of Shiruyeh and Shirin",
+        "category": "book",
+        "quote": "Three gods shared their thrones upon the oasis: the Lord of the Desert, the Mistress of Flowers, and the Avatar of the Tree.",
+        "url": "https://genshin-impact.fandom.com/wiki/The_Tale_of_Shiruyeh_and_Shirin"
+      },
+      {
+        "title": "Flower of Paradise Lost Artifact Set",
+        "category": "artifact",
+        "quote": "The three friends raised Ay-Khanoum, where mortals and spirits lived side by side.",
+        "url": "https://genshin-impact.fandom.com/wiki/Flower_of_Paradise_Lost"
+      },
+      {
+        "title": "Genshin Impact Wiki: Ay-Khanoum",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Ay-Khanoum"
+      }
+    ]
+  },
+  {
+    "id": "passing-of-goddess-of-flowers",
+    "title": "O Sacrifício de Nabu Malikata",
+    "yearsAgo": 3500,
+    "yearsAgoDisplay": "~3.600 AA",
+    "dateDisplay": "~3.600 Anos Atrás • O Lamento do Oásis Eterno",
+    "orderRank": 425,
+    "eraId": "interim-period",
+    "eraName": "A Era dos Antigos Reinos",
+    "summary": "A Deusa das Flores sacrifica-se voluntariamente para conceder a Deshret a visão dos segredos celestiais e do Abismo.",
+    "description": "Consciente das leis inflexíveis de Celestia, a Deusa das Flores orquestrou sua própria morte nas dunas. De seu sacrifício nasceram os Padisarahs e o Oásis Eterno. Sua partida deixou o Rei Deshret desolado, mergulhando-o na busca obsessiva por uma sabedoria que pudesse transcender a mortalidade e o destino divino.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": [
+        "Aliança Tripartite"
+      ],
+      "characters": [
+        "Nabu Malikata",
+        "Rei Deshret",
+        "Maior Lorde Rukkhadevata"
+      ],
+      "spoilerLevel": "Cântico de Bilqis"
+    },
+    "sources": [
+      {
+        "title": "Oasis Garden's Reminiscence",
+        "category": "material",
+        "quote": "The Goddess of Flowers chose to perish so that the Lord of Sand might look upon the sky unblinded.",
+        "url": "https://genshin-impact.fandom.com/wiki/Oasis_Garden%27s_Reminiscence"
+      },
+      {
+        "title": "Genshin Impact Wiki: Nabu Malikata",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Nabu_Malikata"
+      }
+    ]
+  },
+  {
+    "id": "rise-of-remuria",
+    "title": "O Rei-Deus Remus & A Grande Sinfonia de Remuria",
+    "yearsAgo": 3500,
+    "yearsAgoDisplay": "~3.600 AA",
+    "dateDisplay": "~3.600 Anos Atrás • O Reino de Ouro e Canções",
+    "orderRank": 450,
+    "eraId": "interim-period",
+    "eraName": "A Era dos Antigos Reinos",
+    "summary": "O Rei-Deus Remus unifica o mar de Fontaine com a música mágica da \"Sinfonia\", erguendo a magnífica Remuria.",
+    "description": "A bordo do navio dourado Fortuna, o Deus Remus chegou às águas de Fontaine e fundou o Império Remuriano. Remus compôs a \"Grande Sinfonia\" para conectar as almas de seu povo ao Ichor espiritual, acreditando que a harmonia da música poderia repelir a profecia de extinção anunciada pelo dragão Scylla.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Império de Remuria",
+        "Soberano Vishap da Água"
+      ],
+      "characters": [
+        "Rei-Deus Remus",
+        "Scylla",
+        "Boethius"
+      ],
+      "spoilerLevel": "Missão do Mundo: Mar de Eras Passadas"
+    },
+    "sources": [
+      {
+        "title": "The History of the Decline and Fall of Remuria",
+        "category": "book",
+        "quote": "King Remus came aboard Fortuna, playing the golden harp. He gathered all peoples under his great symphony.",
+        "url": "https://genshin-impact.fandom.com/wiki/The_History_of_the_Decline_and_Fall_of_Remuria"
+      },
+      {
+        "title": "Genshin Impact Wiki: Remuria",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Remuria"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-gurabad",
+    "title": "A Tirania e a Queda de Gurabad",
+    "yearsAgo": 3000,
+    "yearsAgoDisplay": "~3.400 AA",
+    "dateDisplay": "~3.400 Anos Atrás • O Voo dos Jinns no Deserto",
+    "orderRank": 475,
+    "eraId": "interim-period",
+    "eraName": "A Era dos Antigos Reinos",
+    "summary": "A cidade humana de Gurabad, erguida por Ormazd e a Jinn Liloupar, desaba em fratricídio, loucura e pragas.",
+    "description": "Criada nas areias sob a bênção do Rei Deshret, Gurabad ascendeu sob o pastor Ormazd e a Jinn Liloupar. Contudo, traições amargas, conspirações familiares e a vingança implacável de Liloupar conduziram a dinastia a uma espiral de parricídio e devastação total, deixando apenas ruínas assombradas pelas areias do tempo.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": [
+        "Gurabad",
+        "Os Jinns"
+      ],
+      "characters": [
+        "Liloupar",
+        "Ormazd",
+        "Shiruyeh"
+      ],
+      "spoilerLevel": "Cântico de Bilqis"
+    },
+    "sources": [
+      {
+        "title": "The Tomb of Caroses / The Scroll of Streaming Song",
+        "category": "book",
+        "quote": "Liloupar's vengeance tore through three generations of royalty until the great walls of Gurabad choked on dust.",
+        "url": "https://genshin-impact.fandom.com/wiki/Scroll_of_Streaming_Song"
+      },
+      {
+        "title": "Genshin Impact Wiki: Gurabad",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Gurabad"
+      }
+    ]
+  },
+  {
+    "id": "guili-assembly-founding",
+    "title": "Morax e Guizhong Fundam a Assembleia Guili",
+    "yearsAgo": 3700,
+    "yearsAgoDisplay": "~3.700 AA",
+    "dateDisplay": "~3.700 Anos Atrás • A Aliança nas Planícies",
+    "orderRank": 505,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "Morax e a sábia Deusa da Poeira, Guizhong, unem seus povos nas Planícies de Guili sob proteção e prosperidade mútua.",
+    "description": "Unidos por respeito e estima mútua, Morax (possuidor de força marcial inigualável) e Guizhong (mestra de genialidade mecânica e sabedoria) uniram seus povos nas Planícies de Guili. Juntos, criaram as Balistas de Guizhong, ensinaram a agricultura aos mortais e forjaram o Halteres de Memória.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Assembleia Guili",
+        "Adepti de Liyue"
+      ],
+      "characters": [
+        "Morax",
+        "Guizhong",
+        "Marchosius"
+      ],
+      "spoilerLevel": "Missões de Evento do Ritual das Lanternas"
+    },
+    "sources": [
+      {
+        "title": "Stone Tablet Compilations: Vol. 1",
+        "category": "book",
+        "quote": "Guizhong and Morax were allies. They gathered the people upon the plains, giving it the name Guili from their combined names.",
+        "url": "https://genshin-impact.fandom.com/wiki/Stone_Tablet_Compilations"
+      },
+      {
+        "title": "Memory of Dust Weapon Lore",
+        "category": "weapon",
+        "quote": "'This is the mark of our pledge, and it is also my challenge to you. All my wisdom is hidden within this stone dumbbell.'",
+        "url": "https://genshin-impact.fandom.com/wiki/Memory_of_Dust"
+      },
+      {
+        "title": "Genshin Impact Wiki: Guili Assembly",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Guili_Assembly"
+      }
+    ]
+  },
+  {
+    "id": "passing-of-guizhong",
+    "title": "A Queda de Guizhong & Fundação do Porto de Liyue",
+    "yearsAgo": 3700,
+    "yearsAgoDisplay": "~3.000 AA",
+    "dateDisplay": "~3.000 Anos Atrás • A Poeira Assenta no Mar",
+    "orderRank": 525,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "Guizhong perece em batalha feroz durante a Guerra dos Arcontes; Morax conduz o povo sobrevivente para o sul até o Porto de Liyue.",
+    "description": "Quando a Guerra dos Arcontes incendiou as terras de Liyue, as Planícies de Guili foram devastadas por deuses rivais. Guizhong tombou em batalha entre as Flores de Seda. Em profunda tristeza, Morax e os Adepti guiaram o povo para o sul através do Monte Tianheng, fundando o Porto de Liyue às margens do Mar das Nuvens.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Assembleia Guili",
+        "Adepti de Liyue"
+      ],
+      "characters": [
+        "Guizhong",
+        "Morax",
+        "Retentora das Nuvens"
+      ],
+      "spoilerLevel": "Missões de Evento do Ritual das Lanternas"
+    },
+    "sources": [
+      {
+        "title": "Customs of Liyue: Vol. 2",
+        "category": "book",
+        "quote": "Guizhong perished amidst the glaze lilies. The Geo Archon led the people south of Mt. Tianheng, founding the port city of Liyue.",
+        "url": "https://genshin-impact.fandom.com/wiki/Customs_of_Liyue#Vol._2"
+      },
+      {
+        "title": "Genshin Impact Wiki: Guizhong",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Guizhong"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-decarabian",
+    "title": "A Rebelião em Velha Mondstadt & Ascensão de Barbatos",
+    "yearsAgo": 2600,
+    "yearsAgoDisplay": "~2.600 AA",
+    "dateDisplay": "~2.600 Anos Atrás • A Canção da Liberdade",
+    "orderRank": 550,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "Um bardo sem nome, Gunnhildr, o cavaleiro Ragnvindr e um pequeno espírito do vento derrubam o tirano Decarabian.",
+    "description": "Enclausurada pelas tempestades intransponíveis do Deus das Tempestades Decarabian na Velha Mondstadt, a população rebelou-se pela liberdade guiada por um jovem bardo, Amos, o clã Gunnhildr e um humilde espírito dos ventos. Com a queda de Decarabian e a morte do bardo, o espírito ascendeu como o Deus Anemo Barbatos, assumindo a forma do amigo falecido para soprar liberdade sobre a terra.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Rebeldes da Velha Mondstadt",
+        "Clã Gunnhildr"
+      ],
+      "characters": [
+        "Barbatos",
+        "O Bardo Sem Nome",
+        "Decarabian",
+        "Amos"
+      ],
+      "spoilerLevel": "Prólogo da Missão do Arconte"
+    },
+    "sources": [
+      {
+        "title": "Biography of Gunnhildr",
+        "category": "book",
+        "quote": "A nameless wind spirit heard the cries of the people... from the songs of the bard arose the breeze that broke the howling walls of Decarabian.",
+        "url": "https://genshin-impact.fandom.com/wiki/Biography_of_Gunnhildr"
+      },
+      {
+        "title": "Amos' Bow Weapon Lore",
+        "category": "weapon",
+        "quote": "Even at the very moment her arrow pierced his heart, the fierce winds did not diminish her longing for true freedom.",
+        "url": "https://genshin-impact.fandom.com/wiki/Amos%27_Bow"
+      },
+      {
+        "title": "Genshin Impact Wiki: Decarabian",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Decarabian"
+      }
+    ]
+  },
+  {
+    "id": "andrius-surrenders",
+    "title": "Andrius Cede o Trono Anemo a Barbatos",
+    "yearsAgo": 2600,
+    "yearsAgoDisplay": "~2.600 AA",
+    "dateDisplay": "~2.600 Anos Atrás • O Vento Dispersa a Neve",
+    "orderRank": 570,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "Andrius percebe que seus ventos congelantes não podem nutrir a vida humana e escolhe ceder a autoridade Anemo a Barbatos.",
+    "description": "Reconhecendo que suas nevascas glaciais eram incompatíveis com a felicidade e o cultivo da humanidade, o grande lobo Andrius recusou o Trono Celestial de Anemo. Ele permitiu que sua forma física se dissolvesse na terra para enriquecê-la, tornando-se o espírito guardião Reino dos Lobos e deixando o governo do vento para Barbatos, que derreteu as neves de Mondstadt com brisas quentes.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Quatro Ventos de Mondstadt",
+        "Lobos de Wolvendom"
+      ],
+      "characters": [
+        "Andrius",
+        "Barbatos"
+      ],
+      "spoilerLevel": "Missão Lendária de Razor / Prólogo"
+    },
+    "sources": [
+      {
+        "title": "Breeze Amidst the Forest: Vol. 1",
+        "category": "book",
+        "quote": "Andrius believed that his biting cold could only snuff out human lives. Therefore, he chose to let his power flow into the earth.",
+        "url": "https://genshin-impact.fandom.com/wiki/Breeze_Amidst_the_Forest#Vol._1"
+      },
+      {
+        "title": "Genshin Impact Wiki: Andrius",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Andrius"
+      }
+    ]
+  },
+  {
+    "id": "orobashi-watatsumi",
+    "title": "Orobashi Resgata Enkanomiya e Erguer Watatsumi",
+    "yearsAgo": 2200,
+    "yearsAgoDisplay": "~2.500 AA",
+    "dateDisplay": "~2.500 Anos Atrás • A Serpente e os Corais",
+    "orderRank": 595,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "A grande serpente Orobashi descobre o povo de Enkanomiya no abismo e cria a Ilha Watatsumi com seus corais luminosos.",
+    "description": "Fugindo da Guerra dos Arcontes nas terras continentais, a colossal serpente Orobashi caiu nas trevas de Enkanomiya. Comovido pelo sofrimento dos humanos encurralados pelos Vishaps, Orobashi quebrou seus próprios ramos de coral radiantes para criar escadarias até a superfície, erguendo a paradisíaca Ilha Watatsumi no oceano de Inazuma.",
+    "images": [],
+    "tags": {
+      "region": "Enkanomiya & Inazuma",
+      "factions": [
+        "Clã Sangonomiya",
+        "Enkanomiya"
+      ],
+      "characters": [
+        "Orobashi"
+      ],
+      "spoilerLevel": "Missões do Mundo da Ilha Watatsumi"
+    },
+    "sources": [
+      {
+        "title": "The Narukami Trail: Vol. 1",
+        "category": "book",
+        "quote": "The great serpent fled to the bottom of the ocean. There, he took pity on the children of the dark and brought them up to the surface.",
+        "url": "https://genshin-impact.fandom.com/wiki/The_Narukami_Trail"
+      },
+      {
+        "title": "Genshin Impact Wiki: Orobashi",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Orobashi"
+      }
+    ]
+  },
+  {
+    "id": "xbalanque-tollan",
+    "title": "Libertação de Tollan & Primeiro Arconte Pyro Xbalanque",
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2.500 AA",
+    "dateDisplay": "~2.500 Anos Atrás • As Chamas do Renascimento",
+    "orderRank": 615,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "Xbalanque liberta a humanidade da tirania do Dragão das Chamas Primordiais e torna-se o primeiro Arconte Pyro de Natlan.",
+    "description": "Nas terras vulcânicas de Natlan, o lendário herói Xbalanque enfrentou o tirânico dragão Soberano de Fogo que escravizava as tribos mortais. Com a bênção da Chama Sagrada e o poder do Reino da Noite, Xbalanque derrotou o tirano em Tollan, fundou o sistema das tribos unificadas e ascendeu como o Primeiro Arconte Pyro sob a proteção do Ode da Ressurreição.",
+    "images": [],
+    "tags": {
+      "region": "Natlan",
+      "factions": [
+        "Tribos de Natlan",
+        "Ancestrais Wayob"
+      ],
+      "characters": [
+        "Xbalanque",
+        "Habitantes da Noite"
+      ],
+      "spoilerLevel": "Missão do Arconte de Natlan Capítulo V"
+    },
+    "sources": [
+      {
+        "title": "Talking Stick Weapon Lore",
+        "category": "weapon",
+        "quote": "Xbalanque buried the ancient dragon lord in the city of gold, and lit the first Sacred Flame for mortals.",
+        "url": "https://genshin-impact.fandom.com/wiki/Talking_Stick"
+      },
+      {
+        "title": "Natlan World Quest: Tale of Dreams Plucked From Fire",
+        "category": "quest",
+        "quote": "With the Shade of Death's blessing, Xbalanque established the rules of the Pyro Archon, ensuring the flame would never be extinguished.",
+        "url": "https://genshin-impact.fandom.com/wiki/Tale_of_Dreams_Plucked_From_Fire"
+      },
+      {
+        "title": "Genshin Impact Wiki: Xbalanque",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Xbalanque"
+      }
+    ]
+  },
+  {
+    "id": "slaying-of-orobashi",
+    "title": "Raiden Ei Derrota Orobashi na Ilha Yashiori",
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2.000 AA",
+    "dateDisplay": "~2.000 Anos Atrás • O Corte do Musou no Hitotachi",
+    "orderRank": 630,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "Orobashi invade o território do Xogunato após ler um livro proibido; Raiden Ei desfere o Musou no Hitotachi na Ilha Yashiori.",
+    "description": "Condenado à morte por Celestia após ler acidentalmente o livro proibido \"Antes do Sol e da Lua\" em Enkanomiya, Orobashi liderou uma invasão deliberada contra a Ilha Yashiori para garantir o futuro de Watatsumi. Raiden Ei desferiu o supremo Musou no Hitotachi, partindo a serpente e a ilha ao meio no Desfiladeiro Musoujin, deixando o legado eterno da Tatarigami.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Xogunato de Inazuma",
+        "Ilha Watatsumi"
+      ],
+      "characters": [
+        "Raiden Ei",
+        "Raiden Makoto",
+        "Orobashi",
+        "Sasayuri"
+      ],
+      "spoilerLevel": "Missão do Arconte Capítulo II"
+    },
+    "sources": [
+      {
+        "title": "Emblem of Severed Fate Artifact Set",
+        "category": "artifact",
+        "quote": "That slash split the serpent god in two, cut the island asunder, and severed the life of the General of the Tengu.",
+        "url": "https://genshin-impact.fandom.com/wiki/Emblem_of_Severed_Fate"
+      },
+      {
+        "title": "Before Sun and Moon",
+        "category": "book",
+        "quote": "For reading this book, the great serpent was sentenced to death by heaven.",
+        "url": "https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon"
+      },
+      {
+        "title": "Genshin Impact Wiki: Yashiori Island",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Yashiori_Island"
+      }
+    ]
+  },
+  {
+    "id": "deshret-sacrifice",
+    "title": "O Sacrifício do Conhecimento Proibido do Rei Deshret",
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2.000 AA",
+    "dateDisplay": "~2.000 Anos Atrás • A Punição das Areias",
+    "orderRank": 650,
+    "eraId": "archon-war",
+    "eraName": "A Guerra dos Arcontes",
+    "summary": "O Rei Deshret desencadeia acidentalmente o Conhecimento Proibido; Rukkhadevata e os espíritos do oásis contêm a praga enquanto Deshret se sacrifica.",
+    "description": "Buscando desafiar as leis de Celestia, o Rei Deshret abriu os caminhos para o Conhecimento Proibido do Abismo. A corrupção enlouqueceu seus súditos e gerou a doença do Eleazar. Reconhecendo seu erro trágico, Deshret sacrificou sua própria vida enquanto a Maior Lorde Rukkhadevata encolheu seu corpo divino para purificar as areias com templos de cura.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": [
+        "Império do Rei Deshret",
+        "Seguidores da Arconte Dendro"
+      ],
+      "characters": [
+        "Rei Deshret",
+        "Maior Lorde Rukkhadevata",
+        "Kasala"
+      ],
+      "spoilerLevel": "Missão do Arconte Capítulo III: Ato IV"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter III: Act IV - King Deshret and the Three Magi",
+        "category": "quest",
+        "quote": "'King Deshret chose to sacrifice himself to seal away the forbidden knowledge... and the Greater Lord expended her power, shrinking into the form of a child.'",
+        "url": "https://genshin-impact.fandom.com/wiki/King_Deshret_and_the_Three_Magi"
+      },
+      {
+        "title": "Genshin Impact Wiki: King Deshret",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/King_Deshret"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-remuria-fontaine",
+    "title": "Queda de Remuria & Ascensão de Egeria",
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2.000 AA",
+    "dateDisplay": "~2.000 Anos Atrás • A Aliança das Águas Claras",
+    "orderRank": 675,
+    "eraId": "post-archon-war",
+    "eraName": "A Paz dos Sete & Eras Mortais",
+    "summary": "O Império Remuriano entra em colapso; Egeria é libertada e assume o Trono Hydro de Fontaine ao lado das Oceânidas.",
+    "description": "A corrupção do Ichor e a revolta dos escravos humanos e Vishaps culminaram no afundamento cataclísmico da capital Remuria. Celestia libertou Egeria, a criação pura de Phanes feita de águas primordiais, para reinar como a primeira Arconte Hydro, pacificando os conflitos e criando a Corte de Fontaine.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Remuria",
+        "Corte de Fontaine"
+      ],
+      "characters": [
+        "Egeria",
+        "Rei-Deus Remus",
+        "Cassiodor"
+      ],
+      "spoilerLevel": "Missões do Mundo do Mar de Eras Passadas"
+    },
+    "sources": [
+      {
+        "title": "The History of the Decline and Fall of Remuria: Vol. 3",
+        "category": "book",
+        "quote": "The waters engulfed the golden city. From the tears of the sorrowful depths, the Lord of All Waters arose to guide the people.",
+        "url": "https://genshin-impact.fandom.com/wiki/The_History_of_the_Decline_and_Fall_of_Remuria#Vol._3"
+      },
+      {
+        "title": "Genshin Impact Wiki: Egeria",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Egeria"
+      }
+    ]
+  },
+  {
+    "id": "mondstadt-aristocracy-rebellion",
+    "title": "A Rebelião de Vennessa & Fundação dos Cavaleiros de Favonius",
+    "yearsAgo": 1000,
+    "yearsAgoDisplay": "~1.000 AA",
+    "dateDisplay": "~1.000 Anos Atrás • O Levantar da Leoa Dourada",
+    "orderRank": 705,
+    "eraId": "post-archon-war",
+    "eraName": "A Paz dos Sete & Eras Mortais",
+    "summary": "A gladiadora Vennessa alia-se a Barbatos para derrubar a tirânica aristocracia Lawrence e fundar os Cavaleiros de Favonius.",
+    "description": "Sob o domínio decadente e opressor dos nobres do clã Lawrence, Mondstadt perdeu sua liberdade. A escrava guerreira Vennessa, das tribos de Natlan, desafiou o dragão Ursa o Devastador na arena com o auxílio do bardo Venti. Com o povo inspirado, a aristocracia foi deposta e os Cavaleiros de Favonius foram instituídos para proteger a liberdade de Mondstadt.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Cavaleiros de Favonius",
+        "Aristocracia de Mondstadt"
+      ],
+      "characters": [
+        "Vennessa",
+        "Barbatos",
+        "Ragnvindr"
+      ],
+      "spoilerLevel": "Mangá de Genshin Impact / Missão Lendária de Venti"
+    },
+    "sources": [
+      {
+        "title": "Biography of Gunnhildr",
+        "category": "book",
+        "quote": "A thousand years ago, the brave warrior Vennessa rose up against the corrupt aristocracy, and freedom returned to the City of the Wind.",
+        "url": "https://genshin-impact.fandom.com/wiki/Biography_of_Gunnhildr"
+      },
+      {
+        "title": "Genshin Impact Official Manga: Prologue",
+        "category": "official_media",
+        "quote": "'Mondstadt's wind belongs to everyone! Not just the nobles who claim to own it.'",
+        "url": "https://genshin-impact.fandom.com/wiki/Manga#Prologue:_Songs_of_the_Wind"
+      },
+      {
+        "title": "Genshin Impact Wiki: Vennessa",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Vennessa"
+      }
+    ]
+  },
+  {
+    "id": "ascension-of-vennessa",
+    "title": "Vennessa Ascende a Celestia como o Falcão do Oeste",
+    "yearsAgo": 1000,
+    "yearsAgoDisplay": "~950 AA",
+    "dateDisplay": "~950 Anos Atrás • As Asas da Ascensão",
+    "orderRank": 730,
+    "eraId": "post-archon-war",
+    "eraName": "A Paz dos Sete & Eras Mortais",
+    "summary": "Após governar Mondstadt com justiça, Vennessa ascende a Celestia na Árvore de Windrise, tornando-se o Falcão dos Quatro Ventos.",
+    "description": "Ao concluir seus anos de liderança benevolente, Vennessa viajou até a grande planície de Windrise. Diante do carvalho colossal, ela ascendeu às ilhas celestiais de Celestia em forma de falcão, passando a vigiar a cidade como o Falcão do Oeste entre os Quatro Ventos de Mondstadt.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Quatro Ventos de Mondstadt",
+        "Cavaleiros de Favonius"
+      ],
+      "characters": [
+        "Vennessa",
+        "Barbatos"
+      ],
+      "spoilerLevel": "Missão Lendária de Venti: Carmen Dei"
+    },
+    "sources": [
+      {
+        "title": "Breeze Amidst the Forest: Vol. 2",
+        "category": "book",
+        "quote": "At Windrise, the maiden ascended to the heavens, taking the form of a great falcon to guard the realm forevermore.",
+        "url": "https://genshin-impact.fandom.com/wiki/Breeze_Amidst_the_Forest#Vol._2"
+      },
+      {
+        "title": "Genshin Impact Wiki: Four Winds",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Four_Winds"
+      }
+    ]
+  },
+  {
+    "id": "guhua-ascension",
+    "title": "A Lenda e Ascensão do Mestre Guhua",
+    "yearsAgo": 800,
+    "yearsAgoDisplay": "~800 AA",
+    "dateDisplay": "~800 Anos Atrás • A Espada e a Chuva de Pétalas",
+    "orderRank": 760,
+    "eraId": "post-archon-war",
+    "eraName": "A Paz dos Sete & Eras Mortais",
+    "summary": "O lendário espadachim Guhua alcança o ápice das artes marciais em Liyue e ascende aos céus no Salão Wangshan.",
+    "description": "Em Liyue, o venerado mestre Guhua unificou as artes marciais de espadas e lanças na Fraternidade Guhua. Após realizar inúmeros feitos de justiça sem jamais tirar a vida de inocentes, diz-se que Guhua atingiu a iluminação marcial máxima e ascendeu em uma chuva de flores roxas no Salão Wangshan.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Fraternidade Guhua"
+      ],
+      "characters": [
+        "Mestre Guhua"
+      ],
+      "spoilerLevel": "Missão Lendária de Xingqiu / Salão Wangshan"
+    },
+    "sources": [
+      {
+        "title": "Records of the Gallant: Vol. 1",
+        "category": "book",
+        "quote": "Master Guhua traversed the land with a righteous heart. When his martial art reached perfection, he ascended into the purple dawn.",
+        "url": "https://genshin-impact.fandom.com/wiki/Records_of_the_Gallant#Vol._1"
+      },
+      {
+        "title": "Genshin Impact Wiki: Guhua",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Guhua"
+      }
+    ]
+  },
+  {
+    "id": "khaenriah-cataclysm-outbreak",
+    "title": "O Cataclismo: Rhinedottir & Os Cinco Pecadores",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 AA",
+    "dateDisplay": "500 Anos Atrás • A Fenda Abissal de Khaenri'ah",
+    "orderRank": 795,
+    "eraId": "cataclysm",
+    "eraName": "O Cataclismo de Khaenri'ah",
+    "summary": "A alquimista de Khaenri'ah, Rhinedottir, e os Cinco Pecadores quebram as fronteiras do Abismo, liberando horrores pelo mundo.",
+    "description": "Nas entranhas da dinastia Eclipse em Khaenri'ah, os maiores mestres da Khemia violaram os limites cósmicos. Rhinedottir (Ouro) criou monstros das trevas como Durin e os Cães da Fenda. As forças do Abismo rasgaram as barreiras dimensionais, desencadeando um dilúvio de escuridão corrosiva em todas as nações de Teyvat.",
+    "images": [],
+    "tags": {
+      "region": "Khaenri'ah",
+      "factions": [
+        "Dinastia Eclipse",
+        "Os Cinco Pecadores",
+        "Ordem do Abismo"
+      ],
+      "characters": [
+        "Rhinedottir",
+        "Rei Irmin",
+        "Dainsleif",
+        "Surtalogi"
+      ],
+      "spoilerLevel": "Missão do Arconte Capítulo IV / Caribert"
+    },
+    "sources": [
+      {
+        "title": "Breeze Amidst the Forest: Vol. 2",
+        "category": "book",
+        "quote": "Five hundred years ago, disaster descended upon the land. The dark dragon Durin was born of corrupted alchemy.",
+        "url": "https://genshin-impact.fandom.com/wiki/Breeze_Amidst_the_Forest#Vol._2"
+      },
+      {
+        "title": "Shadow of the Errant Stalker Weapon Lore",
+        "category": "weapon",
+        "quote": "The black sun fell, and the five sinners divided the power of the abyss among themselves.",
+        "url": "https://genshin-impact.fandom.com/wiki/Cinnabar_Spindle"
+      },
+      {
+        "title": "Genshin Impact Wiki: Cataclysm",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Cataclysm"
+      }
+    ]
+  },
+  {
+    "id": "destruction-of-khaenriah",
+    "title": "Destruição de Khaenri'ah & A Maldição da Selvageria",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 AA",
+    "dateDisplay": "500 Anos Atrás • A Punição dos Princípios Celestiais",
+    "orderRank": 815,
+    "eraId": "cataclysm",
+    "eraName": "O Cataclismo de Khaenri'ah",
+    "summary": "Celestia e os Arcontes destroem Khaenri'ah; os mortais são afligidos com a maldição da imortalidade e da transformação em monstros.",
+    "description": "Celestia interveio com fúria implacável para aniquilar Khaenri'ah. A civilização milenar foi reduzida a escombros flamejantes. Os deuses impuseram a Maldição da Imortalidade aos cidadãos puros de Khaenri'ah (como Dainsleif), enquanto o restante dos habitantes foi amaldiçoado a perder sua humanidade, regredindo em Hilichurls e criaturas monstruosas.",
+    "images": [],
+    "tags": {
+      "region": "Khaenri'ah",
+      "factions": [
+        "Dinastia de Khaenri'ah",
+        "Celestia"
+      ],
+      "characters": [
+        "Dainsleif",
+        "Guardiã dos Princípios Celestiais",
+        "O Viajante Gêmeo"
+      ],
+      "spoilerLevel": "Missão do Arconte: Réquiem dos Profundos Ecos / Caribert"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter II: Act IV - Requiem of the Echoing Depths",
+        "category": "quest",
+        "quote": "'The curse of immortality was not a blessing, but the cruelest torment. For five hundred years, my flesh has eroded while my soul cannot die.'",
+        "url": "https://genshin-impact.fandom.com/wiki/Requiem_of_the_Echoing_Depths"
+      },
+      {
+        "title": "Genshin Impact Wiki: Khaenri'ah",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Khaenri%27ah"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-durin-dragonspine",
+    "title": "A Queda de Durin na Espinha do Dragão",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 AA",
+    "dateDisplay": "500 Anos Atrás • O Sangue Corrompido na Neve",
+    "orderRank": 835,
+    "eraId": "cataclysm",
+    "eraName": "O Cataclismo de Khaenri'ah",
+    "summary": "O dragão corrompido Durin invade Mondstadt; Dvalin e Barbatos enfrentam o monstro e o derrubam nos picos nevados.",
+    "description": "Criado por Rhinedottir com a ilusão inocente de uma canção pacífica, o colossal dragão sombrio Durin sobrevoou Mondstadt com veneno cáustico. Atendendo às preces do povo, Barbatos convocou o dragão Dvalin. Em uma batalha nos céus sobre a Espinha do Dragão, Dvalin dilacerou a garganta de Durin, caindo nas neves onde o coração venenoso do monstro ainda pulsa.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Quatro Ventos de Mondstadt",
+        "Ordem do Abismo"
+      ],
+      "characters": [
+        "Dvalin",
+        "Barbatos",
+        "Durin",
+        "Rhinedottir"
+      ],
+      "spoilerLevel": "O Príncipe de Giz e o Dragão / Prólogo"
+    },
+    "sources": [
+      {
+        "title": "Breeze Amidst the Forest: Vol. 2 - Ballad of Durin",
+        "category": "book",
+        "quote": "Dvalin spread six wings and tore through the clouds, biting through the neck of the dark dragon. The shadow dragon crashed into the snow of the silver mountain.",
+        "url": "https://genshin-impact.fandom.com/wiki/Breeze_Amidst_the_Forest#Vol._2"
+      },
+      {
+        "title": "Genshin Impact Wiki: Durin",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Durin"
+      }
+    ]
+  },
+  {
+    "id": "chasm-sacrifice-bosacius",
+    "title": "Bosacius e Boyang Selam a Brecha Abissal no Despenhadeiro",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 AA",
+    "dateDisplay": "500 Anos Atrás • A Última Batalha nas Profundezas",
+    "orderRank": 855,
+    "eraId": "cataclysm",
+    "eraName": "O Cataclismo de Khaenri'ah",
+    "summary": "O Yaksha Bosacius e o taumaturgo Boyang sacrificam-se selando a fenda abissal nas entranhas do Despenhadeiro.",
+    "description": "Quando as hordas abissais irromperam pelas galerias inferiores do Despenhadeiro, o Millelith travou uma defesa desesperada. O Yaksha Bosacius, atormentado pelo débito cármico mas lembrando-se de seu dever protetor, desceu ao espaço místico ao lado do mago Boyang, selando o Compasso Fantástico por dentro para deter os monstros à custa de suas próprias vidas.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Millelith",
+        "Cinco Yakshas"
+      ],
+      "characters": [
+        "Bosacius",
+        "Boyang",
+        "Yelan (Ancestrais)",
+        "Morax"
+      ],
+      "spoilerLevel": "Missão do Arconte Interlúdio: Trilha Perigosa"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Interlude Chapter: Act II - Perilous Trail",
+        "category": "quest",
+        "quote": "'Boyang, do you miss home?' 'I do... but look, the monsters can no longer escape. Our people are safe.'",
+        "url": "https://genshin-impact.fandom.com/wiki/Perilous_Trail"
+      },
+      {
+        "title": "Genshin Impact Wiki: Bosacius",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Bosacius"
+      }
+    ]
+  },
+  {
+    "id": "deaths-of-the-archons",
+    "title": "Os Sacrifícios de Makoto, Rukkhadevata & Egeria",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 AA",
+    "dateDisplay": "500 Anos Atrás • O Luto dos Sete Tronos",
+    "orderRank": 875,
+    "eraId": "cataclysm",
+    "eraName": "O Cataclismo de Khaenri'ah",
+    "summary": "Vários Arcontes originais perecem durante o Cataclismo: Makoto em Khaenri'ah, Egeria em Tunigi Hollow, e Rukkhadevata em Irminsul.",
+    "description": "O Cataclismo dizimou a primeira geração dos Sete Arcontes. Raiden Makoto viajou secretamente para Khaenri'ah e faleceu nos braços de Ei. Egeria morreu no deserto de Sumeru, seu corpo transformando-se nas águas de Amrita. A Maior Lorde Rukkhadevata esgotou seu poder divino salvando a Árvore Irminsul da contaminação abissal, nascendo de seu ramo mais puro a jovem Nahida.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma / Sumeru / Fontaine",
+      "factions": [
+        "Os Sete Arcontes"
+      ],
+      "characters": [
+        "Raiden Makoto",
+        "Raiden Ei",
+        "Egeria",
+        "Maior Lorde Rukkhadevata",
+        "Nahida"
+      ],
+      "spoilerLevel": "Missões do Arconte de Sumeru / Fontaine"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter III: Act V - Where the Boat of Consciousness Crafts",
+        "category": "quest",
+        "quote": "'Let the world completely forget me.' With these words, the avatar of Irminsul cleansed the world's memory.",
+        "url": "https://genshin-impact.fandom.com/wiki/Where_the_Boat_of_Consciousness_Lies"
+      },
+      {
+        "title": "Vourukasha's Glow Artifact Set",
+        "category": "artifact",
+        "quote": "The former Lord of the Amrita dissolved into sweet waters to wash away the black mud of the abyss.",
+        "url": "https://genshin-impact.fandom.com/wiki/Vourukasha%27s_Glow"
+      },
+      {
+        "title": "Genshin Impact Wiki: Greater Lord Rukkhadevata",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Greater_Lord_Rukkhadevata"
+      }
+    ]
+  },
+  {
+    "id": "founding-of-abyss-order",
+    "title": "Chlothar Alberich Funda a Ordem do Abismo",
+    "yearsAgo": 499,
+    "yearsAgoDisplay": "~400 AA",
+    "dateDisplay": "~400 Anos Atrás • O Tecelão do Destino",
+    "orderRank": 900,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "O nobre de Khaenri'ah Chlothar Alberich descobre o poder do Pecador e funda a Ordem do Abismo ao lado do Viajante Gêmeo.",
+    "description": "Consumido pela dor ao testemunhar seu filho Caribert transformado em Hilichurl pela maldição divina, Chlothar encontrou um cristal abissal reverberando com a voz de um \"Pecador\". Renovado com fé fanática nas forças do Abismo, Chlothar abandonou sua humanidade e fundou a Ordem do Abismo, acolhendo o Viajante Gêmeo como seu líder soberano.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru & Khaenri'ah",
+      "factions": [
+        "Ordem do Abismo",
+        "Clã Alberich"
+      ],
+      "characters": [
+        "Chlothar Alberich",
+        "Caribert",
+        "O Viajante Gêmeo",
+        "Dainsleif"
+      ],
+      "spoilerLevel": "Missão do Arconte Capítulo III: Ato VI - Caribert"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter III: Act VI - Caribert",
+        "category": "quest",
+        "quote": "'I shall be the herald of the abyss. The gods shall know the fury of those they have discarded!'",
+        "url": "https://genshin-impact.fandom.com/wiki/Caribert"
+      },
+      {
+        "title": "Genshin Impact Wiki: Abyss Order",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Abyss_Order"
+      }
+    ]
+  },
+  {
+    "id": "focalors-furina-masquerade",
+    "title": "Focalors Divide Sua Divindade & Início do Baile de Furina",
+    "yearsAgo": 499,
+    "yearsAgoDisplay": "~500 AA",
+    "dateDisplay": "~500 Anos Atrás • O Julgamento de 500 Anos",
+    "orderRank": 915,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "A Arconte Hydro Focalors separa sua divindade de seu corpo humano, encarregando Furina de interpretar a Arconte por 500 anos.",
+    "description": "Para enganar os Princípios Celestiais e evitar a dissolução profetizada do povo de Fontaine, a Arconte Focalors separou seu espírito divino em Oratrice Mecanique d'Analyse Cardinale, deixando seu corpo humano como Furina. Por meio milênio de solidão agoniante, Furina atuou perante o público como uma deusa confiante para acumular Indemnitium suficiente para sacrificar o próprio Trono Divino de Hydro.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Corte de Fontaine"
+      ],
+      "characters": [
+        "Focalors",
+        "Furina",
+        "Neuvillette",
+        "Egeria"
+      ],
+      "spoilerLevel": "Missão do Arconte Capítulo IV: Ato V - Máscara dos Culpados"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Chapter IV: Act V - Masquerade of the Guilty",
+        "category": "quest",
+        "quote": "'For five hundred years, she lived only to play this role... A human body bearing the torment of gods, all to deceive the Heavenly Principles.'",
+        "url": "https://genshin-impact.fandom.com/wiki/Masquerade_of_the_Guilty"
+      },
+      {
+        "title": "Genshin Impact Wiki: Focalors",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Focalors"
+      }
+    ]
+  },
+  {
+    "id": "rosalyne-crimson-witch",
+    "title": "Rosalyne Torna-se a Bruxa Carmesim das Chamas",
+    "yearsAgo": 490,
+    "yearsAgoDisplay": "~480 AA",
+    "dateDisplay": "~480 Anos Atrás • As Cinzas do Luto",
+    "orderRank": 930,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "Após a morte de seu amado Rostam no Cataclismo, a donzela de Mondstadt Rosalyne queima seu corpo com chamas líquidas.",
+    "description": "Ao retornar de seus estudos na Academia de Sumeru, a jovem cantora Rosalyne-Kruzchka Lohefalter descobriu que seu amado cavaleiro Rostam havia morrido enfrentando os monstros do Cataclismo. Em desespero incandescente, ela converteu seu próprio corpo em fogo líquido carmesim, vagando pelo mundo para purificar monstros antes de ser recrutada por Pierro como a Harbinger La Signora.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt / Snezhnaya",
+      "factions": [
+        "Mensageiros dos Fatui"
+      ],
+      "characters": [
+        "Rosalyne (La Signora)",
+        "Rostam",
+        "Pierro"
+      ],
+      "spoilerLevel": "Bruxa Carmesim das Chamas / Missão do Arconte de Inazuma"
+    },
+    "sources": [
+      {
+        "title": "Crimson Witch of Flames Artifact Set",
+        "category": "artifact",
+        "quote": "She poured liquid fire into her veins. Long before the people feared her as a monster, she had wept all her tears upon the grave of her beloved.",
+        "url": "https://genshin-impact.fandom.com/wiki/Crimson_Witch_of_Flames"
+      },
+      {
+        "title": "Genshin Impact Wiki: Signora",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Signora"
+      }
+    ]
+  },
+  {
+    "id": "neuvillette-iudex",
+    "title": "Neuvillette é Nomeado Iudex de Fontaine",
+    "yearsAgo": 400,
+    "yearsAgoDisplay": "~400 AA",
+    "dateDisplay": "~400 Anos Atrás • A Justiça das Águas",
+    "orderRank": 945,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "Focalors convida a reencarnação do Soberano Hydro, Neuvillette, para atuar como Juiz Supremo na Corte de Fontaine.",
+    "description": "Buscando reconectar o Dragão Soberano da Água com a humanidade e prepará-lo para herdar a autoridade elemental plena após o julgamento celestial, Focalors convidou Neuvillette para Fontaine. Durante quatrocentos anos como Iudex no Palais Mermonia, Neuvillette aprendeu sobre os sentimentos e lágrimas mortais, tornando-se o pilar inabalável da justiça da nação.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Corte de Fontaine",
+        "Marechaussee Phantom"
+      ],
+      "characters": [
+        "Neuvillette",
+        "Furina",
+        "Focalors"
+      ],
+      "spoilerLevel": "Missão Lendária de Neuvillette: Capítulo Diluvies"
+    },
+    "sources": [
+      {
+        "title": "Neuvillette - Character Story 4",
+        "category": "character_story",
+        "quote": "Four hundred years ago, upon the invitation of the Hydro Archon, the newly awakened dragon sovereign assumed the seat of the Chief Justice.",
+        "url": "https://genshin-impact.fandom.com/wiki/Neuvillette/Lore#Character_Story_4"
+      },
+      {
+        "title": "Genshin Impact Wiki: Neuvillette",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Neuvillette"
+      }
+    ]
+  },
+  {
+    "id": "tatarasuna-incident",
+    "title": "O Incidente da Forja de Tatarasuna & A Traição de Scaramouche",
+    "yearsAgo": 400,
+    "yearsAgoDisplay": "~400 AA",
+    "dateDisplay": "~400 Anos Atrás • O Fogo Negro da Forja Mikage",
+    "orderRank": 958,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "O agente Fatui Dottore sabota a Forja Mikage em Tatarasuna, manipulando o jovem Kabukimono (Scaramouche).",
+    "description": "Criado e adormecido por Raiden Ei como um protótipo de marionete, o jovem Kabukimono viveu pacificamente entre os ferreiros de Tatarasuna. O diplomata Fatui \"Escher\" (Il Dottore disfarçado) sabotou a forja com energia de Tatarigami e enganou a marionete, fazendo-a crer que fora traída por seu amigo humano Niwa, semeando o ódio ardente que o levou a juntar-se aos Fatui.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Artesãos de Tatarasuna",
+        "Fatui"
+      ],
+      "characters": [
+        "Kabukimono (Scaramouche)",
+        "Niwa Nagamitsu",
+        "Dottore (Escher)"
+      ],
+      "spoilerLevel": "Missão do Arconte Interlúdio: Inversão da Gênese"
+    },
+    "sources": [
+      {
+        "title": "Husk of Opulent Dreams Artifact Set",
+        "category": "artifact",
+        "quote": "He thought that he had found a home among mortals, until the black smoke choked the smelter and betrayal took his heart.",
+        "url": "https://genshin-impact.fandom.com/wiki/Husk_of_Opulent_Dreams"
+      },
+      {
+        "title": "Genshin Impact Wiki: Tatarasuna",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Tatarasuna"
+      }
+    ]
+  },
+  {
+    "id": "raiden-gokaden-fall",
+    "title": "A Vingança de Scaramouche & Queda da Raiden Gokaden",
+    "yearsAgo": 100,
+    "yearsAgoDisplay": "~100 AA",
+    "dateDisplay": "~100 Anos Atrás • O Fim dos Mestres Ferreiros",
+    "orderRank": 970,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "Scaramouche sabota os diagramas de forjamento das cinco grandes escolas de forja de Inazuma, destruindo as linhagens dos ferreiros.",
+    "description": "Em vingança contra o Xogunato e a linhagem dos ferreiros de Tatarasuna, Scaramouche (Kunukuzushi) infiltrou-se nas cinco lendárias escolas da Raiden Gokaden. Ele corrompeu os diagramas de forjamento do Xogum, provocando a ruína e execução de mestres de renome (incluindo os ancestrais de Kaedehara Kazuha e do clã Kamisato), antes de poupar a família Isshin em homenagem a Niwa.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Raiden Gokaden",
+        "Clã Kaedehara",
+        "Clã Kamisato"
+      ],
+      "characters": [
+        "Scaramouche",
+        "Kaedehara Yoshinori"
+      ],
+      "spoilerLevel": "Missão de Evento Cores do Jardim Violeta"
+    },
+    "sources": [
+      {
+        "title": "Kagotsurube Isshin Weapon Lore",
+        "category": "weapon",
+        "quote": "The bladesmith clans withered one after another under the shadow of an unknown puppeteer's wrath.",
+        "url": "https://genshin-impact.fandom.com/wiki/Kagotsurube_Isshin"
+      },
+      {
+        "title": "Hues of the Violet Garden: The Blackier Leaf",
+        "category": "quest",
+        "quote": "A century ago, Kunikuzushi altered the sacred diagram to avenge his perceived betrayal in Tatarasuna.",
+        "url": "https://genshin-impact.fandom.com/wiki/Hues_of_the_Violet_Garden"
+      },
+      {
+        "title": "Genshin Impact Wiki: Raiden Gokaden",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Raiden_Gokaden"
+      }
+    ]
+  },
+  {
+    "id": "crepus-delusion-incident",
+    "title": "O Incidente do Olho da Corrupção de Crepus & A Partida de Diluc",
+    "yearsAgo": 4,
+    "yearsAgoDisplay": "~4 AA",
+    "dateDisplay": "4 Anos Atrás • O Julgamento do Vinhedo",
+    "orderRank": 982,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "O Mestre Crepus morre usando um Olho da Corrupção para salvar Diluc do monstro Ursa; Diluc renuncia aos Cavaleiros de Favonius.",
+    "description": "No aniversário de 18 anos de Diluc Ragnvindr, a carruagem de seu pai foi emboscada pelo monstro Ursa o Devastador. Para proteger o filho, Crepus utilizou um Olho da Corrupção dos Fatui, sofrendo ferimentos fatais pelo recuo do poder das trevas. Desiludido pela tentativa do Inspetor Eroch dos Cavaleiros de Favonius de encobrir o ocorrido, Diluc entregou sua Visão Pyro e viajou sozinho pelas sete nações caçando os Fatui.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Cavaleiros de Favonius",
+        "Fatui",
+        "Clã Ragnvindr"
+      ],
+      "characters": [
+        "Diluc Ragnvindr",
+        "Crepus Ragnvindr",
+        "Kaeya"
+      ],
+      "spoilerLevel": "Mangá de Genshin Impact / História 4 de Diluc"
+    },
+    "sources": [
+      {
+        "title": "Diluc - Character Story 4",
+        "category": "character_story",
+        "quote": "On that rainy day four years ago, Crepus unleashed a forbidden power to protect his son, dying in Diluc's arms.",
+        "url": "https://genshin-impact.fandom.com/wiki/Diluc/Lore#Character_Story_4"
+      },
+      {
+        "title": "Genshin Impact Official Manga: Chapter 1",
+        "category": "official_media",
+        "quote": "The monster was driven off, but the black fire had already consumed his soul.",
+        "url": "https://genshin-impact.fandom.com/wiki/Manga#Chapter_1:_Bad_Wine"
+      },
+      {
+        "title": "Genshin Impact Wiki: Crepus",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Crepus"
+      }
+    ]
+  },
+  {
+    "id": "traveler-awakens",
+    "title": "O Despertar do Viajante: A Praia de Starfell",
+    "yearsAgo": 0,
+    "yearsAgoDisplay": "Ano 0 (Presente)",
+    "dateDisplay": "O Início da Jornada • Praia de Starfell, Mondstadt",
+    "orderRank": 995,
+    "eraId": "modern",
+    "eraName": "Era Moderna & Jornada dos Viajantes",
+    "summary": "O Viajante desperta após 500 anos de sono, resgata Paimon no mar e dá início à sua jornada pelas Sete Nações de Teyvat.",
+    "description": "Após cinco séculos de sono selado pela Guardiã dos Princípios Celestiais, o Viajante acorda na costa deserta de Mondstadt. Ao lançar uma vara de pesca, resgata a pequena Paimon de morrer afogada. Como sua nova guia e companheira inseparável, Paimon conduz o Viajante até a Estátua dos Sete no Lago Estelar, ressoando com o elemento Anemo e dando início à grande odisseia por Teyvat em busca do gêmeo perdido.",
+    "images": [],
+    "tags": {
+      "region": "Mondstadt",
+      "factions": [
+        "Viajante & Paimon"
+      ],
+      "characters": [
+        "O Viajante",
+        "Paimon"
+      ],
+      "spoilerLevel": "Prólogo da Missão do Arconte: Ato I"
+    },
+    "sources": [
+      {
+        "title": "Archon Quest Prologue: Act I - The Outlander Who Caught the Wind",
+        "category": "quest",
+        "quote": "'So, what you're telling me is that you fell into this world from another star, and then an unknown god took your twin away?'",
+        "url": "https://genshin-impact.fandom.com/wiki/The_Outlander_Who_Caught_the_Wind"
+      },
+      {
+        "title": "Genshin Impact Wiki: Traveler",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Traveler"
+      }
+    ]
+  }
+]

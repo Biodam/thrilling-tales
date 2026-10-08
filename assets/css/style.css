@@ -202,6 +202,41 @@ body {
   color: var(--gold-celestial);
 }
 
+/* Language Selector */
+.lang-selector-group {
+  display: flex;
+  align-items: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  gap: 2px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.45rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--gold-celestial);
+}
+
+.lang-btn.active {
+  background: rgba(229, 193, 88, 0.2);
+  color: var(--gold-celestial);
+  box-shadow: 0 0 8px rgba(229, 193, 88, 0.25);
+}
+
 .github-btn {
   display: flex;
   align-items: center;

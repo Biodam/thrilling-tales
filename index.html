@@ -48,6 +48,12 @@
         Loading...
       </span>
 
+      <!-- Language Selector -->
+      <div class="lang-selector-group" id="lang-selector-group" role="group" aria-label="Language Selector">
+        <button class="lang-btn active" data-lang="en" title="English" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="pt" title="Português" aria-pressed="false">PT</button>
+      </div>
+
       <!-- GitHub Link -->
       <a href="https://github.com/Biodam/thrilling-tales" target="_blank" rel="noopener noreferrer" class="github-btn" title="View Source on GitHub">
         <span>GitHub</span>
@@ -71,7 +77,7 @@
     <!-- Floating Minimap Overlay -->
     <aside class="canvas-minimap" id="canvas-minimap" aria-label="Timeline Minimap Navigation">
       <div class="minimap-header">
-        <span class="minimap-title">🗺️ Teyvat Overview</span>
+        <span class="minimap-title" id="minimap-title">🗺️ Teyvat Overview</span>
         <button class="minimap-toggle-btn" id="minimap-toggle-btn" title="Toggle Minimap">−</button>
       </div>
       <div class="minimap-body" id="minimap-body">
@@ -98,7 +104,7 @@
         <div id="inspector-date" class="inspector-date">Date</div>
       </div>
       <div class="inspector-header-right">
-        <span class="inspector-hint-text">Pinned Event Details</span>
+        <span class="inspector-hint-text" id="inspector-hint-text">Pinned Event Details</span>
         <button class="inspector-close-btn" id="inspector-close-btn" title="Close / Unpin (Esc)">✕</button>
       </div>
     </div>
@@ -122,7 +128,7 @@
         <h2 id="inspector-title" class="inspector-title">Event Title</h2>
         <p id="inspector-desc" class="inspector-desc">Detailed event description text.</p>
         <div class="inspector-tag-section">
-          <span class="section-label">Categorization & Entities</span>
+          <span class="section-label" id="inspector-tag-label">Categorization & Entities</span>
           <div class="tag-cloud" id="inspector-tags">
             <!-- Injected via main.js -->
           </div>
@@ -131,7 +137,7 @@
 
       <!-- Citations / Milestones Column -->
       <div class="inspector-citations-col">
-        <span class="section-label">Citations & References</span>
+        <span class="section-label" id="inspector-citation-label">Citations & References</span>
         <div id="inspector-sources">
           <!-- Injected via main.js -->
         </div>
@@ -142,23 +148,23 @@
   <!-- Bottom Helper Bar -->
   <footer class="timeline-bottombar">
     <div class="hint-chips">
-      <span class="hint-chip">
-        <kbd class="key-kbd">Drag</kbd> to Pan 2D
+      <span class="hint-chip" id="hint-drag">
+        <kbd class="key-kbd">Drag</kbd> <span class="hint-text">to Pan 2D</span>
       </span>
-      <span class="hint-chip">
-        <kbd class="key-kbd">Wheel</kbd> to Zoom
+      <span class="hint-chip" id="hint-wheel">
+        <kbd class="key-kbd">Wheel</kbd> <span class="hint-text">to Zoom</span>
       </span>
-      <span class="hint-chip">
-        <kbd class="key-kbd">Space + Drag</kbd> Hand Pan
+      <span class="hint-chip" id="hint-space">
+        <kbd class="key-kbd">Space + Drag</kbd> <span class="hint-text">Hand Pan</span>
       </span>
-      <span class="hint-chip">
-        <kbd class="key-kbd">Click</kbd> to Inspect
+      <span class="hint-chip" id="hint-click">
+        <kbd class="key-kbd">Click</kbd> <span class="hint-text">to Inspect</span>
       </span>
-      <span class="hint-chip">
-        <kbd class="key-kbd">Esc</kbd> to Unpin
+      <span class="hint-chip" id="hint-esc">
+        <kbd class="key-kbd">Esc</kbd> <span class="hint-text">to Unpin</span>
       </span>
     </div>
-    <div>
+    <div id="bottombar-subtitle">
       <span>Teyvat Interactive 2D Canvas • Genshin Impact Lore</span>
     </div>
   </footer>
