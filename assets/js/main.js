@@ -32,6 +32,7 @@ class TeyvatTimelineApp {
   cacheDom() {
     this.viewport = document.getElementById('timeline-viewport');
     this.canvas = document.getElementById('timeline-canvas');
+    this.eraBackdropContainer = document.getElementById('era-backdrop-container');
     this.eraBands = document.getElementById('era-band-container');
     this.ruler = document.getElementById('ruler-container');
     this.nodesContainer = document.getElementById('event-nodes-container');
@@ -175,6 +176,7 @@ class TeyvatTimelineApp {
     const baseWidth = 3800;
     const newWidth = Math.round(baseWidth * this.zoomLevel);
     this.canvas.style.minWidth = `${newWidth}px`;
+    this.renderEraBackdrops();
     this.renderNodes();
     this.renderRuler();
     this.renderEraBands();
@@ -191,6 +193,17 @@ class TeyvatTimelineApp {
       return matchesEra && matchesSearch;
     });
 
+    // Update active backdrop segments
+    if (this.eraBackdropContainer) {
+      this.eraBackdropContainer.querySelectorAll('.era-backdrop-segment').forEach(seg => {
+        if (this.activeEra === 'all') {
+          seg.classList.remove('is-active-era');
+        } else {
+          seg.classList.toggle('is-active-era', seg.getAttribute('data-id') === this.activeEra);
+        }
+      });
+    }
+
     this.renderNodes();
     if (this.eventCountBadge) {
       this.eventCountBadge.textContent = `${this.filteredEvents.length} event${this.filteredEvents.length === 1 ? '' : 's'}`;
@@ -199,6 +212,7 @@ class TeyvatTimelineApp {
 
   render() {
     this.renderEraButtons();
+    this.renderEraBackdrops();
     this.renderEraBands();
     this.renderRuler();
     this.renderNodes();
@@ -244,6 +258,32 @@ class TeyvatTimelineApp {
     });
   }
 
+  renderEraBackdrops() {
+    if (!this.eraBackdropContainer) return;
+    this.eraBackdropContainer.innerHTML = '';
+
+    this.eras.forEach(era => {
+      const seg = document.createElement('div');
+      seg.className = `era-backdrop-segment ${this.activeEra === era.id ? 'is-active-era' : ''}`;
+      seg.setAttribute('data-id', era.id);
+
+      const leftPct = (era.startRank / 1000) * 100;
+      const widthPct = ((era.endRank - era.startRank) / 1000) * 100;
+      seg.style.left = `${leftPct}%`;
+      seg.style.width = `${widthPct}%`;
+
+      if (era.bgImage) {
+        seg.style.backgroundImage = `url("${era.bgImage}")`;
+      }
+
+      seg.innerHTML = `
+        <div class="era-backdrop-watermark" style="color: ${era.color};">${era.shortName || era.name}</div>
+      `;
+
+      this.eraBackdropContainer.appendChild(seg);
+    });
+  }
+
   renderEraBands() {
     if (!this.eraBands) return;
     this.eraBands.innerHTML = '';
@@ -255,6 +295,9 @@ class TeyvatTimelineApp {
       const widthPct = ((era.endRank - era.startRank) / 1000) * 100;
       band.style.width = `${widthPct}%`;
       band.style.background = era.bgGradient || 'rgba(255,255,255,0.05)';
+      if (era.bgImage) {
+        band.style.backgroundImage = `url("${era.bgImage}")`;
+      }
       band.style.borderColor = `${era.color}40`;
       band.title = `Click to view lore and milestones for ${era.name}`;
 
@@ -281,10 +324,15 @@ class TeyvatTimelineApp {
     this.applyFilters();
     this.jumpToEra(era);
 
-    // Highlight active era band
+    // Highlight active era band and backdrop segment
     document.querySelectorAll('.era-band').forEach(b => {
       b.classList.toggle('is-active-era', b.getAttribute('data-id') === era.id);
     });
+    if (this.eraBackdropContainer) {
+      this.eraBackdropContainer.querySelectorAll('.era-backdrop-segment').forEach(seg => {
+        seg.classList.toggle('is-active-era', seg.getAttribute('data-id') === era.id);
+      });
+    }
 
     // Deselect any pinned event node
     document.querySelectorAll('.event-node').forEach(n => n.classList.remove('is-active'));
@@ -300,8 +348,16 @@ class TeyvatTimelineApp {
     this.inspectorTitle.textContent = era.name;
     this.inspectorDesc.textContent = era.longDescription || era.description;
 
-    // Hide image carousel for era overview
-    if (this.carousel) this.carousel.style.display = 'none';
+    // Show era backdrop artwork in inspector carousel if available
+    if (era.bgImage) {
+      this.renderCarousel([{
+        url: era.bgImage,
+        alt: era.name,
+        caption: `${era.name} (${era.yearRange || ''})`
+      }]);
+    } else if (this.carousel) {
+      this.carousel.style.display = 'none';
+    }
 
     // Populate Tags with Key Figures & Dominant Factions
     if (this.inspectorTags) {
@@ -526,6 +582,13 @@ class TeyvatTimelineApp {
     if (nodeElement) nodeElement.classList.add('is-active');
     document.querySelectorAll('.era-band').forEach(b => b.classList.remove('is-active-era'));
 
+    // Highlight backdrop for the event's era
+    if (this.eraBackdropContainer) {
+      this.eraBackdropContainer.querySelectorAll('.era-backdrop-segment').forEach(seg => {
+        seg.classList.toggle('is-active-era', seg.getAttribute('data-id') === ev.eraId);
+      });
+    }
+
     const era = this.eras.find(e => e.id === ev.eraId) || { color: '#e5c158' };
 
     // Fill Inspector Metadata
@@ -555,6 +618,15 @@ class TeyvatTimelineApp {
     this.pinnedEvent = null;
     document.querySelectorAll('.event-node').forEach(n => n.classList.remove('is-active'));
     document.querySelectorAll('.era-band').forEach(b => b.classList.remove('is-active-era'));
+    if (this.eraBackdropContainer) {
+      this.eraBackdropContainer.querySelectorAll('.era-backdrop-segment').forEach(seg => {
+        if (this.activeEra === 'all') {
+          seg.classList.remove('is-active-era');
+        } else {
+          seg.classList.toggle('is-active-era', seg.getAttribute('data-id') === this.activeEra);
+        }
+      });
+    }
     this.inspector.classList.remove('is-open');
   }
 

@@ -133,10 +133,19 @@ interface SourceCitation {
 ```json
 {
   "id": "cataclysm",
-  "name": "The Cataclysm (500 Years Ago)",
-  "order": 5,
+  "name": "The Cataclysm (Fall of Khaenri'ah)",
+  "shortName": "The Cataclysm",
+  "yearRange": "~500 YA",
   "description": "The catastrophic crisis that struck five centuries ago, ending Khaenri'ah and shaking the foundations of the Seven Nations.",
-  "color": "#a855f7",
-  "dominantFactions": ["Khaenri'ah Dynasty", "Abyss Order", "The Seven Archons"]
+  "longDescription": "The catastrophic disaster of 500 years ago...",
+  "color": "#c084fc",
+  "bgGradient": "linear-gradient(135deg, rgba(88, 28, 135, 0.35) 0%, rgba(15, 23, 42, 0.95) 100%)",
+  "bgImage": "./assets/images/eras/placeholder-cataclysm.svg",
+  "dominantFactions": ["Khaenri'ah Dynasty", "Abyss Order", "The Seven Archons"],
+  "keyFigures": ["Dainsleif", "Rhinedottir (Gold)", "Pierro", "King Irmin", "Makoto", "Greater Lord Rukkhadevata"],
+  "startRank": 781,
+  "endRank": 890,
+  "wikiUrl": "https://genshin-impact.fandom.com/wiki/Cataclysm"
 }
 ```
+

@@ -70,6 +70,13 @@ eras.forEach((era, idx) => {
     warnings.push(`Era '${era.id}' lacks a valid fandom wikiUrl.`);
   }
 
+  if (era.bgImage) {
+    const bgFilePath = path.join(rootDir, era.bgImage.replace(/^\.\//, ''));
+    if (!fs.existsSync(bgFilePath)) {
+      errors.push(`Era '${era.id}' specifies bgImage '${era.bgImage}' which does not exist on disk at ${bgFilePath}.`);
+    }
+  }
+
   if (eraIds.has(era.id)) {
     errors.push(`Duplicate era id: '${era.id}'.`);
   }

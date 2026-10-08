@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#1e40af" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#080c14" stop-opacity="0.98"/>
+    </radialGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.7"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep Cosmic Background -->
+  <rect width="100%" height="100%" fill="#050811"/>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Celestial Constellation Circles -->
+  <circle cx="960" cy="500" r="320" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="6 8" stroke-opacity="0.35"/>
+  <circle cx="960" cy="500" r="260" fill="none" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="960" cy="500" r="400" fill="none" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="2 12" stroke-opacity="0.25"/>
+
+  <!-- Framing Filigree -->
+  <rect x="80" y="80" width="1760" height="920" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" rx="16" opacity="0.5"/>
+  <rect x="100" y="100" width="1720" height="880" fill="none" stroke="#60a5fa" stroke-width="1" stroke-dasharray="12 16" opacity="0.25"/>
+
+  <!-- Decorative Corner Diamonds -->
+  <polygon points="80,80 95,80 80,95" fill="#60a5fa" opacity="0.8"/>
+  <polygon points="1840,80 1825,80 1840,95" fill="#60a5fa" opacity="0.8"/>
+  <polygon points="80,1000 95,1000 80,985" fill="#60a5fa" opacity="0.8"/>
+  <polygon points="1840,1000 1825,1000 1840,985" fill="#60a5fa" opacity="0.8"/>
+
+  <!-- Central Watermark Card -->
+  <rect x="460" y="360" width="1000" height="280" rx="12" fill="#0a0e17" fill-opacity="0.85" stroke="#60a5fa" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Icon Glyph -->
+  <text x="960" y="430" font-size="42" text-anchor="middle" fill="#60a5fa">🕊️</text>
+
+  <!-- Era Title -->
+  <text x="960" y="490" font-family="'Cinzel', 'Georgia', serif" font-size="34" font-weight="800" text-anchor="middle" fill="#f8fafc" letter-spacing="6">PEACE OF THE SEVEN</text>
+
+  <!-- Subtitle Range -->
+  <text x="960" y="535" font-family="'Cinzel', 'Georgia', serif" font-size="18" font-weight="600" text-anchor="middle" fill="#60a5fa" letter-spacing="2">~2,000 – 500 YA • Mortal Governance & Culture</text>
+
+  <!-- Watermark Badge -->
+  <rect x="760" y="570" width="400" height="36" rx="6" fill="#60a5fa" fill-opacity="0.15" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="960" y="594" font-family="'Courier New', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#cbd5e1" letter-spacing="2">ERA BACKGROUND PLACEHOLDER</text>
+</svg>
