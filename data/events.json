@@ -246,6 +246,99 @@
     ]
   },
   {
+    "id": "hyperborea-golden-realm",
+    "title": "The Golden Realm of Hyperborea & The Elysium Project",
+    "yearsAgo": 5500,
+    "yearsAgoDisplay": "~5,500 YA",
+    "dateDisplay": "~5,500 Years Ago • The Golden Age of Hyperborea",
+    "orderRank": 225,
+    "eraId": "primordial-one",
+    "eraName": "When the Doves Held Branches",
+    "summary": "In ancient northern Teyvat, the Golden City of Hyperborea reaches the pinnacle of mortal progress under the Archangel Koitar and interstellar voyager Anacharsis.",
+    "description": "A prominent metropolis of the Unified Civilization in what is now Snezhnaya, Hyperborea flourished with a holy citadel and a soaring golden tower. When the interstellar voyager Anacharsis arrived seeking Dragon King Nibelung, she allied with the Archangel Koitar, who shattered her celestial shackles. Defying the Heavenly Principles, they launched the Elysium Project to create a paradise free of divine decree, inventing revolutionary Mekhaneikos apparatuses, generating matter via the SAMPO subatomic orb, fashioning the Snowland Fae from the Frost Moon's light, and constructing the Shadow Realm to shield Teyvat from the Abyss.",
+    "images": [],
+    "tags": {
+      "region": "Snezhnaya (Ancient Hyperborea)",
+      "factions": [
+        "Hyperborea",
+        "The Snowland Fae",
+        "The Three Moon Goddesses",
+        "Celestia"
+      ],
+      "characters": [
+        "Koitar",
+        "Anacharsis",
+        "Nicole",
+        "Aksinya"
+      ],
+      "spoilerLevel": "Snezhnaya World Quests"
+    },
+    "sources": [
+      {
+        "title": "Genshin Impact Wiki: Hyperborea",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Hyperborea"
+      },
+      {
+        "title": "Ballad of the Fjords",
+        "category": "weapon",
+        "quote": "In those days, the golden city still stood beneath the pure, clear dome of heaven...",
+        "url": "https://genshin-impact.fandom.com/wiki/Ballad_of_the_Fjords"
+      },
+      {
+        "title": "Domain: Phantom of the Sanctuary",
+        "category": "domain",
+        "url": "https://genshin-impact.fandom.com/wiki/Phantom_of_the_Sanctuary"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-hyperborea",
+    "title": "The Fall of Hyperborea & The Frostmoon Scions",
+    "yearsAgo": 5050,
+    "yearsAgoDisplay": "~5,050 YA",
+    "dateDisplay": "~5,050 Years Ago • Descent of the Northern Celestial Nail",
+    "orderRank": 238,
+    "eraId": "second-who-came",
+    "eraName": "War of Funerary Flame",
+    "summary": "Hyperborea's rebellion is annihilated by a Celestial Nail after a catastrophic elemental experiment, sinking into the Shadow Realm while survivors flee as the Frostmoon Scions.",
+    "description": "Hyperborea attempted to engineer a 'Primordial Human' using the remains of the Cryo Dragon Sovereign. The experiment breached containment, engulfing the realm in Prime Ice—the origin of Snezhnaya's frozen wastes. In response, Celestia launched a Celestial Nail. Facing doom, the Hyperboreans aimed the Arrow of Terpikeraunas directly at the heavens in armed defiance, joined by dragons from the Dark Sea. The Celestial Nail obliterated the city and plunged it into the Shadow Realm, while Moon Goddess Canon guided the survivors to Nod-Krai, where they became the Frostmoon Scions. This defiance directly incited the returning dragons under Nibelung and the War of Funerary Flame.",
+    "images": [],
+    "tags": {
+      "region": "Snezhnaya & Nod-Krai",
+      "factions": [
+        "Hyperborea",
+        "Frostmoon Scions",
+        "Celestia",
+        "Seven Dragon Sovereigns"
+      ],
+      "characters": [
+        "Koitar",
+        "Anacharsis",
+        "Canon",
+        "Dragon King Nibelung"
+      ],
+      "spoilerLevel": "Snezhnaya World Quests"
+    },
+    "sources": [
+      {
+        "title": "Genshin Impact Wiki: Hyperborea",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Hyperborea"
+      },
+      {
+        "title": "Genshin Impact Wiki: Frostmoon Scions",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Frostmoon_Scions"
+      },
+      {
+        "title": "Archon Quest: Where Does Her Name Rest?",
+        "category": "quest",
+        "url": "https://genshin-impact.fandom.com/wiki/Where_Does_Her_Name_Rest%3F"
+      }
+    ]
+  },
+  {
     "id": "second-who-came-invasion",
     "title": "Invasion of the Second Who Came & Shattered Skies",
     "yearsAgo": 5000,

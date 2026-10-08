@@ -58,6 +58,8 @@ This document serves as the project's **canonical terminology authority** for ev
 | **Rhinedottir** | Gold (黄金), Sinner of Khaenri'ah | 莱茵多特 (Láiyīnduōtè) | Khaenri'ahn alchemist of the Art of Khemia; created Durin, the Rifthounds, and Albedo. | [Rhinedottir](https://genshin-impact.fandom.com/wiki/Rhinedottir) |
 | **Chlothar Alberich** | Founder of the Abyss Order | 克洛达尔·亚尔伯里奇 | Khaenri'ahn pureblood noble cursed with immortality who established the Abyss Order after encountering the Sinner. | [Chlothar Alberich](https://genshin-impact.fandom.com/wiki/Chlothar_Alberich) |
 | **Bosacius** | Marshal Flying Mouse, Electro Yaksha | 浮舍 (Fúshě) | Leader of the Five Foremost Yakshas who sacrificed himself in The Chasm during the Cataclysm. | [Bosacius](https://genshin-impact.fandom.com/wiki/Bosacius) |
+| **Koitar** | Archangel of Celestia | 柯伊塔尔 (Kēyītǎ'ěr) | Divine envoy of Celestia connected to Hyperborea who broke her shackles and rebelled alongside Anacharsis. | [Hyperborea](https://genshin-impact.fandom.com/wiki/Hyperborea) |
+| **Anacharsis** | Interstellar Voyager | 阿纳卡西斯 (Ānàkǎxīsī) | Extraplanetary voyager who arrived ~6,000 YA searching for Nibelung and co-led Hyperborea's Elysium Project. | [Hyperborea](https://genshin-impact.fandom.com/wiki/Hyperborea) |
 | **Rosalyne-Kruzchka Lohefalter** | Crimson Witch of Flame, La Signora | 罗莎琳·克鲁兹希卡·洛芬特 | Mondstadt maiden whose heartbreak led her to burn away her mortal form; 8th Fatui Harbinger. | [Signora](https://genshin-impact.fandom.com/wiki/Signora) |
 | **Kunikuzushi** | Scaramouche, The Balladeer, Wanderer | 国崩 / 散兵 (Guóbēng / Sǎnbīng) | Prototype puppet created by Raiden Ei; 6th Fatui Harbinger who later erased his former identity from Irminsul. | [Wanderer](https://genshin-impact.fandom.com/wiki/Wanderer) |
 
@@ -70,6 +72,8 @@ This document serves as the project's **canonical terminology authority** for ev
 | **Khaenri'ah** | Nation Without a God, Eclipse Dynasty | 坎瑞亚 (Kǎnruìyǎ) | Underground mortal civilization beneath Sumeru; epicenter of the Cataclysm 500 YA. | [Khaenri'ah](https://genshin-impact.fandom.com/wiki/Khaenri%27ah) |
 | **Byakuyakoku / Enkanomiya** | Realm of the White Night | 白夜国 / 渊下宫 (Yuānxiàgōng) | Ancient civilization that fell beneath the sea during the War of Funerary Flame. | [Enkanomiya](https://genshin-impact.fandom.com/wiki/Enkanomiya) |
 | **Sal Vindagnyr** | The Ancient Mountain Kingdom (Dragonspine) | 芬德尼尔 (Fēndéní'ěr) | Prosperous pre-Archon mountain realm frozen when Celestia dropped the Skyfrost Nail. | [Sal Vindagnyr](https://genshin-impact.fandom.com/wiki/Sal_Vindagnyr) |
+| **Hyperborea** | The Golden City, Golden Realm | 亥珀波瑞亚 (Hàipòbōruìyà) | Ancient metropolis of the Unified Civilization in pre-Snezhnaya; site of the Elysium Project and rebellion destroyed by a Celestial Nail. | [Hyperborea](https://genshin-impact.fandom.com/wiki/Hyperborea) |
+| **Nod-Krai** | Land of the Frostmoon Scions | 诺德克莱 (Nuòdékèlái) | Northern sanctuary where Moon Goddess Canon guided surviving Hyperboreans who became the Frostmoon Scions. | [Frostmoon Scions](https://genshin-impact.fandom.com/wiki/Frostmoon_Scions) |
 | **The Chasm** | Cinnabar Cliff, Subterranean Ground | 层岩巨渊 (Céngyán Jùyuān) | Ancient geological crater struck by a Celestial Nail; major battlefield in the Archon War and Cataclysm. | [The Chasm](https://genshin-impact.fandom.com/wiki/The_Chasm) |
 | **Chenyu Vale** | Mt. Lingmeng, Yilong Wharf, Mt. Xuanlian | 沉玉谷 (Chényù Gǔ) | Upper Liyue valley settled by ancestors fleeing the Archon War, protected by Fujin and Herblord. | [Chenyu Vale](https://genshin-impact.fandom.com/wiki/Chenyu_Vale) |
 | **Ay-Khanoum** | City of the Amphitheater | 哎·哈努姆 (Āi Hānǔmǔ) | The joint desert city ruled by King Deshret, Rukkhadevata, and Nabu Malikata during their alliance. | [Ay-Khanoum](https://genshin-impact.fandom.com/wiki/Ay-Khanoum) |
@@ -121,6 +125,7 @@ This document serves as the project's **canonical terminology authority** for ev
 | **Talking Stick** | Claymore (Weapon) | Ancient Natlan legends, Tenoch's alliance, and the First Pyro Archon Xbalanque. | [Talking Stick](https://genshin-impact.fandom.com/wiki/Talking_Stick) |
 | **Kagotsurube Isshin** | Sword (Weapon) | The Isshin Art sword forged with vengeance by the vengeful descendant of the Raiden Gokaden. | [Kagotsurube Isshin](https://genshin-impact.fandom.com/wiki/Kagotsurube_Isshin) |
 | **Cinnabar Spindle** | Sword (Weapon) | Rhinedottir's magnum opus and the alchemical principles of the Primordial Human. | [Cinnabar Spindle](https://genshin-impact.fandom.com/wiki/Cinnabar_Spindle) |
+| **Ballad of the Fjords** | Polearm (Weapon) | Ancient Snezhnayan legends of the golden city of Hyperborea and the boy who answered the call of the north. | [Ballad of the Fjords](https://genshin-impact.fandom.com/wiki/Ballad_of_the_Fjords) |
 
 ---
 

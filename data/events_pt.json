@@ -248,6 +248,99 @@
     ]
   },
   {
+    "id": "hyperborea-golden-realm",
+    "title": "O Reino Dourado de Hiperbórea & O Projeto Elysium",
+    "yearsAgo": 5500,
+    "yearsAgoDisplay": "~5.500 AA",
+    "dateDisplay": "~5.500 Anos Atrás • A Era de Ouro de Hiperbórea",
+    "orderRank": 225,
+    "eraId": "primordial-one",
+    "eraName": "Quando os Pombos Carregavam Ramos",
+    "summary": "No antigo norte de Teyvat, a Cidade Dourada de Hiperbórea atinge o ápice do progresso mortal sob a Arcanjo Koitar e o viajante interestelar Anacharsis.",
+    "description": "Uma das metrópoles mais brilhantes da Civilização Unificada onde hoje é Snezhnaya, Hiperbórea floresceu com uma cidadela sagrada e uma grandiosa torre dourada. Quando o viajante interestelar Anacharsis chegou em busca do Rei Dragão Nibelung, uniu-se à Arcanjo Koitar, que rompeu seus grilhões de Celestia. Desafiando os Princípios Celestiais, iniciaram o Projeto Elysium para criar um paraíso independente de decretos divinos, inventando aparelhos Mekhaneikos, gerando matéria pelo orbe subatômico SAMPO, forjando os Fae das Neves a partir da luz da Lua de Gelo e concebendo o Reino das Sombras para blindar Teyvat do Abismo.",
+    "images": [],
+    "tags": {
+      "region": "Snezhnaya (Hiperbórea Antiga)",
+      "factions": [
+        "Hiperbórea",
+        "Os Fae das Neves",
+        "As Três Deusas da Lua",
+        "Celestia"
+      ],
+      "characters": [
+        "Koitar",
+        "Anacharsis",
+        "Nicole",
+        "Aksinya"
+      ],
+      "spoilerLevel": "Missões de Snezhnaya"
+    },
+    "sources": [
+      {
+        "title": "Genshin Impact Wiki: Hyperborea",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Hyperborea"
+      },
+      {
+        "title": "Balada dos Fiordes",
+        "category": "weapon",
+        "quote": "Naqueles dias, a cidade dourada ainda se erguia sob a cúpula límpida e pura do céu...",
+        "url": "https://genshin-impact.fandom.com/wiki/Ballad_of_the_Fjords"
+      },
+      {
+        "title": "Domínio: Fantasma do Santuário",
+        "category": "domain",
+        "url": "https://genshin-impact.fandom.com/wiki/Phantom_of_the_Sanctuary"
+      }
+    ]
+  },
+  {
+    "id": "fall-of-hyperborea",
+    "title": "A Queda de Hiperbórea & Os Herdeiros da Lua Congelada",
+    "yearsAgo": 5050,
+    "yearsAgoDisplay": "~5.050 AA",
+    "dateDisplay": "~5.050 Anos Atrás • Queda do Prego Celestial do Norte",
+    "orderRank": 238,
+    "eraId": "second-who-came",
+    "eraName": "Guerra da Chama Funerária",
+    "summary": "A rebelião de Hiperbórea é aniquilada por um Prego Celestial após um experimento elemental desastroso, afundando no Reino das Sombras enquanto sobreviventes fundam os Herdeiros da Lua Congelada.",
+    "description": "Hiperbórea tentou criar um 'Humano Primordial' a partir dos restos mortais do Soberano Dragão Cryo. O experimento perdeu o controle, inundando a terra com Gelo Primordial — a gênese do deserto gélido de Snezhnaya. Em retaliação, Celestia arremessou um Prego Celestial. Encarando a ruína, os hiperbóreos apontaram a Flecha de Terpikeraunas aos céus em revolta armada ao lado de dragões do Mar Escuro. O Prego Celestial obliterou a cidade e a sepultou no Reino das Sombras, enquanto a Deusa da Lua Canon guiou os refugiados até Nod-Krai, onde se tornaram os Herdeiros da Lua Congelada (Frostmoon Scions). Essa revolta impulsionou o retorno de Nibelung e o estopim da Guerra da Chama Funerária.",
+    "images": [],
+    "tags": {
+      "region": "Snezhnaya & Nod-Krai",
+      "factions": [
+        "Hiperbórea",
+        "Herdeiros da Lua Congelada",
+        "Celestia",
+        "Sete Soberanos Dragões"
+      ],
+      "characters": [
+        "Koitar",
+        "Anacharsis",
+        "Canon",
+        "Rei Dragão Nibelung"
+      ],
+      "spoilerLevel": "Missões de Snezhnaya"
+    },
+    "sources": [
+      {
+        "title": "Genshin Impact Wiki: Hyperborea",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Hyperborea"
+      },
+      {
+        "title": "Genshin Impact Wiki: Frostmoon Scions",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Frostmoon_Scions"
+      },
+      {
+        "title": "Missão dos Arcontes: Where Does Her Name Rest?",
+        "category": "quest",
+        "url": "https://genshin-impact.fandom.com/wiki/Where_Does_Her_Name_Rest%3F"
+      }
+    ]
+  },
+  {
     "id": "second-who-came-invasion",
     "title": "A Invasão do Segundo Que Veio & Céus Despedaçados",
     "yearsAgo": 5000,

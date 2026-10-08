@@ -37,12 +37,14 @@
       "Istaroth (Kairos)",
       "The Four Shades",
       "The Seelie Ancestors",
+      "Koitar & Anacharsis",
       "Morax"
     ],
     "dominantFactions": [
       "Celestia",
       "The Four Shades",
-      "Unified Human Civilization"
+      "Unified Human Civilization",
+      "Golden Hyperborea"
     ],
     "startRank": 111,
     "endRank": 230,
@@ -63,13 +65,15 @@
       "Phanes",
       "Istaroth",
       "The Princess of Sal Vindagnyr",
-      "Aberaku no Mikoto"
+      "Aberaku no Mikoto",
+      "Moon Goddess Canon"
     ],
     "dominantFactions": [
       "Celestia",
       "The Second Who Came",
       "Ancient Enkanomiya",
-      "Sal Vindagnyr"
+      "Sal Vindagnyr",
+      "Frostmoon Scions"
     ],
     "startRank": 231,
     "endRank": 360,
