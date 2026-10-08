@@ -21,7 +21,7 @@
     "startRank": 0,
     "endRank": 110,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Seven_Sovereigns",
-    "bgImage": "./assets/images/eras/placeholder-dragon-sovereigns.svg"
+    "bgImage": "./assets/images/eras/01-dragon-sovereigns.webp"
   },
   {
     "id": "primordial-one",
@@ -47,7 +47,7 @@
     "startRank": 111,
     "endRank": 230,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/The_Primordial_One",
-    "bgImage": "./assets/images/eras/placeholder-primordial-one.svg"
+    "bgImage": "./assets/images/eras/02-primordial-one.webp"
   },
   {
     "id": "second-who-came",
@@ -74,7 +74,7 @@
     "startRank": 231,
     "endRank": 360,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Second_Who_Came",
-    "bgImage": "./assets/images/eras/placeholder-second-who-came.svg"
+    "bgImage": "./assets/images/eras/03-second-who-came.webp"
   },
   {
     "id": "interim-period",
@@ -102,7 +102,7 @@
     "startRank": 361,
     "endRank": 490,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Timeline#Pre-Archon_War_Period",
-    "bgImage": "./assets/images/eras/placeholder-interim-period.svg"
+    "bgImage": "./assets/images/eras/04-interim-period.png"
   },
   {
     "id": "archon-war",
@@ -134,7 +134,7 @@
     "startRank": 491,
     "endRank": 660,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Archon_War",
-    "bgImage": "./assets/images/eras/placeholder-archon-war.svg"
+    "bgImage": "./assets/images/eras/05-archon-war.png"
   },
   {
     "id": "post-archon-war",
@@ -163,7 +163,7 @@
     "startRank": 661,
     "endRank": 780,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Timeline#Post-Archon_War_Period",
-    "bgImage": "./assets/images/eras/placeholder-post-archon-war.svg"
+    "bgImage": "./assets/images/eras/06-post-archon-war.webp"
   },
   {
     "id": "cataclysm",
@@ -196,7 +196,7 @@
     "startRank": 781,
     "endRank": 890,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Cataclysm",
-    "bgImage": "./assets/images/eras/placeholder-cataclysm.svg"
+    "bgImage": "./assets/images/eras/07-cataclysm.webp"
   },
   {
     "id": "modern",
@@ -231,6 +231,6 @@
     "startRank": 891,
     "endRank": 1000,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Timeline#Traveler%27s_Journey",
-    "bgImage": "./assets/images/eras/placeholder-modern.svg"
+    "bgImage": "./assets/images/eras/08-modern.jpeg"
   }
 ]
