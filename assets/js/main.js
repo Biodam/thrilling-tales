@@ -14,6 +14,9 @@
 const I18N = {
   en: {
     searchPlaceholder: 'Search lore, character, region...',
+    searchPrev: 'Previous match (Shift+Enter)',
+    searchNext: 'Next match (Enter)',
+    searchClear: 'Clear search (Esc)',
     fitAll: 'Fit All',
     eventsBadge: (n) => `${n} event${n === 1 ? '' : 's'}`,
     canonicalMilestones: (n) => `${n} canonical milestone${n === 1 ? '' : 's'}`,
@@ -54,6 +57,9 @@ const I18N = {
   },
   pt: {
     searchPlaceholder: 'Buscar história, personagem, região...',
+    searchPrev: 'Resultado anterior (Shift+Enter)',
+    searchNext: 'Próximo resultado (Enter)',
+    searchClear: 'Limpar busca (Esc)',
     fitAll: 'Ver Tudo',
     eventsBadge: (n) => `${n} evento${n === 1 ? '' : 's'}`,
     canonicalMilestones: (n) => `${n} marco${n === 1 ? '' : 's'} canônico${n === 1 ? '' : 's'}`,
@@ -103,6 +109,9 @@ class TeyvatTimelineApp {
     this.currentSlideIndex = 0;
     this.activeEra = 'all';
     this.searchQuery = '';
+    this.searchResults = [];
+    this.searchCurrentIndex = -1;
+    this.hasNavigatedSearch = false;
 
     // Set of opened era IDs (when closed, shows grand cover poster)
     this.openEras = new Set();
@@ -177,7 +186,13 @@ class TeyvatTimelineApp {
 
     // Header Controls
     this.eraJumperGroup = document.getElementById('era-jumper-group');
+    this.searchBox = document.getElementById('search-box');
     this.searchInput = document.getElementById('timeline-search');
+    this.searchActions = document.getElementById('search-actions');
+    this.searchCount = document.getElementById('search-count');
+    this.searchPrevBtn = document.getElementById('search-prev-btn');
+    this.searchNextBtn = document.getElementById('search-next-btn');
+    this.searchClearBtn = document.getElementById('search-clear-btn');
     this.zoomInBtn = document.getElementById('zoom-in-btn');
     this.zoomOutBtn = document.getElementById('zoom-out-btn');
     this.zoomResetBtn = document.getElementById('zoom-reset-btn');
@@ -283,9 +298,18 @@ class TeyvatTimelineApp {
   updateStaticUI() {
     const t = I18N[this.currentLang] || I18N.en;
 
-    // Search input placeholder
+    // Search controls static localization
     if (this.searchInput) {
       this.searchInput.placeholder = t.searchPlaceholder;
+    }
+    if (this.searchPrevBtn) {
+      this.searchPrevBtn.title = t.searchPrev;
+    }
+    if (this.searchNextBtn) {
+      this.searchNextBtn.title = t.searchNext;
+    }
+    if (this.searchClearBtn) {
+      this.searchClearBtn.title = t.searchClear;
     }
 
     // Minimap title
@@ -467,10 +491,40 @@ class TeyvatTimelineApp {
     this.zoomOutBtn?.addEventListener('click', () => this.adjustZoom(-0.2));
     this.zoomResetBtn?.addEventListener('click', () => this.fitAll());
 
-    // Search Input
+    // Search Input & Navigation Controls
     this.searchInput?.addEventListener('input', (e) => {
       this.searchQuery = e.target.value.toLowerCase().trim();
+      this.hasNavigatedSearch = false;
       this.applyFilters();
+    });
+
+    this.searchInput?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        if (e.shiftKey) {
+          this.navigateSearch(-1);
+        } else {
+          this.navigateSearch(1);
+        }
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        this.clearSearch();
+      }
+    });
+
+    this.searchPrevBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.navigateSearch(-1);
+    });
+
+    this.searchNextBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.navigateSearch(1);
+    });
+
+    this.searchClearBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.clearSearch();
     });
 
     // Inspector Close
@@ -1060,12 +1114,14 @@ class TeyvatTimelineApp {
         if (dist > 8) return; // Ignore genuine drag gestures
       }
       this.pinEvent(ev, card);
+      this.syncSearchIndexForEvent(ev.id);
     });
 
     // Click pin to open event details
     pin.addEventListener('click', (e) => {
       e.stopPropagation();
       this.pinEvent(ev, card);
+      this.syncSearchIndexForEvent(ev.id);
     });
 
     // Hover tooltip
@@ -1126,17 +1182,21 @@ class TeyvatTimelineApp {
 
   applyFilters() {
     let matchCount = 0;
+    this.searchResults = [];
+    const q = this.searchQuery;
 
     this.eras.forEach(era => {
       let eraMatchCount = 0;
       const eraEvents = this.events.filter(e => e.eraId === era.id);
 
       eraEvents.forEach(ev => {
-        const matchesSearch = !this.searchQuery || 
-          ev.title.toLowerCase().includes(this.searchQuery) ||
-          ev.summary.toLowerCase().includes(this.searchQuery) ||
-          (ev.tags?.region && ev.tags.region.toLowerCase().includes(this.searchQuery)) ||
-          (ev.tags?.characters && ev.tags.characters.some(c => c.toLowerCase().includes(this.searchQuery)));
+        const matchesSearch = !q || 
+          ev.title.toLowerCase().includes(q) ||
+          ev.summary.toLowerCase().includes(q) ||
+          (ev.description && ev.description.toLowerCase().includes(q)) ||
+          (ev.tags?.region && ev.tags.region.toLowerCase().includes(q)) ||
+          (ev.tags?.characters && ev.tags.characters.some(c => c.toLowerCase().includes(q))) ||
+          (ev.tags?.factions && ev.tags.factions.some(f => f.toLowerCase().includes(q)));
 
         const cardEl = document.querySelector(`.spatial-event-card[data-id="${ev.id}"]`);
         if (cardEl) {
@@ -1146,6 +1206,9 @@ class TeyvatTimelineApp {
             cardEl.style.display = 'flex';
             matchCount++;
             eraMatchCount++;
+            if (q) {
+              this.searchResults.push(ev);
+            }
           } else {
             wrapperEl.style.display = 'none';
             cardEl.style.display = 'none';
@@ -1155,18 +1218,162 @@ class TeyvatTimelineApp {
 
       const panelEl = document.querySelector(`.spatial-era-panel[data-id="${era.id}"]`);
       if (panelEl) {
-        panelEl.style.opacity = (!this.searchQuery || eraMatchCount > 0) ? '1' : '0.35';
+        panelEl.style.opacity = (!q || eraMatchCount > 0) ? '1' : '0.35';
       }
 
       // If user typed a search query and this era has matching events, reveal this era
-      if (this.searchQuery && eraMatchCount > 0) {
+      if (q && eraMatchCount > 0) {
         this.openEra(era.id, false);
       }
     });
 
+    this.updateSearchUI();
+
     const t = I18N[this.currentLang] || I18N.en;
     if (this.eventCountBadge) {
       this.eventCountBadge.textContent = t.eventsBadge(matchCount);
+    }
+  }
+
+  updateSearchUI() {
+    if (!this.searchBox) return;
+
+    if (this.searchQuery) {
+      this.searchBox.classList.add('has-query');
+      if (this.searchActions) {
+        this.searchActions.style.display = 'flex';
+      }
+
+      const total = this.searchResults.length;
+      if (total > 0) {
+        if (this.searchCurrentIndex < 0 || this.searchCurrentIndex >= total) {
+          this.searchCurrentIndex = 0;
+        }
+        if (this.searchCount) {
+          this.searchCount.textContent = `${this.searchCurrentIndex + 1}/${total}`;
+          this.searchCount.classList.remove('no-matches');
+        }
+        if (this.searchPrevBtn) this.searchPrevBtn.disabled = false;
+        if (this.searchNextBtn) this.searchNextBtn.disabled = false;
+      } else {
+        this.searchCurrentIndex = -1;
+        if (this.searchCount) {
+          this.searchCount.textContent = '0/0';
+          this.searchCount.classList.add('no-matches');
+        }
+        if (this.searchPrevBtn) this.searchPrevBtn.disabled = true;
+        if (this.searchNextBtn) this.searchNextBtn.disabled = true;
+      }
+    } else {
+      this.searchBox.classList.remove('has-query');
+      if (this.searchActions) {
+        this.searchActions.style.display = 'none';
+      }
+      this.searchCurrentIndex = -1;
+      this.searchResults = [];
+      this.hasNavigatedSearch = false;
+      if (this.searchCount) {
+        this.searchCount.textContent = '0/0';
+        this.searchCount.classList.remove('no-matches');
+      }
+      if (this.searchPrevBtn) this.searchPrevBtn.disabled = true;
+      if (this.searchNextBtn) this.searchNextBtn.disabled = true;
+    }
+  }
+
+  navigateSearch(direction = 1) {
+    if (!this.searchResults || this.searchResults.length === 0) return;
+
+    if (!this.hasNavigatedSearch) {
+      this.hasNavigatedSearch = true;
+      if (direction === -1) {
+        this.searchCurrentIndex = this.searchResults.length - 1;
+      } else {
+        this.searchCurrentIndex = 0;
+      }
+    } else {
+      this.searchCurrentIndex = (this.searchCurrentIndex + direction + this.searchResults.length) % this.searchResults.length;
+    }
+
+    this.goToSearchResult(this.searchCurrentIndex);
+  }
+
+  goToSearchResult(index) {
+    if (!this.searchResults || this.searchResults.length === 0) return;
+    const ev = this.searchResults[index];
+    if (!ev) return;
+
+    if (this.searchCount) {
+      this.searchCount.textContent = `${index + 1}/${this.searchResults.length}`;
+    }
+
+    // Ensure containing era is open so card is rendered
+    this.openEra(ev.eraId, false);
+
+    const cardEl = document.querySelector(`.spatial-event-card[data-id="${ev.id}"]`);
+
+    if (this.canvasWorld && this.viewport) {
+      let worldX, worldY;
+
+      if (cardEl) {
+        const cardRect = cardEl.getBoundingClientRect();
+        const canvasRect = this.canvasWorld.getBoundingClientRect();
+
+        if (cardRect.width > 0) {
+          worldX = (cardRect.left + cardRect.width / 2 - canvasRect.left) / this.camera.zoom;
+          worldY = (cardRect.top + cardRect.height / 2 - canvasRect.top) / this.camera.zoom;
+        }
+      }
+
+      if (worldX === undefined || worldY === undefined) {
+        const eraLayout = this.panelLayout.find(p => p.id === ev.eraId);
+        worldX = eraLayout ? eraLayout.x + eraLayout.width / 2 : 1000;
+        worldY = eraLayout ? eraLayout.y + 240 : 380;
+      }
+
+      const vWidth = this.viewport.clientWidth;
+      const vHeight = this.viewport.clientHeight;
+
+      const targetZoom = Math.min(1.05, Math.max(0.78, this.camera.zoom));
+      const isInspectorOpen = this.inspector?.classList.contains('is-open');
+      const usableHeight = isInspectorOpen ? Math.max(260, vHeight - 320) : vHeight;
+
+      const targetX = (vWidth / 2) - worldX * targetZoom;
+      const targetY = (usableHeight / 2) - worldY * targetZoom;
+
+      this.animateCameraTo(targetX, targetY, targetZoom, 420);
+
+      if (cardEl) {
+        this.pinEvent(ev, cardEl);
+        cardEl.classList.remove('is-search-focus');
+        void cardEl.offsetWidth;
+        cardEl.classList.add('is-search-focus');
+      }
+    }
+  }
+
+  clearSearch() {
+    if (this.searchInput) {
+      this.searchInput.value = '';
+    }
+    this.searchQuery = '';
+    this.searchResults = [];
+    this.searchCurrentIndex = -1;
+    this.hasNavigatedSearch = false;
+    this.applyFilters();
+    this.searchInput?.focus();
+  }
+
+  syncSearchIndexForEvent(eventId) {
+    if (this.searchResults && this.searchResults.length > 0) {
+      const idx = this.searchResults.findIndex(s => s.id === eventId);
+      if (idx !== -1) {
+        this.searchCurrentIndex = idx;
+        this.hasNavigatedSearch = true;
+        if (this.searchCount) {
+          this.searchCount.textContent = `${this.searchCurrentIndex + 1}/${this.searchResults.length}`;
+        }
+      }
     }
   }
 
