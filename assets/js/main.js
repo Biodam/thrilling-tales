@@ -883,6 +883,7 @@ class TeyvatTimelineApp {
             <span class="era-epoch-badge" style="color: ${era.color}; border-color: ${era.color}60;">
               ${t.epochBadge(index + 1, this.eras.length)}
             </span>
+            <h2 class="era-panel-title" style="color: ${era.color};">${era.name}</h2>
             <span class="era-hero-year">${era.yearRange || ''}</span>
           </div>
           <div class="era-panel-header-right">

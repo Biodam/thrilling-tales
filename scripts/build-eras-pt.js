@@ -33,7 +33,7 @@ const erasPtMap = {
     ]
   },
   'primordial-one': {
-    name: 'Quando os Pombos Carregavam Ramos',
+    name: 'O Primeiro Que Veio',
     shortName: 'O Primeiro Que Veio',
     yearRange: '~6.000 – 5.000 AA',
     description: 'A chegada de Phanes (O Primeiro Que Veio), criação das Quatro Sombras, quarenta anos de guerra para destronar os dragões e o alvorecer da Civilização Humana Unificada.',

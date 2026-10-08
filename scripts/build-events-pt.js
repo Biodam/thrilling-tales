@@ -43,7 +43,7 @@ const eventsPtMap = {
     title: 'A Gênese de Morax (Rex Lapis)',
     yearsAgoDisplay: '~6.000 AA',
     dateDisplay: 'Mais de 6.000 Anos Atrás • O Alvorecer de Liyue',
-    eraName: 'Quando os Pombos Carregavam Ramos',
+    eraName: 'O Primeiro Que Veio',
     summary: 'Morax (Rex Lapis), o mais antigo dos Sete Arcontes, nasce ou desce à terra em Teyvat.',
     description: 'Há mais de seis milênios, Morax surgiu na terra de Liyue. Antes mesmo de receber a Gnosis Geo ou o título de Arconte, ele caminhou entre os primeiros povos como o Deus dos Contratos e o Deus do Ouro, esculpindo as montanhas com lanças de pedra e estabelecendo as tradições fundamentais do comércio.',
     tags: {
@@ -57,7 +57,7 @@ const eventsPtMap = {
     title: 'A Chegada de Phanes & Criação das Quatro Sombras',
     yearsAgoDisplay: '~6.000 AA',
     dateDisplay: '~6.000 Anos Atrás • A Descida Celestial',
-    eraName: 'Quando os Pombos Carregavam Ramos',
+    eraName: 'O Primeiro Que Veio',
     summary: 'O Primeiro Que Veio (Phanes) desce dos céus, gera quatro sombras luminosas e prepara a conquista de Teyvat.',
     description: 'Nascido de um ovo cósmico, Phanes — O Primeiro Que Veio e o Primeiro Descendente — chegou a Teyvat acompanhado por suas quatro sombras resplandecentes, incluindo Istaroth, a Sombra do Tempo. Ele iniciou a criação de um novo firmamento para proteger o mundo das trevas cósmicas externas.',
     tags: {
@@ -71,7 +71,7 @@ const eventsPtMap = {
     title: 'A Guerra dos Quarenta Anos: A Queda dos Soberanos Dragões',
     yearsAgoDisplay: '~5.960 AA',
     dateDisplay: '~5.960 Anos Atrás • A Guerra da Criação',
-    eraName: 'Quando os Pombos Carregavam Ramos',
+    eraName: 'O Primeiro Que Veio',
     summary: 'Phanes e as Quatro Sombras travam uma guerra devastadora de 40 anos, derrotando os Sete Soberanos Dragões e tomando a autoridade elemental.',
     description: 'Por quarenta longos anos, céu e terra colidiram enquanto Phanes e suas sombras lutavam contra o Rei Dragão Nibelung e os Sete Soberanos. Os dragões foram decisivamente derrotados e destituídos de sua autoridade primordial sobre os elementos. Os sobreviventes fugiram para as profundezas oceânicas ou desertos esquecidos.',
     tags: {
@@ -85,7 +85,7 @@ const eventsPtMap = {
     title: 'A Civilização Humana Unificada & Enviados Celestiais',
     yearsAgoDisplay: '~5.500 AA',
     dateDisplay: '~5.500 Anos Atrás • A Era Dourada da Humanidade',
-    eraName: 'Quando os Pombos Carregavam Ramos',
+    eraName: 'O Primeiro Que Veio',
     summary: 'A humanidade é criada por Phanes; uma civilização global unificada floresce com uma língua compartilhada e orientação celestial direta.',
     description: 'Após reordenar o mundo, Phanes criou os primeiros humanos. A humanidade floresceu em uma Civilização Unificada pacífica abrangendo todo o globo, unida por uma língua e cultura comuns. Megálitos colossais foram construídos no subterrâneo e emissários celestiais desciam para conferir sabedoria, prosperidade e colheitas eternas aos mortais.',
     tags: {
