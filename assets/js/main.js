@@ -39,6 +39,10 @@ const I18N = {
     paimonCaption: 'Starfell Beach — The Traveler awakens and fishes up Paimon',
     snezAlt: 'Zapolyarny Palace — Snezhnaya',
     snezCaption: 'Zapolyarny Palace — The seat of the Tsaritsa and the Fatui Harbingers',
+    clickToReveal: 'Click to reveal milestones & lore',
+    collapse: '⤡ Collapse',
+    coverMilestones: (n) => `✨ ${n} Canonical Milestone${n === 1 ? '' : 's'}`,
+    coverTooltip: 'Click to open detailed timeline',
     hints: {
       drag: 'to Pan 2D',
       wheel: 'to Zoom',
@@ -75,6 +79,10 @@ const I18N = {
     paimonCaption: 'Costa das Estrelas — O Viajante desperta e pesca Paimon',
     snezAlt: 'Palácio Zapolyarny — Snezhnaya',
     snezCaption: 'Palácio Zapolyarny — O assento da Tsaritsa e dos Mensageiros dos Fatui',
+    clickToReveal: 'Clique para revelar marcos e história',
+    collapse: '⤡ Recolher',
+    coverMilestones: (n) => `✨ ${n} Marco${n === 1 ? '' : 's'} Canônico${n === 1 ? '' : 's'}`,
+    coverTooltip: 'Clique para abrir a linha do tempo detalhada',
     hints: {
       drag: 'para Navegar 2D',
       wheel: 'para Zoom',
@@ -95,6 +103,9 @@ class TeyvatTimelineApp {
     this.currentSlideIndex = 0;
     this.activeEra = 'all';
     this.searchQuery = '';
+
+    // Set of opened era IDs (when closed, shows grand cover poster)
+    this.openEras = new Set();
 
     // Language state with persistent preference
     this.currentLang = 'en';
@@ -532,12 +543,57 @@ class TeyvatTimelineApp {
     if (!this.canvasWorld) return;
     this.canvasWorld.style.transform = `translate3d(${this.camera.x}px, ${this.camera.y}px, 0) scale(${this.camera.zoom})`;
 
+    // Automatic collapse threshold check:
+    // When zoomed out past the readability threshold (< 0.55), automatically collapse open era cards to closed state
+    const ZOOM_COLLAPSE_THRESHOLD = 0.55;
+    if (this.camera.zoom < ZOOM_COLLAPSE_THRESHOLD && this.openEras && this.openEras.size > 0) {
+      this.closeAllEras();
+    }
+
     // Update Zoom percentage button label
     if (this.zoomResetBtn) {
       this.zoomResetBtn.textContent = `${Math.round(this.camera.zoom * 100)}%`;
     }
 
     this.updateMinimap();
+  }
+
+  openEra(eraId, autoFly = true) {
+    this.openEras.add(eraId);
+    const panelEl = document.querySelector(`.spatial-era-panel[data-id="${eraId}"]`);
+    if (panelEl) {
+      panelEl.classList.remove('is-closed');
+      panelEl.classList.add('is-active-panel');
+    }
+    if (autoFly && this.camera.zoom < 0.68) {
+      this.flyToEra(eraId, false);
+    }
+  }
+
+  closeEra(eraId) {
+    this.openEras.delete(eraId);
+    const panelEl = document.querySelector(`.spatial-era-panel[data-id="${eraId}"]`);
+    if (panelEl) {
+      panelEl.classList.add('is-closed');
+      panelEl.classList.remove('is-active-panel');
+    }
+  }
+
+  closeAllEras() {
+    if (!this.openEras || this.openEras.size === 0) return;
+    this.openEras.clear();
+    document.querySelectorAll('.spatial-era-panel').forEach(p => {
+      p.classList.add('is-closed');
+      p.classList.remove('is-active-panel');
+    });
+  }
+
+  toggleEra(eraId) {
+    if (this.openEras.has(eraId)) {
+      this.closeEra(eraId);
+    } else {
+      this.openEra(eraId, true);
+    }
   }
 
   animateCameraTo(targetX, targetY, targetZoom, duration = 400) {
@@ -566,9 +622,12 @@ class TeyvatTimelineApp {
     requestAnimationFrame(animate);
   }
 
-  flyToEra(eraId) {
+  flyToEra(eraId, open = true) {
     this.activeEra = eraId;
     this.updateActiveEraButton();
+    if (open) {
+      this.openEra(eraId, false);
+    }
 
     const layout = this.panelLayout.find(p => p.id === eraId);
     if (!layout || !this.viewport) return;
@@ -593,6 +652,7 @@ class TeyvatTimelineApp {
     if (!this.viewport) return;
     this.activeEra = 'all';
     this.updateActiveEraButton();
+    this.closeAllEras();
 
     document.querySelectorAll('.spatial-era-panel').forEach(p => p.classList.remove('is-active-panel'));
 
@@ -707,7 +767,10 @@ class TeyvatTimelineApp {
     this.eras.forEach((era, index) => {
       const layout = this.panelLayout[index];
       const panel = document.createElement('article');
-      panel.className = `spatial-era-panel ${this.activeEra === era.id ? 'is-active-panel' : ''}`;
+
+      // Check if era is currently open or closed
+      const isClosed = !this.openEras.has(era.id);
+      panel.className = `spatial-era-panel ${isClosed ? 'is-closed' : ''} ${this.activeEra === era.id ? 'is-active-panel' : ''}`;
       panel.setAttribute('data-id', era.id);
       panel.style.left = `${layout.x}px`;
       panel.style.top = `${layout.y}px`;
@@ -725,7 +788,41 @@ class TeyvatTimelineApp {
       // Events for this era
       const eraEvents = this.events.filter(e => e.eraId === era.id);
 
-      // Top Header
+      // 1. CLOSED STATE POSTER COVER VIEW (Huge legible typography at macro zoom)
+      const closedCoverHtml = `
+        <div class="era-closed-cover" title="${t.coverTooltip}">
+          <img src="${currentHeroArt}" alt="${era.name}" class="era-cover-bg-img" id="era-cover-art-${era.id}">
+          <div class="era-cover-gradient-overlay"></div>
+          <div class="era-cover-rail" style="--rail-color: ${era.color};"></div>
+          <div class="era-cover-content">
+            <div class="era-cover-top-meta">
+              <span class="era-cover-epoch-badge" style="color: ${era.color}; border-color: ${era.color}70;">
+                ${t.epochBadge(index + 1, this.eras.length)}
+              </span>
+              <span class="era-cover-milestones-pill">
+                ${t.coverMilestones(eraEvents.length)}
+              </span>
+            </div>
+            <div class="era-cover-main">
+              <h2 class="era-cover-title" style="--title-glow: ${era.color}80;">
+                ${era.name}
+              </h2>
+              <div class="era-cover-year">
+                ${era.yearRange || ''}
+              </div>
+            </div>
+            <div class="era-cover-bottom-cta">
+              <button class="era-cover-open-btn" type="button" aria-label="${t.clickToReveal}">
+                <span>${t.clickToReveal}</span>
+                <span class="era-cover-cta-icon">✦</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // 2. OPEN STATE DETAILED VIEW
+      // Top Header (Detailed View with Collapse Button)
       const headerHtml = `
         <div class="era-panel-header">
           <div class="era-panel-header-left">
@@ -736,6 +833,9 @@ class TeyvatTimelineApp {
           </div>
           <div class="era-panel-header-right">
             <span>${t.canonicalMilestones(eraEvents.length)}</span>
+            <button class="era-collapse-btn" type="button" title="${t.collapse}">
+              <span>${t.collapse}</span>
+            </button>
           </div>
         </div>
       `;
@@ -821,7 +921,16 @@ class TeyvatTimelineApp {
         </div>
       `;
 
-      panel.innerHTML = headerHtml + eventsTrackHtml + railHtml + extraInfoHtml;
+      const detailedContentHtml = `
+        <div class="era-detailed-content">
+          ${headerHtml}
+          ${eventsTrackHtml}
+          ${railHtml}
+          ${extraInfoHtml}
+        </div>
+      `;
+
+      panel.innerHTML = closedCoverHtml + detailedContentHtml;
 
       // Inject event card wrappers into top track
       const trackEl = panel.querySelector(`#events-track-${era.id}`);
@@ -831,6 +940,29 @@ class TeyvatTimelineApp {
           trackEl.appendChild(cardWrapper);
         });
       }
+
+      // Panel Click: reveal detailed view when closed
+      panel.addEventListener('click', (e) => {
+        // Ignore genuine drag/pan gestures
+        if (this.hasMoved) return;
+
+        // If clicking collapse button
+        if (e.target.closest('.era-collapse-btn')) {
+          e.stopPropagation();
+          this.closeEra(era.id);
+          return;
+        }
+
+        // If clicking interactive elements inside open detailed view, let them handle it
+        if (e.target.closest('.spatial-event-card, a, input, select, .era-inspect-btn, .art-switch-btn')) {
+          return;
+        }
+
+        // If panel is closed or cover was clicked, reveal detailed view
+        if (panel.classList.contains('is-closed') || e.target.closest('.era-closed-cover')) {
+          this.openEra(era.id, true);
+        }
+      });
 
       // Event Listeners for Epoch Inspect Button
       panel.querySelector('.era-inspect-btn')?.addEventListener('click', (e) => {
@@ -851,10 +983,16 @@ class TeyvatTimelineApp {
               b.classList.toggle('active', b.getAttribute('data-art') === chosenArt);
             });
 
-            // Update Image
+            // Update Image in detailed bottom view
             const imgEl = panel.querySelector(`#era-art-${era.id}`);
             if (imgEl) {
               imgEl.src = chosenArt === 'snez' && era.alternateBgImage ? era.alternateBgImage : era.bgImage;
+            }
+
+            // Also update closed cover image
+            const coverImgEl = panel.querySelector(`#era-cover-art-${era.id}`);
+            if (coverImgEl) {
+              coverImgEl.src = chosenArt === 'snez' && era.alternateBgImage ? era.alternateBgImage : era.bgImage;
             }
           });
         });
@@ -1019,6 +1157,11 @@ class TeyvatTimelineApp {
       if (panelEl) {
         panelEl.style.opacity = (!this.searchQuery || eraMatchCount > 0) ? '1' : '0.35';
       }
+
+      // If user typed a search query and this era has matching events, reveal this era
+      if (this.searchQuery && eraMatchCount > 0) {
+        this.openEra(era.id, false);
+      }
     });
 
     const t = I18N[this.currentLang] || I18N.en;
@@ -1075,6 +1218,9 @@ class TeyvatTimelineApp {
     this.currentSlideIndex = 0;
     this.hideTooltip();
 
+    // Ensure the era of the pinned event is open so the user sees the card
+    this.openEra(ev.eraId, false);
+
     const t = I18N[this.currentLang] || I18N.en;
     const inspectorHintEl = document.getElementById('inspector-hint-text') || document.querySelector('.inspector-hint-text');
     if (inspectorHintEl) {
@@ -1111,6 +1257,7 @@ class TeyvatTimelineApp {
   showEraInfo(era) {
     this.activeEra = era.id;
     this.updateActiveEraButton();
+    this.openEra(era.id, false);
     this.flyToEra(era.id);
 
     const t = I18N[this.currentLang] || I18N.en;
