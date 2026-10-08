@@ -231,6 +231,19 @@
     "startRank": 891,
     "endRank": 1000,
     "wikiUrl": "https://genshin-impact.fandom.com/wiki/Timeline#Traveler%27s_Journey",
-    "bgImage": "./assets/images/eras/08-modern.jpeg"
+    "bgImage": "./assets/images/eras/08-modern.jpeg",
+    "alternateBgImage": "./assets/images/eras/09-snezhnaya.webp",
+    "artworks": [
+      {
+        "url": "./assets/images/eras/08-modern.jpeg",
+        "title": "Starfell Beach — Paimon & Traveler",
+        "caption": "The Traveler awakens upon Starfell Beach in Mondstadt, fishing up Paimon."
+      },
+      {
+        "url": "./assets/images/eras/09-snezhnaya.webp",
+        "title": "Zapolyarny Palace — Snezhnaya",
+        "caption": "The grand frozen citadel of the Tsaritsa and the Eleven Fatui Harbingers."
+      }
+    ]
   }
 ]

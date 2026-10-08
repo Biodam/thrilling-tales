@@ -55,34 +55,32 @@
     </div>
   </header>
 
-  <!-- Horizontal Timeline Viewport -->
-  <main class="timeline-viewport" id="timeline-viewport">
-    <div class="timeline-canvas" id="timeline-canvas">
-      
-      <!-- Era Full-Height Backdrop Segments Container -->
-      <div class="era-backdrop-container" id="era-backdrop-container" aria-hidden="true">
-        <!-- Injected via main.js -->
+  <!-- 2D Spatial Canvas Viewport (Pan & Zoom in X & Y) -->
+  <main class="timeline-viewport" id="timeline-viewport" tabindex="0" aria-label="Interactive 2D Teyvat Timeline Canvas">
+    <!-- Transformable 2D World -->
+    <div class="canvas-world" id="canvas-world">
+      <!-- SVG Connectors & Cosmic Rails Layer -->
+      <svg class="canvas-connectors" id="canvas-connectors" aria-hidden="true"></svg>
+
+      <!-- Spatial Era Panels Container -->
+      <div class="era-panels-container" id="era-panels-container">
+        <!-- Injected dynamically via main.js -->
       </div>
-
-      <!-- Era Header Bands -->
-      <div class="era-band-container" id="era-band-container">
-        <!-- Injected via main.js -->
-      </div>
-
-      <!-- Central Axis Line -->
-      <div class="timeline-axis-line"></div>
-
-      <!-- Ruler Ticks Container -->
-      <div class="ruler-container" id="ruler-container">
-        <!-- Injected via main.js -->
-      </div>
-
-      <!-- Event Nodes Container -->
-      <div id="event-nodes-container">
-        <!-- Injected via main.js -->
-      </div>
-
     </div>
+
+    <!-- Floating Minimap Overlay -->
+    <aside class="canvas-minimap" id="canvas-minimap" aria-label="Timeline Minimap Navigation">
+      <div class="minimap-header">
+        <span class="minimap-title">🗺️ Teyvat Overview</span>
+        <button class="minimap-toggle-btn" id="minimap-toggle-btn" title="Toggle Minimap">−</button>
+      </div>
+      <div class="minimap-body" id="minimap-body">
+        <div class="minimap-world" id="minimap-world">
+          <!-- Miniature era blocks injected dynamically -->
+          <div class="minimap-viewport-box" id="minimap-viewport-box"></div>
+        </div>
+      </div>
+    </aside>
   </main>
 
   <!-- Floating Hover Preview Tooltip -->
@@ -145,20 +143,23 @@
   <footer class="timeline-bottombar">
     <div class="hint-chips">
       <span class="hint-chip">
-        <kbd class="key-kbd">Drag</kbd> or <kbd class="key-kbd">Mouse Wheel</kbd> to Pan
+        <kbd class="key-kbd">Drag</kbd> to Pan 2D
       </span>
       <span class="hint-chip">
-        <kbd class="key-kbd">Hover</kbd> to Preview
+        <kbd class="key-kbd">Wheel</kbd> to Zoom
       </span>
       <span class="hint-chip">
-        <kbd class="key-kbd">Click</kbd> to Pin Details
+        <kbd class="key-kbd">Space + Drag</kbd> Hand Pan
+      </span>
+      <span class="hint-chip">
+        <kbd class="key-kbd">Click</kbd> to Inspect
       </span>
       <span class="hint-chip">
         <kbd class="key-kbd">Esc</kbd> to Unpin
       </span>
     </div>
     <div>
-      <span>Teyvat Interactive Timeline • Genshin Impact Lore</span>
+      <span>Teyvat Interactive 2D Canvas • Genshin Impact Lore</span>
     </div>
   </footer>
 

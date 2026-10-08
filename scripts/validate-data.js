@@ -77,6 +77,13 @@ eras.forEach((era, idx) => {
     }
   }
 
+  if (era.alternateBgImage) {
+    const altFilePath = path.join(rootDir, era.alternateBgImage.replace(/^\.\//, ''));
+    if (!fs.existsSync(altFilePath)) {
+      errors.push(`Era '${era.id}' specifies alternateBgImage '${era.alternateBgImage}' which does not exist on disk at ${altFilePath}.`);
+    }
+  }
+
   if (eraIds.has(era.id)) {
     errors.push(`Duplicate era id: '${era.id}'.`);
   }
