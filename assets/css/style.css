@@ -283,7 +283,7 @@ body {
 /* 2D Spatial Era Panel */
 .spatial-era-panel {
   position: absolute;
-  width: 1260px;
+  width: var(--panel-width, 1260px);
   background: rgba(13, 19, 33, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -505,7 +505,7 @@ body {
 
 .era-events-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(var(--panel-columns, 3), 1fr);
   gap: 1rem;
 }
 

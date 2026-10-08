@@ -119,25 +119,53 @@ class TeyvatTimelineApp {
   }
 
   computePanelLayout() {
-    const panelWidth = 1260;
-    const panelGap = 220;
     const startX = 180;
     const startY = 140;
+    const panelGap = 220;
+
+    let currentX = startX;
 
     this.panelLayout = this.eras.map((era, index) => {
-      const x = startX + index * (panelWidth + panelGap);
-      const y = startY;
-      return {
+      const eraEvents = this.events.filter(e => e.eraId === era.id);
+      const count = eraEvents.length;
+
+      // Determine columns and width based on number of events in this epoch
+      let columns = 3;
+      let width = 1220;
+
+      if (count <= 2) {
+        columns = 1;
+        width = 560;
+      } else if (count <= 4) {
+        columns = 2;
+        width = 880;
+      } else if (count <= 6) {
+        columns = 3;
+        width = 1220;
+      } else if (count <= 8) {
+        columns = 4;
+        width = 1580;
+      } else {
+        columns = Math.min(6, Math.ceil(count / 2));
+        width = columns * 370 + 80;
+      }
+
+      const layoutItem = {
         id: era.id,
         index,
-        x,
-        y,
-        width: panelWidth,
+        x: currentX,
+        y: startY,
+        width,
+        columns,
+        eventCount: count,
         color: era.color
       };
+
+      currentX += width + panelGap;
+      return layoutItem;
     });
 
-    const totalWidth = startX + this.eras.length * (panelWidth + panelGap) + 300;
+    const totalWidth = currentX + 300;
     this.worldBounds = { width: Math.max(12500, totalWidth), height: 1400 };
 
     if (this.canvasWorld) {
@@ -479,6 +507,8 @@ class TeyvatTimelineApp {
       panel.style.left = `${layout.x}px`;
       panel.style.top = `${layout.y}px`;
       panel.style.setProperty('--panel-glow', `${era.color}40`);
+      panel.style.setProperty('--panel-width', `${layout.width}px`);
+      panel.style.setProperty('--panel-columns', layout.columns);
 
       // Determine hero artwork based on era and modern toggle
       let currentHeroArt = era.bgImage;
@@ -683,22 +713,32 @@ class TeyvatTimelineApp {
   applyFilters() {
     let matchCount = 0;
 
-    this.events.forEach(ev => {
-      const matchesSearch = !this.searchQuery || 
-        ev.title.toLowerCase().includes(this.searchQuery) ||
-        ev.summary.toLowerCase().includes(this.searchQuery) ||
-        (ev.tags?.region && ev.tags.region.toLowerCase().includes(this.searchQuery)) ||
-        (ev.tags?.characters && ev.tags.characters.some(c => c.toLowerCase().includes(this.searchQuery)));
+    this.eras.forEach(era => {
+      let eraMatchCount = 0;
+      const eraEvents = this.events.filter(e => e.eraId === era.id);
 
-      const cardEl = document.querySelector(`.spatial-event-card[data-id="${ev.id}"]`);
-      if (cardEl) {
-        if (matchesSearch) {
-          cardEl.style.display = 'flex';
-          cardEl.style.opacity = '1';
-          matchCount++;
-        } else {
-          cardEl.style.display = 'none';
+      eraEvents.forEach(ev => {
+        const matchesSearch = !this.searchQuery || 
+          ev.title.toLowerCase().includes(this.searchQuery) ||
+          ev.summary.toLowerCase().includes(this.searchQuery) ||
+          (ev.tags?.region && ev.tags.region.toLowerCase().includes(this.searchQuery)) ||
+          (ev.tags?.characters && ev.tags.characters.some(c => c.toLowerCase().includes(this.searchQuery)));
+
+        const cardEl = document.querySelector(`.spatial-event-card[data-id="${ev.id}"]`);
+        if (cardEl) {
+          if (matchesSearch) {
+            cardEl.style.display = 'flex';
+            matchCount++;
+            eraMatchCount++;
+          } else {
+            cardEl.style.display = 'none';
+          }
         }
+      });
+
+      const panelEl = document.querySelector(`.spatial-era-panel[data-id="${era.id}"]`);
+      if (panelEl) {
+        panelEl.style.opacity = (!this.searchQuery || eraMatchCount > 0) ? '1' : '0.35';
       }
     });
 
