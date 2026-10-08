@@ -454,11 +454,15 @@ class TeyvatTimelineApp {
       node.addEventListener('mouseenter', (e) => this.showTooltip(ev, e.currentTarget, era));
       node.addEventListener('mouseleave', () => this.hideTooltip());
 
-      // Click to Pin Trigger
+      // Click to Pin Trigger (toggles pin/unpin)
       node.addEventListener('click', (e) => {
         // Prevent accidental clicks during drag gestures
         if (this.dragDistance > 5) return;
-        this.pinEvent(ev, node);
+        if (this.pinnedEvent?.id === ev.id) {
+          this.unpinEvent();
+        } else {
+          this.pinEvent(ev, node);
+        }
       });
 
       this.nodesContainer.appendChild(node);
@@ -488,12 +492,14 @@ class TeyvatTimelineApp {
       <div class="tooltip-pin-hint">Click node to pin event 📌</div>
     `;
 
-    // Position tooltip dynamically based on rendered height
+    // Position tooltip dynamically based on rendered height, constrained inside timeline viewport
     this.tooltip.style.left = `${tooltipX}px`;
     const tooltipHeight = this.tooltip.offsetHeight || (hasImage ? 260 : 130);
+    const viewportRect = this.viewport ? this.viewport.getBoundingClientRect() : { bottom: window.innerHeight - 280 };
+    const maxBottom = (viewportRect.bottom || window.innerHeight) - 16;
     const tooltipY = isTop ? rect.top - tooltipHeight - 12 : rect.bottom + 12;
 
-    this.tooltip.style.top = `${Math.max(65, Math.min(window.innerHeight - tooltipHeight - 20, tooltipY))}px`;
+    this.tooltip.style.top = `${Math.max(65, Math.min(maxBottom - tooltipHeight, tooltipY))}px`;
     this.tooltip.classList.add('is-visible');
   }
 

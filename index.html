@@ -85,46 +85,50 @@
     <!-- Populated dynamically upon node hover -->
   </div>
 
-  <!-- Pinned Event Inspector Drawer (Slide-out panel) -->
+  <!-- Horizontal Pinned Event Details Panel (Docked below timeline, non-overlapping) -->
   <aside class="event-inspector" id="event-inspector" aria-label="Event Details Inspector">
     <div class="inspector-header">
-      <div style="display: flex; align-items: center; gap: 0.5rem;">
+      <div class="inspector-header-left">
         <span id="inspector-era" class="node-era-badge" style="background: rgba(229, 193, 88, 0.15); border: 1px solid var(--gold-celestial); font-size: 0.75rem;">
           Era
         </span>
-        <span id="inspector-date" class="inspector-date">Date</span>
+        <div id="inspector-date" class="inspector-date">Date</div>
       </div>
-      <button class="inspector-close-btn" id="inspector-close-btn" title="Close / Unpin (Esc)">✕</button>
-    </div>
-
-    <!-- Image Carousel -->
-    <div class="carousel-container" id="inspector-carousel">
-      <div id="carousel-slides">
-        <!-- Rendered dynamically -->
-      </div>
-      <button class="carousel-nav-btn prev" id="carousel-prev" title="Previous Slide">‹</button>
-      <button class="carousel-nav-btn next" id="carousel-next" title="Next Slide">›</button>
-      <div class="carousel-dots" id="carousel-dots">
-        <!-- Dots injected dynamically -->
+      <div class="inspector-header-right">
+        <span class="inspector-hint-text">Pinned Event Details</span>
+        <button class="inspector-close-btn" id="inspector-close-btn" title="Close / Unpin (Esc)">✕</button>
       </div>
     </div>
 
-    <!-- Inspector Body -->
-    <div class="inspector-body">
-      <h2 id="inspector-title" class="inspector-title">Event Title</h2>
-      <p id="inspector-desc" class="inspector-desc">Detailed event description text.</p>
-
-      <!-- Tags Section -->
-      <div class="inspector-tag-section">
-        <span class="section-label">Categorization & Entities</span>
-        <div class="tag-cloud" id="inspector-tags">
-          <!-- Injected via main.js -->
+    <!-- Horizontal Multi-Column Content Area -->
+    <div class="inspector-content-row">
+      <!-- Media Column: Image Carousel (Hidden when empty) -->
+      <div class="carousel-container" id="inspector-carousel">
+        <div id="carousel-slides">
+          <!-- Rendered dynamically -->
+        </div>
+        <button class="carousel-nav-btn prev" id="carousel-prev" title="Previous Slide">‹</button>
+        <button class="carousel-nav-btn next" id="carousel-next" title="Next Slide">›</button>
+        <div class="carousel-dots" id="carousel-dots">
+          <!-- Dots injected dynamically -->
         </div>
       </div>
 
-      <!-- Canonical Sources & Quotes -->
-      <div class="inspector-tag-section">
-        <span class="section-label">Primary Canonical Citations</span>
+      <!-- Narrative Column: Title, Description, Tags -->
+      <div class="inspector-narrative-col">
+        <h2 id="inspector-title" class="inspector-title">Event Title</h2>
+        <p id="inspector-desc" class="inspector-desc">Detailed event description text.</p>
+        <div class="inspector-tag-section">
+          <span class="section-label">Categorization & Entities</span>
+          <div class="tag-cloud" id="inspector-tags">
+            <!-- Injected via main.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Citations / Milestones Column -->
+      <div class="inspector-citations-col">
+        <span class="section-label">Citations & References</span>
         <div id="inspector-sources">
           <!-- Injected via main.js -->
         </div>
