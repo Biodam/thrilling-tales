@@ -92,6 +92,20 @@ body {
   filter: drop-shadow(0 0 8px var(--gold-celestial));
 }
 
+.brand-icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(229, 193, 88, 0.45));
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+  flex-shrink: 0;
+}
+
+.brand:hover .brand-icon-img {
+  transform: scale(1.08) rotate(-4deg);
+  filter: drop-shadow(0 0 14px rgba(229, 193, 88, 0.75));
+}
+
 .brand-title {
   font-family: var(--font-serif);
   font-size: 1.15rem;
