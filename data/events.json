@@ -45,6 +45,43 @@
     ]
   },
   {
+    "id": "nibelung-raises-three-moons",
+    "title": "Creation of the Three Moon Sisters & The Primordial Tides",
+    "yearsAgo": 6800,
+    "yearsAgoDisplay": "~6,800+ YA",
+    "dateDisplay": "~6,800+ Years Ago • Origin of the Three Moons",
+    "orderRank": 55,
+    "eraId": "dragon-sovereigns",
+    "eraName": "Seven Sovereigns",
+    "summary": "Before journeying into the cosmic void, Dragon King Nibelung raises the three bright moons from Teyvat's bedrock, binding the primordial world with tidal chains.",
+    "description": "As revealed in the ancient rites of the Aubade of Morningstar and Moon, Dragon King Nibelung raised three bright silver wheels—the Three Moon Sisters (Aria, Sonnet, and Canon)—from the primordial earth. He bound the world with the chains of elemental tides to illuminate the land throughout the cosmic Long Night before setting sail into the dark mists beyond Teyvat's firmament.",
+    "images": [],
+    "tags": {
+      "region": "Primordial Teyvat",
+      "factions": [
+        "Seven Dragon Sovereigns"
+      ],
+      "characters": [
+        "Dragon King Nibelung",
+        "Three Moon Sisters"
+      ],
+      "spoilerLevel": "Fontaine World Quests"
+    },
+    "sources": [
+      {
+        "title": "Aubade of Morningstar and Moon: Moonlit Offering's Final Hour",
+        "category": "artifact",
+        "quote": "He raised three bright moons from the ground and bound this tiny world tightly with the chains of the tides. Moonlight would illuminate the bountiful land throughout the Long Night of the end...",
+        "url": "https://genshin-impact.fandom.com/wiki/Aubade_of_Morningstar_and_Moon"
+      },
+      {
+        "title": "Genshin Impact Wiki: Three Moon Sisters",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Moon_Sisters"
+      }
+    ]
+  },
+  {
     "id": "nibelung-voyage",
     "title": "Nibelung's Cosmic Journey & The Power from Beyond",
     "yearsAgo": 6500,
@@ -373,6 +410,51 @@
         "title": "Genshin Impact Wiki: Second Who Came",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Second_Who_Came"
+      }
+    ]
+  },
+  {
+    "id": "calamity-of-three-moons",
+    "title": "The Fall of the Three Moons & Shattered Lunar Sovereignty",
+    "yearsAgo": 5000,
+    "yearsAgoDisplay": "~5,000 YA",
+    "dateDisplay": "~5,000 Years Ago • Calamity of the Moon Sisters",
+    "orderRank": 255,
+    "eraId": "second-who-came",
+    "eraName": "War of Funerary Flame",
+    "summary": "The Three Moon Sisters succumb to celestial catastrophe as the Eternal Moon falls, the Iridescent Moon shatters, and the Frost Moon ceases to turn.",
+    "description": "During the great celestial conflict triggered by the Second Who Came, the ancient order of the heavens collapsed. The three sovereign sisters of the night sky—who once shared governance with the morning star—were cast down in catastrophe. The Eternal Moon fell throwing heaven and earth into chaos, the Iridescent Moon shattered plunging into the abyssal sea, and the Frost Moon froze in eternal ruin, leaving only petrified lunar fragments and sorrowful Seelie survivors in its wake.",
+    "images": [],
+    "tags": {
+      "region": "Celestia",
+      "factions": [
+        "Celestia",
+        "Frostmoon Scions"
+      ],
+      "characters": [
+        "Three Moon Sisters",
+        "The Second Descender",
+        "Phanes"
+      ],
+      "spoilerLevel": "Enkanomiya World Quests"
+    },
+    "sources": [
+      {
+        "title": "Nightweaver's Looking Glass Weapon Lore",
+        "category": "weapon",
+        "quote": "When the 'Eternal Moon' fell, the heavens and earth were thrown into chaos. When the 'Iridescent Moon' shattered, the crimson shadow sank into the abyssal sea. When the 'Frost Moon' ceased to turn, nations faltered and fell into ruin.",
+        "url": "https://genshin-impact.fandom.com/wiki/Nightweaver%27s_Looking_Glass"
+      },
+      {
+        "title": "Aubade of Morningstar and Moon: Moonlit Offering's Silver Crown",
+        "category": "artifact",
+        "quote": "Once there was an age when, of the three silver wheels that guided the primal heavens, two had fallen. The world, no longer sheltered by 'Eternity,' marched toward its final breath...",
+        "url": "https://genshin-impact.fandom.com/wiki/Aubade_of_Morningstar_and_Moon"
+      },
+      {
+        "title": "Genshin Impact Wiki: Moon Sisters",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Moon_Sisters"
       }
     ]
   },
@@ -783,6 +865,50 @@
     ]
   },
   {
+    "id": "morax-awakens-azhdaha",
+    "title": "Morax Awakens Azhdaha & The Pact of Nantianmen",
+    "yearsAgo": 3700,
+    "yearsAgoDisplay": "~3,700 YA",
+    "dateDisplay": "~3,700 Years Ago • Awakening of the Dragon King",
+    "orderRank": 515,
+    "eraId": "archon-war",
+    "eraName": "The Archon War",
+    "summary": "Rex Lapis encounters the colossal stone dragon Azhdaha slumbering beneath Nantianmen, carving eyes for him from bedrock and sealing a sacred pact of coexistence.",
+    "description": "In the early ages of Liyue, an ancient stone dragon of mountain-like proportions slumbered beneath Nantianmen, causing colossal earthquakes whenever it stirred. Rather than destroying it, Rex Lapis approached the blind behemoth and granted it the gift of sight by carving eyes of glowing amber. Azhdaha swore a sacred contract with Morax to protect the people of Liyue, fighting alongside the Adepti throughout the brutal conflicts of the Archon War.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Adepti of Liyue",
+        "Liyue Qixing"
+      ],
+      "characters": [
+        "Morax (Rex Lapis / Zhongli)",
+        "Azhdaha"
+      ],
+      "spoilerLevel": "Zhongli Story Quest Act II"
+    },
+    "sources": [
+      {
+        "title": "The Unforged Weapon Lore",
+        "category": "weapon",
+        "quote": "A long time ago, a dragon there was to be found in Liyue... Indeed, this ancient dragon of stone was as large as the very mountains it called home... Rex Lapis came before the dragon, seeking to stop the earth's quailing... and Rex Lapis gained another comrade by his side.",
+        "url": "https://genshin-impact.fandom.com/wiki/The_Unforged"
+      },
+      {
+        "title": "Dragon Lord's Crown Material Description",
+        "category": "material",
+        "quote": "Horns created from hardened jade crystallized over a thousand years are the natural crown of the dragon king... born from the mountain's core to express the majesty of the earth.",
+        "url": "https://genshin-impact.fandom.com/wiki/Dragon_Lord%27s_Crown"
+      },
+      {
+        "title": "Genshin Impact Wiki: Azhdaha",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Azhdaha"
+      }
+    ]
+  },
+  {
     "id": "passing-of-guizhong",
     "title": "The Fall of Guizhong & Founding of Liyue Harbor",
     "yearsAgo": 3700,
@@ -1034,6 +1160,44 @@
     ]
   },
   {
+    "id": "origins-of-wangsheng-funeral-parlor",
+    "title": "The Fire Rites & Origins of the Wangsheng Funeral Parlor",
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2,000 YA",
+    "dateDisplay": "~2,000 Years Ago • Purification of God Miasma",
+    "orderRank": 640,
+    "eraId": "archon-war",
+    "eraName": "The Archon War",
+    "summary": "Amidst pestilence and miasmas born from fallen gods during the Archon War, doctors light purifying flames of Homa, establishing the rites of the Wangsheng Funeral Parlor.",
+    "description": "During the final climactic centuries of the Archon War in Liyue, the hatred and decaying remnants of vanquished gods seeped into the soil and waters, unleashing virulent plagues and miasmic karmic corruption upon mortals. A compassionate doctor lifted up burning firewood and the Staff of Homa, establishing sacred fire purification rituals that cleansed evil spirits and guided diseased souls into the beyond. This sacrificial order evolved into the Wangsheng Funeral Parlor, ending centuries of epidemic terror.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Wangsheng Funeral Parlor",
+        "Adepti of Liyue"
+      ],
+      "characters": [
+        "Morax (Rex Lapis / Zhongli)",
+        "Hu Tao"
+      ],
+      "spoilerLevel": "Liyue Archon Quest Chapter I"
+    },
+    "sources": [
+      {
+        "title": "Staff of Homa Weapon Lore",
+        "category": "weapon",
+        "quote": "To cleanse by fire all that is impure, to allow the impurities to rise with the flames unto the all-accommodating high heavens... These blazing rituals were especially commonplace during that ancient period of strife. For the dreams and delusions of the silent corpses of gods would produce evil miasmas...",
+        "url": "https://genshin-impact.fandom.com/wiki/Staff_of_Homa"
+      },
+      {
+        "title": "Genshin Impact Wiki: Wangsheng Funeral Parlor",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Wangsheng_Funeral_Parlor"
+      }
+    ]
+  },
+  {
     "id": "deshret-sacrifice",
     "title": "King Deshret's Forbidden Knowledge Sacrifice",
     "yearsAgo": 2000,
@@ -1154,6 +1318,44 @@
         "title": "Genshin Impact Wiki: Vennessa",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Vennessa"
+      }
+    ]
+  },
+  {
+    "id": "gilded-nomadic-kingdoms-tulaytullah",
+    "title": "The Era of Desert Tyrants & The Fall of Tulaytullah",
+    "yearsAgo": 1000,
+    "yearsAgoDisplay": "~1,000 YA",
+    "dateDisplay": "~1,000 Years Ago • Rise and Fall of the Gilded City-States",
+    "orderRank": 720,
+    "eraId": "post-archon-war",
+    "eraName": "Era of the Seven",
+    "summary": "A thousand years ago, rival mortal city-states in the Sumeru desert like Tulaytullah and Saleh war with tyrants, dancers, and Jinn relics until collapsing into sand.",
+    "description": "One thousand years ago, long after King Deshret's tomb was buried beneath the dunes, human survivors in the Great Red Sand formed fragile, short-lived city-states including Tulaytullah, Saleh, and the ruins of Ay-Khanoum. Plagued by decadence and tyrannical despots obsessed with conquest and plundered relics, the kingdom fell into treachery and palace assassinations orchestrated by sword-dancers like Makhaira and Jinn descendants. Their collapse scattered the desert nomads into the wandering Eremite mercenary corps.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": [
+        "The Eremites",
+        "Ancient Jinn Kingdoms"
+      ],
+      "characters": [
+        "Makhaira",
+        "King Deshret (Amon)"
+      ],
+      "spoilerLevel": "Sumeru Desert World Quests"
+    },
+    "sources": [
+      {
+        "title": "Makhaira Aquamarine Weapon Lore",
+        "category": "weapon",
+        "quote": "Legend has it that a thousand years ago, in the era when the foolish king was buried beneath the dunes, Many short-lived city-states were scattered throughout the barren, boundless, gilded land... The rise and fall of the city-state were but a drunken dream...",
+        "url": "https://genshin-impact.fandom.com/wiki/Makhaira_Aquamarine"
+      },
+      {
+        "title": "Genshin Impact Wiki: Tulaytullah",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Tulaytullah"
       }
     ]
   },
@@ -1321,6 +1523,53 @@
     ]
   },
   {
+    "id": "inazuma-cataclysm-saiguu-sacrifice",
+    "title": "The Cataclysm of Inazuma & The Sacrifice of Kitsune Saiguu",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 YA",
+    "dateDisplay": "500 Years Ago • The Dark Fog of Narukami",
+    "orderRank": 825,
+    "eraId": "cataclysm",
+    "eraName": "The Cataclysm",
+    "summary": "Abyssal darkness engulfs Inazuma 500 years ago; Kitsune Saiguu sacrifices herself to the black fog, Mikoshi Chiyo is corrupted, and the Hakushin legacy is preserved.",
+    "description": "During the Cataclysm five hundred years ago, hordes of abyssal monsters swarmed Narukami Island while Raiden Makoto traveled to Khaenri'ah. In her absence, the Kitsune Saiguu rode out to confront the pitch-black tide, offering her flesh and memories to be devoured by the dark will to safeguard Inazuma. The oni swordmaster Mikoshi Chiyo was swallowed by a beast of sin and driven mad, while the lingering will of Saiguu crystallized into the Hakushin Ring and gave birth to the Kazari purifying spirit.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Inazuma Shogunate",
+        "Grand Narukami Shrine",
+        "Abyss Order"
+      ],
+      "characters": [
+        "Kitsune Saiguu",
+        "Mikoshi Chiyo",
+        "Raiden Ei",
+        "Kazari (Hanachirusato)"
+      ],
+      "spoilerLevel": "Sacred Sakura Cleansing Ritual Quests"
+    },
+    "sources": [
+      {
+        "title": "Hakushin Ring Weapon Lore",
+        "category": "weapon",
+        "quote": "I was once the Hakushin Kitsune. With my agile and loveable comrades, I dashed across the mountains and plains of Narukami... But all of this was swallowed up by the dark will of the pitch-black fog... Please protect the land of Narukami.",
+        "url": "https://genshin-impact.fandom.com/wiki/Hakushin_Ring"
+      },
+      {
+        "title": "Mask of the Tiger's Bite Material Description",
+        "category": "material",
+        "quote": "The oni maiden of great martial prowess... within the belly of that beast, she was stained by deep sin, and her sword-arm was turned against her comrades.",
+        "url": "https://genshin-impact.fandom.com/wiki/Mask_of_the_Tiger%27s_Bite"
+      },
+      {
+        "title": "Genshin Impact Wiki: Kitsune Saiguu",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Kitsune_Saiguu"
+      }
+    ]
+  },
+  {
     "id": "fall-of-durin-dragonspine",
     "title": "The Fall of Durin upon Dragonspine",
     "yearsAgo": 500,
@@ -1444,6 +1693,51 @@
         "title": "Genshin Impact Wiki: Greater Lord Rukkhadevata",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Greater_Lord_Rukkhadevata"
+      }
+    ]
+  },
+  {
+    "id": "asase-hibiki-seirai-storm",
+    "title": "Asase Hibiki Unseals the Seirai Barrier & Ako Domeki's Escape",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "~500 YA",
+    "dateDisplay": "~500 Years Ago • Sinking of Seirai Island into Thunder",
+    "orderRank": 880,
+    "eraId": "cataclysm",
+    "eraName": "The Cataclysm",
+    "summary": "In the aftermath of the Cataclysm, shrine maiden Asase Hibiki unseals the ancient barrier on Seirai Island to save pirate Ako Domeki from the Shogunate fleet.",
+    "description": "Following the loss of her mentor Kitsune Saiguu and lover Takamine the Mistsplitter in the Cataclysm, shrine maiden Asase Hibiki aided the pirate rebel Ako Domeki of Seirai Island against the Shogunate navy. Cornered by the Shogun's warships, Hibiki unsealed the thousand-year-old warding stones containing the wrath of the slain Thunderbird Kanna Kapatche. The unleashed Thunder Manifestation decimated both fleets, enveloped Seirai in a perpetual eternal storm, and blew Domeki's flagship into the fog-shrouded Golden Apple Archipelago.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Inazuma Shogunate",
+        "Seirai Pirates"
+      ],
+      "characters": [
+        "Asase Hibiki",
+        "Ako Domeki",
+        "Kanna Kapatche (Thunderbird)"
+      ],
+      "spoilerLevel": "Seirai Stormchasers Quests"
+    },
+    "sources": [
+      {
+        "title": "Hamayumi Weapon Lore",
+        "category": "weapon",
+        "quote": "She would undo the great barrier that had held for a thousand years, and she would set the resentment of the moribund violet glede free, allowing it to ravage the ships that flew the Electro Archon's banner.",
+        "url": "https://genshin-impact.fandom.com/wiki/Hamayumi"
+      },
+      {
+        "title": "Storm Bead Material Description",
+        "category": "material",
+        "quote": "The lightning storm that lingers upon Seirai Island... It is said that the shrine maiden unsealed the ancient wards, allowing the residual power of the Thunderbird to break free.",
+        "url": "https://genshin-impact.fandom.com/wiki/Storm_Beads"
+      },
+      {
+        "title": "Genshin Impact Wiki: Asase Hibiki",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Asase_Hibiki"
       }
     ]
   },
@@ -1600,6 +1894,52 @@
         "title": "Genshin Impact Wiki: Neuvillette",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Neuvillette"
+      }
+    ]
+  },
+  {
+    "id": "alain-guillotin-fontaine-research-institute",
+    "title": "Alain Guillotin Founds the Fontaine Research Institute & Clockwork Meka",
+    "yearsAgo": 400,
+    "yearsAgoDisplay": "~400 YA",
+    "dateDisplay": "~400 Years Ago • Genesis of Fontainian Kinetic Engineering",
+    "orderRank": 948,
+    "eraId": "modern",
+    "eraName": "Traveler's Journey",
+    "summary": "Four hundred years ago, Narzissenkreuz alumnus Alain Guillotin invents clockwork meka and establishes the Fontaine Research Institute of Kinetic Energy Engineering.",
+    "description": "Approximately four hundred years ago, Alain Guillotin—a gifted former orphan of the Narzissenkreuz Institute and investigator for the Marechaussee Phantom—pioneered the first autonomous clockwork meka powered by Pneumousia kinetic energy. Retiring from state police service following the loss of his sister Mary-Ann, Alain established the Fontaine Research Institute of Kinetic Energy Engineering, fundamentally reshaping Fontaine's industrial civilization, jurisprudence enforcement, and mechanical technology for the next four centuries.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Fontaine Research Institute",
+        "Marechaussee Phantom",
+        "Court of Fontaine"
+      ],
+      "characters": [
+        "Alain Guillotin",
+        "Mary-Ann Guillotin",
+        "Neuvillette"
+      ],
+      "spoilerLevel": "Fontaine Research Institute Chronicles"
+    },
+    "sources": [
+      {
+        "title": "Mechanical Spur Gear Material Description",
+        "category": "material",
+        "quote": "Although many breakthroughs have been made in the kinematics of clockwork meka, its dynamics research has not seen any major advancements beyond the framework laid down by Alain Guillotin four hundred years ago.",
+        "url": "https://genshin-impact.fandom.com/wiki/Mechanical_Spur_Gear"
+      },
+      {
+        "title": "Marechaussee Hunter: Masterpiece's Overture",
+        "category": "artifact",
+        "quote": "Before he joined, then left the Marechaussee Phantom, before finally setting up the Research Institute of Kinetic Energy Engineering, Guillotin was considered a genius researcher without equal...",
+        "url": "https://genshin-impact.fandom.com/wiki/Marechaussee_Hunter"
+      },
+      {
+        "title": "Genshin Impact Wiki: Fontaine Research Institute",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Fontaine_Research_Institute"
       }
     ]
   },

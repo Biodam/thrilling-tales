@@ -45,6 +45,43 @@
     ]
   },
   {
+    "id": "nibelung-raises-three-moons",
+    "title": "Criação das Três Irmãs da Lua e as Marés Primordiais",
+    "yearsAgo": 6800,
+    "yearsAgoDisplay": "~6.800+ AA",
+    "dateDisplay": "~6.800+ Anos Atrás • Origem das Três Luas",
+    "orderRank": 55,
+    "eraId": "dragon-sovereigns",
+    "eraName": "Sete Soberanos",
+    "summary": "Antes de viajar para o vazio cósmico, o Rei Dragão Nibelung ergue as três luas brilhantes da rocha de Teyvat, unindo o mundo primordial com correntes de marés.",
+    "description": "Conforme revelado nos ritos antigos da Serenata das Estrelas e da Lua, o Rei Dragão Nibelung ergueu três brilhantes rodas prateadas—as Três Irmãs da Lua (Aria, Sonnet e Canon)—da terra primordial. Ele uniu o mundo com correntes de marés elementais para iluminar a terra durante a Longa Noite cósmica antes de zarpar pelas névoas escuras além do firmamento de Teyvat.",
+    "images": [],
+    "tags": {
+      "region": "Teyvat Primordial",
+      "factions": [
+        "Sete Soberanos Dragões"
+      ],
+      "characters": [
+        "Rei Dragão Nibelung",
+        "Três Irmãs da Lua"
+      ],
+      "spoilerLevel": "Missões de Mundo de Fontaine"
+    },
+    "sources": [
+      {
+        "title": "Serenata das Estrelas e da Lua: Hora Final da Oferenda ao Luar",
+        "category": "artifact",
+        "quote": "Ele ergueu três luas brilhantes da terra e amarrou firmemente este pequeno mundo com as correntes das marés. A luz da lua iluminaria a terra fértil através da Longa Noite do fim...",
+        "url": "https://genshin-impact.fandom.com/wiki/Aubade_of_Morningstar_and_Moon"
+      },
+      {
+        "title": "Genshin Impact Wiki: Irmãs da Lua",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Moon_Sisters"
+      }
+    ]
+  },
+  {
     "id": "nibelung-voyage",
     "title": "A Jornada Cósmica de Nibelung & O Poder do Além",
     "yearsAgo": 6500,
@@ -375,6 +412,51 @@
         "title": "Genshin Impact Wiki: Second Who Came",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Second_Who_Came"
+      }
+    ]
+  },
+  {
+    "id": "calamity-of-three-moons",
+    "title": "A Queda das Três Luas e a Ruína da Soberania Lunar",
+    "yearsAgo": 5000,
+    "yearsAgoDisplay": "~5.000 AA",
+    "dateDisplay": "~5.000 Anos Atrás • Calamidade das Irmãs da Lua",
+    "orderRank": 255,
+    "eraId": "second-who-came",
+    "eraName": "Guerra das Chamas Funerárias",
+    "summary": "As Três Irmãs da Lua sucumbem à catástrofe celestial quando a Lua Eterna cai, a Lua Iridescente se estilhaça e a Lua Gélida para de girar.",
+    "description": "Durante o colossal conflito celestial desencadeado pelo Segundo Que Chegou, a antiga ordem dos céus desmoronou. As três irmãs soberanas do céu noturno foram derrubadas em catástrofe. A Lua Eterna caiu lançando os céus e a terra no caos, a Lua Iridescente despedaçou-se mergulhando no mar abissal e a Lua Gélida congelou em ruína eterna, deixando para trás fragmentos petrificados e os sobreviventes Seelie amaldiçoados.",
+    "images": [],
+    "tags": {
+      "region": "Celestia",
+      "factions": [
+        "Celestia",
+        "Herdeiros da Lua Gélida"
+      ],
+      "characters": [
+        "Três Irmãs da Lua",
+        "O Segundo Descendente",
+        "Phanes"
+      ],
+      "spoilerLevel": "Missões de Mundo de Enkanomiya"
+    },
+    "sources": [
+      {
+        "title": "Espelho da Tecelã da Noite: História da Arma",
+        "category": "weapon",
+        "quote": "Quando a 'Lua Eterna' caiu, os céus e a terra foram lançados no caos. Quando a 'Lua Iridescente' despedaçou-se, a sombra carmesim afundou no mar abissal. Quando a 'Lua Gélida' parou de girar, nações vacilaram e caíram em ruínas.",
+        "url": "https://genshin-impact.fandom.com/wiki/Nightweaver%27s_Looking_Glass"
+      },
+      {
+        "title": "Serenata das Estrelas e da Lua: Coroa de Prata da Oferenda ao Luar",
+        "category": "artifact",
+        "quote": "Houve uma época em que, das três rodas de prata que guiavam os céus primordiais, duas haviam caído. O mundo, desabrigado da 'Eternidade,' caminhava para seu suspiro final...",
+        "url": "https://genshin-impact.fandom.com/wiki/Aubade_of_Morningstar_and_Moon"
+      },
+      {
+        "title": "Genshin Impact Wiki: Irmãs da Lua",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Moon_Sisters"
       }
     ]
   },
@@ -782,6 +864,50 @@
     ]
   },
   {
+    "id": "morax-awakens-azhdaha",
+    "title": "Morax Desperta Azhdaha e o Pacto de Nantianmen",
+    "yearsAgo": 3700,
+    "yearsAgoDisplay": "~3.700 AA",
+    "dateDisplay": "~3.700 Anos Atrás • Despertar do Rei Dragão",
+    "orderRank": 515,
+    "eraId": "archon-war",
+    "eraName": "Guerra dos Arcontes",
+    "summary": "Rex Lapis encontra o colossal dragão de rocha Azhdaha sob Nantianmen, esculpindo-lhe olhos de âmbar e selando um pacto sagrado de proteção a Liyue.",
+    "description": "Nas primeiras eras de Liyue, um antigo dragão de pedra de proporções montanhosas dormia sob Nantianmen, causando terremotos titânicos a cada movimento. Rex Lapis aproximou-se do ser cego e concedeu-lhe a visão esculpindo olhos de âmbar brilhante. Azhdaha jurou um contrato sagrado para proteger o povo de Liyue, lutando ao lado dos Adepti durante os confrontos brutais da Guerra dos Arcontes.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Adeptos de Liyue",
+        "Qixing de Liyue"
+      ],
+      "characters": [
+        "Morax (Rex Lapis / Zhongli)",
+        "Azhdaha"
+      ],
+      "spoilerLevel": "Missão Lendária de Zhongli: Ato II"
+    },
+    "sources": [
+      {
+        "title": "Espada Áspera: História da Arma",
+        "category": "weapon",
+        "quote": "Muito tempo atrás, havia um dragão em Liyue... De fato, este antigo dragão de pedra era tão grande quanto as próprias montanhas... Rex Lapis veio diante do dragão para acalmar a terra... e Rex Lapis ganhou outro camarada ao seu lado.",
+        "url": "https://genshin-impact.fandom.com/wiki/The_Unforged"
+      },
+      {
+        "title": "Coroa do Senhor dos Dragões: Descrição do Material",
+        "category": "material",
+        "quote": "Chifres criados a partir de jade endurecido cristalizado ao longo de mil anos são a coroa natural do rei dragão... nascido do coração da montanha para expressar a majestade da terra.",
+        "url": "https://genshin-impact.fandom.com/wiki/Dragon_Lord%27s_Crown"
+      },
+      {
+        "title": "Genshin Impact Wiki: Azhdaha",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Azhdaha"
+      }
+    ]
+  },
+  {
     "id": "passing-of-guizhong",
     "title": "A Queda de Guizhong & Fundação do Porto de Liyue",
     "yearsAgo": 3700,
@@ -1032,6 +1158,44 @@
     ]
   },
   {
+    "id": "origins-of-wangsheng-funeral-parlor",
+    "title": "Os Ritos de Fogo e Origens da Funerária de Wangsheng",
+    "yearsAgo": 2000,
+    "yearsAgoDisplay": "~2.000 AA",
+    "dateDisplay": "~2.000 Anos Atrás • Purificação dos Miasmas Divinos",
+    "orderRank": 640,
+    "eraId": "archon-war",
+    "eraName": "Guerra dos Arcontes",
+    "summary": "Em meio a pestes e miasmas de deuses caídos na Guerra dos Arcontes, médicos acendem as chamas purificadoras de Homa, fundando a Funerária de Wangsheng.",
+    "description": "Durante os séculos finais da Guerra dos Arcontes em Liyue, o ódio e os restos em decomposição de deuses derrotados envenenaram o solo e as águas, libertando pragas terríveis sobre os mortais. Médicos compassivos ergueram lenha em chamas e o Báculo de Homa, estabelecendo ritos sagrados de purificação pelo fogo para dissipar espíritos corrompidos e conduzir almas em paz. Esta ordem sacrificial deu origem à Funerária de Wangsheng.",
+    "images": [],
+    "tags": {
+      "region": "Liyue",
+      "factions": [
+        "Funerária de Wangsheng",
+        "Adeptos de Liyue"
+      ],
+      "characters": [
+        "Morax (Rex Lapis / Zhongli)",
+        "Hu Tao"
+      ],
+      "spoilerLevel": "Capítulo I da Missão do Arconte de Liyue"
+    },
+    "sources": [
+      {
+        "title": "Báculo de Homa: História da Arma",
+        "category": "weapon",
+        "quote": "Limpar pelo fogo tudo o que é impuro, permitindo que as impurezas subam com as chamas até os céus... Esses rituais ardentes eram especialmente comuns durante aquele antigo período de conflito. Pois os sonhos e ilusões dos cadáveres silenciosos dos deuses produziam miasmas malignos...",
+        "url": "https://genshin-impact.fandom.com/wiki/Staff_of_Homa"
+      },
+      {
+        "title": "Genshin Impact Wiki: Funerária de Wangsheng",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Wangsheng_Funeral_Parlor"
+      }
+    ]
+  },
+  {
     "id": "deshret-sacrifice",
     "title": "O Sacrifício do Conhecimento Proibido do Rei Deshret",
     "yearsAgo": 2000,
@@ -1151,6 +1315,44 @@
         "title": "Genshin Impact Wiki: Vennessa",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Vennessa"
+      }
+    ]
+  },
+  {
+    "id": "gilded-nomadic-kingdoms-tulaytullah",
+    "title": "A Era dos Tiranos do Deserto e a Queda de Tulaytullah",
+    "yearsAgo": 1000,
+    "yearsAgoDisplay": "~1.000 AA",
+    "dateDisplay": "~1.000 Anos Atrás • Ascensão e Queda das Cidades Douradas",
+    "orderRank": 720,
+    "eraId": "post-archon-war",
+    "eraName": "Era dos Sete",
+    "summary": "Mil anos atrás, cidades-estado rivais no deserto de Sumeru, como Tulaytullah e Saleh, guerreiam sob déspotas e relíquias de Jinns até ruírem sob as areias.",
+    "description": "Mil anos atrás, muito depois da tumba do Rei Deshret repousar sob as dunas, sobreviventes humanos no Grande Deserto Dourado formaram frágeis cidades-estado de curta duração, incluindo Tulaytullah e Saleh. Consumidas por tirania e conspirações palacianas lideradas por dançarinas de espadas como Makhaira e descendentes de Jinns, as cidades sucumbiram à ruína, transformando os nômades do deserto nos mercenários Eremitas.",
+    "images": [],
+    "tags": {
+      "region": "Sumeru",
+      "factions": [
+        "Os Eremitas",
+        "Antigos Reinos de Jinns"
+      ],
+      "characters": [
+        "Makhaira",
+        "Rei Deshret (Amon)"
+      ],
+      "spoilerLevel": "Missões de Mundo do Deserto de Sumeru"
+    },
+    "sources": [
+      {
+        "title": "Água-Marinha de Mahara: História da Arma",
+        "category": "weapon",
+        "quote": "Diz a lenda que mil anos atrás, na era em que o rei tolo foi sepultado sob as dunas, muitas cidades-estado de curta duração estavam espalhadas pela terra estéril e dourada... A ascensão e queda da cidade-estado não passaram de um sonho ébrio...",
+        "url": "https://genshin-impact.fandom.com/wiki/Makhaira_Aquamarine"
+      },
+      {
+        "title": "Genshin Impact Wiki: Tulaytullah",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Tulaytullah"
       }
     ]
   },
@@ -1315,6 +1517,53 @@
     ]
   },
   {
+    "id": "inazuma-cataclysm-saiguu-sacrifice",
+    "title": "O Cataclismo de Inazuma e o Sacrifício de Kitsune Saiguu",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "500 AA",
+    "dateDisplay": "500 Anos Atrás • O Nevoeiro Sombrio de Narukami",
+    "orderRank": 825,
+    "eraId": "cataclysm",
+    "eraName": "O Cataclismo",
+    "summary": "A escuridão do Abismo atinge Inazuma 500 anos atrás; Kitsune Saiguu sacrifica-se ao nevoeiro negro, Mikoshi Chiyo é corrompida e o legado de Hakushin renasce.",
+    "description": "Durante o Cataclismo há 500 anos, hordas abissais invadiram a Ilha Narukami enquanto Raiden Makoto viajava para Khaenri'ah. Kitsune Saiguu cavalgou para confrontar a maré negra, permitindo que suas memórias fossem consumidas para proteger Inazuma. A guerreira oni Mikoshi Chiyo foi devorada pela corrupção abissal, enquanto as memórias puras de Saiguu forjaram o Anel de Hakushin e deram origem ao espírito Kazari.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Xogunato de Inazuma",
+        "Grande Santuário Narukami",
+        "Ordem do Abismo"
+      ],
+      "characters": [
+        "Kitsune Saiguu",
+        "Mikoshi Chiyo",
+        "Raiden Ei",
+        "Kazari (Hanachirusato)"
+      ],
+      "spoilerLevel": "Ritual de Purificação da Sagrada Sakura"
+    },
+    "sources": [
+      {
+        "title": "Anel de Hakushin: História da Arma",
+        "category": "weapon",
+        "quote": "Eu já fui a Kitsune Hakushin. Com meus ágeis e adoráveis companheiros, corri pelos montes e planícies de Narukami... Mas tudo isso foi engolido pela vontade sinistra da névoa escura como breu... Por favor, protejam a terra de Narukami.",
+        "url": "https://genshin-impact.fandom.com/wiki/Hakushin_Ring"
+      },
+      {
+        "title": "Máscara da Mordida do Tigre: Descrição do Material",
+        "category": "material",
+        "quote": "A donzela oni de grande proeza marcial... dentro da barriga daquela fera, ela foi manchada pelo pecado profundo, e sua espada voltou-se contra seus companheiros.",
+        "url": "https://genshin-impact.fandom.com/wiki/Mask_of_the_Tiger%27s_Bite"
+      },
+      {
+        "title": "Genshin Impact Wiki: Kitsune Saiguu",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Kitsune_Saiguu"
+      }
+    ]
+  },
+  {
     "id": "fall-of-durin-dragonspine",
     "title": "A Queda de Durin na Espinha do Dragão",
     "yearsAgo": 500,
@@ -1437,6 +1686,51 @@
         "title": "Genshin Impact Wiki: Greater Lord Rukkhadevata",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Greater_Lord_Rukkhadevata"
+      }
+    ]
+  },
+  {
+    "id": "asase-hibiki-seirai-storm",
+    "title": "Asase Hibiki Rompe o Selo de Seirai e a Fuga de Ako Domeki",
+    "yearsAgo": 500,
+    "yearsAgoDisplay": "~500 AA",
+    "dateDisplay": "~500 Anos Atrás • O Vórtice de Raios da Ilha Seirai",
+    "orderRank": 880,
+    "eraId": "cataclysm",
+    "eraName": "O Cataclismo",
+    "summary": "Após o Cataclismo, a sacerdotisa Asase Hibiki desfaz a barreira milenar de Seirai para salvar o pirata rebelde Ako Domeki da armada do Xogunato.",
+    "description": "Após a dor do Cataclismo, a sacerdotisa Asase Hibiki ajudou o pirata Ako Domeki de Seirai na rebelião contra a marinha do Xogunato. Encurralada pelos navios de guerra, Hibiki rompeu os selos milenares do Pássaro do Trovão Kanna Kapatche. A Manifestação do Trovão destruiu ambas as frotas, mergulhou Seirai em tempestades perpétuas e lançou a nau de Domeki até o Arquipélago da Maçã Dourada.",
+    "images": [],
+    "tags": {
+      "region": "Inazuma",
+      "factions": [
+        "Xogunato de Inazuma",
+        "Piratas de Seirai"
+      ],
+      "characters": [
+        "Asase Hibiki",
+        "Ako Domeki",
+        "Kanna Kapatche (Pássaro do Trovão)"
+      ],
+      "spoilerLevel": "Caçadores de Tempestades de Seirai"
+    },
+    "sources": [
+      {
+        "title": "Arco Quebra-Demônios: História da Arma",
+        "category": "weapon",
+        "quote": "Ela desfez a grande barreira que havia permanecido por mil anos, e libertou o ressentimento da ave violeta moribunda, permitindo que devastasse os navios sob o estandarte do Arconte Electro.",
+        "url": "https://genshin-impact.fandom.com/wiki/Hamayumi"
+      },
+      {
+        "title": "Conta da Tempestade: Descrição do Material",
+        "category": "material",
+        "quote": "A tempestade de relâmpagos que paira sobre a Ilha Seirai... Dizem que a sacerdotisa desfez os antigos selos, permitindo que o poder residual do Pássaro do Trovão se libertasse.",
+        "url": "https://genshin-impact.fandom.com/wiki/Storm_Beads"
+      },
+      {
+        "title": "Genshin Impact Wiki: Asase Hibiki",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Asase_Hibiki"
       }
     ]
   },
@@ -1593,6 +1887,52 @@
         "title": "Genshin Impact Wiki: Neuvillette",
         "category": "wiki",
         "url": "https://genshin-impact.fandom.com/wiki/Neuvillette"
+      }
+    ]
+  },
+  {
+    "id": "alain-guillotin-fontaine-research-institute",
+    "title": "Alain Guillotin Funda o Instituto de Pesquisas de Fontaine e Meka",
+    "yearsAgo": 400,
+    "yearsAgoDisplay": "~400 AA",
+    "dateDisplay": "~400 Anos Atrás • Gênese da Engenharia Cinética de Fontaine",
+    "orderRank": 948,
+    "eraId": "modern",
+    "eraName": "Jornada do Viajante",
+    "summary": "Quatrocentos anos atrás, Alain Guillotin inventa os autômatos meka e funda o Instituto de Pesquisas de Energia Cinética de Fontaine.",
+    "description": "Aproximadamente quatrocentos anos atrás, Alain Guillotin—aluno brilhante do Instituto Narzissenkreuz e investigador do Fantasma de Marechaussee—desenvolveu os primeiros autômatos meka movidos por energia Pneuma-Ousia. Aposentando-se das forças policiais após a perda de sua irmã Mary-Ann, Alain fundou o Instituto de Pesquisas de Energia Cinética de Fontaine, transformando permanentemente a indústria e a tecnologia mecânica de Fontaine.",
+    "images": [],
+    "tags": {
+      "region": "Fontaine",
+      "factions": [
+        "Instituto de Pesquisas de Fontaine",
+        "Fantasma de Marechaussee",
+        "Corte de Fontaine"
+      ],
+      "characters": [
+        "Alain Guillotin",
+        "Mary-Ann Guillotin",
+        "Neuvillette"
+      ],
+      "spoilerLevel": "Crônicas do Instituto de Pesquisas de Fontaine"
+    },
+    "sources": [
+      {
+        "title": "Engrenagem Reta: Descrição do Material",
+        "category": "material",
+        "quote": "Embora muitos avanços tenham sido feitos na cinemática dos meka mecânicos, a pesquisa de sua dinâmica não viu grandes avanços além da estrutura estabelecida por Alain Guillotin quatrocentos anos atrás.",
+        "url": "https://genshin-impact.fandom.com/wiki/Mechanical_Spur_Gear"
+      },
+      {
+        "title": "Caçador das Sombras: Prelúdio da Obra-Prima",
+        "category": "artifact",
+        "quote": "Antes de ingressar e depois deixar o Fantasma de Marechaussee, antes de finalmente criar o Instituto de Pesquisa de Energia Cinética, Guillotin era considerado um pesquisador genial sem igual...",
+        "url": "https://genshin-impact.fandom.com/wiki/Marechaussee_Hunter"
+      },
+      {
+        "title": "Genshin Impact Wiki: Instituto de Pesquisas de Fontaine",
+        "category": "wiki",
+        "url": "https://genshin-impact.fandom.com/wiki/Fontaine_Research_Institute"
       }
     ]
   },
